@@ -1,0 +1,101 @@
+add_namespace = dop_sar
+
+
+country_event = { #
+	id = dop_sar.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.1" }
+	title = dop_sar.1.t
+	desc = dop_sar.1.desc
+	picture = GFX_report_event_GNG_morita_akio_10
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_sar.1.a
+	}
+}
+country_event = { #
+	id = dop_sar.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.1" }
+	title = dop_sar.2.t
+	desc = dop_sar.2.desc
+	picture = GFX_report_event_GNG_morita_akio_10
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_sar.2.a
+	}
+}
+country_event = { #
+	id = dop_sar.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.1" }
+	title = dop_sar.3.t
+	desc = dop_sar.3.desc
+	picture = GFX_report_event_GNG_morita_akio_10
+
+	is_triggered_only = no
+	trigger = {
+		tag = GNG
+		has_completed_focus = GNG_the_coming_storm
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 20 
+	}
+	option = { #
+		name = dop_sar.3.a
+		load_focus_tree = dop_newdefender_success
+	}
+	
+}
+country_event = { #
+	id = dop_sar.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.1" }
+	title = dop_sar.4.t
+	desc = dop_sar.4.desc
+	picture = GFX_report_event_GNG_morita_akio_10
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_sar.4.a
+		custom_effect_tooltip = GNG_sony_reload_SOFA_1_tt
+		set_variable = { GNG_japan_sofa_var = 7 }
+	}
+}
+country_event = { #
+	id = dop_sar.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.1" }
+	title = dop_sar.5.t
+	desc = dop_sar.5.desc
+	picture = GFX_report_event_GNG_morita_akio_10
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_sar.5.a
+		custom_effect_tooltip = GNG_sony_reload_SOFA_2_tt
+		set_variable = { GNG_japan_sofa_var = 8 }
+	}
+}
+country_event = { #
+	id = dop_sar.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.1" }
+	title = dop_sar.6.t
+	desc = dop_sar.6.desc
+	picture = GFX_report_event_GNG_morita_akio_10
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_sar.6.a
+		custom_effect_tooltip = GNG_sony_reload_SOFA_3_tt
+		set_variable = { GNG_japan_sofa_var = 9 }
+	}
+}

@@ -1,0 +1,338 @@
+focus_tree = {
+	id = dop_test_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GNG
+		}
+	}
+	default = no
+	shared_focus = GNG_Li_frightened
+	shared_focus = GNG_Test_the_police
+	shared_focus = GNG_Enhance_the_police
+	shared_focus = GNG_Special_police_ordinance
+	shared_focus = GNG_We_are_Guangdong
+	shared_focus = GNG_Defense_over_self
+	shared_focus = GNG_Long_way_back_home
+	shared_focus = GNG_New_defense_way
+}
+focus_tree = {
+	id = dop_newdefender_success
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GNG
+		}
+	}
+	default = no
+	shared_focus = GNG_Li_frightened
+	shared_focus = GNG_Test_the_police
+	shared_focus = GNG_Enhance_the_police
+	shared_focus = GNG_train_day_by_day
+	shared_focus = GNG_improve_train_method
+	shared_focus = GNG_update_weapon
+	shared_focus = GNG_Special_police_ordinance
+	# shared_focus = GNG_New_defense_way
+	# shared_focus = GNG_ask_chi
+	# shared_focus = GNG_ask_jap
+	# shared_focus = GNG_ask_self
+	# shared_focus = GNG_ask_other
+	# shared_focus = GNG_dangerous_try
+	# shared_focus = GNG_now_is_time
+	# shared_focus = GNG_new_defnese_way_ordinance
+	# shared_focus = GNG_sdw_passed
+}
+shared_focus = {
+		id = GNG_Li_frightened
+		icon = GFX_GNG_An_Island_of_Stability
+		cost = 1
+		x = 8
+		y = 0
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus Li_frightened"
+			country_event = {
+			id = dop_sar.1
+		}
+			
+		}
+	}
+shared_focus = {
+		id = GNG_Test_the_police
+		icon = GFX_focus_deploy_the_police
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = GNG_Li_frightened
+		prerequisite = {focus = GNG_Li_frightened}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus Test_the_police"
+			country_event = {
+			id = dop_sar.2
+		}
+		}
+	}
+shared_focus = {
+	id = GNG_Enhance_the_police
+	icon = GFX_OMS_enhanced_training_programs
+	cost = 1
+	x = 8
+	y = 2
+	relative_position_id = Test_the_police
+	prerequisite = {focus = GNG_Test_the_police}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus Enhance_the_police"
+		set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_matsushita_temp_support = 1.0 }
+		set_temp_variable = { GNG_legco_fujitsu_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_hitachi_temp_support = 0.00 }
+		set_temp_variable = { GNG_temp_legco_id = 76 }
+		legco_introduce_ordinance = yes
+		TNO_worsen_max_workhours_policy_effectiveness_low = yes
+		every_owned_state = {
+			set_temp_variable = { chi_app_temp = 0.75 }
+			GNG_chinese_app_change = yes
+			set_temp_variable = { zhu_app_temp = 0.5 }
+			GNG_zhujin_app_change = yes
+			set_temp_variable = { jap_app_temp = 0.5 }
+			GNG_japanese_app_change = yes
+			}
+		}
+	}
+	shared_focus = {
+		id = GNG_train_day_by_day
+		icon = GFX_QIN_Training_Day_and_Night
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = GNG_Enhance_the_police
+		prerequisite = {focus = GNG_Enhance_the_police}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus Test_the_police"
+			country_event = {
+			id = dop_sar.2
+		}
+		}
+	}
+	shared_focus = {
+		id = GNG_improve_train_method
+		icon = GFX_GNG_The_Public_Order_and_Police_Law
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = GNG_train_day_by_day
+		prerequisite = {focus = GNG_train_day_by_day}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus Test_the_police"
+			country_event = {
+			id = dop_sar.2
+		}
+		}
+	}
+	shared_focus = {
+		id = GNG_update_weapon
+		icon = GFX_GER_guns_for_the_future
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = GNG_improve_train_method
+		prerequisite = {focus = GNG_improve_train_method}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus Test_the_police"
+			country_event = {
+			id = dop_sar.2
+		}
+		}
+	}
+shared_focus = {
+	id = GNG_Defense_over_self
+	icon = GFX_USA_The_Economic_Opportunity_Act
+	cost = 1
+	x = 8
+	y = 3
+	relative_position_id = Test_the_police
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus Enhance_the_police"
+		set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_matsushita_temp_support = 1.0 }
+		set_temp_variable = { GNG_legco_fujitsu_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_hitachi_temp_support = 0.00 }
+		set_temp_variable = { GNG_temp_legco_id = 77 }
+		legco_introduce_ordinance = yes
+		TNO_worsen_max_workhours_policy_effectiveness_low = yes
+		every_owned_state = {
+			set_temp_variable = { chi_app_temp = 0.75 }
+			GNG_chinese_app_change = yes
+			set_temp_variable = { zhu_app_temp = 0.5 }
+			GNG_zhujin_app_change = yes
+			set_temp_variable = { jap_app_temp = 0.5 }
+			GNG_japanese_app_change = yes
+			}
+		}
+	}	
+shared_focus = {
+	id = GNG_New_defense_way
+	icon = GFX_generic_Police_Sphere
+	cost = 1
+	x = 8
+	y = 4
+	relative_position_id = GNG_Test_the_police
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus Enhance_the_police"
+		set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_matsushita_temp_support = 1.0 }
+		set_temp_variable = { GNG_legco_fujitsu_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_hitachi_temp_support = 0.00 }
+		set_temp_variable = { GNG_temp_legco_id = 78 }
+		legco_introduce_ordinance = yes
+		TNO_worsen_max_workhours_policy_effectiveness_low = yes
+		every_owned_state = {
+			set_temp_variable = { chi_app_temp = 0.75 }
+			GNG_chinese_app_change = yes
+			set_temp_variable = { zhu_app_temp = 0.5 }
+			GNG_zhujin_app_change = yes
+			set_temp_variable = { jap_app_temp = 0.5 }
+			GNG_japanese_app_change = yes
+			}
+		}
+	}
+	shared_focus = {
+		id = GNG_Long_way_back_home
+		icon = GFX_CHI_The_Sphere_Relies_On_Us
+		cost = 1
+		x = 8
+		y = 5
+		relative_position_id = Test_the_police
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus Enhance_the_police"
+			set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+			set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+			set_temp_variable = { GNG_legco_matsushita_temp_support = 1.0 }
+			set_temp_variable = { GNG_legco_fujitsu_temp_support = 1.00 }
+			set_temp_variable = { GNG_legco_hitachi_temp_support = 0.00 }
+			set_temp_variable = { GNG_temp_legco_id = 79 }
+			legco_introduce_ordinance = yes
+			TNO_worsen_max_workhours_policy_effectiveness_low = yes
+			every_owned_state = {
+				set_temp_variable = { chi_app_temp = 0.75 }
+				GNG_chinese_app_change = yes
+				set_temp_variable = { zhu_app_temp = 0.5 }
+				GNG_zhujin_app_change = yes
+				set_temp_variable = { jap_app_temp = 0.5 }
+				GNG_japanese_app_change = yes
+				}
+			}
+		}
+		shared_focus = {
+			id = GNG_We_are_Guangdong
+			icon = GFX_GNG_within_the_sphere
+			cost = 1
+			x = 8
+			y = 6
+			relative_position_id = Test_the_police
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus Enhance_the_police"
+				set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+				set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+				set_temp_variable = { GNG_legco_matsushita_temp_support = 1.0 }
+				set_temp_variable = { GNG_legco_fujitsu_temp_support = 1.00 }
+				set_temp_variable = { GNG_legco_hitachi_temp_support = 0.00 }
+				set_temp_variable = { GNG_temp_legco_id = 80 }
+				legco_introduce_ordinance = yes
+				TNO_worsen_max_workhours_policy_effectiveness_low = yes
+				every_owned_state = {
+					set_temp_variable = { chi_app_temp = 0.75 }
+					GNG_chinese_app_change = yes
+					set_temp_variable = { zhu_app_temp = 0.5 }
+					GNG_zhujin_app_change = yes
+					set_temp_variable = { jap_app_temp = 0.5 }
+					GNG_japanese_app_change = yes
+					}
+				}
+			}
+	shared_focus = {
+		id = GNG_Special_police_ordinance
+		icon = GFX_GNG_The_Guangdong_Modern_Police_Ordinance
+		cost = 4.286
+		x = 0
+		y = 1
+		relative_position_id = GNG_update_weapon
+		prerequisite={focus = GNG_update_weapon}
+		completion_reward = {
+			effect_tooltip = {
+				set_temp_variable = { GNG_temp_legco_id = 76 }
+				custom_effect_tooltip = GNG_legco_bill_introduce_start_when_selected_tooltip
+				set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+				set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+				set_temp_variable = { GNG_legco_matsushita_temp_support = 1.00 }
+				set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.60 }
+				set_temp_variable = { GNG_legco_hitachi_temp_support = 0.40 }
+				GNG_legco_votes_initialize = yes
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus GNG_Special_police_ordinance"
+		}
+		select_effect = {
+			set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+			set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+			set_temp_variable = { GNG_legco_matsushita_temp_support = 1.0 }
+			set_temp_variable = { GNG_legco_fujitsu_temp_support = 1.00 }
+			set_temp_variable = { GNG_legco_hitachi_temp_support = 0.00 }
+			set_temp_variable = { GNG_temp_legco_id = 76 }
+			legco_introduce_ordinance_start = yes
+			hidden_effect = {
+				country_event = {
+					id = guangdong_sonyAmendment.35
+					days = 5
+				}
+				country_event = {
+					id = guangdong_sonyAmendment.36
+					days = 10
+				}
+				country_event = {
+					id = guangdong_sonyAmendment.37
+					days = 15
+				}
+				country_event = {
+					id = guangdong_sonyAmendment.38
+					days = 20
+				}
+			}
+			
+			}
+			
+		}
+		shared_focus = {
+			id = GNG_No_changging
+			icon = GFX_GNG_within_the_sphere
+			cost = 1
+			x = 8
+			y = 6
+			relative_position_id = Test_the_police
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus Enhance_the_police"
+				set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+				set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+				set_temp_variable = { GNG_legco_matsushita_temp_support = 1.0 }
+				set_temp_variable = { GNG_legco_fujitsu_temp_support = 1.00 }
+				set_temp_variable = { GNG_legco_hitachi_temp_support = 0.00 }
+				set_temp_variable = { GNG_temp_legco_id = 80 }
+				legco_introduce_ordinance = yes
+				TNO_worsen_max_workhours_policy_effectiveness_low = yes
+				every_owned_state = {
+					set_temp_variable = { chi_app_temp = 0.75 }
+					GNG_chinese_app_change = yes
+					set_temp_variable = { zhu_app_temp = 0.5 }
+					GNG_zhujin_app_change = yes
+					set_temp_variable = { jap_app_temp = 0.5 }
+					GNG_japanese_app_change = yes
+					}
+				}
+			}
+
+
+
+

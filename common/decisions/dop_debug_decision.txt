@@ -1,0 +1,13 @@
+GNG_debug_category = {
+	GNG_dop_debug_load_new_tree = {
+		allowed = {
+			original_tag = GNG
+		}
+		icon = GFX_decision_GNG_generic
+		visible = {
+		}
+		complete_effect = {
+			load_focus_tree = dop_test_tree
+		}
+	}
+}
