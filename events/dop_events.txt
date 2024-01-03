@@ -23,7 +23,7 @@ country_event = { #
 }
 country_event = { #
 	id = dop_sar.2
-	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.1" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.2" }
 	title = dop_sar.2.t
 	desc = dop_sar.2.desc
 	picture = GFX_report_event_GNG_morita_akio_10
@@ -37,7 +37,7 @@ country_event = { #
 }
 country_event = { #
 	id = dop_sar.3
-	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.1" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.3" }
 	title = dop_sar.3.t
 	desc = dop_sar.3.desc
 	picture = GFX_report_event_GNG_morita_akio_10
@@ -59,7 +59,7 @@ country_event = { #
 }
 country_event = { #
 	id = dop_sar.4
-	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.1" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.4" }
 	title = dop_sar.4.t
 	desc = dop_sar.4.desc
 	picture = GFX_report_event_GNG_morita_akio_10
@@ -75,7 +75,7 @@ country_event = { #
 }
 country_event = { #
 	id = dop_sar.5
-	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.1" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.5" }
 	title = dop_sar.5.t
 	desc = dop_sar.5.desc
 	picture = GFX_report_event_GNG_morita_akio_10
@@ -91,7 +91,7 @@ country_event = { #
 }
 country_event = { #
 	id = dop_sar.6
-	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.1" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.6" }
 	title = dop_sar.6.t
 	desc = dop_sar.6.desc
 	picture = GFX_report_event_GNG_morita_akio_10
