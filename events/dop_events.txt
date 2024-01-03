@@ -1,4 +1,10 @@
 add_namespace = dop_sar
+add_namespace = dop_pre_gaw
+add_namespace = dop_gaw
+add_namespace = dop_end
+add_namespace = dop_usage
+add_namespace = dop_news
+add_namespace = dop_flavors #maybe…i think
 
 
 country_event = { #
