@@ -10,8 +10,8 @@
   GNG_update_weapon: "更新武器"
   GNG_Special_police_ordinance: "广东特种警察条例"
   GNG_We_are_Guangdong: "独立之国"
-  GNG_Defense_over_self: "加强防御"
   GNG_Long_way_back_home: "归乡长路"
+  GNG_ctns_ordinance: "续签条约"
   GNG_New_defense_way: "新防卫者"
   GNG_ask_chi: "去电南京"
   GNG_ask_jap: "东京一夜"
@@ -29,7 +29,8 @@
   GNG_agriculture_growth: "关注农业"
   GNG_science_future: "未来科学"
   GNG_fake_final: "更进一步"
-
+  GNG_nanjing_emergency_call: "南京急电"
+  GNG_coming_disaster: "灾难抵近"
 #event 
   dop_sar.1.t:  "危机四伏的清晨"
   dop_sar.1.desc:  "占位符"
