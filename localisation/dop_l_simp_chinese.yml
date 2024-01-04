@@ -1,6 +1,7 @@
 ﻿l_simp_chinese: 
 #decision
-  GNG_dop_debug_load_new_tree:0 "珠江黎明 调试决议"
+  GNG_dop_debug_load_new_tree:0 "珠江黎明 调试决议
+  GNG_dop_debug_remove_faction: "退出阵营"
 #focus
   GNG_Li_frightened: "李嘉诚的隐忧"
   GNG_Test_the_police: "警察测试"
@@ -30,8 +31,15 @@
   GNG_science_future: "未来科学"
   GNG_fake_final: "更进一步"
   GNG_nanjing_emergency_call: "南京急电"
-  GNG_delay_for_time: "拖延时间"
-
+  GNG_keep_calm: "慌张不得"
+  GNG_consider_the_situation: "审时度势"
+  GNG_storm_center: "风暴中心"
+  GNG_observation_leave: "监视放松"
+  GNG_develop_urge: "紧急发展"
+  GNG_transfor_weapon: "转产武器"
+  GNG_apply_emergency: "广东应急权力条例"
+  GNG_arms_built: "库存装备"
+  GNG_recruitment: "招兵买马"
 #event 
   dop_sar.1.t:  "危机四伏的清晨"
   dop_sar.1.desc:  "占位符"
