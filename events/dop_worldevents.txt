@@ -1,0 +1,16 @@
+
+add_namespace = WORLD
+
+news_event = { #GAW
+	id = WORLD.40001
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.60001"}
+	title = WORLD.40001.t
+	desc = WORLD.40001.desc
+	picture = GFX_news_event_YUN_western_insurrection_GAW
+
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40001.a
+	}
+}
