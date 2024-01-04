@@ -30,7 +30,8 @@
   GNG_science_future: "未来科学"
   GNG_fake_final: "更进一步"
   GNG_nanjing_emergency_call: "南京急电"
-  GNG_coming_disaster: "灾难抵近"
+  GNG_delay_for_time: "拖延时间"
+
 #event 
   dop_sar.1.t:  "危机四伏的清晨"
   dop_sar.1.desc:  "占位符"
@@ -41,6 +42,11 @@
   dop_sar.3.t: "十一年"
   dop_sar.3.desc:  "占位符"
   dop_sar.3.a: "李嘉诚和盛田相视而笑"
+  dop_sar.4.t: ""
+  dop_sar.4.desc: ""
+  dop_sar.4.a: ""
+  dop_pregaw.1.t: "外部干预"
+  dop_pregaw.2.t: "外部干预"
 #legco
   GNG_legco_ord_76_title: "广东特种警察条例"
   GNG_legco_ord_76_effect: "£GNG_police_texticon 将建立§Q广警特种联队§!，用于调查重大刑事案件。"
@@ -79,4 +85,9 @@ GNG_legco_ord_81_title: "广东新国际地位条例"
   TNO_PEACE_POPUP_FLAVOR_GNG_SONY_GAW_CHI: "如今狞恶的海狮扑在我身上，啖着我的骨肉，咽着我的脂膏；母亲呀，我哭泣号啕，呼你不应。母亲呀，快让我躲入你的怀抱！母亲！我要回来，母亲！"
   TNO_PEACE_POPUP_FLAVOR_GNG_SONY_GAW_JAP: "挽救我国唯一的道路，就是下定决心把战争继续下去，进行本土决战，以便置之死地而后生。"
   TNO_PEACE_POPUP_FLAVOR_GNG_SONY_GAW_OTH: "产品的好坏是由用户来决定的，制造商无法评估。"
-#
+#tooltip
+  GNG_sony_btfgng_start_tt: "占位符"
+  GNG_sony_btfgng_chi_win: ""
+  GNG_sony_btfgng_jap_win: ""
+  GNG_sony_btfgng_gng_mid: ""
+  GNG_fakeswitchfocustree: "国策树将变化…"
