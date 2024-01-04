@@ -10059,6 +10059,13 @@ defined_text = {
 		}
 		localization_key = GNG_japan_sofa_law_9
 	}
+	text = {
+		trigger = {
+			check_variable = { v = 3 }
+			check_variable = { GNG_japan_sofa_var = 10 }
+		}
+		localization_key = GNG_japan_sofa_law_10
+	}
 
 
 
@@ -10789,6 +10796,13 @@ defined_text = {
 			check_variable = { GNG_japan_sofa_var = 9 }
 		}
 		localization_key = GNG_japan_sofa_law_desc_9
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 3 }
+			check_variable = { GNG_japan_sofa_var = 10 }
+		}
+		localization_key = GNG_japan_sofa_law_desc_10
 	}
 
 
