@@ -1,5 +1,5 @@
 add_namespace = dop_sar
-add_namespace = dop_pre_gaw
+add_namespace = dop_pregaw
 add_namespace = dop_gaw
 add_namespace = dop_end
 add_namespace = dop_usage
