@@ -14,3 +14,42 @@ news_event = { #GAW
 		name = WORLD.40001.a
 	}
 }
+news_event = { #GAW CHI WIN
+	id = WORLD.40002
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40002"}
+	title = WORLD.40002.t
+	desc = WORLD.40002.desc
+	picture = GFX_news_event_YUN_western_insurrection_victory
+
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40002.a
+	}
+}
+news_event = { #GAW JAP WIN
+	id = WORLD.40003
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40003"}
+	title = WORLD.40003.t
+	desc = WORLD.40003.desc
+	picture = GFX_news_event_PHI_14th_Army_victory
+
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40003.a
+	}
+}
+news_event = { #GAW GNG EASTEREGG
+	id = WORLD.40004
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40004"}
+	title = WORLD.40004.t
+	desc = WORLD.40004.desc
+	picture = GFX_news_event_SUR_suriname_coup
+
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40004.a
+	}
+}
