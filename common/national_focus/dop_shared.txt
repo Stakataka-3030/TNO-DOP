@@ -13,7 +13,6 @@ focus_tree = {
 	shared_focus = GNG_Enhance_the_police
 	shared_focus = GNG_Special_police_ordinance
 	shared_focus = GNG_We_are_Guangdong
-	shared_focus = GNG_Defense_over_self
 	shared_focus = GNG_Long_way_back_home
 	shared_focus = GNG_New_defense_way
 }
@@ -300,16 +299,6 @@ shared_focus = {
 					}
 				}
 			}
-# shared_focus = GNG_New_defense_way
-# shared_focus = GNG_ask_chi
-# shared_focus = GNG_ask_jap
-# shared_focus = GNG_ask_self
-# shared_focus = GNG_ask_other
-# shared_focus = GNG_dangerous_try
-# shared_focus = GNG_now_is_time
-# shared_focus = GNG_new_defnese_way_ordinance
-# shared_focus = GNG_sdw_passed
-# shared_focus = GNG_sdw_failed
 shared_focus = {
 	id = GNG_New_defense_way
 	icon = GFX_generic_Police_Sphere
@@ -350,7 +339,7 @@ shared_focus = {
 	}
 	icon = GFX_YUN_For_China
 	cost = 1
-	x = -2.25
+	x = -3
 	y = 1
 	relative_position_id = GNG_New_defense_way
 	completion_reward = {
@@ -365,7 +354,7 @@ shared_focus = {
 	}
 	icon = GFX_AST_friends_japan
 	cost = 1
-	x = -0.75
+	x = -1
 	y = 1
 	relative_position_id = GNG_New_defense_way
 	completion_reward = {
@@ -380,7 +369,7 @@ shared_focus = {
 	}
 	icon = GFX_GNG_Matsushita_Leads
 	cost = 1
-	x = 0.75
+	x = 1
 	y = 1
 	relative_position_id = GNG_New_defense_way
 	completion_reward = {
@@ -394,7 +383,7 @@ shared_focus = {
 	}
 	id = GNG_ask_other
 	icon = GFX_GNG_Draft_a_Plan
-	cost = 1
+	cost = 3
 	x = 2.25
 	y = 1
 	relative_position_id = GNG_New_defense_way
@@ -482,3 +471,34 @@ shared_focus = {
 				id = guangdong_sonyAmendment.38
 				days = 20
 			}}}}
+shared_focus = {
+	prerequisite=
+	{	
+		focus = GNG_dangerous_try
+	}
+	show = { not = {has_country_flag = sdw_failed} } 
+	id = GNG_sdw_passed
+	icon = GFX_MAG_Desperate_Times
+	cost = 1
+	x = 0
+	y = 5
+	relative_position_id = GNG_New_defense_way
+	completion_reward = {
+	
+	}}
+shared_focus = {
+	prerequisite=
+	{	
+		focus = GNG_dangerous_try
+	}
+	show = { has_country_flag = sdw_failed } 
+	id = GNG_sdw_failed
+	icon = GFX_MAG_Desperate_Times
+	cost = 1
+	x = 0
+	y = 5
+	relative_position_id = GNG_New_defense_way
+	completion_reward = {
+	
+	}}
+		

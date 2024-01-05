@@ -1,6 +1,7 @@
 ﻿l_simp_chinese: 
 #decision
-  GNG_dop_debug_load_new_tree: "珠江黎明 调试决议"
+  GNG_dop_debug_load_new_tree: "珠江黎明 测试国策"
+  GNG_dop_debug_load_ndwtree: "ndw树"
   GNG_dop_debug_remove_faction: "退出阵营"
 #focus
   GNG_Li_frightened: "李嘉诚的隐忧"
@@ -16,8 +17,8 @@
   GNG_New_defense_way: "新防卫者"
   GNG_ask_chi: "去电南京"
   GNG_ask_jap: "东京一夜"
-  GNG_ask_self: "问问何鸿燊"
-  GNG_ask_other: "咨询松下"
+  GNG_ask_other: "问问何鸿燊"
+  GNG_ask_self: "咨询松下"
   GNG_dangerous_try: "危险尝试"
   GNG_now_is_time: "是时候了……"
   GNG_new_defnese_way_ordinance: "广东国家防卫条例"

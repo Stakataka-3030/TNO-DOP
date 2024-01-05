@@ -3176,8 +3176,8 @@ defined_text = {
 		localization_key = GNG_legco_amend_78_3_title
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 78.3 } }
-		localization_key = GNG_legco_amend_78_3_title
+		trigger = { check_variable = { GNG_legco_amendment_id = 78.4 } }
+		localization_key = GNG_legco_amend_78_4_title
 	}
 	text = {
 		trigger = { check_variable = { GNG_legco_amendment_id = 79.1 } }
@@ -4146,6 +4146,10 @@ defined_text = {
 	text = {
 		trigger = { check_variable = { GNG_legco_amendment_id = 78.3 } }
 		localization_key = GNG_legco_amend_78_3_effect
+	}
+	text = {
+		trigger = { check_variable = { GNG_legco_amendment_id = 78.4 } }
+		localization_key = GNG_legco_amend_78_4_effect
 	}
 	text = {
 		trigger = { check_variable = { GNG_legco_amendment_id = 79.1 } }
