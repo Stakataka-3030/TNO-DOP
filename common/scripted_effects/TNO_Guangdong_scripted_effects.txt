@@ -18752,65 +18752,35 @@ GNG_amendment_effects = {
 			limit = {
 				check_variable = { GNG_legco_amendment_id = 78.1 } 
 			}
-			set_temp_variable = { temp_econ_spending_amount = 0.875 }
+			set_temp_variable = { temp_econ_spending_amount = 1 }
 			econ_spend_money_once_effect_raw_money = yes
-			every_owned_state = {
-			set_temp_variable = { zhu_app_temp = 0.75 }
-			GNG_zhujin_app_change = yes
-			set_temp_variable = { jap_app_temp = 2 }
-			GNG_japanese_app_change = yes
-			}
-			random_owned_state = {
-			limit = {
-				state = 592
-			}
-			add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			set_temp_variable = { temp_state_value_addition = 0.35 }
-			econ_state_value_change_addition = yes
-			add_state_modifier = {
-				modifier = {
-					state_GDP_growth_modifier = 0.45
-				}
-			}
+			add_to_variable = {GNG_ndw_success_chance = 15}
 		}
-		random_owned_state = {
+		else_if = {
 			limit = {
-				state = 593
+				check_variable = { GNG_legco_amendment_id = 78.2 } 
 			}
-			add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			set_temp_variable = { temp_state_value_addition = 0.25 }
-			econ_state_value_change_addition = yes
-			add_state_modifier = {
-				modifier = {
-					state_GDP_growth_modifier = 0.95
-				}
-			}
+			set_temp_variable = { temp_econ_spending_amount = 1 }
+			econ_spend_money_once_effect_raw_money = yes
+			add_to_variable = {GNG_ndw_success_chance = 15}
 		}
-		random_owned_state = {
+		else_if = {
 			limit = {
-				state = 1017
+				check_variable = { GNG_legco_amendment_id = 78.3 } 
 			}
-			add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			set_temp_variable = { temp_state_value_addition = 0.25 }
-			econ_state_value_change_addition = yes
-			add_state_modifier = {
-				modifier = {
-					state_GDP_growth_modifier = 0.95
-				}
-			}
+			add_to_variable = {GNG_ndw_success_chance = 10}
 		}
+		else_if = {
+			limit = {
+				check_variable = { GNG_legco_amendment_id = 78.4 } 
+			}
+			if = {
+				limit = {
+					has_country_flag = GNG_Stanley_Casino_Success
+				}
+				add_to_variable = {GNG_ndw_success_chance = 10}
+			}
+			else = {add_to_variable = {GNG_ndw_success_chance = 5}}
 		}
 		else_if = {
 			limit = {
