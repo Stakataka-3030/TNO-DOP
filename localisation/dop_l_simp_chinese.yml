@@ -1,6 +1,7 @@
 ﻿l_simp_chinese: 
 #decision
-  GNG_dop_debug_load_new_tree: "珠江黎明 调试决议"
+  GNG_dop_debug_load_new_tree: "珠江黎明 测试树"
+  GNG_dop_debug_load_ndwtree: "新防卫树"
   GNG_dop_debug_remove_faction: "退出阵营"
 #focus
   GNG_Li_frightened: "李嘉诚的隐忧"
