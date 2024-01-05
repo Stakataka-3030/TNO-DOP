@@ -52,8 +52,8 @@ focus_tree = {
 	shared_focus = GNG_dangerous_try
 	shared_focus = GNG_now_is_time
 	shared_focus = GNG_new_defnese_way_ordinance
-	#shared_focus = GNG_sdw_passed
-	#shared_focus = GNG_sdw_failed
+	shared_focus = GNG_sdw_passed
+	shared_focus = GNG_sdw_failed
 }
 shared_focus = {
 		id = GNG_Li_frightened
