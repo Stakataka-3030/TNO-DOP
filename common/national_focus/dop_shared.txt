@@ -384,7 +384,7 @@ shared_focus = {
 	id = GNG_ask_other
 	icon = GFX_GNG_Draft_a_Plan
 	cost = 3
-	x = 2.25
+	x = 3
 	y = 1
 	relative_position_id = GNG_New_defense_way
 	completion_reward = {
@@ -474,9 +474,12 @@ shared_focus = {
 shared_focus = {
 	prerequisite=
 	{	
-		focus = GNG_dangerous_try
+		focus = GNG_new_defnese_way_ordinance
 	}
-	show = { not = {has_country_flag = sdw_failed} } 
+	allow_branch = {
+		not = {
+		has_country_flag = sdw_failed}
+	}
 	id = GNG_sdw_passed
 	icon = GFX_MAG_Desperate_Times
 	cost = 1
@@ -489,9 +492,11 @@ shared_focus = {
 shared_focus = {
 	prerequisite=
 	{	
-		focus = GNG_dangerous_try
+		focus = GNG_new_defnese_way_ordinance
 	}
-	show = { has_country_flag = sdw_failed } 
+	allow_branch = {
+		has_country_flag = sdw_failed
+	}
 	id = GNG_sdw_failed
 	icon = GFX_MAG_Desperate_Times
 	cost = 1
@@ -499,6 +504,5 @@ shared_focus = {
 	y = 5
 	relative_position_id = GNG_New_defense_way
 	completion_reward = {
-	
 	}}
 		
