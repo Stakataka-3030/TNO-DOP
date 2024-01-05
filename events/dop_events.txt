@@ -104,6 +104,7 @@ country_event = { #
 		custom_effect_tooltip = GNG_sony_reload_SOFA_3_tt
 		set_variable = { GNG_japan_sofa_var = 9 }
 	}
+}
 country_event = { #sdw_pass
 id = dop_sar.7
 immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.6" }
