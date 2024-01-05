@@ -29,7 +29,7 @@ GNG_debug_category = {
 		visible = {
 		}
 		complete_effect = {
-			set_variable = {sdw_failed = 1}
+			set_country_flag = sdw_failed
 		}
 	}
 	GNG_dop_debug_remove_faction = {

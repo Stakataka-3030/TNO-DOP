@@ -477,11 +477,10 @@ shared_focus = {
 		focus = GNG_new_defnese_way_ordinance
 	}
 	allow_branch = {
-		not = {
-		has_country_flag = sdw_failed}
+		NOT= {has_country_flag = sdw_failed}
 	}
 	id = GNG_sdw_passed
-	icon = GFX_MAG_Desperate_Times
+	icon = GFX_GNG_Pass_the_Amendments
 	cost = 1
 	x = 0
 	y = 5
@@ -498,7 +497,7 @@ shared_focus = {
 		has_country_flag = sdw_failed
 	}
 	id = GNG_sdw_failed
-	icon = GFX_MAG_Desperate_Times
+	icon = GFX_MAD_HOW_DID_YOU_FAIL
 	cost = 1
 	x = 0
 	y = 5
