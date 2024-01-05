@@ -9715,7 +9715,7 @@ GNG_pass_ordinance_event_effect = {
 			check_variable = { GNG_legco_current_ordinance_id = 78 } #Public Transport Ordinance
 		}
 		country_event = {
-			id = dop_sar.5
+			id = dop_sar.7
 		}
 	}
 	else_if = {
@@ -10395,7 +10395,9 @@ GNG_fail_ordinance_event_effect = {
 		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 78 } #Public Transport Ordinance
 		}
-		
+		country_event = {
+			id = dop_sar.8
+		}
 	}
 	else_if = {
 		limit = {

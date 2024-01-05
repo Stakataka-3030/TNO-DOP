@@ -133,6 +133,9 @@ fire_only_once = yes
 option = { #
 	name = dop_sar.8.a
 	custom_effect_tooltip = GNG_sdw_fail_tt
+	set_temp_variable = { GNG_legco_seat_temp = -3 }
+	set_temp_variable = { GNG_legco_faction_temp = 3 }
+	GNG_change_legco_seats = yes
 }
 }
 country_event = { #sdw_attack
@@ -148,6 +151,12 @@ fire_only_once = yes
 option = { #
 	name = dop_sar.9.a
 	custom_effect_tooltip = GNG_sdw_retray_tt
+	set_temp_variable = { GNG_legco_seat_temp = -10 }
+	set_temp_variable = { GNG_legco_faction_temp = 3 }
+	GNG_change_legco_seats = yes
+	set_temp_variable = { GNG_legco_seat_temp = -10 }
+	set_temp_variable = { GNG_legco_faction_temp = 6 }
+	GNG_change_legco_seats = yes
 }
 }
 country_event = { #sdw_safe
