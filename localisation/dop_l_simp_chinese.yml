@@ -40,7 +40,7 @@
   GNG_apply_emergency: "广东应急权力条例"
   GNG_arms_built: "库存装备"
   GNG_recruitment: "招兵买马"
-  GNG_cutback_traintime: "缩短时间训练时间"
+  GNG_cutback_traintime: "缩短训练时间"
   GNG_lower_standard: "降低征兵标准"
 #event 
   dop_sar.1.t:  "危机四伏的清晨"
