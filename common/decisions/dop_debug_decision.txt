@@ -21,6 +21,17 @@ GNG_debug_category = {
 			load_focus_tree = dop_ndwtree
 		}
 	}
+	GNG_dop_debug_load_peacetree = {
+		allowed = {
+			original_tag = GNG
+		}
+		icon = GFX_decision_GNG_generic
+		visible = {
+		}
+		complete_effect = {
+			load_focus_tree = dop_peace_develop
+		}
+	}
 	GNG_dop_debug_fail_ndw = {
 		allowed = {
 			original_tag = GNG

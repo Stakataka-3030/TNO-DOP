@@ -561,7 +561,7 @@ shared_focus = {
 	}}
 shared_focus = {
 	id = GNG_new_develop_project
-	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	icon = GFX_GNG_Civil_Service
 	cost = 1
 	x = 8
 	y = 0
@@ -573,7 +573,7 @@ shared_focus = {
 		focus = GNG_new_develop_project
 	}
 	id = GNG_teaching_first
-	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	icon = GFX_CHI_Increase_Education_Spending
 	cost = 1
 	x = -8
 	y = 1
@@ -586,7 +586,7 @@ shared_focus = {
 		focus = GNG_teaching_first
 	}
 	id = GNG_rewrite_textbook
-	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	icon = GFX_USA_Print_More_Books
 	cost = 1
 	x = -9
 	y = 2
@@ -603,7 +603,7 @@ shared_focus = {
 		focus = GNG_poverty_help
 	}
 	id = GNG_compulsory_education_ordinance
-	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	icon = GFX_generic_education_general
 	cost = 1
 	x = -8
 	y = 3
@@ -616,7 +616,7 @@ shared_focus = {
 		focus = GNG_teaching_first
 	}
 	id = GNG_poverty_help
-	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	icon = GFX_USA_Primary_Education_Act
 	cost = 1
 	x = -7
 	y = 2
@@ -629,7 +629,7 @@ shared_focus = {
 		focus = GNG_new_develop_project
 	}
 	id = GNG_advance_tools
-	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	icon = GFX_CHI_New_Tools
 	cost = 1
 	x = -4
 	y = 1
@@ -642,7 +642,7 @@ shared_focus = {
 		focus = GNG_advance_tools
 	}
 	id = GNG_japanese_tech
-	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	icon = GFX_CHI_Invite_Japanese_Technicians
 	cost = 1
 	x = -5
 	y = 2
@@ -655,7 +655,7 @@ shared_focus = {
 		focus = GNG_advance_tools
 	}
 	id = GNG_chinese_tech
-	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	icon = GFX_CHI_New_Chinese_Technicians
 	cost = 1
 	x = -3
 	y = 2
@@ -672,7 +672,7 @@ shared_focus = {
 			focus = GNG_chinese_tech
 		}
 		id = GNG_prove_tools_import_ordinance
-		icon = GFX_MAD_HOW_DID_YOU_FAIL
+		icon = GFX_CHI_Import_Designs
 		cost = 1
 		x = -4
 		y = 3
@@ -685,7 +685,7 @@ shared_focus = {
 		focus = GNG_new_develop_project
 	}
 	id = GNG_improve_health_care
-	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	icon = GFX_generic_change_law_healthcare
 	cost = 1
 	x = 0
 	y = 1
@@ -698,7 +698,7 @@ shared_focus = {
 		focus = GNG_improve_health_care
 	}
 	id = GNG_county_hospital
-	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	icon = GFX_ENG_The_Health_And_Needs_Division
 	cost = 1
 	x = -1
 	y = 2
@@ -711,7 +711,7 @@ shared_focus = {
 		focus = GNG_improve_health_care
 	}
 	id = GNG_social_care
-	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	icon = GFX_GNG_healthcare
 	cost = 1
 	x = 1
 	y = 2
@@ -728,7 +728,7 @@ shared_focus = {
 			focus = GNG_county_hospital
 		}
 		id = GNG_standard_health_insurance_ordinance
-		icon = GFX_MAD_HOW_DID_YOU_FAIL
+		icon = GFX_GNG_The_Health_Crisis
 		cost = 1
 		x = 0
 		y = 3
@@ -741,7 +741,7 @@ shared_focus = {
 		focus = GNG_new_develop_project
 	}
 	id = GNG_agriculture_growth
-	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	icon = GFX_CHI_New_Agricultural_Equipment
 	cost = 1
 	x = 4
 	y = 1
@@ -754,7 +754,7 @@ shared_focus = {
 		focus = GNG_agriculture_growth
 	}
 	id = GNG_import_seeds
-	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	icon = GFX_Generic_Agricultural_Control
 	cost = 1
 	x = 3
 	y = 2
@@ -767,7 +767,7 @@ shared_focus = {
 		focus = GNG_agriculture_growth
 	}
 	id = GNG_tech_help_agri
-	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	icon = GFX_ITA_Conclude_the_Mechanization_of_Agriculture
 	cost = 1
 	x = 5
 	y = 2
@@ -784,7 +784,7 @@ shared_focus = {
 			focus = GNG_import_seeds
 		}
 		id = GNG_food_safe_ordinance
-		icon = GFX_MAD_HOW_DID_YOU_FAIL
+		icon = GFX_SAM_Food_For_All
 		cost = 1
 		x = 4
 		y = 3
@@ -797,7 +797,7 @@ shared_focus = {
 		focus = GNG_new_develop_project
 	}
 	id = GNG_science_future
-	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	icon = GFX_TNO_Generic_Science
 	cost = 1
 	x = 8
 	y = 1
@@ -810,7 +810,7 @@ shared_focus = {
 		focus = GNG_science_future
 	}
 	id = GNG_build_research_center
-	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	icon = GFX_GNG_Establish_Research_Parks
 	cost = 1
 	x = 7
 	y = 2
@@ -823,7 +823,7 @@ shared_focus = {
 		focus = GNG_science_future
 	}
 	id = GNG_sponsor_new_tech
-	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	icon = GFX_CHI_We_Have_The_Technology
 	cost = 1
 	x = 9
 	y = 2
@@ -840,7 +840,7 @@ shared_focus = {
 			focus = GNG_sponsor_new_tech
 		}
 		id = GNG_new_tech_develop_ordinance
-		icon = GFX_MAD_HOW_DID_YOU_FAIL
+		icon = GFX_TNO_Generic_Science02
 		cost = 1
 		x = 8
 		y = 3
@@ -869,13 +869,13 @@ shared_focus = {
 		focus = GNG_new_tech_develop_ordinance
 	}
 	id = GNG_fake_final
-	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	icon = GFX_GNG_the_rural_development_ordinance
 	cost = 1
 	x = 0
 	y = 4
 	relative_position_id = GNG_new_develop_project
 	select_effect = { 
-		country_event = dop_sar.3
+		country_event = dop_sar.11
 	}
 	completion_reward = {
 		custom_effect_tooltip = GNG_fakeswitchfocustree
