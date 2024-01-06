@@ -9720,7 +9720,7 @@ GNG_pass_ordinance_event_effect = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { GNG_legco_current_ordinance_id = 79 } #Public Housing Ordinance
+			check_variable = { GNG_legco_current_ordinance_id = 79 } #chinese
 		}
 		country_event = {
 			id = dop_sar.6
@@ -9728,10 +9728,42 @@ GNG_pass_ordinance_event_effect = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { GNG_legco_current_ordinance_id = 80 } #Public Housing Ordinance
+			check_variable = { GNG_legco_current_ordinance_id = 80 } #indep
 		}
 		country_event = {
 			id = sonypluss.5
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 81 } #japan
+		}
+		country_event = {
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 82 } #compulsory_educ_ord
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 83 } #tools_ord
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 84 } #health_ord
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 85 } #agri_ord
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 86 } #science_dev_ord
 		}
 	}
 	else_if = {
@@ -10413,6 +10445,38 @@ GNG_fail_ordinance_event_effect = {
 	}
 	else_if = {
 		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 81 } #japan
+		}
+		country_event = {
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 82 } #compulsory_educ_ord
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 83 } #tools_ord
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 84 } #health_ord
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 85 } #agri_ord
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 86 } #science_dev_ord
+		}
+	}
+	else_if = {
+		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 22 } #Civil Service Ordinance
 		}
 		
@@ -11080,6 +11144,83 @@ GNG_ordinances_effects = {
 			set_temp_variable = { chi_app_temp = 2 }
 			GNG_chinese_app_change = yes
 			}
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 81 } #japan
+		}
+		country_event = {
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 82 } #compulsory_educ_ord
+		}
+		set_temp_variable = { temp_econ_spending_amount = 1.20 }
+		econ_spend_money_once_effect_raw_money = yes
+		tno_education_improve = yes
+		TNO_improve_academic_base_high = yes
+		every_owned_state = {
+			set_temp_variable = { zhu_app_temp = 1 }
+			GNG_zhujin_app_change = yes
+			set_temp_variable = { chi_app_temp = 1 }
+			GNG_chinese_app_change = yes
+			set_temp_variable = { jap_app_temp = 1 }
+			GNG_japanese_app_change = yes
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 83 } #tools_ord
+		}
+		set_temp_variable = { temp_econ_spending_amount = 1.50 }
+		econ_spend_money_once_effect_raw_money = yes
+		income_tax_temp = -0.075
+		econ_income_tax_rate_change = yes
+		TNO_improve_industrial_equipment_high = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 84 } #health_ord
+		}
+		set_temp_variable = { temp_econ_spending_amount = 1.50 }
+		econ_spend_money_once_effect_raw_money = yes
+		TNO_improve_healthcare_high = yes
+		TNO_improve_healthcare_high = yes
+		every_owned_state = {
+			set_temp_variable = { zhu_app_temp = 1 }
+			GNG_zhujin_app_change = yes
+			set_temp_variable = { chi_app_temp = 1 }
+			GNG_chinese_app_change = yes
+			set_temp_variable = { jap_app_temp = 3 }
+			GNG_japanese_app_change = yes
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 85 } #agri_ord
+		}
+		set_temp_variable = { temp_econ_spending_amount = 1.50 }
+		econ_spend_money_once_effect_raw_money = yes
+		TNO_improve_agriculture_high = yes
+		TNO_improve_agriculture_high = yes
+		every_owned_state = {
+			set_temp_variable = { zhu_app_temp = 1 }
+			GNG_zhujin_app_change = yes
+			set_temp_variable = { chi_app_temp = 3 }
+			GNG_chinese_app_change = yes
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 86 } #science_dev_ord
+		}
+		TNO_improve_research_facilities_high = yes
+		TNO_improve_research_facilities_high = yes
+		every_owned_state = {
+			set_temp_variable = { jap_app_temp = 3 }
+			GNG_japanese_app_change = yes
+		}
 	}
 	else_if = {
 		limit = {
