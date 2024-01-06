@@ -2,8 +2,7 @@ bfg_gui_decision_category = {
 	allowed = {
 			tag = GNG
 	}
-	visible_when_empty = yes
-	scripted_gui = "TNO_BFG_GUI"
+	scripted_gui = GNG_BFG_GUI
 	priority = 95000
 }
 	

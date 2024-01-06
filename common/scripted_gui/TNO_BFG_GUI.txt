@@ -1,15 +1,5 @@
 scripted_gui = {
-	TNO_BFG_GUI = {
+	GNG_BFG_GUI = {
 		context_type = decision_category
-		window_name = "TNO_BFG_GUI"
-
-		visible = {
-			always = yes
-		}
-
-		triggers = {
-			Info_button_visible = {
-				NOT = { tag = ITA }
-			}}
-	}
-}
+		window_name = "GNG_BFG_GUI"
+}}

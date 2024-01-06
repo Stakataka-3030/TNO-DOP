@@ -1,51 +1,34 @@
 guiTypes = {
 	containerWindowType = {
-		name = "TNO_BFG_GUI"
+		name = "GNG_BFG_GUI"
 		size = { width = 500 height = 600 }
+		origo = center
 		position = { x = 0 y = 0 }
-		
-		containerWindowType = {
-			name = "TNO_BFG_GUI_movement_container"
-			size = { width = 500 height = 600 }
-			position = { x = 0 y = 30 }
-		
-			iconType = {
-				name = "TNO_BFG_GUI_bg"
-				spriteType = "GFX_TNO_BFG_GUI_bg"
-				position = { x = 8 y = 25 }
-			}
-			
-			iconType = {
-				name = "TNO_BFG_GUI_Dot"
-				spriteType = "GFX_tangle_dot"
-				position = { x = 0 y = 0 }
-			}
-			instantTextboxType = {
-				name = "TNO_BFG_GUI_Guangdong"
-				position = { x = -6 y = -3 }
-				font = "aldrich_30_outline"
-				maxWidth = 533
-				text = BFG_gui_guangdong_name
-				format = center
-			}
-			
-			instantTextboxType = {
-				name = "TNO_BFG_GUI_China"
-				position = { x = -65 y = 415 }
-				font = "aldrich_30_outline"
-				maxWidth = 267
-				text = BFG_gui_china_name
-				format = center
-			}
-			
-			instantTextboxType = {
-				name = "TNO_BFG_GUI_Japan"
-				position = { x = 314 y = 415 }
-				font = "aldrich_30_outline"
-				maxWidth = 267
-				text = BFG_gui_japan_name
-				format = center
-			}
-		}
+		iconType = {
+		name = "TNO_BFG_bg"
+		position = { x = 0 y = 0 }
+		spriteType = "GFX_GNG_BFG_GUI_bg"
 	}
+		instantTextBoxType = {
+		name = "china_side"
+		position = { x = -5 , y = 400 }
+		text = "china_side_text"
+		font = "aldrich_30_outline"
+		format = center
+	}
+	instantTextBoxType = {
+		name = "japan_side"
+		position = { x = 400 , y = 400 }
+		text = "japan_side_text"
+		font = "aldrich_30_outline"
+		format = center
+	}
+	instantTextBoxType = {
+		name = "gng_side"
+		position = { x = 200 , y = 0 }
+		text = "gng_side_text"
+		font = "aldrich_30_outline"
+		format = center
+	}
+}
 }
