@@ -136,6 +136,7 @@ option = { #
 	set_temp_variable = { GNG_legco_seat_temp = -3 }
 	set_temp_variable = { GNG_legco_faction_temp = 3 }
 	GNG_change_legco_seats = yes
+	set_country_flag = sdw_failed
 }
 }
 country_event = { #sdw_attack
@@ -157,6 +158,7 @@ option = { #
 	set_temp_variable = { GNG_legco_seat_temp = -10 }
 	set_temp_variable = { GNG_legco_faction_temp = 6 }
 	GNG_change_legco_seats = yes
+	set_country_flag = sdw_failed
 }
 }
 country_event = { #sdw_safe

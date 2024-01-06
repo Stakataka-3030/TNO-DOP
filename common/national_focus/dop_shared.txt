@@ -55,6 +55,61 @@ focus_tree = {
 	shared_focus = GNG_sdw_passed
 	shared_focus = GNG_sdw_failed
 }
+focus_tree = {
+	id = dop_peace_develop
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GNG
+		}
+	}
+	default = no
+	shared_focus = GNG_new_develop_project
+	shared_focus = GNG_teaching_first
+	shared_focus = GNG_rewrite_textbook
+	shared_focus = GNG_poverty_help
+	shared_focus = GNG_compulsory_education_ordinance
+	shared_focus = GNG_advance_tools
+	shared_focus = GNG_japanese_tech
+	shared_focus = GNG_chinese_tech
+	shared_focus = GNG_prove_tools_import_ordinance
+	shared_focus = GNG_improve_health_care
+	shared_focus = GNG_county_hospital
+	shared_focus = GNG_social_care
+	shared_focus = GNG_standard_health_insurance_ordinance
+	shared_focus = GNG_agriculture_growth
+	shared_focus = GNG_import_seeds
+	shared_focus = GNG_tech_help_agri
+	shared_focus = GNG_food_safe_ordinance
+	shared_focus = GNG_science_future
+	shared_focus = GNG_build_research_center
+	shared_focus = GNG_sponsor_new_tech
+	shared_focus = GNG_new_tech_develop_ordinance
+	shared_focus = GNG_fake_final
+}
+# GNG_new_develop_project: "新发展计划"
+#   GNG_teaching_first: "教育为先"
+#   GNG_rewrite_textbook: "重写课本"
+#   GNG_poverty_help: "扶贫基金"
+#   GNG_compulsory_education_ordinance: "广东义务教育条例"
+#   GNG_advance_tools: "设备升级"
+#   GNG_japanese_tech: "本岛技术"
+#   GNG_chinese_tech: "南京寻访"
+#   GNG_prove_tools_import_ordinance: "广东设备进口条例"
+#   GNG_improve_health_care: "人命关天"
+#   GNG_county_hospital: "乡村医院"
+#   GNG_social_care: "社区服务"
+#   GNG_standard_health_insurance_ordinance: "广东基础医保条例"
+#   GNG_agriculture_growth: "关注农业"
+#   GNG_import_seeds: "进口新种"
+#   GNG_tech_help_agri: "科技助农"
+#   GNG_food_safe_ordinance: "广东粮食安全条例"
+#   GNG_science_future: "未来科学"
+#   GNG_build_research_center: "建立研究中心"
+#   GNG_sponsor_new_tech: "赞助新技术"
+#   GNG_new_tech_develop_ordinance: "广东新技术发展条例"
+#   GNG_fake_final: "更进一步"
 shared_focus = {
 		id = GNG_Li_frightened
 		icon = GFX_GNG_An_Island_of_Stability
@@ -504,4 +559,347 @@ shared_focus = {
 	relative_position_id = GNG_New_defense_way
 	completion_reward = {
 	}}
+shared_focus = {
+	id = GNG_new_develop_project
+	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	cost = 1
+	x = 8
+	y = 0
+	completion_reward = {
+	}}
+shared_focus = {
+	prerequisite=
+	{	
+		focus = GNG_new_develop_project
+	}
+	id = GNG_teaching_first
+	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	cost = 1
+	x = -8
+	y = 1
+	relative_position_id = GNG_new_develop_project
+	completion_reward = {
+	}}
+shared_focus = {
+	prerequisite=
+	{	
+		focus = GNG_teaching_first
+	}
+	id = GNG_rewrite_textbook
+	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	cost = 1
+	x = -9
+	y = 2
+	relative_position_id = GNG_new_develop_project
+	completion_reward = {
+	}}
+shared_focus = {
+	prerequisite=
+	{	
+		focus = GNG_rewrite_textbook
+	}
+	prerequisite=
+	{	
+		focus = GNG_poverty_help
+	}
+	id = GNG_compulsory_education_ordinance
+	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	cost = 1
+	x = -8
+	y = 3
+	relative_position_id = GNG_new_develop_project
+	completion_reward = {
+	}}
+shared_focus = {
+	prerequisite=
+	{	
+		focus = GNG_teaching_first
+	}
+	id = GNG_poverty_help
+	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	cost = 1
+	x = -7
+	y = 2
+	relative_position_id = GNG_new_develop_project
+	completion_reward = {
+	}}
+shared_focus = {
+	prerequisite=
+	{	
+		focus = GNG_new_develop_project
+	}
+	id = GNG_advance_tools
+	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	cost = 1
+	x = -4
+	y = 1
+	relative_position_id = GNG_new_develop_project
+	completion_reward = {
+	}}
+shared_focus = {
+	prerequisite=
+	{	
+		focus = GNG_advance_tools
+	}
+	id = GNG_japanese_tech
+	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	cost = 1
+	x = -5
+	y = 2
+	relative_position_id = GNG_new_develop_project
+	completion_reward = {
+	}}
+shared_focus = {
+	prerequisite=
+	{	
+		focus = GNG_advance_tools
+	}
+	id = GNG_chinese_tech
+	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	cost = 1
+	x = -3
+	y = 2
+	relative_position_id = GNG_new_develop_project
+	completion_reward = {
+	}}
+	shared_focus = {
+		prerequisite=
+		{	
+			focus = GNG_japanese_tech
+		}
+		prerequisite=
+		{	
+			focus = GNG_chinese_tech
+		}
+		id = GNG_prove_tools_import_ordinance
+		icon = GFX_MAD_HOW_DID_YOU_FAIL
+		cost = 1
+		x = -4
+		y = 3
+		relative_position_id = GNG_new_develop_project
+		completion_reward = {
+		}}
+shared_focus = {
+	prerequisite=
+	{	
+		focus = GNG_new_develop_project
+	}
+	id = GNG_improve_health_care
+	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	cost = 1
+	x = 0
+	y = 1
+	relative_position_id = GNG_new_develop_project
+	completion_reward = {
+	}}
+shared_focus = {
+	prerequisite=
+	{	
+		focus = GNG_improve_health_care
+	}
+	id = GNG_county_hospital
+	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	cost = 1
+	x = -1
+	y = 2
+	relative_position_id = GNG_new_develop_project
+	completion_reward = {
+	}}
+shared_focus = {
+	prerequisite=
+	{	
+		focus = GNG_improve_health_care
+	}
+	id = GNG_social_care
+	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	cost = 1
+	x = 1
+	y = 2
+	relative_position_id = GNG_new_develop_project
+	completion_reward = {
+	}}
+	shared_focus = {
+		prerequisite=
+		{	
+			focus = GNG_social_care
+		}
+		prerequisite=
+		{	
+			focus = GNG_county_hospital
+		}
+		id = GNG_standard_health_insurance_ordinance
+		icon = GFX_MAD_HOW_DID_YOU_FAIL
+		cost = 1
+		x = 0
+		y = 3
+		relative_position_id = GNG_new_develop_project
+		completion_reward = {
+		}}
+shared_focus = {
+	prerequisite=
+	{	
+		focus = GNG_new_develop_project
+	}
+	id = GNG_agriculture_growth
+	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	cost = 1
+	x = 4
+	y = 1
+	relative_position_id = GNG_new_develop_project
+	completion_reward = {
+	}}
+shared_focus = {
+	prerequisite=
+	{	
+		focus = GNG_agriculture_growth
+	}
+	id = GNG_import_seeds
+	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	cost = 1
+	x = 3
+	y = 2
+	relative_position_id = GNG_new_develop_project
+	completion_reward = {
+	}}
+shared_focus = {
+	prerequisite=
+	{	
+		focus = GNG_agriculture_growth
+	}
+	id = GNG_tech_help_agri
+	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	cost = 1
+	x = 5
+	y = 2
+	relative_position_id = GNG_new_develop_project
+	completion_reward = {
+	}}
+	shared_focus = {
+		prerequisite=
+		{	
+			focus = GNG_tech_help_agri
+		}
+		prerequisite=
+		{	
+			focus = GNG_import_seeds
+		}
+		id = GNG_food_safe_ordinance
+		icon = GFX_MAD_HOW_DID_YOU_FAIL
+		cost = 1
+		x = 4
+		y = 3
+		relative_position_id = GNG_new_develop_project
+		completion_reward = {
+		}}
+shared_focus = {
+	prerequisite=
+	{	
+		focus = GNG_new_develop_project
+	}
+	id = GNG_science_future
+	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	cost = 1
+	x = 8
+	y = 1
+	relative_position_id = GNG_new_develop_project
+	completion_reward = {
+	}}
+shared_focus = {
+	prerequisite=
+	{	
+		focus = GNG_science_future
+	}
+	id = GNG_build_research_center
+	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	cost = 1
+	x = 7
+	y = 2
+	relative_position_id = GNG_new_develop_project
+	completion_reward = {
+	}}
+shared_focus = {
+	prerequisite=
+	{	
+		focus = GNG_science_future
+	}
+	id = GNG_sponsor_new_tech
+	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	cost = 1
+	x = 9
+	y = 2
+	relative_position_id = GNG_new_develop_project
+	completion_reward = {
+	}}
+	shared_focus = {
+		prerequisite=
+		{	
+			focus = GNG_build_research_center
+		}
+		prerequisite=
+		{	
+			focus = GNG_sponsor_new_tech
+		}
+		id = GNG_new_tech_develop_ordinance
+		icon = GFX_MAD_HOW_DID_YOU_FAIL
+		cost = 1
+		x = 8
+		y = 3
+		relative_position_id = GNG_new_develop_project
+		completion_reward = {
+		}}
+shared_focus = {
+	prerequisite=
+	{	
+		focus = GNG_compulsory_education_ordinance
+	}
+	prerequisite=
+	{	
+		focus = GNG_food_safe_ordinance
+	}
+	prerequisite=
+	{	
+		focus = GNG_standard_health_insurance_ordinance
+	}
+	prerequisite=
+	{	
+		focus = GNG_prove_tools_import_ordinance
+	}
+	prerequisite=
+	{	
+		focus = GNG_new_tech_develop_ordinance
+	}
+	id = GNG_fake_final
+	icon = GFX_MAD_HOW_DID_YOU_FAIL
+	cost = 1
+	x = 0
+	y = 4
+	relative_position_id = GNG_new_develop_project
+	select_effect = { 
+		country_event = dop_sar.3
+	}
+	completion_reward = {
+		custom_effect_tooltip = GNG_fakeswitchfocustree
+	}}
+	# GNG_new_develop_project: "新发展计划"
+	#   GNG_teaching_first: "教育为先"
+	#   GNG_rewrite_textbook: "重写课本"
+	#   GNG_poverty_help: "扶贫基金"
+	#   GNG_compulsory_education_ordinance: "广东义务教育条例"
+	#   GNG_advance_tools: "设备升级"
+	#   GNG_japanese_tech: "本岛技术"
+	#   GNG_chinese_tech: "南京寻访"
+	#   GNG_prove_tools_import_ordinance: "广东设备进口条例"
+	#   GNG_improve_health_care: "人命关天"
+	#   GNG_county_hospital: "乡村医院"
+	#   GNG_social_care: "社区服务"
+	#   GNG_standard_health_insurance_ordinance: "广东基础医保条例"
+	#   GNG_agriculture_growth: "关注农业"
+	#   GNG_import_seeds: "进口新种"
+	#   GNG_tech_help_agri: "科技助农"
+	#   GNG_food_safe_ordinance: "广东粮食安全条例"
+	#   GNG_science_future: "未来科学"
+	#   GNG_build_research_center: "建立研究中心"
+	#   GNG_sponsor_new_tech: "赞助新技术"
+	#   GNG_new_tech_develop_ordinance: "广东新技术发展条例"
+	#   GNG_fake_final: "更进一步"
 		
