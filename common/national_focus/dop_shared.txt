@@ -327,7 +327,7 @@ shared_focus = {
 		shared_focus = {
 			id = GNG_ctns_ordinance
 			icon = GFX_GNG_within_the_sphere
-			cost = 1
+			cost = 4.286
 			x = 8
 			y = 6
 			relative_position_id = Test_the_police
@@ -484,7 +484,7 @@ shared_focus = {
 	}
 	id = GNG_new_defnese_way_ordinance
 	icon = GFX_GNG_Reinforce_the_Police_Presence
-	cost = 1
+	cost = 4.286
 	x = 0
 	y = 4
 	relative_position_id = GNG_New_defense_way
@@ -612,7 +612,7 @@ shared_focus = {
 	}
 	id = GNG_compulsory_education_ordinance
 	icon = GFX_generic_education_general
-	cost = 1
+	cost = 4.286
 	x = -8
 	y = 3
 	relative_position_id = GNG_new_develop_project
@@ -692,7 +692,7 @@ shared_focus = {
 	}
 	id = GNG_chinese_tech
 	icon = GFX_CHI_New_Chinese_Technicians
-	cost = 1
+	cost = 4.286
 	x = -3
 	y = 2
 	relative_position_id = GNG_new_develop_project
@@ -793,7 +793,7 @@ shared_focus = {
 		}
 		id = GNG_standard_health_insurance_ordinance
 		icon = GFX_GNG_The_Health_Crisis
-		cost = 1
+		cost = 4.286
 		x = 0
 		y = 3
 		relative_position_id = GNG_new_develop_project
@@ -860,7 +860,7 @@ shared_focus = {
 	}
 	id = GNG_tech_help_agri
 	icon = GFX_ITA_Conclude_the_Mechanization_of_Agriculture
-	cost = 1
+	cost = 4.286
 	x = 5
 	y = 2
 	relative_position_id = GNG_new_develop_project
@@ -961,7 +961,7 @@ shared_focus = {
 		}
 		id = GNG_new_tech_develop_ordinance
 		icon = GFX_TNO_Generic_Science02
-		cost = 1
+		cost = 4.286
 		x = 8
 		y = 3
 		relative_position_id = GNG_new_develop_project
