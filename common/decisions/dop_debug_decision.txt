@@ -57,7 +57,7 @@ GNG_debug_category = {
 			remove_from_faction = yun}
 		}
 	}
-	GNG_dop_debug_add_seat = {
+	GNG_dop_debug_add_seat_1 = {
 		allowed = {
 			original_tag = GNG
 		}
@@ -73,5 +73,35 @@ GNG_debug_category = {
 	GNG_change_legco_seats = yes
 }
 		}
+		GNG_dop_debug_add_seat_2 = {
+			allowed = {
+				original_tag = GNG
+			}
+			icon = GFX_decision_GNG_generic
+			visible = {
+			}
+			complete_effect = {
+				set_temp_variable = { GNG_legco_seat_temp = 10 }
+		set_temp_variable = { GNG_legco_faction_temp = 4 }
+		GNG_change_legco_seats = yes
+		set_temp_variable = { GNG_legco_seat_temp = 10 }
+		set_temp_variable = { GNG_legco_faction_temp = 5 }
+		GNG_change_legco_seats = yes
 	}
+			}
+			GNG_dop_debug_add_seat_3 = {
+				allowed = {
+					original_tag = GNG
+				}
+				icon = GFX_decision_GNG_generic
+				visible = {
+				}
+				complete_effect = {
+					set_temp_variable = { GNG_legco_seat_temp = 10 }
+			set_temp_variable = { GNG_legco_faction_temp = 7 }
+			GNG_change_legco_seats = yes
+		}
+				}
+	}
+
 
