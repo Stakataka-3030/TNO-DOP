@@ -10,9 +10,6 @@ scripted_gui = {
 		triggers = {
 			Info_button_visible = {
 				NOT = { tag = ITA }
-			}
-
-
-		}
+			}}
 	}
 }
