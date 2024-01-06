@@ -8,11 +8,11 @@ scripted_gui = {
 		}
 
 		triggers = {
-		properties = {
-			TNO_BFI_GUI_Dot = {
-				x = ITA.BattleForItalyTangle_X
-				y = ITA.BattleForItalyTangle_Y
-			}}
+			Info_button_visible = {
+				NOT = { tag = ITA }
+			}
+
+
 		}
 	}
 }
