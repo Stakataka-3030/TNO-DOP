@@ -53,7 +53,7 @@ country_event = { #
 	}
 	option = { #
 		name = dop_sar.3.a
-		load_focus_tree = dop_newdefender_success
+		load_focus_tree = dop_opening_tree
 	}
 	
 }
