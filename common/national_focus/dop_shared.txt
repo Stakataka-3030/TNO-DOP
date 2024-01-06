@@ -579,7 +579,15 @@ shared_focus = {
 	y = 1
 	relative_position_id = GNG_new_develop_project
 	completion_reward = {
-	}}
+		log = "[GetDateText]: [Root.GetName]: Focus Enhance_the_police"
+		set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_matsushita_temp_support = 0.30 }
+		set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.30 }
+		set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
+		set_temp_variable = { GNG_temp_legco_id = 82 }
+		legco_introduce_ordinance = yes
+		}}
 shared_focus = {
 	prerequisite=
 	{	
@@ -609,7 +617,29 @@ shared_focus = {
 	y = 3
 	relative_position_id = GNG_new_develop_project
 	completion_reward = {
-	}}
+		effect_tooltip = {
+			set_temp_variable = { GNG_temp_legco_id = 82 }
+			custom_effect_tooltip = GNG_legco_bill_introduce_start_when_selected_tooltip
+			set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+			set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+			set_temp_variable = { GNG_legco_matsushita_temp_support = 0.30 }
+			set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.30 }
+			set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
+			GNG_legco_votes_initialize = yes
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus GNG_Special_police_ordinance"
+	}
+	select_effect = {
+		set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_matsushita_temp_support = 0.30 }
+		set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.30 }
+		set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
+		set_temp_variable = { GNG_temp_legco_id = 82 }
+		legco_introduce_ordinance_start = yes
+		}
+		
+		}
 shared_focus = {
 	prerequisite=
 	{	
@@ -635,7 +665,15 @@ shared_focus = {
 	y = 1
 	relative_position_id = GNG_new_develop_project
 	completion_reward = {
-	}}
+		log = "[GetDateText]: [Root.GetName]: Focus Enhance_the_police"
+		set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_matsushita_temp_support = 0.30 }
+		set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.30 }
+		set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
+		set_temp_variable = { GNG_temp_legco_id = 83 }
+		legco_introduce_ordinance = yes
+		}}
 shared_focus = {
 	prerequisite=
 	{	
@@ -646,9 +684,7 @@ shared_focus = {
 	cost = 1
 	x = -5
 	y = 2
-	relative_position_id = GNG_new_develop_project
-	completion_reward = {
-	}}
+	relative_position_id = GNG_new_develop_project}
 shared_focus = {
 	prerequisite=
 	{	
@@ -678,7 +714,27 @@ shared_focus = {
 		y = 3
 		relative_position_id = GNG_new_develop_project
 		completion_reward = {
-		}}
+			effect_tooltip = {
+				set_temp_variable = { GNG_temp_legco_id = 83 }
+				custom_effect_tooltip = GNG_legco_bill_introduce_start_when_selected_tooltip
+				set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+				set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+				set_temp_variable = { GNG_legco_matsushita_temp_support = 0.30 }
+				set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.30 }
+				set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
+				GNG_legco_votes_initialize = yes
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus GNG_Special_police_ordinance"
+		}
+		select_effect = {
+			set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+			set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+			set_temp_variable = { GNG_legco_matsushita_temp_support = 0.30 }
+			set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.30 }
+			set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
+			set_temp_variable = { GNG_temp_legco_id = 83 }
+			legco_introduce_ordinance_start = yes
+			}}
 shared_focus = {
 	prerequisite=
 	{	
@@ -691,7 +747,15 @@ shared_focus = {
 	y = 1
 	relative_position_id = GNG_new_develop_project
 	completion_reward = {
-	}}
+		log = "[GetDateText]: [Root.GetName]: Focus Enhance_the_police"
+		set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_matsushita_temp_support = 0.30 }
+		set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.30 }
+		set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
+		set_temp_variable = { GNG_temp_legco_id = 84 }
+		legco_introduce_ordinance = yes
+		}}
 shared_focus = {
 	prerequisite=
 	{	
@@ -734,7 +798,27 @@ shared_focus = {
 		y = 3
 		relative_position_id = GNG_new_develop_project
 		completion_reward = {
-		}}
+			effect_tooltip = {
+				set_temp_variable = { GNG_temp_legco_id = 85 }
+				custom_effect_tooltip = GNG_legco_bill_introduce_start_when_selected_tooltip
+				set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+				set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+				set_temp_variable = { GNG_legco_matsushita_temp_support = 0.30 }
+				set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.30 }
+				set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
+				GNG_legco_votes_initialize = yes
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus GNG_Special_police_ordinance"
+		}
+		select_effect = {
+			set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+			set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+			set_temp_variable = { GNG_legco_matsushita_temp_support = 0.30 }
+			set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.30 }
+			set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
+			set_temp_variable = { GNG_temp_legco_id = 85 }
+			legco_introduce_ordinance_start = yes
+			}}
 shared_focus = {
 	prerequisite=
 	{	
@@ -747,7 +831,15 @@ shared_focus = {
 	y = 1
 	relative_position_id = GNG_new_develop_project
 	completion_reward = {
-	}}
+		log = "[GetDateText]: [Root.GetName]: Focus Enhance_the_police"
+		set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_matsushita_temp_support = 0.30 }
+		set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.30 }
+		set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
+		set_temp_variable = { GNG_temp_legco_id = 85 }
+		legco_introduce_ordinance = yes
+		}}
 shared_focus = {
 	prerequisite=
 	{	
@@ -790,7 +882,27 @@ shared_focus = {
 		y = 3
 		relative_position_id = GNG_new_develop_project
 		completion_reward = {
-		}}
+			effect_tooltip = {
+				set_temp_variable = { GNG_temp_legco_id = 85 }
+				custom_effect_tooltip = GNG_legco_bill_introduce_start_when_selected_tooltip
+				set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+				set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+				set_temp_variable = { GNG_legco_matsushita_temp_support = 0.30 }
+				set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.30 }
+				set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
+				GNG_legco_votes_initialize = yes
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus GNG_Special_police_ordinance"
+		}
+		select_effect = {
+			set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+			set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+			set_temp_variable = { GNG_legco_matsushita_temp_support = 0.30 }
+			set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.30 }
+			set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
+			set_temp_variable = { GNG_temp_legco_id = 85 }
+			legco_introduce_ordinance_start = yes
+			}}
 shared_focus = {
 	prerequisite=
 	{	
@@ -803,7 +915,15 @@ shared_focus = {
 	y = 1
 	relative_position_id = GNG_new_develop_project
 	completion_reward = {
-	}}
+		log = "[GetDateText]: [Root.GetName]: Focus Enhance_the_police"
+		set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_matsushita_temp_support = 0.30 }
+		set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.30 }
+		set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
+		set_temp_variable = { GNG_temp_legco_id = 86 }
+		legco_introduce_ordinance = yes
+		}}
 shared_focus = {
 	prerequisite=
 	{	
@@ -846,7 +966,27 @@ shared_focus = {
 		y = 3
 		relative_position_id = GNG_new_develop_project
 		completion_reward = {
-		}}
+			effect_tooltip = {
+				set_temp_variable = { GNG_temp_legco_id = 86 }
+				custom_effect_tooltip = GNG_legco_bill_introduce_start_when_selected_tooltip
+				set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+				set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+				set_temp_variable = { GNG_legco_matsushita_temp_support = 0.30 }
+				set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.30 }
+				set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
+				GNG_legco_votes_initialize = yes
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus GNG_Special_police_ordinance"
+		}
+		select_effect = {
+			set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+			set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+			set_temp_variable = { GNG_legco_matsushita_temp_support = 0.30 }
+			set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.30 }
+			set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
+			set_temp_variable = { GNG_temp_legco_id = 86 }
+			legco_introduce_ordinance_start = yes
+			}}
 shared_focus = {
 	prerequisite=
 	{	
