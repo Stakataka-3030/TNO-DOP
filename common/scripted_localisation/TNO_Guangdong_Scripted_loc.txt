@@ -2584,11 +2584,27 @@ defined_text = {
 	}
 	text = {
 		trigger = { check_variable = { GNG_legco_ordinance_id = 81 } } #Labor Relations Ordinance
-		localization_key = GNG_legco_ord_80_title
+		localization_key = GNG_legco_ord_81_title
 	}
 	text = {
 		trigger = { check_variable = { GNG_legco_ordinance_id = 82 } } #Labor Relations Ordinance
-		localization_key = GNG_legco_ord_80_title
+		localization_key = GNG_legco_ord_82_title
+	}
+	text = {
+		trigger = { check_variable = { GNG_legco_ordinance_id = 83 } } #Labor Relations Ordinance
+		localization_key = GNG_legco_ord_83_title
+	}
+	text = {
+		trigger = { check_variable = { GNG_legco_ordinance_id = 84 } } #Labor Relations Ordinance
+		localization_key = GNG_legco_ord_84_title
+	}
+	text = {
+		trigger = { check_variable = { GNG_legco_ordinance_id = 85 } } #Labor Relations Ordinance
+		localization_key = GNG_legco_ord_85_title
+	}
+	text = {
+		trigger = { check_variable = { GNG_legco_ordinance_id = 86 } } #Labor Relations Ordinance
+		localization_key = GNG_legco_ord_86_title
 	}
 	text = {
 		localization_key = "ORD [?GNG_legco_ordinance_id] NO TITLE"
@@ -2923,11 +2939,27 @@ defined_text = {
 	}
 	text = {
 		trigger = { check_variable = { GNG_legco_ordinance_id = 81 } } #Labor Relations Ordinance
-		localization_key = GNG_legco_ord_80_effect
+		localization_key = GNG_legco_ord_81_effect
 	}
 	text = {
 		trigger = { check_variable = { GNG_legco_ordinance_id = 82 } } #Labor Relations Ordinance
-		localization_key = GNG_legco_ord_80_effect
+		localization_key = GNG_legco_ord_82_effect
+	}
+	text = {
+		trigger = { check_variable = { GNG_legco_ordinance_id = 83 } } #Labor Relations Ordinance
+		localization_key = GNG_legco_ord_83_effect
+	}
+	text = {
+		trigger = { check_variable = { GNG_legco_ordinance_id = 84 } } #Labor Relations Ordinance
+		localization_key = GNG_legco_ord_84_effect
+	}
+	text = {
+		trigger = { check_variable = { GNG_legco_ordinance_id = 85 } } #Labor Relations Ordinance
+		localization_key = GNG_legco_ord_85_effect
+	}
+	text = {
+		trigger = { check_variable = { GNG_legco_ordinance_id = 86 } } #Labor Relations Ordinance
+		localization_key = GNG_legco_ord_86_effect
 	}
 	text = {
 		localization_key = "ORD [?GNG_legco_ordinance_id] NO EFFECT"
@@ -6252,13 +6284,37 @@ defined_text = {
 		trigger = {
 			check_variable = { GNG_legco_current_ordinance_id = 81 }
 		}
-		localization_key = GNG_legco_temp_tooltip_bill_80
+		localization_key = GNG_legco_temp_tooltip_bill_81
 	}
 	text = {
 		trigger = {
 			check_variable = { GNG_legco_current_ordinance_id = 82 }
 		}
-		localization_key = GNG_legco_temp_tooltip_bill_80
+		localization_key = GNG_legco_temp_tooltip_bill_82
+	}
+	text = {
+		trigger = {
+			check_variable = { GNG_legco_current_ordinance_id = 83 }
+		}
+		localization_key = GNG_legco_temp_tooltip_bill_83
+	}
+	text = {
+		trigger = {
+			check_variable = { GNG_legco_current_ordinance_id = 84 }
+		}
+		localization_key = GNG_legco_temp_tooltip_bill_84
+	}
+	text = {
+		trigger = {
+			check_variable = { GNG_legco_current_ordinance_id = 85 }
+		}
+		localization_key = GNG_legco_temp_tooltip_bill_85
+	}
+	text = {
+		trigger = {
+			check_variable = { GNG_legco_current_ordinance_id = 86 }
+		}
+		localization_key = GNG_legco_temp_tooltip_bill_86
 	}
 }
 
