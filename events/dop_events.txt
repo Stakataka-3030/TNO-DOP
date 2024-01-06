@@ -174,6 +174,8 @@ fire_only_once = yes
 option = { #
 	name = dop_sar.10.a
 	custom_effect_tooltip = GNG_sdw_final_tt
+	set_temp_variable = { v = 92 }
+	GNG_add_uncategorised_law = yes
 }
 }
 country_event = { #sdw_safe

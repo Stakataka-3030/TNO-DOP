@@ -10755,6 +10755,16 @@ defined_text = {
 		trigger = { check_variable = { v = 90 } }
 		localization_key = GNG_fujitsu_anti_corruption_ordinance_law
 	}
+#91 - three year develop project
+	text = {
+		trigger = { check_variable = { v = 91 } }
+		localization_key = GNG_typ_law
+	}
+#92 - new police project
+	text = {
+		trigger = { check_variable = { v = 92 } }
+		localization_key = GNG_npp_law
+	}
 }
 
 
@@ -11492,6 +11502,16 @@ defined_text = {
 	text = {
 		trigger = { check_variable = { v = 90 } }
 		localization_key = GNG_fujitsu_anti_corruption_ordinance_law_desc
+	}
+#91 - three year develop project
+	text = {
+		trigger = { check_variable = { v = 91 } }
+		localization_key = GNG_typ_law_desc
+	}
+#92 - new police project
+	text = {
+		trigger = { check_variable = { v = 92 } }
+		localization_key = GNG_npp_law_desc
 	}
 }
 

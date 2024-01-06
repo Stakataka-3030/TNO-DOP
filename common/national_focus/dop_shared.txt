@@ -566,6 +566,8 @@ shared_focus = {
 	x = 8
 	y = 0
 	completion_reward = {
+		set_temp_variable = { v = 91 }
+		GNG_add_uncategorised_law = yes
 	}}
 shared_focus = {
 	prerequisite=
