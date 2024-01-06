@@ -1,0 +1,60 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TNO_BFG_GUI"
+		size = { width = 500 height = 600 }
+		position = { x = 0 y = 0 }
+		
+		buttonType = {
+			name = "Info_button"
+			quadTextureSprite = "GFX_Espionage_GUI_Button_Info"
+			position = { x = -62 y = -18 }
+			orientation = upper_right
+			pdx_tooltip = BFG_explanation_tooltip
+		}
+		
+		containerWindowType = {
+			name = "TNO_BFG_GUI_movement_container"
+			size = { width = 500 height = 600 }
+			position = { x = 0 y = 30 }
+		
+			iconType = {
+				name = "TNO_BFG_GUI_bg"
+				spriteType = "GFX_TNO_BFG_GUI_bg"
+				position = { x = 8 y = 25 }
+			}
+			
+			iconType = {
+				name = "TNO_BFG_GUI_Dot"
+				spriteType = "GFX_tangle_dot"
+				position = { x = 0 y = 0 }
+			}
+			
+			instantTextboxType = {
+				name = "TNO_BFG_GUI_Italy"
+				position = { x = -6 y = -3 }
+				font = "aldrich_30_outline"
+				maxWidth = 533
+				text = BFG_gui_guangdong_name
+				format = center
+			}
+			
+			instantTextboxType = {
+				name = "TNO_BFG_GUI_USA"
+				position = { x = -65 y = 415 }
+				font = "aldrich_30_outline"
+				maxWidth = 267
+				text = BFG_gui_china_name
+				format = center
+			}
+			
+			instantTextboxType = {
+				name = "TNO_BFG_GUI_Japan"
+				position = { x = 314 y = 415 }
+				font = "aldrich_30_outline"
+				maxWidth = 267
+				text = BFG_gui_japan_name
+				format = center
+			}
+		}
+	}
+}

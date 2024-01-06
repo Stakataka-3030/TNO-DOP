@@ -103,5 +103,17 @@ GNG_debug_category = {
 		}
 				}
 	}
-
+bfg_gui_decision_category = {
+	icon = GFX_decision_category_control_warlord
+	allowed = {
+			tag = GNG
+	}
+	visible = {
+		original_tag = GNG
+	}
+	visible_when_empty = yes
+	scripted_gui = TNO_BFG_GUI
+	priority = 95000
+}
+	
 

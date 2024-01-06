@@ -180,3 +180,7 @@ GNG_legco_ord_86_title: "广东新技术发展条例"
   GNG_sdw_retray_tt: "§r报告长官：事件已经平息，£GNG_Sony_texticon §V索尼§!和£GNG_Cheung_Kong_texticon §C长江实业§!现在已经构不成威胁。§!"
   GNG_sdw_final_tt: "§F谢天谢地：£GNG_Sony_texticon §V索尼§!和£GNG_Cheung_Kong_texticon §C长江实业§!，以及他们的政策，已经§M安全了§!§!"
   GNG_typ_broken_tt: "§F§C三年发展计划§!已被§r打断§!§!！"
+#gui
+  BFG_gui_guangdong_name: "§S广东国§!"
+  BFG_gui_china_name: "§M民族解放阵线§!"
+  BFG_gui_guangdong_name: "§J大东亚共荣圈§!"
