@@ -4,14 +4,6 @@ guiTypes = {
 		size = { width = 500 height = 600 }
 		position = { x = 0 y = 0 }
 		
-		buttonType = {
-			name = "Info_button"
-			quadTextureSprite = "GFX_Espionage_GUI_Button_Info"
-			position = { x = -62 y = -18 }
-			orientation = upper_right
-			pdx_tooltip = BFG_explanation_tooltip
-		}
-		
 		containerWindowType = {
 			name = "TNO_BFG_GUI_movement_container"
 			size = { width = 500 height = 600 }
@@ -28,9 +20,8 @@ guiTypes = {
 				spriteType = "GFX_tangle_dot"
 				position = { x = 0 y = 0 }
 			}
-			
 			instantTextboxType = {
-				name = "TNO_BFG_GUI_Italy"
+				name = "TNO_BFG_GUI_Guangdong"
 				position = { x = -6 y = -3 }
 				font = "aldrich_30_outline"
 				maxWidth = 533
@@ -39,7 +30,7 @@ guiTypes = {
 			}
 			
 			instantTextboxType = {
-				name = "TNO_BFG_GUI_USA"
+				name = "TNO_BFG_GUI_China"
 				position = { x = -65 y = 415 }
 				font = "aldrich_30_outline"
 				maxWidth = 267

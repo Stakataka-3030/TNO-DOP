@@ -1,0 +1,14 @@
+bfg_gui_decision_category = {
+	icon = GFX_decision_category_control_warlord
+	allowed = {
+			tag = GNG
+	}
+
+	visible = {
+		has_country_flag = GNG_bfg_Show
+	}
+	visible_when_empty = yes
+	scripted_gui = TNO_BFG_GUI
+	priority = 95000
+}
+	

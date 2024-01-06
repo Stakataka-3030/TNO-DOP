@@ -1,0 +1,18 @@
+scripted_gui = {
+	TNO_BFG_GUI = {
+		context_type = decision_category
+		window_name = "TNO_BFG_GUI"
+
+		visible = {
+			always = yes
+		}
+
+		triggers = {
+		properties = {
+			TNO_BFI_GUI_Dot = {
+				x = ITA.BattleForItalyTangle_X
+				y = ITA.BattleForItalyTangle_Y
+			}}
+		}
+	}
+}
