@@ -5840,6 +5840,30 @@ defined_text = {
 		}
 		localization_key = GNG_legco_temp_tooltip_bill_82
 	}
+	text = {
+		trigger = {
+			check_variable = { GNG_temp_legco_id = 83 }
+		}
+		localization_key = GNG_legco_temp_tooltip_bill_83
+	}
+	text = {
+		trigger = {
+			check_variable = { GNG_temp_legco_id = 84 }
+		}
+		localization_key = GNG_legco_temp_tooltip_bill_84
+	}
+	text = {
+		trigger = {
+			check_variable = { GNG_temp_legco_id = 85 }
+		}
+		localization_key = GNG_legco_temp_tooltip_bill_85
+	}
+	text = {
+		trigger = {
+			check_variable = { GNG_temp_legco_id = 86 }
+		}
+		localization_key = GNG_legco_temp_tooltip_bill_86
+	}
 }
 
 defined_text = {

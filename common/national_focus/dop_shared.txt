@@ -692,7 +692,7 @@ shared_focus = {
 	}
 	id = GNG_chinese_tech
 	icon = GFX_CHI_New_Chinese_Technicians
-	cost = 4.286
+	cost = 1
 	x = -3
 	y = 2
 	relative_position_id = GNG_new_develop_project
@@ -709,7 +709,7 @@ shared_focus = {
 		}
 		id = GNG_prove_tools_import_ordinance
 		icon = GFX_CHI_Import_Designs
-		cost = 1
+		cost = 4.286
 		x = -4
 		y = 3
 		relative_position_id = GNG_new_develop_project
@@ -799,7 +799,7 @@ shared_focus = {
 		relative_position_id = GNG_new_develop_project
 		completion_reward = {
 			effect_tooltip = {
-				set_temp_variable = { GNG_temp_legco_id = 85 }
+				set_temp_variable = { GNG_temp_legco_id = 84 }
 				custom_effect_tooltip = GNG_legco_bill_introduce_start_when_selected_tooltip
 				set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
 				set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
@@ -816,7 +816,7 @@ shared_focus = {
 			set_temp_variable = { GNG_legco_matsushita_temp_support = 0.30 }
 			set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.30 }
 			set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
-			set_temp_variable = { GNG_temp_legco_id = 85 }
+			set_temp_variable = { GNG_temp_legco_id = 84 }
 			legco_introduce_ordinance_start = yes
 			}}
 shared_focus = {
@@ -860,7 +860,7 @@ shared_focus = {
 	}
 	id = GNG_tech_help_agri
 	icon = GFX_ITA_Conclude_the_Mechanization_of_Agriculture
-	cost = 4.286
+	cost = 1
 	x = 5
 	y = 2
 	relative_position_id = GNG_new_develop_project
@@ -877,7 +877,7 @@ shared_focus = {
 		}
 		id = GNG_food_safe_ordinance
 		icon = GFX_SAM_Food_For_All
-		cost = 1
+		cost = 4.286
 		x = 4
 		y = 3
 		relative_position_id = GNG_new_develop_project
@@ -1042,4 +1042,12 @@ shared_focus = {
 	#   GNG_sponsor_new_tech: "赞助新技术"
 	#   GNG_new_tech_develop_ordinance: "广东新技术发展条例"
 	#   GNG_fake_final: "更进一步"
-		
+	shared_focus = {
+		id = GNG_nanjing_emergency_call
+		icon = GFX_CHI_We_Have_The_Technology
+		cost = 1
+		x = 9
+		y = 2
+		relative_position_id = GNG_new_develop_project
+		completion_reward = {
+		}}

@@ -8852,12 +8852,18 @@ GNG_initialize_legco = {
 	add_to_array = { GNG_legco_sponsor_faction = MATSUSHITA } # Bill 74: Ordinance for Effective Oversight
 	add_to_array = { GNG_legco_sponsor_faction = MATSUSHITA } # Bill 75: Emergency Powers Ordinance
 
-	### Sony Plus added
+	### DOP added
 	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 76: Country Park Ordinance
 	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 77: Compulsory Education Ordinance
-	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 78: Public Transport Ordinance
+	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill : Public T78ransport Ordinance
 	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 79: Public Housing Ordinance
 	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 80: Public Housing Ordinance
+	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 81: Public Housing Ordinance
+	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 82: Public Housing Ordinance
+	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 83: Public Housing Ordinance
+	add_to_array = { GNG_legco_sponsor_faction = CHEUNG_KONG } # Bill 84: Public Housing Ordinance
+	add_to_array = { GNG_legco_sponsor_faction = CHEUNG_KONG } # Bill 85: Public Housing Ordinance
+	add_to_array = { GNG_legco_sponsor_faction = CHEUNG_KONG } # Bill 86: Public Housing Ordinance
 
 	clear_array = GNG_legco_amendments_1
 	clear_array = GNG_legco_amendments_2
@@ -11175,8 +11181,8 @@ GNG_ordinances_effects = {
 		}
 		set_temp_variable = { temp_econ_spending_amount = 1.50 }
 		econ_spend_money_once_effect_raw_money = yes
-		income_tax_temp = -0.075
-		econ_income_tax_rate_change = yes
+		set_temp_variable = { sales_tax_temp = -0.01 }
+		econ_sales_tax_rate_change = yes
 		TNO_improve_industrial_equipment_high = yes
 	}
 	else_if = {
