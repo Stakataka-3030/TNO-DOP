@@ -119,7 +119,7 @@ shared_focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus Li_frightened"
 			country_event = {
-			id = dop_sar.1
+			id = dop_flavors.1
 		}
 			
 		}
@@ -135,7 +135,7 @@ shared_focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus Test_the_police"
 			country_event = {
-			id = dop_sar.2
+			id = dop_flavors.2
 		}
 		}
 	}
@@ -151,6 +151,7 @@ shared_focus = {
 		GNG_no_ordinance_in_legco = yes
 		}
 	completion_reward = {
+		id = dop_flavors.3
 		log = "[GetDateText]: [Root.GetName]: Focus Enhance_the_police"
 		set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
 		set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
@@ -181,7 +182,7 @@ shared_focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus Test_the_police"
 			country_event = {
-			id = dop_sar.2
+			id = dop_flavors.4
 		}
 		}
 	}
@@ -196,7 +197,7 @@ shared_focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus Test_the_police"
 			country_event = {
-			id = dop_sar.2
+			id = dop_flavors.5
 		}
 		}
 	}
@@ -211,7 +212,7 @@ shared_focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus Test_the_police"
 			country_event = {
-			id = dop_sar.2
+			id = dop_flavors.6
 		}
 		}
 	}

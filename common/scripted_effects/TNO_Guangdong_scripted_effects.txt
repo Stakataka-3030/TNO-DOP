@@ -9710,6 +9710,26 @@ GNG_pass_ordinance_event_effect = {
 	}
 	else_if = {
 		limit = {
+			OR= {has_country_flag = GNG_Dismantlement_CCL_OVER
+			has_country_flag = GNG_Dismantlement_GFT_OVER }			
+			check_variable = { GNG_legco_current_ordinance_id = 76 } #country park ordinance
+		}
+		country_event = {
+			id = dop_sar.4
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {has_country_flag = GNG_Dismantlement_CCL_OVER }
+			NOT = {has_country_flag = GNG_Dismantlement_GFT_OVER }			
+			check_variable = { GNG_legco_current_ordinance_id = 76 } #country park ordinance
+		}
+		country_event = {
+			id = dop_sar.5
+		}
+	}
+	else_if = {
+		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 77 } #compulsory education ordinance
 		}
 		country_event = {
@@ -10417,9 +10437,13 @@ GNG_fail_ordinance_event_effect = {
 			id = guangdong_sonyflavor.45
 		}
 	}
+	
 	else_if = {
 		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 76 } #country park ordinance
+		}
+		country_event = {
+			id = dop_sar.6
 		}
 		
 	}
@@ -10432,9 +10456,6 @@ GNG_fail_ordinance_event_effect = {
 	else_if = {
 		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 78 } #Public Transport Ordinance
-		}
-		country_event = {
-			id = dop_sar.8
 		}
 	}
 	else_if = {
