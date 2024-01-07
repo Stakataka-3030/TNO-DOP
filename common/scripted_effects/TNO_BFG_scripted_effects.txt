@@ -7,6 +7,10 @@ BFG_setup_influence = {
 		set_variable = { BFG_JAP_Balance = 33 }
 		BattleForGNGTangle_calcXY = yes
 		set_country_flag = bfg_active
+		add_days_mission_timeout = {
+			mission = GNG_the_wheel_turns
+			days = -5
+		}
 	}
 }
 

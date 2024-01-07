@@ -103,6 +103,17 @@ GNG_debug_category = {
 			GNG_change_legco_seats = yes
 		}
 				}
+GNG_dop_debug_show_bfg_gui = {
+allowed = {
+	original_tag = GNG
+}
+icon = GFX_decision_GNG_generic
+visible = {
+}
+complete_effect = {
+	BFG_setup_influence = yes
+}
+}
 	}
 	bfg_gui_decision_category = {GNG_dop_debug_recalcposition = {
 		allowed = {
