@@ -4,4 +4,10 @@ scripted_gui = {
 		}
 		context_type = decision_category
 		window_name = "GNG_BFG_GUI"
+		properties = {
+			TNO_BFG_GUI_Dot = {
+				x = GNG.BattleForGNGTangle_X
+				y = GNG.BattleForGNGTangle_Y
+			}
+		}
 }}

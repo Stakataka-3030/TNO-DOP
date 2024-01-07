@@ -37,8 +37,8 @@ guiTypes = {
 		format = center
 	}
 	iconType = {
-		name = "TNO_BFI_GUI_Dot"
-		spriteType = "GFX_decision_guangdong_government_riots"
+		name = "TNO_BFG_GUI_Dot"
+		spriteType = "GFX_icon_best_in_career"
 		position = { x = 200 y = 350 }
 	}
 }

@@ -1,0 +1,163 @@
+### Stolen from the BattleForGNG :heart: ###
+
+BFG_setup_influence = {
+	GNG = {
+		set_variable = { BFG_GNG_Balance = 33 }
+		set_variable = { BFG_CHI_Balance = 33 }
+		set_variable = { BFG_JAP_Balance = 33 }
+		BattleForGNGTangle_calcXY = yes
+		set_country_flag = bfi_active
+	}
+}
+
+BFG_increase_GNG_influence_low = {
+	GNG = {
+		add_to_variable = { BFG_GNG_Balance = 1 }
+		add_to_variable = { BFG_CHI_Balance = -0.5 }
+		add_to_variable = { BFG_JAP_Balance = -0.5 }
+		BattleForGNGTangle_calcXY = yes
+	}
+}
+
+BFG_increase_GNG_influence_med = {
+	GNG = {
+		add_to_variable = { BFG_GNG_Balance = 2 }
+		add_to_variable = { BFG_CHI_Balance = -1 }
+		add_to_variable = { BFG_JAP_Balance = -1 }
+		BattleForGNGTangle_calcXY = yes
+	}
+}
+
+BFG_increase_GNG_influence_high = {
+	GNG = {
+		add_to_variable = { BFG_GNG_Balance = 5 }
+		add_to_variable = { BFG_CHI_Balance = -2.5 }
+		add_to_variable = { BFG_JAP_Balance = -2.5 }
+		BattleForGNGTangle_calcXY = yes
+	}
+}
+
+
+BFG_increase_japan_influence_low = {
+	GNG = {
+		add_to_variable = { BFG_GNG_Balance = -0.5 }
+		add_to_variable = { BFG_CHI_Balance = -0.5 }
+		add_to_variable = { BFG_JAP_Balance = 1 }
+		BattleForGNGTangle_calcXY = yes
+	}
+}
+
+BFG_increase_japan_influence_med = {
+	GNG = {
+		add_to_variable = { BFG_GNG_Balance = -1 }
+		add_to_variable = { BFG_CHI_Balance = -1 }
+		add_to_variable = { BFG_JAP_Balance = 2 }
+		BattleForGNGTangle_calcXY = yes
+	}
+}
+
+BFG_increase_japan_influence_high = {
+	GNG = {
+		add_to_variable = { BFG_GNG_Balance = -2.5 }
+		add_to_variable = { BFG_CHI_Balance = -2.5 }
+		add_to_variable = { BFG_JAP_Balance = 5 }
+		BattleForGNGTangle_calcXY = yes
+	}
+}
+
+
+BFG_increase_CHI_influence_low = {
+	GNG = {
+		add_to_variable = { BFG_GNG_Balance = -0.5 }
+		add_to_variable = { BFG_CHI_Balance = 1 }
+		add_to_variable = { BFG_JAP_Balance = -0.5 }
+		BattleForGNGTangle_calcXY = yes
+	}
+}
+
+BFG_increase_CHI_influence_med = {
+	GNG = {
+		add_to_variable = { BFG_GNG_Balance = -1 }
+		add_to_variable = { BFG_CHI_Balance = 2 }
+		add_to_variable = { BFG_JAP_Balance = -1 }
+		BattleForGNGTangle_calcXY = yes
+	}
+}
+
+BFG_increase_CHI_influence_high = {
+	GNG = {
+		add_to_variable = { BFG_GNG_Balance = -2.5 }
+		add_to_variable = { BFG_CHI_Balance = 5 }
+		add_to_variable = { BFG_JAP_Balance = -2.5 }
+		BattleForGNGTangle_calcXY = yes
+	}
+}
+
+# This normalizes the variables
+BFG_clamp_influences = {
+	GNG = {
+		if = {
+			limit = { check_variable = { BFG_CHI_Balance < 0 } }
+			set_variable = { BFG_CHI_Balance = 0 }
+		}
+		if = {
+			limit = { check_variable = { BFG_JAP_Balance < 0 } }
+			set_variable = { BFG_JAP_Balance = 0 }
+		}
+		if = {
+			limit = { check_variable = { BFG_GNG_Balance < 0 } }
+			set_variable = { BFG_GNG_Balance = 0 }
+		}
+
+		## Temp Variable Definition
+		# ABC = A+B+C
+		set_temp_variable = { ABC = BFG_CHI_Balance }
+		add_to_temp_variable = { ABC = BFG_JAP_Balance }
+		add_to_temp_variable = { ABC = BFG_GNG_Balance }
+
+		divide_temp_variable = { ABC = 99 }
+		divide_variable = { BFG_CHI_Balance = ABC }
+		divide_variable = { BFG_JAP_Balance = ABC }
+		divide_variable = { BFG_GNG_Balance = ABC }
+	}
+}
+
+# BattleForGNGTangle calcXY
+#  - Calculates the x & y values used by BattleForGNGTangle to set the location of it's point
+#  - The Equation is the following;
+
+BattleForGNGTangle_calcXY = {
+	GNG = {
+		BFG_clamp_influences = yes
+		## Temp Variable Definition
+		# Done to make life a bit easier
+		set_temp_variable = { A = BFG_CHI_Balance }
+		set_temp_variable = { B = BFG_JAP_Balance }
+		set_temp_variable = { C = BFG_GNG_Balance }
+		# ABC = A+B+C
+		set_temp_variable = { ABC = A }
+		add_to_temp_variable = { ABC = B }
+		add_to_temp_variable = { ABC = C }
+
+		## Calc X
+		# 1/2 * ((B-A)/(A+B+C))
+		set_variable = { BattleForGNGTangle_X = B }
+		subtract_from_variable = { BattleForGNGTangle_X = A }
+		divide_variable = { BattleForGNGTangle_X = ABC }	#A+B+C
+
+		## Calc Y
+		# sqrt(3)/2 * ((C)/(A+B+C))
+		set_variable = { BattleForGNGTangle_Y = C }
+		divide_variable = { BattleForGNGTangle_Y = ABC }	#A+B+C
+
+		## Scaling
+		# The above calculates the x and y values for a triangle contained in a 1x1 square,
+		# that's not per se how large the end triangle will be.
+		# So, we scale it up. We can do so by just multiplying x & y by some scale.
+		multiply_variable = { BattleForGNGTangle_X = 217 }
+		multiply_variable = { BattleForGNGTangle_Y = 375 }
+		multiply_variable = { BattleForGNGTangle_Y = -1 }
+		add_to_variable = { BattleForGNGTangle_Y = 395 } # Account for initial Y-pos
+		add_to_variable = { BattleForGNGTangle_X = 250 } # Account for initial X-pos
+	}
+}

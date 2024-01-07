@@ -104,17 +104,39 @@ GNG_debug_category = {
 		}
 				}
 	}
-	bfg_gui_decision_category = {GNG_dop_debug_add_seat_4 = {
+	bfg_gui_decision_category = {GNG_dop_debug_recalcposition = {
 		allowed = {
 			original_tag = GNG
 		}
 		icon = GFX_decision_GNG_generic
 		complete_effect = {
-			set_temp_variable = { GNG_legco_seat_temp = 10 }
-	set_temp_variable = { GNG_legco_faction_temp = 3 }
-	GNG_change_legco_seats = yes
-	set_temp_variable = { GNG_legco_seat_temp = 10 }
-	set_temp_variable = { GNG_legco_faction_temp = 6 }
-	GNG_change_legco_seats = yes
+BattleForGNGTangle_calcXY = yes
+}}
+GNG_dop_debug_addchi = {
+	allowed = {
+		original_tag = GNG
+	}
+	icon = GFX_decision_GNG_generic
+	complete_effect = {
+		BFG_increase_CHI_influence_high = yes
 }
-		}}
+	}
+	GNG_dop_debug_addgng = {
+		allowed = {
+			original_tag = GNG
+		}
+		icon = GFX_decision_GNG_generic
+		complete_effect = {
+			BFG_increase_GNG_influence_high = yes
+	}
+		}
+		GNG_dop_debug_addjap = {
+			allowed = {
+				original_tag = GNG
+			}
+			icon = GFX_decision_GNG_generic
+			complete_effect = {
+				BFG_increase_japan_influence_high = yes
+		}
+			}
+		}
