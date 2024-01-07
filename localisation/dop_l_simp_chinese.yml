@@ -53,11 +53,12 @@
   GNG_observation_leave: "监视放松"
   GNG_develop_urge: "紧急征兵"
   GNG_transfor_weapon: "转产武器"
-  GNG_apply_emergency: "广东应急权力条例"
   GNG_arms_built: "库存装备"
   GNG_recruitment: "招兵买马"
   GNG_cutback_traintime: "缩短训练时间"
   GNG_lower_standard: "降低征兵标准"
+  GNG_apply_emergency: "广东应急权力条例"
+
 #event 
   dop_sar.1.t:  "危机四伏的清晨"
   dop_sar.1.desc:  "占位符"

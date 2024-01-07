@@ -6,7 +6,7 @@ BFG_setup_influence = {
 		set_variable = { BFG_CHI_Balance = 33 }
 		set_variable = { BFG_JAP_Balance = 33 }
 		BattleForGNGTangle_calcXY = yes
-		set_country_flag = bfi_active
+		set_country_flag = bfg_active
 	}
 }
 
