@@ -1,5 +1,7 @@
 scripted_gui = {
 	GNG_BFG_GUI = {
+		visible = {
+		}
 		context_type = decision_category
 		window_name = "GNG_BFG_GUI"
 }}

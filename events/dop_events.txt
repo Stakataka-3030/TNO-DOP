@@ -201,7 +201,7 @@ option = { #
 }
 }
 country_event = { #switchfocus_1
-id = dop_sar.11
+id = dop_sar.12
 immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.6" }
 title = dop_sar.12.t
 desc = dop_sar.12.desc
@@ -213,4 +213,20 @@ fire_only_once = yes
 option = { #
 	name = dop_sar.12.a
 	load_focus_tree = dop_ndwtree
+}}
+country_event = { #final
+id = dop_pregaw.10
+immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.6" }
+title = dop_pregaw.10.t
+desc = dop_pregaw.10.desc
+picture = GFX_report_event_GNG_morita_akio_10
+
+is_triggered_only = yes
+fire_only_once = yes
+
+option = { #
+	name = dop_pregaw.10.a
+	set_country_flag = dop_ending
+	TNO_Country_Closing_Screen_Show = yes
+	custom_effect_tooltip = dop_country_closing_tt
 }}

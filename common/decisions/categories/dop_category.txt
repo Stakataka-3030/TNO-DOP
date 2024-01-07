@@ -2,6 +2,8 @@ bfg_gui_decision_category = {
 	allowed = {
 			tag = GNG
 	}
+	icon = GFX_decision_BRA_decision_category_lottquadros
+
 	scripted_gui = GNG_BFG_GUI
 	priority = 95000
 }
