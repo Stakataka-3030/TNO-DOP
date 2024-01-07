@@ -155,9 +155,9 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus Enhance_the_police"
 		set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
 		set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
-		set_temp_variable = { GNG_legco_matsushita_temp_support = 1.0 }
-		set_temp_variable = { GNG_legco_fujitsu_temp_support = 1.00 }
-		set_temp_variable = { GNG_legco_hitachi_temp_support = 0.00 }
+		set_temp_variable = { GNG_legco_matsushita_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.70 }
+		set_temp_variable = { GNG_legco_hitachi_temp_support = 0.30 }
 		set_temp_variable = { GNG_temp_legco_id = 76 }
 		legco_introduce_ordinance = yes
 		TNO_worsen_max_workhours_policy_effectiveness_low = yes
@@ -289,8 +289,8 @@ shared_focus = {
 				set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
 				set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
 				set_temp_variable = { GNG_legco_matsushita_temp_support = 1.00 }
-				set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.60 }
-				set_temp_variable = { GNG_legco_hitachi_temp_support = 0.40 }
+				set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.70 }
+				set_temp_variable = { GNG_legco_hitachi_temp_support = 0.30 }
 				GNG_legco_votes_initialize = yes
 			}
 			log = "[GetDateText]: [Root.GetName]: Focus GNG_Special_police_ordinance"
@@ -298,9 +298,9 @@ shared_focus = {
 		select_effect = {
 			set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
 			set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
-			set_temp_variable = { GNG_legco_matsushita_temp_support = 1.0 }
-			set_temp_variable = { GNG_legco_fujitsu_temp_support = 1.00 }
-			set_temp_variable = { GNG_legco_hitachi_temp_support = 0.00 }
+			set_temp_variable = { GNG_legco_matsushita_temp_support = 1.00 }
+			set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.70 }
+			set_temp_variable = { GNG_legco_hitachi_temp_support = 0.30 }
 			set_temp_variable = { GNG_temp_legco_id = 76 }
 			legco_introduce_ordinance_start = yes
 			hidden_effect = {
