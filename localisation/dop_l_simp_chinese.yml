@@ -212,7 +212,7 @@ GNG_legco_ord_86_title: "广东新技术发展条例"
   GNG_sdw_fail_tt: "§F£GNG_Sony_texticon §V索尼§!和£GNG_Cheung_Kong_texticon §C长江实业§!未能妥善处理§e宪兵队§!，现在他们的处境危险了！§!\n\n§Y下一阶段国策中的激进选项将被禁用§!§!"
   GNG_sdw_retray_tt: "§r报告长官：事件已经平息，£GNG_Sony_texticon §V索尼§!和£GNG_Cheung_Kong_texticon §C长江实业§!现在已经构不成威胁。§!"
   GNG_sdw_final_tt: "§F谢天谢地：£GNG_Sony_texticon §V索尼§!和£GNG_Cheung_Kong_texticon §C长江实业§!，以及他们的政策，已经§M安全了§!§!"
-  GNG_typ_broken_tt: "§F§x轰的一声，平地惊雷；硅晶高塔，化为土沙。§!\n广东国就如同盛田手中的酒杯，虽然精美漂亮，但只要轻轻一碰，便会粉身碎骨。\n§C三年发展计划§!已被§r打断§!§!"
+  GNG_typ_broken_tt: "§F§x轰然一声，平地惊雷；硅晶高塔，化为土沙。§!\n广东国就如同盛田手中的酒杯，虽然精美漂亮，但只要轻轻一碰，便会粉身碎骨。\n§C三年发展计划§!已被§r打断§!§!"
 #gui
   gng_side_text: "§S广东国§!"
   china_side_text: "§M民族解放阵线§!"
