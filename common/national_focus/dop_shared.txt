@@ -1011,7 +1011,7 @@ shared_focus = {
 	
 	shared_focus = {
 		id = GNG_nanjing_emergency_call
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_Call_In_The_Whiz_Kids
 		cost = 2
 		x = 8
 		y = 0
@@ -1019,7 +1019,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_silicon_tower_collasped
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_GNG_Once_Again_Alone
 		cost = 2
 		x = -1
 		y = 1
@@ -1029,7 +1029,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_ground_lighting
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_GNG_From_the_Ground_Up
 		cost = 2
 		x = 1
 		y = 1
@@ -1039,7 +1039,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_keep_calm
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_USA_Calm_the_Hell_Down
 		cost = 2
 		x = -1
 		y = 2
@@ -1050,7 +1050,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_consider_the_situation
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_GNG_The_Security_Situation
 		cost = 2
 		x = 1
 		y = 2
@@ -1061,7 +1061,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_get_control
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_GNG_Keep_Control
 		cost = 2
 		x = 0
 		y = 3
@@ -1072,7 +1072,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_guarantee_m
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_GNG_Ensure_Matsushita_Dominance
 		cost = 2
 		x = -2
 		y = 4
@@ -1082,7 +1082,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_bribe_ito
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_GNG_Listen_to_Ibukas_Concerns
 		cost = 2
 		x = 0
 		y = 4
@@ -1092,7 +1092,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_coercion_hitachi
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_GNG_Hail_Hitachi
 		cost = 2
 		x = 2
 		y = 4
@@ -1102,7 +1102,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_apply_emergency_ordinance
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_GNG_The_Anti-Corruption_Ordinance
 		cost = 2
 		x = 0
 		y = 5
@@ -1116,7 +1116,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_storm_center
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_IRQ_A_Dark_and_Stormy_Night
 		cost = 2
 		x = -5
 		y = 6
@@ -1126,7 +1126,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_change_support_as_weapon
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_SVR_Specialized_Weapons
 		cost = 2
 		x = -7
 		y = 7
@@ -1136,7 +1136,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_calm_civil
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_GNG_Shut_Up_and_Get_On_with_It
 		cost = 2
 		x = -3
 		y = 8
@@ -1146,7 +1146,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_use_chi_emotion
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_GNG_The_Pearls_Ablaze
 		cost = 2
 		x = -2
 		y = 9
@@ -1156,7 +1156,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_rise_money
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_USA_money_wall
 		cost = 2
 		x = -7
 		y = 8
@@ -1166,7 +1166,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_use_jap_emotion
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_GNG_Tighten_Eligibility
 		cost = 2
 		x = -4
 		y = 9
@@ -1176,7 +1176,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_ask_indepence
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_GNG_review_government_contracts
 		cost = 2
 		x = -7
 		y = 9
@@ -1186,7 +1186,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_social_military
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_HGR_Military_Preference
 		cost = 2
 		x = -5
 		y = 10
@@ -1198,7 +1198,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_observation_leave
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_SGR_Observing_the_People
 		cost = 2
 		x = 5
 		y = 6
@@ -1208,7 +1208,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_develop_urge
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_Arms_factory_red
 		cost = 2
 		x = 7
 		y = 7
@@ -1218,7 +1218,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_transfor_weapon
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_SVR_Sverdlovsk_Tank_Factory
 		cost = 2
 		x = 3
 		y = 7
@@ -1228,7 +1228,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_arms_built
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_COG_Ask_for_more_guns
 		cost = 2
 		x = 3
 		y = 9
@@ -1238,7 +1238,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_recruitment
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_HGR_Encourage_Recruitment
 		cost = 2
 		x = 7
 		y = 8
@@ -1248,7 +1248,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_cutback_traintime
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_ORE_the_leagues_training
 		cost = 2
 		x = 8
 		y = 9
@@ -1258,7 +1258,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_lower_standard
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_General_Recruitment
 		cost = 2
 		x = 6
 		y = 9
@@ -1268,7 +1268,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_build_barricade
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_ITA_Run_over_the_Barricades
 		cost = 2
 		x = 5
 		y = 10
@@ -1280,7 +1280,7 @@ shared_focus = {
 	}}
 	shared_focus = {
 		id = GNG_war_drum_roming
-		icon = GFX_CHI_We_Have_The_Technology
+		icon = GFX_GRO_The_Drums_Echo
 		cost = 2
 		x = 0
 		y = 11

@@ -174,7 +174,7 @@ option = { #
 	load_focus_tree = dop_peace_develop
 }
 }
-country_event = { #sdw_safe
+country_event = { 
 id = dop_sar.11
 immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.6" }
 title = dop_sar.11.t
@@ -189,7 +189,22 @@ trigger = {
 }
 option = { #
 	name = dop_sar.11.a
+	country_event = dop_sar.13
+}
+}
+country_event = { 
+id = dop_sar.13
+immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.6" }
+title = dop_sar.13.t
+desc = dop_sar.13.desc
+picture = GFX_report_event_GNG_morita_akio_10
+
+is_triggered_only = no
+fire_only_once = yes
+option = { #
+	name = dop_sar.13.a
 	complete_national_focus = GNG_nanjing_emergency_call
+	load_focus_tree = dop_pregaw_tree
 	custom_effect_tooltip = GNG_typ_broken_tt
 	custom_effect_tooltip = GNG_fakeswitchfocustree
 }
