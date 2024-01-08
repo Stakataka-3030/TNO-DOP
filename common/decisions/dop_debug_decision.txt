@@ -32,7 +32,7 @@ GNG_debug_category = {
 			load_focus_tree = dop_peace_develop
 		}
 	}
-	GNG_dop_debug_fail_ndw = {
+	GNG_dop_debug_pregaw = {
 		allowed = {
 			original_tag = GNG
 		}
@@ -40,8 +40,7 @@ GNG_debug_category = {
 		visible = {
 		}
 		complete_effect = {
-			set_country_flag = sdw_failed
-			set_country_flag = GNG_bfg_Show
+			load_focus_tree = dop_pregaw_tree
 		}
 	}
 	GNG_dop_debug_remove_faction = {
