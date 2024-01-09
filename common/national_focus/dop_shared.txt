@@ -55,7 +55,39 @@ focus_tree = {
 	shared_focus = GNG_sdw_passed
 	shared_focus = GNG_sdw_failed
 }
-
+focus_tree = {
+	id = dop_peace_develop
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GNG
+		}
+	}
+	default = no
+	shared_focus = GNG_new_develop_project
+	shared_focus = GNG_teaching_first
+	shared_focus = GNG_rewrite_textbook
+	shared_focus = GNG_poverty_help
+	shared_focus = GNG_compulsory_education_ordinance
+	shared_focus = GNG_advance_tools
+	shared_focus = GNG_japanese_tech
+	shared_focus = GNG_chinese_tech
+	shared_focus = GNG_prove_tools_import_ordinance
+	shared_focus = GNG_improve_health_care
+	shared_focus = GNG_county_hospital
+	shared_focus = GNG_social_care
+	shared_focus = GNG_standard_health_insurance_ordinance
+	shared_focus = GNG_agriculture_growth
+	shared_focus = GNG_import_seeds
+	shared_focus = GNG_tech_help_agri
+	shared_focus = GNG_food_safe_ordinance
+	shared_focus = GNG_science_future
+	shared_focus = GNG_build_research_center
+	shared_focus = GNG_sponsor_new_tech
+	shared_focus = GNG_new_tech_develop_ordinance
+	shared_focus = GNG_fake_final
+}
 focus_tree = {
 	id = dop_pregaw_tree
 	country = {
@@ -1088,9 +1120,9 @@ shared_focus = {
 		completion_reward = {
 			set_temp_variable = { GNG_legco_amendment_id = 87.1 }
 			GNG_add_amendment_to_current = yes
+			set_temp_variable = { GNG_temp_votes_percentage = 0.60 }
 			set_temp_variable = { GNG_legco_faction = 4 }
-			set_temp_variable = { GNG_temp_votes = 40 }
-			GNG_legco_change_votes = yes
+			GNG_legco_change_votes_percentage = yes
 	}}
 	shared_focus = {
 		id = GNG_bribe_ito
@@ -1103,9 +1135,9 @@ shared_focus = {
 		completion_reward = {
 			set_temp_variable = { GNG_legco_amendment_id = 87.2 }
 			GNG_add_amendment_to_current = yes
-			set_temp_variable = { GNG_legco_faction = 5 }
-			set_temp_variable = { GNG_temp_votes = 30 }
-			GNG_legco_change_votes = yes
+			set_temp_variable = { GNG_temp_votes_percentage = 0.30 }
+		set_temp_variable = { GNG_legco_faction = 5 }
+		GNG_legco_change_votes_percentage = yes
 	}}
 	shared_focus = {
 		id = GNG_coercion_hitachi
@@ -1118,9 +1150,9 @@ shared_focus = {
 		completion_reward = {
 			set_temp_variable = { GNG_legco_amendment_id = 87.3 }
 			GNG_add_amendment_to_current = yes
-			set_temp_variable = { GNG_legco_faction = 7 }
-			set_temp_variable = { GNG_temp_votes = 15 }
-			GNG_legco_change_votes = yes
+			set_temp_variable = { GNG_temp_votes_percentage = 0.15 }
+		set_temp_variable = { GNG_legco_faction = 7 }
+		GNG_legco_change_votes_percentage = yes
 	}}
 	shared_focus = {
 		id = GNG_apply_emergency_ordinance
@@ -1135,7 +1167,27 @@ shared_focus = {
 	}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
-	}}
+			effect_tooltip = {
+				set_temp_variable = { GNG_temp_legco_id = 87 }
+				custom_effect_tooltip = GNG_legco_bill_introduce_start_when_selected_tooltip
+				set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_matsushita_temp_support = 0.10 }
+		set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.00 }
+		set_temp_variable = { GNG_legco_hitachi_temp_support = 0.00 }
+				GNG_legco_votes_initialize = yes
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus GNG_Special_police_ordinance"
+		}
+		select_effect = {
+			set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_matsushita_temp_support = 0.10 }
+		set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.00 }
+		set_temp_variable = { GNG_legco_hitachi_temp_support = 0.00 }
+			set_temp_variable = { GNG_temp_legco_id = 87 }
+			legco_introduce_ordinance_start = yes
+			}}
 	shared_focus = {
 		id = GNG_storm_center
 		icon = GFX_IRQ_A_Dark_and_Stormy_Night
