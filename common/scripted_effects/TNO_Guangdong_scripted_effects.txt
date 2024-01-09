@@ -8853,17 +8853,18 @@ GNG_initialize_legco = {
 	add_to_array = { GNG_legco_sponsor_faction = MATSUSHITA } # Bill 75: Emergency Powers Ordinance
 
 	### DOP added
-	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 76: Country Park Ordinance
-	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 77: Compulsory Education Ordinance
-	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill : Public T78ransport Ordinance
-	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 79: Public Housing Ordinance
-	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 80: Public Housing Ordinance
-	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 81: Public Housing Ordinance
-	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 82: Public Housing Ordinance
-	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 83: Public Housing Ordinance
-	add_to_array = { GNG_legco_sponsor_faction = CHEUNG_KONG } # Bill 84: Public Housing Ordinance
-	add_to_array = { GNG_legco_sponsor_faction = CHEUNG_KONG } # Bill 85: Public Housing Ordinance
-	add_to_array = { GNG_legco_sponsor_faction = CHEUNG_KONG } # Bill 86: Public Housing Ordinance
+	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 76: tejingtiaoli
+	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 77: !
+	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 78:guojiabaowei
+	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 79: chiside
+	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 80: indep
+	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 81: japside
+	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 82: yiwujiaoyu
+	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 83: shebeijinkou
+	add_to_array = { GNG_legco_sponsor_faction = CHEUNG_KONG } # Bill 84: jichuyibao
+	add_to_array = { GNG_legco_sponsor_faction = CHEUNG_KONG } # Bill 85: cujinnongye
+	add_to_array = { GNG_legco_sponsor_faction = CHEUNG_KONG } # Bill 86: xinjishufazhan
+	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 87: yingjingquanli
 
 	clear_array = GNG_legco_amendments_1
 	clear_array = GNG_legco_amendments_2
@@ -9794,6 +9795,11 @@ GNG_pass_ordinance_event_effect = {
 	}
 	else_if = {
 		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 87 } #emergencey_power_ord
+		}
+	}
+	else_if = {
+		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 22 } #Civil Service Ordinance
 		}
 		country_event = {
@@ -10500,6 +10506,11 @@ GNG_fail_ordinance_event_effect = {
 	else_if = {
 		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 86 } #science_dev_ord
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 87 } #emergencey_power_ord
 		}
 	}
 	else_if = {
@@ -11248,6 +11259,14 @@ GNG_ordinances_effects = {
 			set_temp_variable = { jap_app_temp = 3 }
 			GNG_japanese_app_change = yes
 		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 87 } #emergencey_power_ord
+		}
+		TNO_worsen_admin_efficiency_mid = yes
+		set_temp_variable = { v = 93 }
+		GNG_add_uncategorised_law = yes
 	}
 	else_if = {
 		limit = {
@@ -18954,88 +18973,26 @@ GNG_amendment_effects = {
 		}
 		else_if = {
 			limit = {
-				check_variable = { GNG_legco_amendment_id = 78.2 } 
+				check_variable = { GNG_legco_amendment_id = 87.1 } 
 			}
-			set_temp_variable = { temp_econ_spending_amount = 1.275 }
-			econ_spend_money_once_effect_raw_money = yes
-			every_owned_state = {
-			set_temp_variable = { zhu_app_temp = 1.5 }
-			GNG_zhujin_app_change = yes
-			set_temp_variable = { chi_app_temp = 1.5 }
-			GNG_chinese_app_change = yes
-		}
-			random_owned_state = {
-			limit = {
-				state = 592
-			}
-			add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			set_temp_variable = { temp_state_value_addition = 0.5 }
-			econ_state_value_change_addition = yes
-			add_state_modifier = {
-				modifier = {
-					state_GDP_growth_modifier = 1.05
-				}
-			}
-		}
-		random_owned_state = {
-			limit = {
-				state = 729
-			}
-			add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			set_temp_variable = { temp_state_value_addition = 0.1 }
-			econ_state_value_change_addition = yes
-			add_state_modifier = {
-				modifier = {
-					state_GDP_growth_modifier = 1.05
-				}
-			}
-		}
-		random_owned_state = {
-			limit = {
-				state = 326
-			}
-			add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			set_temp_variable = { temp_state_value_addition = 0.25 }
-			econ_state_value_change_addition = yes
-			add_state_modifier = {
-				modifier = {
-					state_GDP_growth_modifier = 1.05
-				}
-			}
-		}
+			set_temp_variable = { GNG_legco_seat_temp = -2 }
+			set_temp_variable = { GNG_legco_faction_temp = 3 }
+			set_temp_variable = { GNG_legco_faction_target_temp = 5 }
+			GNG_change_legco_seats_specific_1 = yes
 		}
 		else_if = {
 			limit = {
-				check_variable = { GNG_legco_amendment_id = 78.3 } 
+				check_variable = { GNG_legco_amendment_id = 87.2 } 
 			}
-			set_temp_variable = { temp_econ_spending_amount = 0.575 }
+			set_temp_variable = { temp_econ_spending_amount = 1.000 }
 			econ_spend_money_once_effect_raw_money = yes
-			set_temp_variable = { gdp_growth_temp = 0.25 }
-			econ_gdp_growth_change = yes
-			random_owned_state = {
-			limit = {
-				state = 326
-			}
-			set_temp_variable = { temp_state_value_addition = 0.45 }
-			econ_state_value_change_addition = yes
-			add_state_modifier = {
-				modifier = {
-					state_GDP_growth_modifier = 0.15
-				}
-			}
+			GNG_improve_corruption = yes
 		}
+		else_if = {
+			limit = {
+				check_variable = { GNG_legco_amendment_id = 87.3 } 
+			}
+			GNG_improve_corruption = yes
 		}
 		else_if = {
 			limit = {

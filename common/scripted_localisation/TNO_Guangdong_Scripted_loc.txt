@@ -3212,12 +3212,16 @@ defined_text = {
 		localization_key = GNG_legco_amend_78_4_title
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 79.1 } }
-		localization_key = GNG_legco_amend_79_1_title
+		trigger = { check_variable = { GNG_legco_amendment_id = 87.1 } }
+		localization_key = GNG_legco_amend_87_1_title
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 79.2 } }
-		localization_key = GNG_legco_amend_79_2_title
+		trigger = { check_variable = { GNG_legco_amendment_id = 87.2 } }
+		localization_key = GNG_legco_amend_87_2_title
+	}
+	text = {
+		trigger = { check_variable = { GNG_legco_amendment_id = 87.3 } }
+		localization_key = GNG_legco_amend_87_3_title
 	}
 	text = {
 		trigger = { check_variable = { GNG_legco_amendment_id = 79.3 } }
@@ -10758,12 +10762,24 @@ defined_text = {
 #91 - three year develop project
 	text = {
 		trigger = { check_variable = { v = 91 } }
-		localization_key = GNG_typ_law
+		
+		localization_key = GNG_typ_law_1
+	}
+#91 - three year develop project broken
+	text = {
+		trigger = { check_variable = { v = 91.1 } }
+		localization_key = GNG_typ_law_2
 	}
 #92 - new police project
 	text = {
 		trigger = { check_variable = { v = 92 } }
 		localization_key = GNG_npp_law
+	}
+
+#92 - new police project
+	text = {
+		trigger = { check_variable = { v = 93 } }
+		localization_key = GNG_emergency_powers_law_1
 	}
 }
 
@@ -11508,10 +11524,21 @@ defined_text = {
 		trigger = { check_variable = { v = 91 } }
 		localization_key = GNG_typ_law_desc
 	}
+#91 - three year develop project broken
+	text = {
+		trigger = { check_variable = { v = 91.1 } }
+		localization_key = GNG_typ_law_desc_2
+	}
 #92 - new police project
 	text = {
 		trigger = { check_variable = { v = 92 } }
 		localization_key = GNG_npp_law_desc
+	}
+
+#92 - new police project
+	text = {
+		trigger = { check_variable = { v = 93 } }
+		localization_key = GNG_emergency_powers_law_desc_1
 	}
 }
 

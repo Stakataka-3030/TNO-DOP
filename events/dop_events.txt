@@ -207,6 +207,11 @@ option = { #
 	hidden_effect = {
 	load_focus_tree = dop_pregaw_tree}
 	custom_effect_tooltip = GNG_typ_broken_tt
+	hidden_effect={
+		set_temp_variable = { v = 91.1 }
+	GNG_add_uncategorised_law = yes
+	set_temp_variable = { v = 91 }
+	GNG_remove_uncategorised_law= yes }
 	custom_effect_tooltip = GNG_fakeswitchfocustree
 }
 }

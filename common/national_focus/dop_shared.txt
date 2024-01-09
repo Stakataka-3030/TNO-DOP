@@ -1069,6 +1069,13 @@ shared_focus = {
 		prerequisite = {focus = GNG_keep_calm}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+		set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
+		set_temp_variable = { GNG_legco_matsushita_temp_support = 0.10 }
+		set_temp_variable = { GNG_legco_fujitsu_temp_support = 0.00 }
+		set_temp_variable = { GNG_legco_hitachi_temp_support = 0.00 }
+		set_temp_variable = { GNG_temp_legco_id = 87 }
+		legco_introduce_ordinance = yes
 	}}
 	shared_focus = {
 		id = GNG_guarantee_m
@@ -1079,6 +1086,11 @@ shared_focus = {
 		prerequisite = {focus = GNG_get_control}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			set_temp_variable = { GNG_legco_amendment_id = 87.1 }
+			GNG_add_amendment_to_current = yes
+			set_temp_variable = { GNG_legco_faction = 4 }
+			set_temp_variable = { GNG_temp_votes = 40 }
+			GNG_legco_change_votes = yes
 	}}
 	shared_focus = {
 		id = GNG_bribe_ito
@@ -1089,6 +1101,11 @@ shared_focus = {
 		prerequisite = {focus = GNG_get_control}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			set_temp_variable = { GNG_legco_amendment_id = 87.2 }
+			GNG_add_amendment_to_current = yes
+			set_temp_variable = { GNG_legco_faction = 5 }
+			set_temp_variable = { GNG_temp_votes = 30 }
+			GNG_legco_change_votes = yes
 	}}
 	shared_focus = {
 		id = GNG_coercion_hitachi
@@ -1099,6 +1116,11 @@ shared_focus = {
 		prerequisite = {focus = GNG_get_control}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			set_temp_variable = { GNG_legco_amendment_id = 87.3 }
+			GNG_add_amendment_to_current = yes
+			set_temp_variable = { GNG_legco_faction = 7 }
+			set_temp_variable = { GNG_temp_votes = 15 }
+			GNG_legco_change_votes = yes
 	}}
 	shared_focus = {
 		id = GNG_apply_emergency_ordinance
