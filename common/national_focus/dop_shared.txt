@@ -382,6 +382,9 @@ shared_focus = {
 		GNG_no_ordinance_in_legco = yes
 		}
 	completion_reward = {
+		country_event = {
+			id = dop_flavors.7
+		}
 		log = "[GetDateText]: [Root.GetName]: Focus Enhance_the_police"
 		set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
 		set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
@@ -416,6 +419,9 @@ shared_focus = {
 	y = 1
 	relative_position_id = GNG_New_defense_way
 	completion_reward = {
+		country_event = {
+			id = dop_flavors.8
+		}
 		set_temp_variable = { GNG_legco_amendment_id = 78.1 }
 			GNG_add_amendment_to_current = yes
 	}}
@@ -431,6 +437,9 @@ shared_focus = {
 	y = 1
 	relative_position_id = GNG_New_defense_way
 	completion_reward = {
+		country_event = {
+			id = dop_flavors.9
+		}
 		set_temp_variable = { GNG_legco_amendment_id = 78.2 }
 			GNG_add_amendment_to_current = yes
 	}}
@@ -446,6 +455,9 @@ shared_focus = {
 	y = 1
 	relative_position_id = GNG_New_defense_way
 	completion_reward = {
+		country_event = {
+			id = dop_flavors.11
+		}
 		set_temp_variable = { GNG_legco_amendment_id = 78.3 }
 			GNG_add_amendment_to_current = yes
 	}}
@@ -461,6 +473,9 @@ shared_focus = {
 	y = 1
 	relative_position_id = GNG_New_defense_way
 	completion_reward = {
+		country_event = {
+			id = dop_flavors.12
+		}
 		set_temp_variable = { GNG_legco_amendment_id = 78.4 }
 			GNG_add_amendment_to_current = yes
 	}}
@@ -479,7 +494,9 @@ shared_focus = {
 	y = 2
 	relative_position_id = GNG_New_defense_way
 	completion_reward = {
-
+		country_event = {
+			id = dop_flavors.13
+		}
 	}}
 shared_focus = {
 	prerequisite=
@@ -493,7 +510,13 @@ shared_focus = {
 	y = 3
 	relative_position_id = GNG_New_defense_way
 	completion_reward = {
-	
+		if = {limit={ 
+			lhc_disabled = 1
+		}}
+		else = {
+		country_event = {
+			dop_legco_hostage_crisis.1
+		}}
 	}}
 shared_focus = {
 	prerequisite=
