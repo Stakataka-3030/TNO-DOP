@@ -2607,6 +2607,10 @@ defined_text = {
 		localization_key = GNG_legco_ord_86_title
 	}
 	text = {
+		trigger = { check_variable = { GNG_legco_ordinance_id = 87 } } #Labor Relations Ordinance
+		localization_key = GNG_legco_ord_87_title
+	}
+	text = {
 		localization_key = "ORD [?GNG_legco_ordinance_id] NO TITLE"
 	}
 }
@@ -2960,6 +2964,10 @@ defined_text = {
 	text = {
 		trigger = { check_variable = { GNG_legco_ordinance_id = 86 } } #Labor Relations Ordinance
 		localization_key = GNG_legco_ord_86_effect
+	}
+	text = {
+		trigger = { check_variable = { GNG_legco_ordinance_id = 87 } } #Labor Relations Ordinance
+		localization_key = GNG_legco_ord_87_effect
 	}
 	text = {
 		localization_key = "ORD [?GNG_legco_ordinance_id] NO EFFECT"
@@ -4186,6 +4194,18 @@ defined_text = {
 	text = {
 		trigger = { check_variable = { GNG_legco_amendment_id = 78.4 } }
 		localization_key = GNG_legco_amend_78_4_effect
+	}
+	text = {
+		trigger = { check_variable = { GNG_legco_amendment_id = 87.1 } }
+		localization_key = GNG_legco_amend_87_1_effect
+	}
+	text = {
+		trigger = { check_variable = { GNG_legco_amendment_id = 87.2 } }
+		localization_key = GNG_legco_amend_87_2_effect
+	}
+	text = {
+		trigger = { check_variable = { GNG_legco_amendment_id = 87.3 } }
+		localization_key = GNG_legco_amend_87_3_effect
 	}
 	text = {
 		trigger = { check_variable = { GNG_legco_amendment_id = 79.1 } }
@@ -5867,6 +5887,12 @@ defined_text = {
 			check_variable = { GNG_temp_legco_id = 86 }
 		}
 		localization_key = GNG_legco_temp_tooltip_bill_86
+	}
+	text = {
+		trigger = {
+			check_variable = { GNG_temp_legco_id = 87 }
+		}
+		localization_key = GNG_legco_temp_tooltip_bill_87
 	}
 }
 

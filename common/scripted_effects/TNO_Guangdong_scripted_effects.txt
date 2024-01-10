@@ -18977,22 +18977,23 @@ GNG_amendment_effects = {
 			}
 			set_temp_variable = { GNG_legco_seat_temp = -2 }
 			set_temp_variable = { GNG_legco_faction_temp = 3 }
-			set_temp_variable = { GNG_legco_faction_target_temp = 5 }
+			set_temp_variable = { GNG_legco_faction_target_temp = 4 }
 			GNG_change_legco_seats_specific_1 = yes
 		}
 		else_if = {
 			limit = {
 				check_variable = { GNG_legco_amendment_id = 87.2 } 
 			}
-			set_temp_variable = { temp_econ_spending_amount = 1.000 }
+			set_temp_variable = { temp_econ_spending_amount = 1.500 }
 			econ_spend_money_once_effect_raw_money = yes
-			GNG_improve_corruption = yes
 		}
 		else_if = {
 			limit = {
 				check_variable = { GNG_legco_amendment_id = 87.3 } 
 			}
-			GNG_improve_corruption = yes
+			set_temp_variable = { temp_econ_spending_amount = 1.000 }
+			econ_spend_money_once_effect_raw_money = yes
+			TNO_worsen_security_policy_effectiveness_high = yes
 		}
 		else_if = {
 			limit = {

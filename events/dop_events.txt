@@ -226,6 +226,8 @@ is_triggered_only = yes
 fire_only_once = yes
 
 option = { #
+set_temp_variable = { v = 93 }
+GNG_add_uncategorised_law = yes
 	name = dop_sar.12.a
 	load_focus_tree = dop_ndwtree
 }}
