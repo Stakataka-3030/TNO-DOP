@@ -168,7 +168,8 @@ shared_focus = {
 		GNG_no_ordinance_in_legco = yes
 		}
 	completion_reward = {
-		id = dop_flavors.3
+		country_event= {
+		id = dop_flavors.3}
 		log = "[GetDateText]: [Root.GetName]: Focus Enhance_the_police"
 		set_temp_variable = { GNG_legco_cheungkong_temp_support = 1.00 }
 		set_temp_variable = { GNG_legco_sony_temp_support = 1.00 }
