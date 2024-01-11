@@ -86,7 +86,7 @@ country_event = { #
 		
 		country_event = {
 			id = dop_legco_hostage_crisis.6
-			days = 5}
+			days = 1}
 	}
 }
 country_event = { #
@@ -251,16 +251,68 @@ country_event = { #
 	}
 }
 country_event = { #
-	id = dop_legco_hostage_crisis.16
-	title = dop_legco_hostage_crisis.16.t
-	desc = dop_legco_hostage_crisis.16.desc
+	id = dop_legco_hostage_crisis.17
+	title = dop_legco_hostage_crisis.17.t
+	desc = dop_legco_hostage_crisis.17.desc
 	picture = GFX_report_event_GNG_morita_akio_10
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { #
-		name = dop_legco_hostage_crisis.16.a
+		name = dop_legco_hostage_crisis.17.a
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.18
+	title = dop_legco_hostage_crisis.18.t
+	desc = dop_legco_hostage_crisis.18.desc
+	picture = GFX_report_event_GNG_morita_akio_10
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_legco_hostage_crisis.18.a
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.19
+	title = dop_legco_hostage_crisis.19.t
+	desc = dop_legco_hostage_crisis.19.desc
+	picture = GFX_report_event_GNG_morita_akio_10
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_legco_hostage_crisis.19.a
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.20
+	title = dop_legco_hostage_crisis.20.t
+	desc = dop_legco_hostage_crisis.20.desc
+	picture = GFX_report_event_GNG_morita_akio_10
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_legco_hostage_crisis.20.a
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.21
+	title = dop_legco_hostage_crisis.21.t
+	desc = dop_legco_hostage_crisis.21.desc
+	picture = GFX_report_event_GNG_morita_akio_10
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_legco_hostage_crisis.21.a
 	}
 }
 country_event = { #
