@@ -45,15 +45,14 @@ country_event = { #
 	option = { #
 		name = dop_legco_hostage_crisis.3.a
 		if = {
-			limit = {GNG_Japan_Approval > 75}
+			limit = {check_variable = { GNG_Japan_Approval > 75}}
 			country_event = {
 		id = dop_legco_hostage_crisis.4
-		days = 5}
-		}
+		mean_time_to_happen = 2}
 		else = {country_event = {
 			id = dop_legco_hostage_crisis.5
-			days = 5
-		}}
+			mean_time_to_happen = 2
+		}}}
 	}
 	option = { #
 		name = dop_legco_hostage_crisis.3.b

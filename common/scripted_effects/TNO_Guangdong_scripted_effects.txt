@@ -9739,10 +9739,20 @@ GNG_pass_ordinance_event_effect = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { GNG_legco_current_ordinance_id = 78 } #Public Transport Ordinance
+			check_variable = { GNG_legco_current_ordinance_id = 78 }
+			has_country_flag = lhc_disabled
 		}
 		country_event = {
 			id = dop_sar.7
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { GNG_legco_current_ordinance_id = 78 }
+			NOT = {has_country_flag = lhc_disabled}
+		}
+		country_event = {
+			id = dop_legco_hostage_crisis.2
 		}
 	}
 	else_if = {
