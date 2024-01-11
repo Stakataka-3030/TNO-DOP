@@ -70,7 +70,6 @@ country_event = { #
 
 	option = { #
 		name = dop_legco_hostage_crisis.4.a
-		custom_effect_tooltip = dop_lhc_end_gaodao_tt
 	}
 }
 country_event = { #
@@ -84,6 +83,7 @@ country_event = { #
 
 	option = { #
 		name = dop_legco_hostage_crisis.5.a
+		
 		country_event = {
 			id = dop_legco_hostage_crisis.6
 			days = 5}
@@ -103,45 +103,166 @@ country_event = { #
 	}
 }
 country_event = { #
-	id = dop_legco_hostage_crisis.6
-	title = dop_legco_hostage_crisis.6.t
-	desc = dop_legco_hostage_crisis.6.desc
+	id = dop_legco_hostage_crisis.7
+	title = dop_legco_hostage_crisis.7.t
+	desc = dop_legco_hostage_crisis.7.desc
 	picture = GFX_report_event_GNG_morita_akio_10
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { #
-		name = dop_legco_hostage_crisis.6.a
+		name = dop_legco_hostage_crisis.7.a
 	}
 }
 country_event = { #
-	id = dop_legco_hostage_crisis.6
-	title = dop_legco_hostage_crisis.6.t
-	desc = dop_legco_hostage_crisis.6.desc
+	id = dop_legco_hostage_crisis.8
+	title = dop_legco_hostage_crisis.8.t
+	desc = dop_legco_hostage_crisis.8.desc
 	picture = GFX_report_event_GNG_morita_akio_10
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { #
-		name = dop_legco_hostage_crisis.6.a
+		name = dop_legco_hostage_crisis.8.a
 	}
 }
 country_event = { #
-	id = dop_legco_hostage_crisis.6
-	title = dop_legco_hostage_crisis.6.t
-	desc = dop_legco_hostage_crisis.6.desc
+	id = dop_legco_hostage_crisis.9
+	title = dop_legco_hostage_crisis.9.t
+	desc = dop_legco_hostage_crisis.9.desc
 	picture = GFX_report_event_GNG_morita_akio_10
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { #
-		name = dop_legco_hostage_crisis.6.a
+		name = dop_legco_hostage_crisis.9.a
+	}
+	option = { #
+		name = dop_legco_hostage_crisis.9.b
+	}
+	option = { #
+		name = dop_legco_hostage_crisis.9.c
 	}
 }
+country_event = { #
+	id = dop_legco_hostage_crisis.10
+	title = dop_legco_hostage_crisis.10.t
+	desc = dop_legco_hostage_crisis.10.desc
+	picture = GFX_report_event_GNG_morita_akio_10
 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_legco_hostage_crisis.10.a
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.11
+	title = dop_legco_hostage_crisis.11.t
+	desc = dop_legco_hostage_crisis.11.desc
+	picture = GFX_report_event_GNG_morita_akio_10
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_legco_hostage_crisis.11.a
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.12
+	title = dop_legco_hostage_crisis.12.t
+	desc = dop_legco_hostage_crisis.12.desc
+	picture = GFX_report_event_GNG_morita_akio_10
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_legco_hostage_crisis.12.a
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.13
+	title = dop_legco_hostage_crisis.13.t
+	desc = dop_legco_hostage_crisis.13.desc
+	picture = GFX_report_event_GNG_morita_akio_10
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_legco_hostage_crisis.13.a
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.14
+	title = dop_legco_hostage_crisis.14.t
+	desc = dop_legco_hostage_crisis.14.desc
+	picture = GFX_report_event_GNG_morita_akio_10
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_legco_hostage_crisis.14.a
+	}
+	option = { #
+		name = dop_legco_hostage_crisis.14.b
+	}
+	option = { #
+		name = dop_legco_hostage_crisis.14.c
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.15
+	title = dop_legco_hostage_crisis.15.t
+	desc = dop_legco_hostage_crisis.15.desc
+	picture = GFX_report_event_GNG_morita_akio_10
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_legco_hostage_crisis.15.a
+	}
+	option = { #
+		name = dop_legco_hostage_crisis.15.b
+	}
+	option = { #
+		name = dop_legco_hostage_crisis.15.c
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.16
+	title = dop_legco_hostage_crisis.16.t
+	desc = dop_legco_hostage_crisis.16.desc
+	picture = GFX_report_event_GNG_morita_akio_10
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_legco_hostage_crisis.16.a
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.16
+	title = dop_legco_hostage_crisis.16.t
+	desc = dop_legco_hostage_crisis.16.desc
+	picture = GFX_report_event_GNG_morita_akio_10
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_legco_hostage_crisis.16.a
+	}
+}
 country_event = { #
 	id = dop_sar.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.1" }

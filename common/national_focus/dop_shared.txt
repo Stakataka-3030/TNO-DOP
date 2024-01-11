@@ -512,11 +512,11 @@ shared_focus = {
 	relative_position_id = GNG_New_defense_way
 	completion_reward = {
 		if = {limit={ 
-			Var:lhc_disabled = 1
+			lhc_disabled = 1
 		}}
 		else = {
 		country_event = {
-			dop_legco_hostage_crisis.1
+			id = dop_legco_hostage_crisis.1
 		}}
 	}}
 shared_focus = {
