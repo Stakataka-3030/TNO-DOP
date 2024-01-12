@@ -117,6 +117,10 @@ complete_effect = {
 	bfg_gui_decision_category = {GNG_dop_debug_recalcposition = {
 		allowed = {
 			original_tag = GNG
+			debug = yes
+		}
+		visible = {
+			is_debug = yes
 		}
 		icon = GFX_decision_GNG_generic
 		complete_effect = {
@@ -134,6 +138,10 @@ GNG_dop_debug_addchi = {
 	GNG_dop_debug_addgng = {
 		allowed = {
 			original_tag = GNG
+			debug = yes
+		}
+		visible = {
+			is_debug = yes
 		}
 		icon = GFX_decision_GNG_generic
 		complete_effect = {
@@ -143,6 +151,10 @@ GNG_dop_debug_addchi = {
 		GNG_dop_debug_addjap = {
 			allowed = {
 				original_tag = GNG
+				debug = yes
+			}
+			visible = {
+				is_debug = yes
 			}
 			icon = GFX_decision_GNG_generic
 			complete_effect = {

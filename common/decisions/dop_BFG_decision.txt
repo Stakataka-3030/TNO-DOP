@@ -21,7 +21,7 @@ GNG_ken_effect_on_bfg = {
 	timeout_effect = {
 		every_owned_state = { limit={check_variable= {ken_spt>25} }	BFG_increase_japan_influence_low = yes	}
 	}
-	days_remove = 0
+	days_remove = 1
 }
 GNG_tri_effect_on_bfg = {
 	icon = GFX_decisionguangdong_IJA
@@ -47,7 +47,7 @@ GNG_tri_effect_on_bfg = {
 		every_owned_state = {	limit={ check_variable= {tri_spt>25} }BFG_increase_CHI_influence_low = yes	}
 
 	}
-	days_remove = 0
+	days_remove = 1
 }
 GNG_yak_effect_on_bfg = {
 	icon = GFX_decisionguangdong_IJA
@@ -75,4 +75,77 @@ GNG_yak_effect_on_bfg = {
 	}
 	days_remove = 1
 }
+GNG_chi_effect_on_bfg = {
+	icon = GFX_decisionguangdong_IJA
+	activation = {
+		any_owned_state = { check_variable= {chi_app<70 }}
+		has_country_flag = bfg_active
+	}
+	available = {
+		hidden_trigger = {
+			always = no
+		}
+	}
+	is_good = no
+	days_mission_timeout = 10
+	allowed = {
+		tag = GNG
+	}
+	cancel_trigger = {
+		every_owned_state = { check_variable= {chi_app>70 }}
+	} 
+	fixed_random_seed = no
+	timeout_effect = {
+		every_owned_state = {limit={ check_variable= {chi_app<70 } }BFG_increase_japan_influence_low =yes	}
+
+	}
+	days_remove = 1
+}
+GNG_jap_effect_on_bfg = {
+	icon = GFX_decisionguangdong_IJA
+	activation = {
+		any_owned_state = { check_variable= {jap_app<70} }
+		has_country_flag = bfg_active
+	}
+	available = {
+		hidden_trigger = {
+			always = no
+		}
+	}
+	is_good = no
+	days_mission_timeout = 10
+	allowed = {
+		tag = GNG
+	}
+	cancel_trigger = {
+		every_owned_state = { check_variable= {jap_app>70} }
+	} 
+	fixed_random_seed = no
+	timeout_effect = {
+		every_owned_state = {limit={ check_variable= {jap_app<70} }BFG_increase_japan_influence_low =yes	}
+
+	}
+	days_remove = 1
+}
+}
+GNG_bfg_countdown = {
+	icon = GFX_decisionguangdong_IJA
+	activation = {
+		has_country_flag = bfg_active
+	}
+	available = {
+		hidden_trigger = {
+			always = no
+		}}
+	is_good = no
+	days_mission_timeout = 180
+	allowed = {
+		tag = GNG
+	}
+	fixed_random_seed = no
+	timeout_effect = {
+		clr_country_flag = bfg_active
+		custom_effect_tooltip = bfg_end_tt
+	}
+	days_remove = 1
 }

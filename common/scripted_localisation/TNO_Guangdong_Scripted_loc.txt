@@ -20,6 +20,7 @@ defined_text = {
 	}
 }
 
+
 defined_text = {
 	name = GetGNGStatusPP
 	text = {
@@ -174,6 +175,27 @@ defined_text = {
 			NOT = {check_variable = {GNG_status_product_seats_modifier = 0}}
 		}
 		localization_key = GNG_status_dummy_product_seats_modifier
+	}
+}
+defined_text = {
+	name = bfg_end_effect
+	text = {
+		trigger = {
+			AND = {check_variable = { BFG_CHI_Balance > BFG_JAP_Balance }	check_variable = { BFG_GNG_Balance < 70.001 }}
+		}
+		localization_key = GNG_sony_btfgng_chi_win_tt
+	}
+	text = {
+		trigger = {
+			AND = {check_variable = { BFG_CHI_Balance < BFG_JAP_Balance }	check_variable = { BFG_GNG_Balance < 70.001 }}
+		}
+		localization_key = GNG_sony_btfgng_jap_win_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { BFG_GNG_Balance > 70 }
+		}
+		localization_key = GNG_sony_btfgng_gng_mid_tt
 	}
 }
 
