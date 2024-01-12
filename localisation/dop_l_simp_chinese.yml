@@ -326,5 +326,8 @@ GNG_legco_amend_87_3_effect: "£GNG_Hitachi_texticon §k日立§!被要挟，被
 #ending
   TNO_CountryClosing_dop_pregaw: "索尼和长实本已使广东的所有人，无论珠人，日侨抑或华人，对未来的生活充满希望，然而，一通电话就轻而易举的打破了这一幻想，北方的巨人仅仅弹指一挥，就将两位珠人勾勒的美丽蓝图捻为纸灰。\n\n不过。盛田昭夫、李嘉诚和何鸿燊既然曾成就了如此艰难的伟业，就无论如何不会轻易放弃，广东必须幸存，必须挺过风暴。\n\n时值1975年，广东的两位珠人被迫面对许久以来全力避免的问题——要么胜利，要么死亡。而死亡，从来不是一个可选项。"
 #anarchy_guis
-   TNO_anarchy_GNG_tt: "§J广东无政府状态§!"
- TNO_anarchy_GNG_tt_delayed: "§m硅晶制成的高塔§!轰然§r破碎坍塌§!，企业试验的国度被炮火碾作粉末。霓虹灯映照下的珠三角再繁华，在§x战争机器的铁蹄§!面前，也不过是破砖碎瓦。昨日的§m硅晶之梦§!，虽然美好，却终究是昙花一现。\n\n也许有一日§J秩序§!会回到珠三角，但广州已经不再是£GNG_legco_texticon §S立法会§!的§S广州§!，而是§M广东省§!的省会§M广州§!，或者是§J政务委员会§!的所在地§J广州§!，亦或者是……£GNG_IJA_riots_texticon §x华南方面军§!监视下的§x广州§!。\n\n但不论如何，£GFX_GNG_Guangdong_texticon §S硅晶之梦§!已经成为过去，£GNG_Sony_texticon£GNG_Cheung_Kong_texticon §V狮子山上虚假的希冀§!也迎来了它自己的结局。\n\n瓦砾参差之中，§x广东的故事就此结束……§!"
+   TNO_Anarchy_GNG_tt: "§J广东无政府状态§!"
+ TNO_Anarchy_GNG_tt_delayed: "§m硅晶制成的高塔§!轰然§r破碎坍塌§!，企业试验的国度被炮火碾作粉末。霓虹灯映照下的珠三角再繁华，在§x战争机器的铁蹄§!面前，也不过是破砖碎瓦。昨日的§m硅晶之梦§!，虽然美好，却终究是昙花一现。\n\n也许有一日§J秩序§!会回到珠三角，但广州已经不再是£GNG_legco_texticon §S立法会§!的§S广州§!，而是§M广东省§!的省会§M广州§!，或者是§J政务委员会§!的所在地§J广州§!，亦或者是……£GNG_IJA_riots_texticon §x华南方面军§!监视下的§x广州§!。\n\n但不论如何，£GFX_GNG_Guangdong_texticon §S硅晶之梦§!已经成为过去，£GNG_Sony_texticon £GNG_Cheung_Kong_texticon §V狮子山上虚假的希冀§!也迎来了它自己的结局。\n\n瓦砾参差之中，§x广东的故事就此结束……§!"
+#ideas
+ GNG_Anarchy_dummy: "§R大梦已觉§!"
+ GNG_Anarchy_dummy_desc: "[GetGNGStatusStab][GetGNGStatusWarsup][GetGNGStatusPP][GetGNGStatusrGDP][GetGNGStatusGDPGrowth][GetGNGStatusROCOpinionCap][GetGNGStatusJapanApprovalCap][GetGNGStatusConstructionSpeed][GetGNGStatusFactoryOutput][GetGNGStatusMiscIncome][GetGNGStatusMiscCosts][GetGNGStatusMiscCostsGDPPercent][GetGNGStatusSocialCosts][GetGNGStatusMilitaryCosts][GetGNGStatusAdminCosts][GetGNGStatusProductProfitability][GetGNGStatusProductSeats]§R无法训练、解散单位和编辑部队模板。§!\n§x广东的故事已然结束，硅晶迷梦虽似乎真实，却实则无比虚假，即使是广东手艺人和广东超人联手合作，也无法守护这虚假的美梦，在两极之间的夹缝中，狮子山精神粉身碎骨。§!"

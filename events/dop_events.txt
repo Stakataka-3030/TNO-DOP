@@ -849,4 +849,15 @@ country_event = {
 	option = { #
 		name = dop_flavors.14.a
 		set_global_flag = TNO_GNG_SiliconDreamEnd
+		remove_ideas = {
+			GNG_between_two_worlds_dummy
+			GNG_corruption_asias_finest
+			GNG_corruption_passable
+			GNG_corruption_corrupt
+			GNG_corruption_the_finest_money_can_buy_dummy
+			GNG_kenpeitai_transitional_security_apparatus_dummy
+			GNG_kenpeitai_pervasive_kenpeitai_networks_dummy
+			GNG_fiscal_sound_dummy
+		}
+		add_ideas = GNG_Anarchy_dummy
 }}
