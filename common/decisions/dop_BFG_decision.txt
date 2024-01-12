@@ -126,7 +126,7 @@ GNG_jap_effect_on_bfg = {
 
 	}
 	days_remove = 1
-}
+	
 }
 GNG_bfg_countdown = {
 	icon = GFX_decisionguangdong_IJA
@@ -148,4 +148,6 @@ GNG_bfg_countdown = {
 		custom_effect_tooltip = bfg_end_tt
 	}
 	days_remove = 1
+}
+
 }
