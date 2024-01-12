@@ -299,6 +299,29 @@ GNG_improve_corruption = {
 		GNG_update_corruption = yes
 	}
 }
+GNG_worsen_corruption = {
+	if = {
+		limit = {
+			has_idea = GNG_corruption_asias_finest_dummy
+		}
+		set_temp_variable = { GNG_corruption_status_var_temp = 2 }
+		GNG_update_corruption = yes
+	}
+	else_if = {
+		limit = {
+			has_idea = GNG_corruption_corrupt_dummy
+		}
+		set_temp_variable = { GNG_corruption_status_var_temp = 0 }
+		GNG_update_corruption = yes
+	}
+	else_if = {
+		limit = {
+			has_idea = GNG_corruption_passable_dummy
+		}
+		set_temp_variable = { GNG_corruption_status_var_temp = 1 }
+		GNG_update_corruption = yes
+	}
+}
 
 GNG_update_fiscal = {
 	set_variable = { GNG_fiscal_status_var = GNG_fiscal_status_var_temp }
