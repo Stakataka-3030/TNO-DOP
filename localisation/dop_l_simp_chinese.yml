@@ -306,10 +306,20 @@ GNG_legco_amend_87_3_effect: "£GNG_Hitachi_texticon §k日立§!被要挟，被
   TNO_PEACE_POPUP_FLAVOR_JAP_GAW: "朕对帝国与共终始协力于东亚解放诸盟邦、不得不表遗憾之意。然朕时运所趋、堪难堪、忍难忍、欲以为万世开太平。"
   TNO_PEACE_POPUP_FLAVOR_CHI_GAW: "三十年抗战落幕，自由之梦幻化成泡影"
 #tooltip
-  GNG_sony_btfgng_start_tt: "占位符"
+  GNG_sony_btfgng_start_tt: "随着§e大东亚战争§!的战云迫近，决定£GFX_GNG_Guangdong_texticon §S广东§!命运的时刻也将要到来……\n§S广东§!§j争§!§M夺§!战决议已经解锁！"
   GNG_sony_btfgng_chi_win_tt: ""
   GNG_sony_btfgng_jap_win_tt: ""
   GNG_sony_btfgng_gng_mid_tt: ""
+  BFG_GNG_low_tt: "§J£GFX_GNG_Guangdong_texticon §S广东§!的独立性将小幅上升§!"
+  BFG_GNG_mid_tt: "§J£GFX_GNG_Guangdong_texticon §S广东§!的独立性将中幅上升§!"
+  BFG_GNG_high_tt: "§J£GFX_GNG_Guangdong_texticon §S广东§!的独立性将大幅上升§!"
+  BFG_Japan_low_tt: "§J£GNG_japanese_nation_texticon §j日本§!的影响将小幅上升§!"
+  BFG_Japan_mid_tt: "§J£GNG_japanese_nation_texticon §j日本§!的影响将中幅上升§!"
+  BFG_Japan_high_tt: "§J£GNG_japanese_nation_texticon §j日本§!的影响将大幅上升§!"
+  BFG_CHI_low_tt: "§J£GNG_chinese_nation_texticon §M中国§!的影响将小幅上升§!"
+  BFG_CHI_mid_tt: "§J£GNG_chinese_nation_texticon §M中国§!的影响将中幅上升§!"
+  BFG_CHI_high_tt: "§J£GNG_chinese_nation_texticon §M中国§!的影响将大幅上升§!"
+
   GNG_fakeswitchfocustree: "§Y国策树将变化…§!"
   GNG_sdw_pass_tt: "§F£GNG_Sony_texticon §V索尼§!和£GNG_Cheung_Kong_texticon §C长江实业§!已经成功地将§e宪兵队§!的权力限制，§x如果一切不出乱子的话§!§!"
   GNG_sdw_fail_tt: "§F£GNG_Sony_texticon §V索尼§!和£GNG_Cheung_Kong_texticon §C长江实业§!未能妥善处理§e宪兵队§!，现在他们的处境危险了！§!\n\n§Y下一阶段国策中的激进选项将被禁用§!§!"
@@ -327,7 +337,7 @@ GNG_legco_amend_87_3_effect: "£GNG_Hitachi_texticon §k日立§!被要挟，被
   TNO_CountryClosing_dop_pregaw: "索尼和长实本已使广东的所有人，无论珠人，日侨抑或华人，对未来的生活充满希望，然而，一通电话就轻而易举的打破了这一幻想，北方的巨人仅仅弹指一挥，就将两位珠人勾勒的美丽蓝图捻为纸灰。\n\n不过。盛田昭夫、李嘉诚和何鸿燊既然曾成就了如此艰难的伟业，就无论如何不会轻易放弃，广东必须幸存，必须挺过风暴。\n\n时值1975年，广东的两位珠人被迫面对许久以来全力避免的问题——要么胜利，要么死亡。而死亡，从来不是一个可选项。"
 #anarchy_guis
    TNO_Anarchy_GNG_tt: "§J广东无政府状态§!"
- TNO_Anarchy_GNG_tt_delayed: "§m硅晶制成的高塔§!轰然§r破碎坍塌§!，企业试验的国度被炮火碾作粉末。霓虹灯映照下的珠三角再繁华，在§x战争机器的铁蹄§!面前，也不过是破砖碎瓦。昨日的§m硅晶之梦§!，虽然美好，却终究是昙花一现。\n\n也许有一日§J秩序§!会回到珠三角，但广州已经不再是£GNG_legco_texticon §S立法会§!的§S广州§!，而是§M广东省§!的省会§M广州§!，或者是§J政务委员会§!的所在地§J广州§!，亦或者是……£GNG_IJA_riots_texticon §x华南方面军§!监视下的§x广州§!。\n\n但不论如何，£GFX_GNG_Guangdong_texticon §S硅晶之梦§!已经成为过去，£GNG_Sony_texticon £GNG_Cheung_Kong_texticon §V狮子山上虚假的希冀§!也迎来了它自己的结局。\n\n瓦砾参差之中，§x广东的故事就此结束……§!"
+ TNO_Anarchy_GNG_tt_delayed: "§m硅晶制成的高塔§!轰然§r破碎坍塌§!，企业试验的国度被炮火碾作粉末。霓虹灯映照下的珠三角再繁华，在§x战争机器的铁蹄§!面前，也不过是破砖碎瓦。昨日的§m硅晶之梦§!，虽然美好，却终究是昙花一现。\n\n也许有一日§J秩序§!会回到珠三角，但广州已经不再是£GNG_legco_texticon §S立法会§!的§S广州§!，而是§M广东省§!的省会§M广州§!，或者是§J政务委员会§!的所 地§J广州§!，亦或者是……£GNG_IJA_riots_texticon §x华南方面军§!监视下的§x广州§!。\n\n但不论如何，£GFX_GNG_Guangdong_texticon §S硅晶之梦§!已经成为过去，£GNG_Sony_texticon £GNG_Cheung_Kong_texticon §V狮子山上虚假的希冀§!也迎来了它自己的结局。\n\n瓦砾参差之中，§x广东的故事就此结束……§!"
 #ideas
  GNG_Anarchy_dummy: "§R大梦已觉§!"
  GNG_Anarchy_dummy_desc: "[GetGNGStatusStab][GetGNGStatusWarsup][GetGNGStatusPP][GetGNGStatusrGDP][GetGNGStatusGDPGrowth][GetGNGStatusROCOpinionCap][GetGNGStatusJapanApprovalCap][GetGNGStatusConstructionSpeed][GetGNGStatusFactoryOutput][GetGNGStatusMiscIncome][GetGNGStatusMiscCosts][GetGNGStatusMiscCostsGDPPercent][GetGNGStatusSocialCosts][GetGNGStatusMilitaryCosts][GetGNGStatusAdminCosts][GetGNGStatusProductProfitability][GetGNGStatusProductSeats]§R无法训练、解散单位和编辑部队模板。§!\n§x广东的故事已然结束，硅晶迷梦虽似乎真实，却实则无比虚假，即使是广东手艺人和广东超人联手合作，也无法守护这虚假的美梦，在两极之间的夹缝中，狮子山精神粉身碎骨。§!"

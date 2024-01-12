@@ -7,6 +7,7 @@ BFG_setup_influence = {
 		set_variable = { BFG_JAP_Balance = 33 }
 		BattleForGNGTangle_calcXY = yes
 		set_country_flag = bfg_active
+		custom_effect_tooltip = GNG_sony_btfgng_start_tt
 	}
 }
 
@@ -16,6 +17,7 @@ BFG_increase_GNG_influence_low = {
 		add_to_variable = { BFG_CHI_Balance = -0.5 }
 		add_to_variable = { BFG_JAP_Balance = -0.5 }
 		BattleForGNGTangle_calcXY = yes
+		custom_effect_tooltip = BFG_GNG_low_tt
 	}
 }
 
@@ -25,6 +27,7 @@ BFG_increase_GNG_influence_med = {
 		add_to_variable = { BFG_CHI_Balance = -1 }
 		add_to_variable = { BFG_JAP_Balance = -1 }
 		BattleForGNGTangle_calcXY = yes
+		custom_effect_tooltip = BFG_GNG_mid_tt
 	}
 }
 
@@ -34,6 +37,7 @@ BFG_increase_GNG_influence_high = {
 		add_to_variable = { BFG_CHI_Balance = -2.5 }
 		add_to_variable = { BFG_JAP_Balance = -2.5 }
 		BattleForGNGTangle_calcXY = yes
+		custom_effect_tooltip = BFG_GNG_high_tt
 	}
 }
 
@@ -44,6 +48,7 @@ BFG_increase_japan_influence_low = {
 		add_to_variable = { BFG_CHI_Balance = -0.5 }
 		add_to_variable = { BFG_JAP_Balance = 1 }
 		BattleForGNGTangle_calcXY = yes
+		custom_effect_tooltip = BFG_Japan_low_tt
 	}
 }
 
@@ -53,6 +58,7 @@ BFG_increase_japan_influence_med = {
 		add_to_variable = { BFG_CHI_Balance = -1 }
 		add_to_variable = { BFG_JAP_Balance = 2 }
 		BattleForGNGTangle_calcXY = yes
+		custom_effect_tooltip = BFG_Japan_mid_tt
 	}
 }
 
@@ -62,6 +68,7 @@ BFG_increase_japan_influence_high = {
 		add_to_variable = { BFG_CHI_Balance = -2.5 }
 		add_to_variable = { BFG_JAP_Balance = 5 }
 		BattleForGNGTangle_calcXY = yes
+		custom_effect_tooltip = BFG_Japan_high_tt
 	}
 }
 
@@ -72,6 +79,7 @@ BFG_increase_CHI_influence_low = {
 		add_to_variable = { BFG_CHI_Balance = 1 }
 		add_to_variable = { BFG_JAP_Balance = -0.5 }
 		BattleForGNGTangle_calcXY = yes
+		custom_effect_tooltip = BFG_CHI_low_tt
 	}
 }
 
@@ -81,6 +89,7 @@ BFG_increase_CHI_influence_med = {
 		add_to_variable = { BFG_CHI_Balance = 2 }
 		add_to_variable = { BFG_JAP_Balance = -1 }
 		BattleForGNGTangle_calcXY = yes
+		custom_effect_tooltip = BFG_CHI_mid_tt
 	}
 }
 
@@ -90,6 +99,7 @@ BFG_increase_CHI_influence_high = {
 		add_to_variable = { BFG_CHI_Balance = 5 }
 		add_to_variable = { BFG_JAP_Balance = -2.5 }
 		BattleForGNGTangle_calcXY = yes
+		custom_effect_tooltip = BFG_CHI_high_tt
 	}
 }
 

@@ -3,11 +3,12 @@ GNG_ken_effect_on_bfg = {
 	icon = GFX_decisionguangdong_IJA
 	activation = {
 		any_owned_state = { check_variable= {ken_spt>25}}
-		available = {
+		
+	}
+	available = {
 		hidden_trigger = {
 			always = no
 		}}
-	}
 	is_good = no
 	days_mission_timeout = 10
 	allowed = {
@@ -20,7 +21,7 @@ GNG_ken_effect_on_bfg = {
 	timeout_effect = {
 		every_owned_state = { limit={check_variable= {ken_spt>25} }	BFG_increase_japan_influence_low = yes	}
 	}
-	days_remove = -1
+	days_remove = 0
 }
 GNG_tri_effect_on_bfg = {
 	icon = GFX_decisionguangdong_IJA
