@@ -1231,6 +1231,8 @@ shared_focus = {
 		prerequisite = {focus = GNG_storm_center}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			custom_effect_tooltip = sew_unlock_tt
+			set_country_flag = bfg_support_exchange_weapon
 	}}
 	shared_focus = {
 		id = GNG_calm_civil
@@ -1261,6 +1263,8 @@ shared_focus = {
 		prerequisite = {focus = GNG_change_support_as_weapon}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			set_country_flag = bfg_money_asking
+			custom_effect_tooltip = money_asking_unlock_tt
 	}}
 	shared_focus = {
 		id = GNG_use_jap_emotion
@@ -1271,6 +1275,7 @@ shared_focus = {
 		prerequisite = {focus = GNG_calm_civil}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			
 	}}
 	shared_focus = {
 		id = GNG_ask_indepence
@@ -1281,6 +1286,8 @@ shared_focus = {
 		prerequisite = {focus = GNG_rise_money}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			set_country_flag = bfg_indep_promise
+			custom_effect_tooltip = indep_promise_unlock_tt
 	}}
 	shared_focus = {
 		id = GNG_social_military

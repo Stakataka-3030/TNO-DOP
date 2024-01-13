@@ -197,6 +197,12 @@ defined_text = {
 		}
 		localization_key = GNG_sony_btfgng_gng_mid_tt
 	}
+	text = {
+		trigger = {
+			OR = {check_variable = { BFG_CHI_Balance = BFG_JAP_Balance }	check_variable = { BFG_GNG_Balance = 70 }}
+		}
+		localization_key = GNG_sony_btfgng_not_finished
+	}
 }
 
 defined_text = {

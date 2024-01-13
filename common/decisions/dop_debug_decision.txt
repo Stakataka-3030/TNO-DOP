@@ -130,6 +130,9 @@ GNG_dop_debug_addchi = {
 	allowed = {
 		original_tag = GNG
 	}
+	visible = {
+		is_debug = yes
+	}
 	icon = GFX_decision_GNG_generic
 	complete_effect = {
 		BFG_increase_CHI_influence_high = yes

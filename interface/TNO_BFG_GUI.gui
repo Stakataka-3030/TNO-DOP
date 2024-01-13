@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "GNG_BFG_GUI"
-		size = { width = 500 height = 600 }
+		size = { width = 500 height = 450 }
 		origo = center
 		position = { x = 0 y = 0 }
 		

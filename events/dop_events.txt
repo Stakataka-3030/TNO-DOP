@@ -861,3 +861,15 @@ country_event = {
 		}
 		add_ideas = GNG_Anarchy_dummy
 }}
+country_event = { 
+	id = dop_usage.1
+	title = dop_usage.1.t
+	desc = dop_usage.1.desc
+	picture = GFX_report_event_generic_crate_of_guns_2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = dop_usage.1.a
+}}
