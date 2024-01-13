@@ -11,7 +11,7 @@ country_event = { #
 	id = dop_legco_hostage_crisis.1
 	title = dop_legco_hostage_crisis.1.t
 	desc = dop_legco_hostage_crisis.1.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -24,7 +24,7 @@ country_event = { #
 	id = dop_legco_hostage_crisis.2
 	title = dop_legco_hostage_crisis.2.t
 	desc = dop_legco_hostage_crisis.2.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_GNG_IJA_street_battle
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -32,39 +32,45 @@ country_event = { #
 	option = { #
 		name = dop_legco_hostage_crisis.2.a
 		country_event = {id = dop_legco_hostage_crisis.3
-		random_hours = 12}
+		random_hours = 48}
+		custom_effect_tooltip = lhc_alarm_tt
 	}
 }
 country_event = { #
 	id = dop_legco_hostage_crisis.3
 	title = dop_legco_hostage_crisis.3.t
 	desc = dop_legco_hostage_crisis.3.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_generic_firing_squad
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { #
 		name = dop_legco_hostage_crisis.3.a
+		hidden_effect = {
 		if = {
 			limit = {check_variable = { GNG_Japan_Approval > 75}}
 			country_event = {
 		id = dop_legco_hostage_crisis.4
-		random_hours = 12}
+		random_hours = 48}
 		else = {country_event = {
 			id = dop_legco_hostage_crisis.5
-			random_hours = 12
-		}}}
+			random_hours = 48
+		}}}}
 	}
 	option = { #
 		name = dop_legco_hostage_crisis.3.b
-	}
+		hidden_effect = {
+				country_event = {
+			id = dop_legco_hostage_crisis.9
+			random_hours = 48}}}
+	
 }
 country_event = { #
 	id = dop_legco_hostage_crisis.4
 	title = dop_legco_hostage_crisis.4.t
 	desc = dop_legco_hostage_crisis.4.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_GNG_Takashima_Masuo_1
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -73,7 +79,7 @@ country_event = { #
 		name = dop_legco_hostage_crisis.4.a
 		country_event = {
 			id = dop_legco_hostage_crisis.7
-			random_hours = 12
+			random_hours = 48
 		}
 	}
 }
@@ -81,24 +87,30 @@ country_event = { #
 	id = dop_legco_hostage_crisis.5
 	title = dop_legco_hostage_crisis.5.t
 	desc = dop_legco_hostage_crisis.5.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_GNG_Takashima_Masuo_2
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { #
 		name = dop_legco_hostage_crisis.5.a
-		
+		if ={ limit = {
+			has_country_flag = senjiu_refuse
+		}
+		country_event = {
+			id = dop_legco_hostage_crisis.13
+			days = 1}}else={set_country_flag = gaodao_refuse
 		country_event = {
 			id = dop_legco_hostage_crisis.6
-			days = 1}
+			days = 1}}
+		
 	}
 }
 country_event = { #
 	id = dop_legco_hostage_crisis.6
 	title = dop_legco_hostage_crisis.6.t
 	desc = dop_legco_hostage_crisis.6.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_GNG_Takashima_Masuo_1
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -107,7 +119,7 @@ country_event = { #
 		name = dop_legco_hostage_crisis.6.a
 		country_event = {
 			id = dop_legco_hostage_crisis.9
-			random_hours = 12
+			random_hours = 48
 		}
 	}
 }
@@ -115,7 +127,7 @@ country_event = { #
 	id = dop_legco_hostage_crisis.7
 	title = dop_legco_hostage_crisis.7.t
 	desc = dop_legco_hostage_crisis.7.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_GNG_Takashima_Masuo_1
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -124,7 +136,7 @@ country_event = { #
 		name = dop_legco_hostage_crisis.7.a
 		country_event = {
 			id = dop_legco_hostage_crisis.8
-			random_hours = 12
+			random_hours = 48
 		}
 	}
 }
@@ -132,82 +144,102 @@ country_event = { #
 	id = dop_legco_hostage_crisis.8
 	title = dop_legco_hostage_crisis.8.t
 	desc = dop_legco_hostage_crisis.8.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_IBR_iberian_wars_11
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { #
 		name = dop_legco_hostage_crisis.8.a
+		custom_effect_tooltip = lhc_deduce_2
+		country_event = {
+			id = dop_legco_hostage_crisis.20
+			random_hours = 48
+		}
 	}
 }
 country_event = { #
 	id = dop_legco_hostage_crisis.9
 	title = dop_legco_hostage_crisis.9.t
 	desc = dop_legco_hostage_crisis.9.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_HIS_ua_tv
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { #
 		name = dop_legco_hostage_crisis.9.a
+		hidden_effect = {
 		country_event = {
 			id = dop_legco_hostage_crisis.11
-			random_hours = 12
-		}
+			random_hours = 48
+		}}
 	}
 	option = { #
 		name = dop_legco_hostage_crisis.9.b
+		hidden_effect = {
 		random_list = {
-			40 = {
-				country_event = {
-					id = dop_legco_hostage_crisis.10
-					random_hours = 12
-				}
-			}
 			60 = {
 				country_event = {
-					id = dop_legco_hostage_crisis.11
-					random_hours = 12
+					id = dop_legco_hostage_crisis.10
+					random_hours = 48
 				}
 			}
-		}
+			40 = {
+				if ={ limit = {
+					has_country_flag = senjiu_refuse
+				}
+				country_event = {
+					id = dop_legco_hostage_crisis.13
+					days = 1}}else={set_country_flag = senjiu_refuse
+				country_event = {
+					id = dop_legco_hostage_crisis.6
+					days = 1}}
+			}
+		}}
 	}
 	option = { #
 		name = dop_legco_hostage_crisis.9.c
-		country_event = {
-			id = dop_legco_hostage_crisis.10
-			random_hours = 12
-		}
+		hidden_effect = {
+			if ={ limit = {
+				has_country_flag = gaodao_refuse
+			}
+			country_event = {
+				id = dop_legco_hostage_crisis.13
+				days = 1}}else={set_country_flag = senjiu_refuse
+			country_event = {
+				id = dop_legco_hostage_crisis.6
+				days = 1}}}
 	}
 }
 country_event = { #
 	id = dop_legco_hostage_crisis.10
 	title = dop_legco_hostage_crisis.10.t
 	desc = dop_legco_hostage_crisis.10.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_HIS_ua_tv
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { #
+	name = dop_legco_hostage_crisis.10.a
+	hidden_effect = {
 	if = {
 		limit = {check_variable = { GNG_Japan_Approval > 75}}
 		country_event = {
 	id = dop_legco_hostage_crisis.4
-	random_hours = 12}
+	random_hours = 48}
 	else = {country_event = {
 		id = dop_legco_hostage_crisis.5
-		random_hours = 12
-	}}}
+		random_hours = 48
+	}}}}
 	}
 }
 country_event = { #
 	id = dop_legco_hostage_crisis.11
 	title = dop_legco_hostage_crisis.11.t
 	desc = dop_legco_hostage_crisis.11.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_2
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -216,7 +248,7 @@ country_event = { #
 		name = dop_legco_hostage_crisis.11.a
 		country_event = {
 			id = dop_legco_hostage_crisis.8
-			random_hours = 12
+			random_hours = 48
 		}
 	}
 }
@@ -237,7 +269,7 @@ country_event = { #
 	id = dop_legco_hostage_crisis.13
 	title = dop_legco_hostage_crisis.13.t
 	desc = dop_legco_hostage_crisis.13.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_generic_money
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -246,7 +278,7 @@ country_event = { #
 		name = dop_legco_hostage_crisis.13.a
 		country_event = {
 			id = dop_legco_hostage_crisis.14
-			random_hours = 12
+			random_hours = 48
 		}
 	}
 }
@@ -254,89 +286,95 @@ country_event = { #
 	id = dop_legco_hostage_crisis.14
 	title = dop_legco_hostage_crisis.14.t
 	desc = dop_legco_hostage_crisis.14.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_IBR_belem_brazil_hotel
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { #
 		name = dop_legco_hostage_crisis.14.a
+		hidden_effect = {
 		country_event = {
 			id = dop_legco_hostage_crisis.20
-			random_hours = 12
-		}
+			random_hours = 48
+		}}
 	}
 	option = { #
 		name = dop_legco_hostage_crisis.14.b
+		hidden_effect = {
 		random_list = {
 			40 = {
 				country_event = {
 					id = dop_legco_hostage_crisis.20
-					random_hours = 12
+					random_hours = 48
 				}
 			}
 			60 = {
 				country_event = {
 					id = dop_legco_hostage_crisis.15
-					random_hours = 12
+					random_hours = 48
 				}
 			}
-		}
+		}}
 	}
 	option = { #
 		name = dop_legco_hostage_crisis.14.c
+		hidden_effect = {
 		country_event = {
 			id = dop_legco_hostage_crisis.15
-			random_hours = 12
-		}
+			random_hours = 48
+		}}
 	}
 }
 country_event = { #
 	id = dop_legco_hostage_crisis.15
 	title = dop_legco_hostage_crisis.15.t
 	desc = dop_legco_hostage_crisis.15.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_RUS_war_planning
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { #
 		name = dop_legco_hostage_crisis.15.a
+		hidden_effect = {
 		country_event = {
 			id = dop_legco_hostage_crisis.16
-			random_hours = 12
-		}
+			random_hours = 48
+		}}
 	}
 	option = { #
 		name = dop_legco_hostage_crisis.15.b
+		hidden_effect = {
 		random_list = {
 			40 = {
 				country_event = {
 					id = dop_legco_hostage_crisis.17
-					random_hours = 12
+					random_hours = 48
 				}
 			}
 			60 = {
 				country_event = {
 					id = dop_legco_hostage_crisis.18
-					random_hours = 12
+					random_hours = 48
 				}
 			}
-		}
+		}}
 	}
 	option = { #
 		name = dop_legco_hostage_crisis.15.c
+		hidden_effect = {
 		country_event = {
 			id = dop_legco_hostage_crisis.19
-			random_hours = 12
-		}
+			random_hours = 48
+		}}
 	}
 }
 country_event = { #
 	id = dop_legco_hostage_crisis.16
 	title = dop_legco_hostage_crisis.16.t
 	desc = dop_legco_hostage_crisis.16.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_IME_attack
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -345,15 +383,17 @@ country_event = { #
 		name = dop_legco_hostage_crisis.16.a
 		country_event = {
 			id = dop_legco_hostage_crisis.20
-			random_hours = 12
+			random_hours = 48
+			
 		}
+		custom_effect_tooltip = lhc_deduce_1
 	}
 }
 country_event = { #
 	id = dop_legco_hostage_crisis.17
 	title = dop_legco_hostage_crisis.17.t
 	desc = dop_legco_hostage_crisis.17.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_IME_attack
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -362,15 +402,17 @@ country_event = { #
 		name = dop_legco_hostage_crisis.17.a
 		country_event = {
 			id = dop_legco_hostage_crisis.20
-			random_hours = 12
+			random_hours = 48
+			
 		}
+		custom_effect_tooltip = lhc_deduce_1
 	}
 }
 country_event = { #
 	id = dop_legco_hostage_crisis.18
 	title = dop_legco_hostage_crisis.18.t
 	desc = dop_legco_hostage_crisis.18.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_IME_attack
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -379,15 +421,17 @@ country_event = { #
 		name = dop_legco_hostage_crisis.18.a
 		country_event = {
 			id = dop_legco_hostage_crisis.20
-			random_hours = 12
+			random_hours = 48
+			
 		}
+		custom_effect_tooltip = lhc_deduce_2
 	}
 }
 country_event = { #
 	id = dop_legco_hostage_crisis.19
 	title = dop_legco_hostage_crisis.19.t
 	desc = dop_legco_hostage_crisis.19.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_IME_attack
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -396,15 +440,17 @@ country_event = { #
 		name = dop_legco_hostage_crisis.19.a
 		country_event = {
 			id = dop_legco_hostage_crisis.20
-			random_hours = 12
+			random_hours = 48
+			
 		}
+		custom_effect_tooltip = lhc_deduce_3
 	}
 }
 country_event = { #
 	id = dop_legco_hostage_crisis.20
 	title = dop_legco_hostage_crisis.20.t
 	desc = dop_legco_hostage_crisis.20.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_GNG_morita_future
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -412,13 +458,14 @@ country_event = { #
 	option = { #
 		name = dop_legco_hostage_crisis.20.a
 		custom_effect_tooltip = lhc_finished_tt
+		set_country_flag = lhc_finished
 	}
 }
 country_event = { #
 	id = dop_legco_hostage_crisis.21
 	title = dop_legco_hostage_crisis.21.t
 	desc = dop_legco_hostage_crisis.21.desc
-	picture = GFX_report_event_GNG_morita_akio_10
+	picture = GFX_report_event_GNG_morita_future
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -833,8 +880,8 @@ country_event = {
 }
 option = { #
 		name = dop_flavors.13.b
-		set_variable = {lhc_disabled = 1}
-		GNG_worsen_corruption = yes
+		set_country_flag = lhc_finished
+		GNG_worsen_corruption_2 = yes
 		set_temp_variable = { temp_econ_spending_amount = 5.0 }
 		econ_spend_money_once_effect_raw_money = yes
 }}

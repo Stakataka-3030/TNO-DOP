@@ -576,6 +576,10 @@ shared_focus = {
 	allow_branch = {
 		NOT= {has_country_flag = sdw_failed}
 	}
+	available = {
+		custom_effect_tooltip=lhc_finish_asking_tt
+		has_country_flag = lhc_finished
+	}
 	id = GNG_sdw_passed
 	icon = GFX_GNG_Pass_the_Amendments
 	cost = 2
