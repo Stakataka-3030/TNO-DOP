@@ -338,7 +338,7 @@ BFG_CHI_ask_indep_promise = {
 		check_variable = { GNG_Japan_Approval > 29.99 }
 	}
 	fire_only_once = yes
-	icon = GFX_decision_guangdong_japan
+	icon = GFX_decision_guangdong_chinese
 	complete_effect = {
 		CHI ={ 
 			country_event = {id = dop_usage.1}
@@ -366,7 +366,7 @@ BFG_JAP_ask_indep_promise = {
 			check_variable = { GNG_China_Opinion > 29.99 }
 		}
 	fire_only_once = yes
-	icon = GFX_decision_guangdong_chinese
+	icon = GFX_decision_guangdong_japan
 	complete_effect = {
 		CHI ={ 
 			country_event = {id = dop_usage.1}
