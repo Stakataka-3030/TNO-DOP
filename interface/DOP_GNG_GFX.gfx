@@ -3,4 +3,21 @@ spriteTypes = {
 		name = "GFX_Anarchy_GNG"
 		texturefile = "gfx/interface/DOP_Anarchy_GNG.dds"
 	}
+	spriteType = {
+		name = "GFX_frontend_DOP_logo"
+		texturefile = "gfx/interface/thumbnail.png"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_fronticons_dop"
+		#texturefile = "gfx/interface/backpic.dds"
+		texturefile = "gfx/interface/backpic.dds"
+		borderSize = { x=0 y= 0 }
+		size = {  x=934 y= 375 }
+		tilingCenter = no
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_frontend_DOP_backpic"
+		texturefile = "gfx/interface/backpic.dds"
+	}
 }
