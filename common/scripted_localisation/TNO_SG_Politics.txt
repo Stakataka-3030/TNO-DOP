@@ -97,6 +97,10 @@ defined_text = {
 		localization_key = communist_trotskyism_subtype
 	}
 	text = {
+		trigger = { has_country_leader_ideology = communist_morita_joke_subtype }
+		localization_key = communist_morita_joke_subtype
+	}
+	text = {
 		localization_key = communist
 	}
 }
@@ -174,10 +178,6 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = socialist_revolutionary_gaitanismo_subtype }
 		localization_key = socialist_revolutionary_gaitanismo_subtype
-	}
-	text = {
-		trigger = { has_country_leader_ideology = socialist_morita_joke_subtype }
-		localization_key = socialist_morita_joke_subtype
 	}
 	text = {
 		trigger = { has_country_leader_ideology = socialist_morita_serious_subtype }
@@ -600,6 +600,10 @@ defined_text = {
 		localization_key = despotism_aristocratic_republicanism_subtype
 	}	
 	text = {
+		trigger = { has_country_leader_ideology = despotism_morita_subtype }
+		localization_key = despotism_morita_subtype
+	}	
+	text = {
 		localization_key = despotism
 	}
 }
@@ -629,6 +633,10 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = ultranationalism_reactionary_nationalism_subtype }
 		localization_key = ultranationalism_reactionary_nationalism_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = ultranationalism_morita_subtype }
+		localization_key = ultranationalism_morita_subtype
 	}
 	text = {
 		localization_key = ultranationalism
@@ -714,6 +722,10 @@ defined_text = {
 		localization_key = fascism_social_credit_subtype
 	}
 	text = {
+		trigger = { has_country_leader_ideology = fascism_morita_subtype }
+		localization_key = fascism_morita_subtype
+	}
+	text = {
 		localization_key = fascism
 	}
 }
@@ -779,6 +791,14 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = national_socialism_rosenbergite_tendency_subtype }
 		localization_key = national_socialism_rosenbergite_tendency_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = national_socialism_morita_subtype }
+		localization_key = national_socialism_morita_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = esoteric_nazism_morita_subtype }
+		localization_key = esoteric_nazism_morita_subtype
 	}
 	text = {
 		localization_key = national_socialism
