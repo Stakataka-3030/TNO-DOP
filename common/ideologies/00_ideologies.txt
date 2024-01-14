@@ -370,6 +370,7 @@ ideologies = {
 			liberalism_dynastic_liberalism_gabor_subtype = { can_be_randomly_selected = no }
 			liberalism_dynastic_liberalism_chep_subtype = { can_be_randomly_selected = no }
 			liberalism_dynastic_liberalism_kirk_subtype = { can_be_randomly_selected = no }
+			liberalism_dynastic_liberalism_morita_subtype = { can_be_randomly_selected = no }
 			liberalism_liberal_technocracy_subtype = { can_be_randomly_selected = no }
 			liberalism_morita_subtype = { can_be_randomly_selected = no }
 		}
