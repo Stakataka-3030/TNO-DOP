@@ -931,54 +931,188 @@ country_event = {
 	
 	option = { #
 		name = dop_usage.2.a
+		
+		set_politics = {
+			ruling_party = communist
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+			long_name = GNG_paternalism_party_long
+			name = GNG_paternalism_party
+		}
 		set_country_leader_ideology = communist_morita_joke_subtype
-}
+	}
 option = { #
 name = dop_usage.2.b
+set_politics = {
+	ruling_party = socialist
+	elections_allowed = no
+	last_election = "1935.12.17"
+	election_frequency = 48
+	long_name = GNG_paternalism_party_long
+	name = GNG_paternalism_party
+}
 set_country_leader_ideology = socialist_morita_serious_subtype
+
 }
 option = { #
 name = dop_usage.2.c
+set_politics = {
+	ruling_party = progressivism
+	elections_allowed = no
+	last_election = "1935.12.17"
+	election_frequency = 48
+	long_name = GNG_paternalism_party_long
+	name = GNG_paternalism_party
+}
 set_country_leader_ideology = progressivism_morita_subtype
 }
 option = { #
 name = dop_usage.2.d
+set_politics = {
+	ruling_party = liberalism
+	elections_allowed = no
+	last_election = "1935.12.17"
+	election_frequency = 48
+	long_name = GNG_paternalism_party_long
+	name = GNG_paternalism_party
+}
 set_country_leader_ideology = liberalism_morita_subtype
 }
 option = { #
 name = dop_usage.2.e
+set_politics = {
+	ruling_party = liberalism
+	elections_allowed = no
+	last_election = "1935.12.17"
+	election_frequency = 48
+	long_name = GNG_paternalism_party_long
+	name = GNG_paternalism_party
+}
 set_country_leader_ideology = liberalism_dynastic_liberalism_morita_subtype
 }
+}
+country_event = { 
+	id = dop_usage.3
+	title = dop_usage.3.t
+	desc = dop_usage.3.desc
+	picture = GFX_report_event_generic_crate_of_guns_2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
 option = { #
 name = dop_usage.2.f
+
+set_politics = {
+	ruling_party = liberal_conservatism
+	elections_allowed = no
+	last_election = "1935.12.17"
+	election_frequency = 48
+	long_name = GNG_paternalism_party_long
+	name = GNG_paternalism_party
+}
 set_country_leader_ideology = liberal_conservatism_morita_subtype
 }
 option = { #
 name = dop_usage.2.g
+
+set_politics = {
+	ruling_party = conservatism
+	elections_allowed = no
+	last_election = "1935.12.17"
+	election_frequency = 48
+	long_name = GNG_paternalism_party_long
+	name = GNG_paternalism_party
+}
 set_country_leader_ideology = conservatism_morita_subtype
 }
 option = { #
 name = dop_usage.2.h
+
+set_politics = {
+	ruling_party = paternalism
+	elections_allowed = no
+	last_election = "1935.12.17"
+	election_frequency = 48
+	long_name = GNG_paternalism_party_long
+	name = GNG_paternalism_party
+}
 set_country_leader_ideology = paternalism_morita_subtype
 }
 option = { #
 name = dop_usage.2.j
+
+set_politics = {
+	ruling_party = despotism
+	elections_allowed = no
+	last_election = "1935.12.17"
+	election_frequency = 48
+	long_name = GNG_paternalism_party_long
+	name = GNG_paternalism_party
+}
 set_country_leader_ideology = despotism_morita_subtype
 }
 option = { #
 name = dop_usage.2.k
+
+set_politics = {
+	ruling_party = ultranationalism
+	elections_allowed = no
+	last_election = "1935.12.17"
+	election_frequency = 48
+	long_name = GNG_paternalism_party_long
+	name = GNG_paternalism_party
+}
 set_country_leader_ideology = ultranationalism_morita_subtype
 }
+}
+country_event = { 
+	id = dop_usage.4
+	title = dop_usage.4.t
+	desc = dop_usage.4.desc
+	picture = GFX_report_event_generic_crate_of_guns_2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
 option = { #
 name = dop_usage.2.l
+
+set_politics = {
+	ruling_party = fascism
+	elections_allowed = no
+	last_election = "1935.12.17"
+	election_frequency = 48
+	long_name = GNG_paternalism_party_long
+	name = GNG_paternalism_party
+}
 set_country_leader_ideology = fascism_morita_subtype
 }
 option = { #
 name = dop_usage.2.m
+
+set_politics = {
+	ruling_party = national_socialism
+	elections_allowed = no
+	last_election = "1935.12.17"
+	election_frequency = 48
+	long_name = GNG_paternalism_party_long
+	name = GNG_paternalism_party
+}
 set_country_leader_ideology = national_socialism_morita_subtype
 }
 option = { #
 name = dop_usage.2.n
+
+set_politics = {
+	ruling_party = national_socialism
+	elections_allowed = no
+	last_election = "1935.12.17"
+	election_frequency = 48
+	long_name = GNG_paternalism_party_long
+	name = GNG_paternalism_party
+}
 set_country_leader_ideology = esoteric_nazism_morita_subtype
 }
 }
