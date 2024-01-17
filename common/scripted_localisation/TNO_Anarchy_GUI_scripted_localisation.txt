@@ -148,19 +148,19 @@ defined_text = {
 		trigger = {
 			TNO_anarchy_GNG = yes
 		}
-		localization_key = "GFX_Anarchy_GNG_tt"
+		localization_key = "TNO_Anarchy_GNG_tt"
 	}
 	text = {
 		trigger = {
 			TNO_anarchy_GNG_chi = yes
 		}
-		localization_key = "GFX_Anarchy_GNG_chi_tt"
+		localization_key = "TNO_Anarchy_GNG_chi_tt"
 	}
 	text = {
 		trigger = {
 			TNO_anarchy_GNG_jap = yes
 		}
-		localization_key = "GFX_Anarchy_GNG_jap_tt"
+		localization_key = "TNO_Anarchy_GNG_jap_tt"
 	}
 }
 
@@ -230,18 +230,18 @@ defined_text = {
 		trigger = {
 			TNO_anarchy_GNG = yes
 		}
-		localization_key = "GFX_Anarchy_GNG_tt_delayed"
+		localization_key = "TNO_Anarchy_GNG_tt_delayed"
 	}
 	text = {
 		trigger = {
 			TNO_anarchy_GNG_chi = yes
 		}
-		localization_key = "GFX_Anarchy_GNG_chi_tt_delayed"
+		localization_key = "TNO_Anarchy_GNG_chi_tt_delayed"
 	}
 	text = {
 		trigger = {
 			TNO_anarchy_GNG_jap = yes
 		}
-		localization_key = "GFX_Anarchy_GNG_jap_tt_delayed"
+		localization_key = "TNO_Anarchy_GNG_jap_tt_delayed"
 	}
 }
