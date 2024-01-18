@@ -9,7 +9,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_Anarchy_GNG_chi"
-		texturefile = "gfx/interface/DOP_Anarchy_GNG_chi.dds"
+		texturefile = "gfx/interface/DOP_Anarchy_GNG_chi.png"
 	}
 	spriteType = {
 		name = "GFX_frontend_DOP_logo"
