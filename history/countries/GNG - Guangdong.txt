@@ -28,7 +28,6 @@ recruit_character = GNG_arisue_seizo
 recruit_character = GNG_kayanomiya_tsunenorio
 recruit_character = GNG_kobayashi_masami
 recruit_character = GNG_ptrg
-
 recruit_character = GNG_song_zhiguang
 
 set_variable = { chi_influence = 0 }

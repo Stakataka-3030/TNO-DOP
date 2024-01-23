@@ -17,25 +17,9 @@ prerequisite = { focus = GNG_black_cloud_roming}
 x = 4
 y = 1
 completion_reward = {
-    create_corps_commander = {
-            name = GNG_song_zhiguang
-            picture="gfx/leaders/song2.png"
-                traits = {
-                    foreign_mercenary
-                    guerrilla_veteran
-                    partisan_commander
-                    trait_reckless
-                }
-                skill = 6
-                attack_skill = 6
-                defense_skill = 6
-                planning_skill = 4
-                logistics_skill = 8
-                legacy_id = 12119
-        }
-    }
-}
 
+}
+}
 shared_focus = {
     id = GNG_until_the_end
     icon = GFX_DRL_Prepare_for_the_Clash

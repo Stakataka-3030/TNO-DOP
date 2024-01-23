@@ -1,0 +1,20 @@
+characters = {
+	GNG_song_zhiguang = {
+		name = GNG_song_zhiguang
+		portraits = {
+			army = { large = "gfx/leaders/GNG/song2.png" }
+		}
+		corps_commander = {
+			traits = {
+				trickster
+				cavalry_leader
+			}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 7
+			planning_skill = 6
+			logistics_skill = 7
+			legacy_id = 12111
+		}
+	}
+}
