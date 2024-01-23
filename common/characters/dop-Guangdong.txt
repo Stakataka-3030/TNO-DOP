@@ -2,7 +2,7 @@ characters = {
 	GNG_song_zhiguang = {
 		name = GNG_song_zhiguang
 		portraits = {
-			army = { large = "gfx/leaders/GNG/song2.png" }
+			army = { large = "gfx/leaders/song2.png" }
 		}
 		corps_commander = {
 			traits = {
@@ -14,6 +14,25 @@ characters = {
 			defense_skill = 7
 			planning_skill = 6
 			logistics_skill = 7
+			legacy_id = 12111
+		}
+	}
+
+	GNG_wang_jingxu = {
+		name = GNG_wang_jingxu
+		portraits = {
+			army = { large = "gfx/leaders/wangjingxu2.png" }
+		}
+		corps_commander = {
+			traits = {
+				trickster
+				cavalry_leader
+			}
+			skill = 6
+			attack_skill = 7
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 9
 			legacy_id = 12111
 		}
 	}

@@ -29,6 +29,7 @@ recruit_character = GNG_kayanomiya_tsunenorio
 recruit_character = GNG_kobayashi_masami
 recruit_character = GNG_ptrg
 recruit_character = GNG_song_zhiguang
+recruit_character = GNG_wang_jingxu
 
 set_variable = { chi_influence = 0 }
 load_focus_tree = GNG_suzuki_tree
