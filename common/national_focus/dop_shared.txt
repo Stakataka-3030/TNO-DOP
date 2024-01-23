@@ -126,7 +126,16 @@ focus_tree = {
 	shared_focus = GNG_build_barricade
 	shared_focus = GNG_war_drum_roming
 }
-
+focus_tree = {
+	id = dop_warpp_tree
+	factor = 0
+	modifier = {
+		add = 10
+		tag = GNG
+	}
+	default = no
+	shared_focus = GNG_black_cloud_roming
+}
 shared_focus = {
 		id = GNG_Li_frightened
 		icon = GFX_GNG_An_Island_of_Stability
@@ -587,7 +596,7 @@ shared_focus = {
 	y = 5
 	relative_position_id = GNG_New_defense_way
 	completion_reward = {
-	
+		load_focus_tree = dop_peace_develop
 	}}
 shared_focus = {
 	prerequisite=
@@ -604,6 +613,7 @@ shared_focus = {
 	y = 5
 	relative_position_id = GNG_New_defense_way
 	completion_reward = {
+		load_focus_tree = dop_peace_develop
 	}}
 shared_focus = {
 	id = GNG_new_develop_project

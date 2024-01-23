@@ -11,3 +11,17 @@ bfg_gui_decision_category = {
 	priority = 95000
 }
 	
+lhc_gui_decision_category = {
+	allowed = {
+			tag = GNG
+	}
+	visible = {
+		has_country_flag = lhc_active
+	}
+	icon = GFX_decision_BRA_decision_category_lottquadros
+
+	scripted_gui = GNG_LHC_GUI
+	priority = 97000
+	visible_when_empty = yes
+}
+	

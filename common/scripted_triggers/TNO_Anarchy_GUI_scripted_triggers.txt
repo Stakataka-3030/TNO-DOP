@@ -9,7 +9,9 @@ TNO_is_anarchy_visible = {
 		TNO_anarchy_DRL_Orsk = yes
 		TNO_anarchy_UZB = yes
 		TNO_anarchy_MCW_Dissapearance = yes
-		TNO_anarchy_GNG = yes
+		TNO_anarchy_GNG = yes 
+		TNO_anarchy_GNG_chi = yes
+		TNO_anarchy_GNG_jap = yes
 		original_tag = MDM
 	}
 }
@@ -72,4 +74,12 @@ TNO_anarchy_MCW_Dissapearance = {
 TNO_anarchy_GNG = {
 	original_tag = GNG
 	has_global_flag = TNO_GNG_SiliconDreamEnd
+}
+TNO_anarchy_GNG_chi = {
+	original_tag = GNG
+	has_global_flag = TNO_GNG_Posioned_ground
+}
+TNO_anarchy_GNG_jap = {
+	original_tag = GNG
+	has_global_flag = TNO_GNG_Nuclear_attack
 }

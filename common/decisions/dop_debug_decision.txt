@@ -21,6 +21,30 @@ GNG_debug_category = {
 			load_focus_tree = dop_ndwtree
 		}
 	}
+	GNG_dop_debug_load_japtree = {
+		allowed = {
+			original_tag = GNG
+		}
+		icon = GFX_decision_GNG_generic
+		visible = {
+		}
+		complete_effect = {
+			load_focus_tree = dop_warpp_tree
+			clr_country_flag = gng_chi_choiced
+		}
+	}
+	GNG_dop_debug_load_chitree = {
+		allowed = {
+			original_tag = GNG
+		}
+		icon = GFX_decision_GNG_generic
+		visible = {
+		}
+		complete_effect = {
+			load_focus_tree = dop_warpp_tree
+			set_country_flag = gng_chi_choiced
+		}
+	}
 	GNG_dop_debug_load_peacetree = {
 		allowed = {
 			original_tag = GNG

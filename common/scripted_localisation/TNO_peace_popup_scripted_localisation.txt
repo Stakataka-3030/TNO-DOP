@@ -1072,6 +1072,33 @@ defined_text = {
 		}
 		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_GAW_GNG
 	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				or = {
+				original_tag = NRB
+				original_tag = GUX
+				original_tag = GAN
+				original_tag = XIK
+				original_tag = QIN
+				original_tag = MEN
+				original_tag = MAN
+				original_tag = SHX
+				original_tag = AZH
+				original_tag = BUR
+				original_tag = THA
+				original_tag = CAM
+				original_tag = LAO
+				original_tag = SHO
+				original_tag = INS
+				original_tag = PHI
+				original_tag = XIN
+				}
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_GAW_OTH
+	}
 	##
 	text = {
 		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_DEFAULT
@@ -1083,6 +1110,81 @@ defined_text = {
 defined_text = {
 	name = GetWarContinuationLoc
 	# we should probably add some stuff for this
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				or = {
+					tag = JAP
+					tag = GNG
+				}
+			}
+			event_target:losing_country = {
+				or = {
+					tag = CHI
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_GAW_CHI
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				or = {
+					tag = CHI
+					tag = GNG
+				}
+			}
+			event_target:losing_country = {
+				or = {
+					tag = JAP
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_GAW_JAP
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				or = {
+					tag = CHI
+					tag = JAP
+				}
+			}
+			event_target:losing_country = {
+				or = {
+					tag = GNG
+				}
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_GAW_GNG
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				or = {
+				original_tag = NRB
+				original_tag = GUX
+				original_tag = GAN
+				original_tag = XIK
+				original_tag = QIN
+				original_tag = MEN
+				original_tag = MAN
+				original_tag = SHX
+				original_tag = AZH
+				original_tag = BUR
+				original_tag = THA
+				original_tag = CAM
+				original_tag = LAO
+				original_tag = SHO
+				original_tag = INS
+				original_tag = PHI
+				original_tag = XIN
+				}
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_GAW_OTH
+	}
 	text = {
 		localization_key = TNO_PEACE_POPUP_WAR_CONTINUING_DEFAULT
 	}
@@ -3558,6 +3660,7 @@ defined_text = {
 			event_target:losing_country = {
 				original_tag = GNG
 			}
+			has_global_flag = GAW_ongoing
 		}
 		localization_key = TNO_PEACE_POPUP_FLAVOR_GNG_SONY_GAW_CHI
 	}
@@ -3569,6 +3672,7 @@ defined_text = {
 			event_target:losing_country = {
 				original_tag = GNG
 			}
+			has_global_flag = GAW_ongoing
 		}
 		localization_key = TNO_PEACE_POPUP_FLAVOR_GNG_SONY_GAW_JAP
 	}
@@ -3581,8 +3685,180 @@ defined_text = {
 			event_target:losing_country = {
 				original_tag = GNG
 			}
+			has_global_flag = GAW_ongoing
 		}
 		localization_key = TNO_PEACE_POPUP_FLAVOR_GNG_SONY_GAW_OTH
+	}
+	text = { 
+		trigger = {
+			event_target:losing_country = {
+				original_tag = CHI
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_CHI_GAW
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = JAP
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_JAP_GAW
+	}
+	text = { 
+		trigger = {
+			event_target:losing_country = {
+				original_tag = GUX
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_GUX_GAW
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = YUN
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_YUN_GAW
+	}
+	text = { 
+		trigger = {
+			event_target:losing_country = {
+				original_tag = XIK
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_XIK_GAW
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = QIN
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_QIN_GAW
+	}
+	text = { 
+		trigger = {
+			event_target:losing_country = {
+				original_tag = MAN
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_MAN_GAW
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = GAN
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_GAN_GAW
+	}
+	text = { 
+		trigger = {
+			event_target:losing_country = {
+				original_tag = MEN
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_MEN_GAW
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = XIN
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_XIN_GAW
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = AZH
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_AZH_GAW
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = BUR
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_BUR_GAW
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = THA
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_THA_GAW
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = SHO
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_SHO_GAW
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = CAM
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_CAM_GAW
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = LAO
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_LAO_GAW
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = PHI
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_PHI_GAW
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = INS
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_INS_GAW
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = NRB
+			}
+			has_global_flag = GAW_ongoing
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_NRB_GAW
 	}
 	text = {
 		localization_key = TNO_PEACE_POPUP_FLAVOR_DEFAULT

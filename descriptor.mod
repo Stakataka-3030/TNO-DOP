@@ -10,5 +10,5 @@ name="The New Order: The Dawn Over the Pearl"
 dependencies={
 	"The New Order: Last Days of Europe"
 }
-supported_version="1.13.*"
-remote_file_id="1000000000000"
+supported_version="1.13.6"
+remote_file_id="3141302332"

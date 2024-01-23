@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_GNG_LHC_GUI_bg"
+		texturefile = "gfx/interface/DOP_LHC/Legco_hostage_crisis_bg.dds"
+	}
+	progressbartype = {
+		name = "GFX_GNG_LHC_killer_bar"
+		textureFile1 = "gfx/interface/DOP_LHC/LHC_Tension_Bar_Full.dds"
+		textureFile2 = "gfx/interface/DOP_LHC/LHC_Tension_Bar_Empty.dds"
+		size = { 
+			x = 400
+			y = 50
+		}
+		effectFile = "gfx/FX/progress_reverse.lua"
+		steps = 1000
+	}
+}
+

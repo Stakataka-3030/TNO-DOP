@@ -516,7 +516,7 @@ country_event = { #
 	}
 	fire_only_once = yes
 	mean_time_to_happen = {
-		days = 20 
+		days = 40
 	}
 	option = { #
 		name = dop_sar.3.a
@@ -536,6 +536,7 @@ country_event = { #
 
 	option = { #
 		name = dop_sar.4.a
+		load_focus_tree = dop_ndwtree
 	}
 }
 country_event = { #
@@ -550,6 +551,7 @@ country_event = { #
 
 	option = { #
 		name = dop_sar.5.a
+		load_focus_tree = dop_ndwtree
 	}
 }
 country_event = { #
@@ -564,6 +566,7 @@ country_event = { #
 
 	option = { #
 		name = dop_sar.6.a
+		load_focus_tree = dop_ndwtree
 	}
 }
 country_event = { #sdw_pass
@@ -760,7 +763,6 @@ is_triggered_only = yes
 fire_only_once = yes
 
 option = { #
-	load_focus_tree = dop_ndwtree
 	name = dop_flavors.4.a
 }}
 country_event = { 
@@ -772,7 +774,7 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { load_focus_tree = dop_ndwtree
+	option = { 
 		name = dop_flavors.5.a
 }}
 country_event = { 
@@ -785,7 +787,7 @@ country_event = {
 	fire_only_once = yes
 	
 	option = { #
-		load_focus_tree = dop_ndwtree
+		
 		name = dop_flavors.6.a
 }}
 country_event = { 

@@ -4,6 +4,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/DOP_Anarchy_GNG.dds"
 	}
 	spriteType = {
+		name = "GFX_Anarchy_GNG_jap"
+		texturefile = "gfx/interface/DOP_Anarchy_GNG_jap.dds"
+	}
+	spriteType = {
+		name = "GFX_Anarchy_GNG_chi"
+		texturefile = "gfx/interface/DOP_Anarchy_GNG_chi.png"
+	}
+	spriteType = {
 		name = "GFX_frontend_DOP_logo"
 		texturefile = "gfx/interface/thumbnail.png"
 	}

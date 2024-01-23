@@ -1,0 +1,372 @@
+
+shared_focus = {
+	id = GNG_black_cloud_roming
+	icon = GER_GOR_Only_Clouds_Remain
+	cost = 0.5
+	x = 8
+	y = 0
+	completion_reward = {
+	}
+}
+shared_focus = {
+id = GNG_prepare_never_stop
+icon = GFX_CAU_Prepare_the_Troops
+cost = 0.5
+relative_position_id = GNG_black_cloud_roming
+prerequisite = { focus = GNG_black_cloud_roming}
+x = 4
+y = 1
+completion_reward = {
+    create_corps_commander = {
+            name = GNG_song_zhiguang
+            picture="gfx/leaders/song2.png"
+                traits = {
+                    foreign_mercenary
+                    guerrilla_veteran
+                    partisan_commander
+                    trait_reckless
+                }
+                skill = 6
+                attack_skill = 6
+                defense_skill = 6
+                planning_skill = 4
+                logistics_skill = 8
+                legacy_id = 12119
+        }
+    }
+}
+
+shared_focus = {
+    id = GNG_until_the_end
+    icon = GFX_DRL_Prepare_for_the_Clash
+    cost = 0.5
+    relative_position_id = GNG_black_cloud_roming
+    prerequisite = { focus = GNG_prepare_never_stop}
+    x = 4
+    y = 2
+    completion_reward = {
+
+    }
+}
+shared_focus = {
+    id = GNG_putdown_sp
+    icon = GFX_generic_police_rifle
+    cost = 0.5
+    relative_position_id = GNG_black_cloud_roming
+    prerequisite = { focus = GNG_until_the_end}
+    x = 2
+    y = 3
+    completion_reward = {
+    }
+}
+shared_focus = {
+    id = GNG_putdown_tri
+    icon = GFX_Generic_Army_of_Compromise
+    cost = 0.5
+    relative_position_id = GNG_black_cloud_roming
+    prerequisite = { focus = GNG_until_the_end}
+    x = 6
+    y = 3
+    completion_reward = {
+    }
+}
+shared_focus = {
+    id = GNG_we_shall_never_surrunder
+    icon = GFX_ITA_Surround_Verona
+    cost = 0.5
+    relative_position_id = GNG_black_cloud_roming
+    prerequisite = { focus = GNG_putdown_tri}
+    prerequisite = { focus = GNG_putdown_sp}
+    x = 4
+    y = 4
+    completion_reward = {
+    }
+}
+shared_focus = {
+    id = GNG_because_after_all
+    icon = GFX_GNG_Sonzai_Igi
+    cost = 0.5
+    relative_position_id = GNG_black_cloud_roming
+    prerequisite = { focus = GNG_we_shall_never_surrunder}
+    prerequisite = {
+    focus = GNG_everyone_be_full_of_fight
+    focus =  GNG_guangdong_hold_on
+    }
+    x = 0
+    y = 5
+    completion_reward = {
+    }
+}
+shared_focus = {
+    id = GNG_its_our_home
+    icon = GFX_GNG_Our_Home_Our_Way_of_Life
+    cost = 0.5
+    relative_position_id = GNG_black_cloud_roming
+    prerequisite = { focus = GNG_because_after_all}
+    x = 0
+    y = 6
+    completion_reward = {
+    }
+}
+shared_focus = {
+    id = GNG_for_everyone_s_state
+    icon = GFX_GNG_Our_Own_Components
+    cost = 0.5
+    relative_position_id = GNG_black_cloud_roming
+    prerequisite = { focus = GNG_its_our_home}
+    x = 0
+    y = 7
+    completion_reward = {
+    }
+}
+shared_focus = {
+    id = GNG_so_we_give_our_all
+    icon = GFX_GNG_The_Rising_Tide
+    cost = 0.5
+    relative_position_id = GNG_black_cloud_roming
+    prerequisite = { focus = GNG_for_everyone_s_state}
+    x = 0
+    y = 8
+    completion_reward = {
+    }
+}
+shared_focus = {
+    id = GNG_for_guangdong_forever_fake
+    icon = GFX_GNG_Guangdong_Rises
+    cost = 1.5
+    relative_position_id = GNG_black_cloud_roming
+    
+    prerequisite = { focus = GNG_so_we_give_our_all}
+    x = 0
+    y = 9
+    completion_reward = {
+    }
+}
+shared_focus = { 
+    id = GNG_a_state_of_unstay
+    icon = GFX_GNG_Metal_Grinds_Stomachs_Churn
+    cost = 0.5
+    x = -4
+    y = 1
+    relative_position_id = GNG_black_cloud_roming
+    allow_branch = {
+        NOT= {has_country_flag = gng_chi_choiced}
+    }
+    completion_reward = {
+    }
+    prerequisite = { focus = GNG_black_cloud_roming}
+}
+shared_focus = { 
+    id = GNG_chi_crazy
+    icon = GFX_GNG_No_Connection_Shall_Go_Unused
+    cost = 0.5
+    x = -6
+    y = 2
+    relative_position_id = GNG_black_cloud_roming
+    allow_branch = {
+        NOT= {has_country_flag = gng_chi_choiced}
+    }
+    completion_reward = {
+    }
+    prerequisite = { focus = GNG_a_state_of_unstay}
+}
+shared_focus = { 
+    id = GNG_open_all_boarders
+    icon = GFX_GNG_Trouble_on_the_Border
+    cost = 0.5
+    x = -6
+    y = 3
+    relative_position_id = GNG_black_cloud_roming
+    allow_branch = {
+        NOT= {has_country_flag = gng_chi_choiced}
+    }
+    completion_reward = {
+    }
+    prerequisite = { focus = GNG_chi_crazy}
+}
+shared_focus = { 
+    id = GNG_battle_for_loyal
+    icon = GFX_JAP_Our_Presence_is_Everywhere
+    cost = 0.5
+    x = -2
+    y = 2
+    relative_position_id = GNG_black_cloud_roming
+    allow_branch = {
+        NOT= {has_country_flag = gng_chi_choiced}
+    }
+    completion_reward = {
+    }
+    prerequisite = { focus = GNG_a_state_of_unstay}
+}
+shared_focus = { 
+    id = GNG_japanese_nationalism
+    icon = GFX_JAP_New_Showa_Warfare_2
+    cost = 0.5
+    x = -2
+    y = 3
+    relative_position_id = GNG_black_cloud_roming
+    allow_branch = {
+        NOT= {has_country_flag = gng_chi_choiced}
+    }
+    completion_reward = {
+    }
+    prerequisite = { focus = GNG_battle_for_loyal}
+}
+shared_focus = { 
+    id = GNG_time_for_prove
+    icon = GFX_JAP_Reassure_the_peers
+    cost = 0.5
+    x = -4
+    y = 2
+    relative_position_id = GNG_black_cloud_roming
+    allow_branch = {
+        NOT= {has_country_flag = gng_chi_choiced}
+    }
+    completion_reward = {
+    }
+    prerequisite = { focus = GNG_a_state_of_unstay}
+}
+shared_focus = { 
+    id = GNG_battle_for_self
+    icon = GFX_GNG_Save_Zhujin_Suppliers
+    cost = 0.5
+    x = -4
+    y = 3
+    relative_position_id = GNG_black_cloud_roming
+    allow_branch = {
+        NOT= {has_country_flag = gng_chi_choiced}
+    }
+    completion_reward = {
+    }
+    prerequisite = { focus = GNG_time_for_prove}
+}
+shared_focus = { 
+    id = GNG_guangdong_hold_on
+    icon = GFX_GNG_Guangdong_Place_In_Sphere
+    cost = 0.5
+    x = -4
+    y = 4
+    relative_position_id = GNG_black_cloud_roming
+    allow_branch = {
+        NOT= {has_country_flag = gng_chi_choiced}
+    }
+    completion_reward = {
+    }
+    prerequisite = { focus = GNG_battle_for_self}
+    prerequisite = { focus = GNG_japanese_nationalism}
+    prerequisite = { focus = GNG_open_all_boarders}
+}
+	shared_focus = { 
+		id = GNG_a_destoried_wall
+		icon = GFX_GNG_Language_Barrier
+		cost = 0.5
+		x = -4
+		y = 1
+		relative_position_id = GNG_black_cloud_roming
+		completion_reward = {
+		}
+        allow_branch = {
+           has_country_flag = gng_chi_choiced
+        }
+		prerequisite = { focus = GNG_black_cloud_roming}
+	}
+	shared_focus = { 
+		id = GNG_calm_down_jap
+		icon = GFX_JAP_Nihon_No_Yokai
+		cost = 0.5
+		x = -6
+		y = 2
+		relative_position_id = GNG_black_cloud_roming
+		completion_reward = {
+		}
+        allow_branch = {
+            has_country_flag = gng_chi_choiced
+         }
+		prerequisite = { focus = GNG_a_destoried_wall}
+	}
+	shared_focus = { 
+		id = GNG_airport_full_power
+		icon = GFX_generic_airfield_civilian
+		cost = 0.5
+		x = -6
+		y = 3
+		relative_position_id = GNG_black_cloud_roming
+		completion_reward = {
+		}
+        allow_branch = {
+            has_country_flag = gng_chi_choiced
+         }
+		prerequisite = { focus = GNG_calm_down_jap}
+	}
+	shared_focus = { 
+		id = GNG_battle_for_freedom
+		icon = GFX_OST_A_Storm_Of_Hope_Of_Freedom
+		cost = 0.5
+		x = -2
+		y = 2
+		relative_position_id = GNG_black_cloud_roming
+		completion_reward = {
+		}
+        allow_branch = {
+            has_country_flag = gng_chi_choiced
+         }
+		prerequisite = { focus = GNG_a_destoried_wall}
+	}
+	shared_focus = { 
+		id = GNG_time_to_stand
+		icon = GFX_YUN_No_Restraints
+		cost = 0.5
+		x = -2
+		y = 3
+		relative_position_id = GNG_black_cloud_roming
+		completion_reward = {
+		}
+        allow_branch = {
+            has_country_flag = gng_chi_choiced
+         }
+		prerequisite = { focus = GNG_battle_for_freedom}
+	}
+	shared_focus = { 
+		id = GNG_come_with_gng
+		icon = GFX_GNG_Guangdongs_Open
+		cost = 0.5
+		x = -4
+		y = 2
+		relative_position_id = GNG_black_cloud_roming
+		completion_reward = {
+		}
+        allow_branch = {
+            has_country_flag = gng_chi_choiced
+         }
+		prerequisite = { focus = GNG_a_destoried_wall}
+	}
+	shared_focus = { 
+		id = GNG_state_of_zhujin
+		icon = GFX_GNG_Our_Debts_to_the_Zhujin
+		cost = 0.5
+		x = -4
+		y = 3
+		relative_position_id = GNG_black_cloud_roming
+		completion_reward = {
+		}
+        allow_branch = {
+            has_country_flag = gng_chi_choiced
+         }
+		prerequisite = { focus = GNG_come_with_gng}
+	}
+	shared_focus = { 
+		id = GNG_everyone_be_full_of_fight
+		icon = GFX_YUN_If_You_Can_Hold_A_Gun_You_Can_Fight
+		cost = 0.5
+		x = -4
+		y = 4
+		relative_position_id = GNG_black_cloud_roming
+		completion_reward = {
+		}
+        allow_branch = {
+            has_country_flag = gng_chi_choiced
+         }
+		prerequisite = { focus = GNG_state_of_zhujin}
+		prerequisite = { focus = GNG_time_to_stand}
+		prerequisite = { focus = GNG_airport_full_power}
+	}

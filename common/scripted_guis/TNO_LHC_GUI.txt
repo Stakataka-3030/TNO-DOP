@@ -1,0 +1,13 @@
+scripted_gui = {
+	GNG_LHC_GUI = {
+		visible = {
+			has_country_flag = lhc_active
+		}
+		context_type = decision_category
+		window_name = "GNG_LHC_GUI"
+		properties = {
+			TNO_LHC_killer_pb = {
+				frame = killer_prgess
+			}
+		}
+}}
