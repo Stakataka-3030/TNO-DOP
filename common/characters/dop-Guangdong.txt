@@ -16,6 +16,9 @@ characters = {
 			logistics_skill = 7
 			legacy_id = 12111
 		}
+		allowed = {
+			has_completed_focus = GNG_prepare_never_stop
+		}
 	}
 
 	GNG_wang_jingxu = {
@@ -33,7 +36,10 @@ characters = {
 			defense_skill = 4
 			planning_skill = 1
 			logistics_skill = 9
-			legacy_id = 12111
+			legacy_id = 12112
+		}
+		allowed = {
+			has_completed_focus = GNG_prepare_never_stop
 		}
 	}
 }
