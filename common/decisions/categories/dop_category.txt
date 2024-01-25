@@ -25,3 +25,13 @@ lhc_gui_decision_category = {
 	visible_when_empty = yes
 }
 	
+enchance_guangjing_decision_category = {
+	allowed = {
+			tag = GNG
+	}
+	visible = {
+		has_country_flag = gjad_active
+	}
+	icon = GFX_decision_BRA_decision_category_lottquadros
+}
+	

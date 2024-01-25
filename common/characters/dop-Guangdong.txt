@@ -45,8 +45,8 @@ characters = {
 		}
 	}
 
-CHI_peng_mengji = {
-	name = GNG_peng_mengji
+GNG_peng_mengji = {
+	name = CHI_peng_mengji
 	portraits = {
 		army = { large = "gfx/leaders/Portrait_China_Peng_Mengji.dds" }
 	}
@@ -64,8 +64,8 @@ CHI_peng_mengji = {
 		has_country_flag = chi_choiced
 	}
 }
-CHI_chen_daqing = {
-	name = GNG_chen_daqing
+GNG_chen_daqing = {
+	name = CHI_chen_daqing
 	portraits = {
 		army = { large = "gfx/leaders/Portrait_China_Chen_Daqing.dds" }
 	}

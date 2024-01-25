@@ -1,0 +1,51 @@
+enchance_guangjing_decision_category = {
+	GNG_update_weapon = {
+		allowed = {
+			original_tag = GNG
+		}
+		icon = GFX_decision_GNG_generic
+		visible = {
+		}
+		complete_effect = {
+			set_temp_variable = { gjqh_temp_var = 10 } 
+			add_guangjing_var = yes
+		}
+	}
+	GNG_enhance_train = {
+		allowed = {
+			original_tag = GNG
+		}
+		icon = GFX_decision_GNG_generic
+		visible = {
+		}
+		complete_effect = {
+			set_temp_variable = { gjqh_temp_var = 15 } 
+			add_guangjing_var = yes
+		}
+	}
+	GNG_exercise_start = {
+		allowed = {
+			original_tag = GNG
+		}
+		icon = GFX_decision_GNG_generic
+		visible = {
+		}
+		complete_effect = {
+			set_temp_variable = { gjqh_temp_var = 7 } 
+			add_guangjing_var = yes
+		}
+	}
+	GNG_recruit_new_p = {
+		allowed = {
+			original_tag = GNG
+		}
+		icon = GFX_decision_GNG_generic
+		visible = {
+		}
+		complete_effect = {
+			set_temp_variable = { gjqh_temp_var = 8 } 
+			add_guangjing_var = yes
+		}
+	}
+}
+	

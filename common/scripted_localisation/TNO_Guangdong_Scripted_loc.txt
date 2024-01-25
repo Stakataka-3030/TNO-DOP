@@ -11637,3 +11637,74 @@ defined_text = {
 		localization_key = GNG_the_curtain_falls_tooltip_2
 	}
 }
+defined_text = {
+	name = gjqh_effect
+	text = {
+		trigger = {
+			check_variable = {gjqh_var<30}
+		}
+		localization_key = gjqh_effect_1
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				gjqh_var<60
+				gjqh_var>29.9
+		}
+		}
+		localization_key = gjqh_effect_2
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				gjqh_var<90
+				gjqh_var>59.9
+		}
+		}
+		localization_key = gjqh_effect_3
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				gjqh_var<120
+				gjqh_var>89.9
+		}
+		}
+		localization_key = gjqh_effect_4
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				gjqh_var<150
+				gjqh_var>119.9
+		}
+		}
+		localization_key = gjqh_effect_5
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				gjqh_var<180
+				gjqh_var>149.9
+		}
+		}
+		localization_key = gjqh_effect_6
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				gjqh_var<210
+				gjqh_var>179.9
+		}
+		}
+		localization_key = gjqh_effect_7
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				gjqh_var>209.9
+		}
+		}
+		localization_key = gjqh_effect_8
+	}
+}
