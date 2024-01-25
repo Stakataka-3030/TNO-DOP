@@ -18,6 +18,7 @@ characters = {
 		}
 		allowed = {
 			has_completed_focus = GNG_prepare_never_stop
+			has_country_flag = chi_choiced
 		}
 	}
 
@@ -40,6 +41,46 @@ characters = {
 		}
 		allowed = {
 			has_completed_focus = GNG_prepare_never_stop
+			has_country_flag = chi_choiced
 		}
 	}
+
+CHI_peng_mengji = {
+	name = GNG_peng_mengji
+	portraits = {
+		army = { large = "gfx/leaders/Portrait_China_Peng_Mengji.dds" }
+	}
+	corps_commander = {
+		traits = { commando }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 2
+		legacy_id = 24100
+	}
+	allowed = {
+		has_completed_focus = GNG_prepare_never_stop
+		has_country_flag = chi_choiced
+	}
+}
+CHI_chen_daqing = {
+	name = GNG_chen_daqing
+	portraits = {
+		army = { large = "gfx/leaders/Portrait_China_Chen_Daqing.dds" }
+	}
+	corps_commander = {
+		traits = { organizer }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 3
+		legacy_id = 24120
+	}
+	allowed = {
+		has_completed_focus = GNG_prepare_never_stop
+		has_country_flag = chi_choiced
+	}
+}
 }

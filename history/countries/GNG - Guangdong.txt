@@ -30,7 +30,8 @@ recruit_character = GNG_kobayashi_masami
 recruit_character = GNG_ptrg
 recruit_character = GNG_song_zhiguang
 recruit_character = GNG_wang_jingxu
-
+recruit_character = GNG_chen_daqing
+recruit_character = GNG_peng_mengji
 set_variable = { chi_influence = 0 }
 load_focus_tree = GNG_suzuki_tree
 set_country_flag = tno_playable_country
