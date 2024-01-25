@@ -11648,8 +11648,10 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
+				AND = {
 				gjqh_var<60
 				gjqh_var>29.9
+				}
 		}
 		}
 		localization_key = gjqh_effect_2
@@ -11657,8 +11659,10 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
+				AND = {
 				gjqh_var<90
 				gjqh_var>59.9
+				}
 		}
 		}
 		localization_key = gjqh_effect_3
@@ -11666,8 +11670,10 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
+				AND = {
 				gjqh_var<120
 				gjqh_var>89.9
+				}
 		}
 		}
 		localization_key = gjqh_effect_4
@@ -11675,8 +11681,10 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
+				AND = {
 				gjqh_var<150
 				gjqh_var>119.9
+				}
 		}
 		}
 		localization_key = gjqh_effect_5
@@ -11684,8 +11692,10 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
+				AND = {
 				gjqh_var<180
 				gjqh_var>149.9
+				}
 		}
 		}
 		localization_key = gjqh_effect_6
@@ -11693,8 +11703,10 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
+				AND = {
 				gjqh_var<210
 				gjqh_var>179.9
+				}
 		}
 		}
 		localization_key = gjqh_effect_7
@@ -11702,7 +11714,9 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
+				AND = {
 				gjqh_var>209.9
+		}
 		}
 		}
 		localization_key = gjqh_effect_8

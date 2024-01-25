@@ -18,7 +18,7 @@ lhc_gui_decision_category = {
 	visible = {
 		has_country_flag = lhc_active
 	}
-	icon = GFX_decision_BRA_decision_category_lottquadros
+	icon = GFX_decision_category_generic_investigate
 
 	scripted_gui = GNG_LHC_GUI
 	priority = 97000
@@ -30,8 +30,9 @@ enchance_guangjing_decision_category = {
 			tag = GNG
 	}
 	visible = {
-		has_country_flag = gjad_active
+		has_country_flag = gjqh_active
 	}
-	icon = GFX_decision_BRA_decision_category_lottquadros
+	picture = GFX_decision_SCO_decision_paranoia
+	icon = GFX_decision_category_army_reform
 }
 	

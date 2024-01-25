@@ -3,11 +3,11 @@ enchance_guangjing_decision_category = {
 		allowed = {
 			original_tag = GNG
 		}
-		icon = GFX_decision_GNG_generic
+		icon = GFX_decision_generic_supply
 		visible = {
 		}
 		complete_effect = {
-			set_temp_variable = { gjqh_temp_var = 10 } 
+			set_temp_variable = { gjqh_temp_var = 4 } 
 			add_guangjing_var = yes
 		}
 	}
@@ -15,11 +15,11 @@ enchance_guangjing_decision_category = {
 		allowed = {
 			original_tag = GNG
 		}
-		icon = GFX_decision_GNG_generic
+		icon = GFX_decision_generic_prepare_civil_war
 		visible = {
 		}
 		complete_effect = {
-			set_temp_variable = { gjqh_temp_var = 15 } 
+			set_temp_variable = { gjqh_temp_var = 3 } 
 			add_guangjing_var = yes
 		}
 	}
@@ -27,11 +27,11 @@ enchance_guangjing_decision_category = {
 		allowed = {
 			original_tag = GNG
 		}
-		icon = GFX_decision_GNG_generic
+		icon = GFX_decision_generic_guard
 		visible = {
 		}
 		complete_effect = {
-			set_temp_variable = { gjqh_temp_var = 7 } 
+			set_temp_variable = { gjqh_temp_var = 5 } 
 			add_guangjing_var = yes
 		}
 	}
@@ -39,11 +39,11 @@ enchance_guangjing_decision_category = {
 		allowed = {
 			original_tag = GNG
 		}
-		icon = GFX_decision_GNG_generic
+		icon = GFX_decision_generic_military_hat
 		visible = {
 		}
 		complete_effect = {
-			set_temp_variable = { gjqh_temp_var = 8 } 
+			set_temp_variable = { gjqh_temp_var = 4 } 
 			add_guangjing_var = yes
 		}
 	}
