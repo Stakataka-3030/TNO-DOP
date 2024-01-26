@@ -1,0 +1,12 @@
+GNG_street_dummy = {
+
+			icon = GNG_South_China_Area_Army_dummy
+
+			modifier = {
+				political_power_gain = street_pp_var
+				stability_weekly = street_st_var
+				war_support_weekly = street_ws_var
+				civilian_factory_use = street_cf_var
+				command_power_gain = street_cp_var
+			}
+		}

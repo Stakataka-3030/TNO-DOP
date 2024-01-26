@@ -436,6 +436,9 @@ disable_guangdong_map: "§F与§x天中二日之灼烧§!相比，§S广东地�
 disable_silicon_year: "§F在§r暴风骤雨§!面前，§J珠江奇迹§!已§x烟消云散§!。§!"
 disable_product_gui: "§F我们已然无暇顾及§m产品周期§!。§!"
 corruption_make_nonsense: "§F§R腐败§!在生存的危机之下一文不值。§!"
+storm_center_tt: "§F无论采用何种措施，£GFX_GNG_Guangdong_texticon §S广东§!必须挺过风暴。§!"
+observation_leave_tt: "§F在双日之间，我们反而获得了少许活动的空间，现在是训练部队的时候了。\n\n一个新编制已被添加并可以被训练。§!"
+war_drum_roming_tt: "战争将至，我们只能希望我们做了充足的准备"
 #gui
   gng_side_text: "§S广东国§!"
   china_side_text: "§M民族解放阵线§!"

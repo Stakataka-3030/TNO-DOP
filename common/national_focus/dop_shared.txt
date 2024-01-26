@@ -1177,6 +1177,9 @@ shared_focus = {
 		x = 8
 		y = 0
 		completion_reward = {
+			BFG_setup_influence = yes
+
+
 	}}
 	shared_focus = {
 		id = GNG_silicon_tower_collasped
@@ -1333,6 +1336,8 @@ shared_focus = {
 		prerequisite = {focus = GNG_apply_emergency_ordinance}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			custom_effect_tooltip = storm_center_tt
+			
 	}}
 	shared_focus = {
 		id = GNG_change_support_as_weapon
@@ -1366,6 +1371,7 @@ shared_focus = {
 		prerequisite = {focus = GNG_calm_civil}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			add_stability = 0.1
 	}}
 	shared_focus = {
 		id = GNG_rise_money
@@ -1388,7 +1394,7 @@ shared_focus = {
 		prerequisite = {focus = GNG_calm_civil}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
-			
+			add_stability = 0.1
 	}}
 	shared_focus = {
 		id = GNG_ask_indepence
@@ -1413,6 +1419,11 @@ shared_focus = {
 		prerequisite = {focus = GNG_use_chi_emotion}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			TNO_improve_army_professionalism_high = yes
+			TNO_improve_training_policy_effectiveness_high = yes
+			tno_conscription_worsen = yes
+			set_temp_variable = { temp_econ_spending_amount = 1.50 }
+			econ_spend_money_once_effect_raw_money = yes
 	}}
 	shared_focus = {
 		id = GNG_observation_leave
@@ -1423,6 +1434,24 @@ shared_focus = {
 		prerequisite = {focus = GNG_apply_emergency_ordinance}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			custom_effect_tooltip = observation_leave_tt
+			division_template = {
+				name = "Guangdong Temp Defense"
+				division_cap = 30
+				force_allow_recruiting = yes
+				division_names_group = GNG_NORMAL_01
+				priority = 0
+				template_counter = 0
+				regiments = {
+					light_infantry = { x = 0 y = 0 }
+				light_infantry = { x = 0 y = 1 }
+				light_infantry = { x = 0 y = 2 }
+				light_infantry = { x = 1 y = 0 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+				}
+			}
 	}}
 	shared_focus = {
 		id = GNG_develop_urge
@@ -1433,6 +1462,18 @@ shared_focus = {
 		prerequisite = {focus = GNG_observation_leave}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+				producer = GNG
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 2000
+				producer = GNG
+			}
+			set_temp_variable = { temp_econ_spending_amount = 0.7 }
+			econ_spend_money_once_effect_raw_money = yes
 	}}
 	shared_focus = {
 		id = GNG_transfor_weapon
@@ -1443,6 +1484,23 @@ shared_focus = {
 		prerequisite = {focus = GNG_observation_leave}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 100
+				producer = GNG
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 2000
+				producer = GNG
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = 2000
+				producer = GNG
+			}
+			set_temp_variable = { temp_econ_spending_amount = 0.7 }
+			econ_spend_money_once_effect_raw_money = yes
 	}}
 	shared_focus = {
 		id = GNG_arms_built
@@ -1453,6 +1511,23 @@ shared_focus = {
 		prerequisite = {focus = GNG_transfor_weapon}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 1500
+				producer = GNG
+			}
+			add_equipment_to_stockpile = {
+				type = armored_car_equipment
+				amount = 700
+				producer = GNG
+			}
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = 2000
+				producer = GNG
+			}
+			set_temp_variable = { temp_econ_spending_amount = 0.7 }
+			econ_spend_money_once_effect_raw_money = yes
 	}}
 	shared_focus = {
 		id = GNG_recruitment
@@ -1463,6 +1538,10 @@ shared_focus = {
 		prerequisite = {focus = GNG_develop_urge}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			add_manpower = 300000
+			set_temp_variable = { temp_econ_spending_amount = 1.0 }
+			econ_spend_money_once_effect_raw_money = yes
+			add_stability = -0.1
 	}}
 	shared_focus = {
 		id = GNG_cutback_traintime
@@ -1473,6 +1552,7 @@ shared_focus = {
 		prerequisite = {focus = GNG_recruitment}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			tno_training_worsen = yes
 	}}
 	shared_focus = {
 		id = GNG_lower_standard
@@ -1483,6 +1563,7 @@ shared_focus = {
 		prerequisite = {focus = GNG_recruitment}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			tno_conscription_worsen = yes
 	}}
 	shared_focus = {
 		id = GNG_build_barricade
@@ -1495,6 +1576,28 @@ shared_focus = {
 		prerequisite = {focus = GNG_arms_built}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			every_owned_state = {
+			add_building_construction = {
+				type = bunker
+				level = 5
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 5
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_coastal = yes
+				}
+			}}
+			set_temp_variable = { temp_econ_spending_amount = 3.0 }
+			econ_spend_money_once_effect_raw_money = yes
+
 	}}
 	shared_focus = {
 		id = GNG_war_drum_roming
@@ -1506,5 +1609,6 @@ shared_focus = {
 		prerequisite = {focus = GNG_social_military}
 		prerequisite = {focus = GNG_build_barricade}
 		completion_reward = {
+			custom_effect_tooltip = war_drum_roming_tt
 	}}
 	
