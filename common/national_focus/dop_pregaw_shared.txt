@@ -112,16 +112,115 @@ shared_focus = {
             }
         }
         if = {
-        
+            limit = {
+            check_variable = {gjqh_var<30}
+            }
         1439 = {
-        create_unit = {
-            division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" "
-            owner = GNG
-            count = 1
-            id = 1439
+            create_unit = {
+                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" "
+                owner = GNG
+                count = 1
+                id = 1439
+            }
+         }
         }
-    }
-    }
+        if = {
+            limit = {
+            check_variable = {gjqh_var<60}
+		    check_variable = {gjqh_var>29.9}
+            }
+        1439 = {
+            create_unit = {
+                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" "
+                owner = GNG
+                count = 2
+                id = 1439
+            }
+         }
+        }
+        if = {
+            limit = {
+            check_variable = {gjqh_var<90}
+		    check_variable = {gjqh_var>59.9}
+            }
+        1439 = {
+            create_unit = {
+                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" "
+                owner = GNG
+                count = 3
+                id = 1439
+            }
+         }
+        }
+        if = {
+            limit = {
+            check_variable = {gjqh_var<120}
+		    check_variable = {gjqh_var>89.9}
+            }
+        1439 = {
+            create_unit = {
+                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" "
+                owner = GNG
+                count = 4
+                id = 1439
+            }
+         }
+        }
+        if = {
+            limit = {
+            check_variable = {gjqh_var<150}
+		    check_variable = {gjqh_var>119.9}
+            }
+        1439 = {
+            create_unit = {
+                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" "
+                owner = GNG
+                count = 5
+                id = 1439
+            }
+         }
+        }
+        if = {
+            limit = {
+            check_variable = {gjqh_var<180}
+		    check_variable = {gjqh_var>149.9}
+            }
+        1439 = {
+            create_unit = {
+                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" "
+                owner = GNG
+                count = 6
+                id = 1439
+            }
+         }
+        }
+        if = {
+            limit = {
+            check_variable = {gjqh_var<210}
+		    check_variable = {gjqh_var>179.9}
+            }
+        1439 = {
+            create_unit = {
+                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" "
+                owner = GNG
+                count = 7
+                id = 1439
+            }
+         }
+        }
+        if = {
+            limit = {
+		    check_variable = {gjqh_var>209.9}
+            }
+        1439 = {
+            create_unit = {
+                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" "
+                owner = GNG
+                count = 8
+                id = 1439
+            }
+         }
+        }
     }
 }
 shared_focus = {
