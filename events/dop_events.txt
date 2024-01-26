@@ -8,6 +8,156 @@ add_namespace = dop_flavors #maybe…i think
 
 
 country_event = { #
+	id = dop_pregaw.1
+	title = dop_pregaw.1.t
+	desc = dop_pregaw.1.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.1.a
+		every_owned_state = {
+			set_temp_variable = { chi_app_temp = -8 }
+			GNG_chinese_app_change = yes
+		}
+		every_owned_state = {
+			set_temp_variable = { zhu_app_temp = -8 }
+			GNG_zhujin_app_change = yes
+		}
+		every_owned_state = {
+			set_temp_variable = { jap_app_temp = -8 }
+			GNG_japanese_app_change = yes
+		}
+	}
+}
+country_event = { #
+	id = dop_pregaw.2
+	title = dop_pregaw.2.t
+	desc = dop_pregaw.2.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.2.a
+		every_owned_state = {
+			set_temp_variable = { chi_pop_temp = -4 }
+			GNG_chinese_pop_change = yes
+		}
+		every_owned_state = {
+			set_temp_variable = { zhu_pop_temp = -4 }
+			GNG_zhujin_pop_change = yes
+		}
+		every_owned_state = {
+			set_temp_variable = { jap_pop_temp = -4 }
+			GNG_japanese_pop_change = yes
+		}
+	}
+}
+country_event = { #
+	id = dop_pregaw.3
+	title = dop_pregaw.3.t
+	desc = dop_pregaw.3.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.3.a
+		custom_effect_tooltip = disable_silicon_year
+		clr_country_flag = GNG_Product_Decisions_GUI_show
+		clr_country_flag = GNG_Economic_Graphs_Show
+		custom_effect_tooltip = disable_product_gui
+		add_stability = -0.2
+	}
+}
+country_event = { #
+	id = dop_pregaw.4
+	title = dop_pregaw.4.t
+	desc = dop_pregaw.4.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.4.a
+		custom_effect_tooltip = disable_guangdong_map
+		clr_country_flag = GNG_Google_Maps_Show
+		custom_effect_tooltip = corruption_make_nonsense
+		add_war_support = -0.2
+	}
+}
+country_event = { #
+	id = dop_pregaw.5
+	title = dop_pregaw.5.t
+	desc = dop_pregaw.5.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.5.a
+	}
+}
+country_event = { #
+	id = dop_pregaw.6
+	title = dop_pregaw.6.t
+	desc = dop_pregaw.6.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.6.a
+	}
+}
+country_event = { #
+	id = dop_pregaw.7
+	title = dop_pregaw.7.t
+	desc = dop_pregaw.7.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.7.a
+	}
+}
+country_event = { #
+	id = dop_pregaw.8
+	title = dop_pregaw.8.t
+	desc = dop_pregaw.8.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.8.a
+	}
+}
+country_event = { #
+	id = dop_pregaw.9
+	title = dop_pregaw.9.t
+	desc = dop_pregaw.9.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.9.a
+	}
+}
+country_event = { #
 	id = dop_legco_hostage_crisis.1
 	title = dop_legco_hostage_crisis.1.t
 	desc = dop_legco_hostage_crisis.1.desc
@@ -169,6 +319,8 @@ country_event = { #
 
 	option = { #
 		name = dop_legco_hostage_crisis.9.a
+		set_temp_variable = { temp_econ_spending_amount = 3 }
+		econ_spend_money_once_effect_raw_money = yes
 		hidden_effect = {
 		country_event = {
 			id = dop_legco_hostage_crisis.11
@@ -177,6 +329,8 @@ country_event = { #
 	}
 	option = { #
 		name = dop_legco_hostage_crisis.9.b
+		set_temp_variable = { temp_econ_spending_amount = 1.8}
+		econ_spend_money_once_effect_raw_money = yes
 		hidden_effect = {
 		random_list = {
 			60 = {
@@ -293,19 +447,23 @@ country_event = { #
 
 	option = { #
 		name = dop_legco_hostage_crisis.14.a
+		set_temp_variable = { temp_econ_spending_amount = 4.35 }
+		econ_spend_money_once_effect_raw_money = yes
 		hidden_effect = {
 		country_event = {
-			id = dop_legco_hostage_crisis.20
+			id = dop_legco_hostage_crisis.22
 			random_hours = 48
 		}}
 	}
 	option = { #
 		name = dop_legco_hostage_crisis.14.b
+		set_temp_variable = { temp_econ_spending_amount = 2.6 }
+		econ_spend_money_once_effect_raw_money = yes
 		hidden_effect = {
 		random_list = {
 			40 = {
 				country_event = {
-					id = dop_legco_hostage_crisis.20
+					id = dop_legco_hostage_crisis.22
 					random_hours = 48
 				}
 			}
@@ -337,14 +495,28 @@ country_event = { #
 
 	option = { #
 		name = dop_legco_hostage_crisis.15.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -1000
+		}
+		set_temp_variable = { temp_econ_spending_amount = 0.5 }
+		econ_spend_money_once_effect_raw_money = yes
 		hidden_effect = {
 		country_event = {
 			id = dop_legco_hostage_crisis.16
 			random_hours = 48
-		}}
+		}
+		
+	}
 	}
 	option = { #
 		name = dop_legco_hostage_crisis.15.b
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -2000
+		}
+		set_temp_variable = { temp_econ_spending_amount =1 }
+		econ_spend_money_once_effect_raw_money = yes
 		hidden_effect = {
 		random_list = {
 			40 = {
@@ -363,6 +535,12 @@ country_event = { #
 	}
 	option = { #
 		name = dop_legco_hostage_crisis.15.c
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -5000
+		}
+		set_temp_variable = { temp_econ_spending_amount = 2 }
+		econ_spend_money_once_effect_raw_money = yes
 		hidden_effect = {
 		country_event = {
 			id = dop_legco_hostage_crisis.19
@@ -387,6 +565,7 @@ country_event = { #
 			
 		}
 		custom_effect_tooltip = lhc_deduce_1
+		set_variable = {current_witness = 2}
 	}
 }
 country_event = { #
@@ -406,6 +585,7 @@ country_event = { #
 			
 		}
 		custom_effect_tooltip = lhc_deduce_1
+		set_variable = {current_witness = 2}
 	}
 }
 country_event = { #
@@ -425,6 +605,7 @@ country_event = { #
 			
 		}
 		custom_effect_tooltip = lhc_deduce_2
+		set_variable = {current_witness = 3}
 	}
 }
 country_event = { #
@@ -444,6 +625,7 @@ country_event = { #
 			
 		}
 		custom_effect_tooltip = lhc_deduce_3
+		set_variable = {current_witness = 5}
 	}
 }
 country_event = { #
@@ -472,8 +654,28 @@ country_event = { #
 
 	option = { #
 		name = dop_legco_hostage_crisis.21.a
+		
 	}
 }
+country_event = { #
+	id = dop_legco_hostage_crisis.22
+	title = dop_legco_hostage_crisis.22.t
+	desc = dop_legco_hostage_crisis.22.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_legco_hostage_crisis.22.a
+		custom_effect_tooltip = lhc_deduce_3
+		set_variable = {current_witness = 5}
+		country_event = {
+			id = dop_legco_hostage_crisis.20
+			random_hours = 48
+		}
+	}
+}
+
 country_event = { #
 	id = dop_sar.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.1" }

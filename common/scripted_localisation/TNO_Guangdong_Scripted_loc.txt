@@ -6397,6 +6397,12 @@ defined_text = {
 		}
 		localization_key = GNG_legco_temp_tooltip_bill_86
 	}
+	text = {
+		trigger = {
+			check_variable = { GNG_legco_current_ordinance_id = 87 }
+		}
+		localization_key = GNG_legco_temp_tooltip_bill_87
+	}
 }
 
 ###################

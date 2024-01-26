@@ -210,6 +210,7 @@ shared_focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus Test_the_police"
 			country_event = {
 			id = dop_flavors.4
+			add_manpower = 10000
 		}
 		}
 	}
@@ -225,6 +226,9 @@ shared_focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus Test_the_police"
 			country_event = {
 			id = dop_flavors.5
+			TNO_improve_army_professionalism_high = yes
+			set_temp_variable = { temp_econ_spending_amount = 0.50 }
+			con_spend_money_once_effect_raw_money = yes
 		}
 		}
 	}
@@ -240,7 +244,15 @@ shared_focus = {
 			log = "[GetDateText]: [Root.GetName]: Focus Test_the_police"
 			country_event = {
 			id = dop_flavors.6
+			add_tech_bonus = {
+				bonus = 2
+				uses = 2
+				category = infantry_weapons
+			}
+			set_temp_variable = { temp_econ_spending_amount = 0.25 }
+			con_spend_money_once_effect_raw_money = yes
 		}
+		
 		}
 	}
 
@@ -1175,6 +1187,7 @@ shared_focus = {
 		prerequisite = {focus = GNG_nanjing_emergency_call}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			country_event = dop_pregaw.1
 	}}
 	shared_focus = {
 		id = GNG_ground_lighting
@@ -1185,6 +1198,7 @@ shared_focus = {
 		prerequisite = {focus = GNG_nanjing_emergency_call}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			country_event = dop_pregaw.2
 	}}
 	shared_focus = {
 		id = GNG_keep_calm
@@ -1196,6 +1210,7 @@ shared_focus = {
 		prerequisite = {focus = GNG_silicon_tower_collasped}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			country_event = dop_pregaw.3
 	}}
 	shared_focus = {
 		id = GNG_consider_the_situation
@@ -1207,6 +1222,7 @@ shared_focus = {
 		prerequisite = {focus = GNG_silicon_tower_collasped}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			country_event = dop_pregaw.4
 	}}
 	shared_focus = {
 		id = GNG_get_control
@@ -1235,6 +1251,7 @@ shared_focus = {
 		prerequisite = {focus = GNG_get_control}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			country_event = dop_pregaw.5
 			set_temp_variable = { GNG_legco_amendment_id = 87.1 }
 			GNG_add_amendment_to_current = yes
 			set_temp_variable = { GNG_temp_votes_percentage = 0.60 }
@@ -1250,6 +1267,7 @@ shared_focus = {
 		prerequisite = {focus = GNG_get_control}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			country_event = dop_pregaw.6
 			set_temp_variable = { GNG_legco_amendment_id = 87.2 }
 			GNG_add_amendment_to_current = yes
 			set_temp_variable = { GNG_temp_votes_percentage = 0.30 }
@@ -1265,6 +1283,7 @@ shared_focus = {
 		prerequisite = {focus = GNG_get_control}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			country_event = dop_pregaw.7
 			set_temp_variable = { GNG_legco_amendment_id = 87.3 }
 			GNG_add_amendment_to_current = yes
 			set_temp_variable = { GNG_temp_votes_percentage = 0.15 }
@@ -1274,7 +1293,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_apply_emergency_ordinance
 		icon = GFX_GNG_The_Anti-Corruption_Ordinance
-		cost = 2
+		cost = 4.5
 		x = 0
 		y = 5
 		prerequisite = {
@@ -1336,6 +1355,7 @@ shared_focus = {
 		prerequisite = {focus = GNG_storm_center}
 		relative_position_id = GNG_nanjing_emergency_call
 		completion_reward = {
+			country_event = dop_pregaw.8
 	}}
 	shared_focus = {
 		id = GNG_use_chi_emotion
