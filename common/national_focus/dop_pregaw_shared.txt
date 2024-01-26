@@ -232,6 +232,29 @@ shared_focus = {
     x = 6
     y = 3
     completion_reward = {
+        division_template = {
+            name = "Guangdong Tri Devision"
+            division_names_group = GNG_NORMAL_01
+            priority = 0
+            template_counter = 0
+            regiments = {
+                light_infantry = { x = 0 y = 0 }
+            light_infantry = { x = 0 y = 1 }
+            light_infantry = { x = 0 y = 2 }
+            light_infantry = { x = 1 y = 0 }
+            }
+            support = {
+                engineer = { x = 0 y = 0 }
+            }
+        }
+        1439 = {
+            create_unit = {
+                division = "name = \"Special Police\" division_template = \"Guangdong Tri Devision\" "
+                owner = GNG
+                count = 4
+                id = 1439
+            }
+         }
     }
 }
 shared_focus = {
@@ -244,6 +267,7 @@ shared_focus = {
     x = 4
     y = 4
     completion_reward = {
+        add_war_support = 0.3
     }
 }
 shared_focus = {
@@ -259,6 +283,9 @@ shared_focus = {
     x = 0
     y = 5
     completion_reward = {
+        add_political_power = 100
+        add_war_support = 0.05
+        add_stability = 0.05
     }
 }
 shared_focus = {
