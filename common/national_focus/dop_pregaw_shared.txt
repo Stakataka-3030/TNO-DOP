@@ -5,13 +5,17 @@ shared_focus = {
 	cost = 0.5
 	x = 8
 	y = 0
+    select_effect = {
+        set_variable = {street_pp_var = -1}
+		set_variable = {street_st_var = -0.6}
+		set_variable = {street_ws_var = -0.6}
+		set_variable = { street_cf_var = 10}
+		set_variable = { street_cp_var = -0.5}
+    }
 	completion_reward = {
-        add_dynamic_modifier = { modifier = GNG_street_dummy }
-        set_var = {street_pp_var = -1}
-		set_var = {street_st_var = -0.4}
-		set_var = {street_ws_var = -0.4}
-		set_var = {street_cf_var = 10}
-		set_var = {street_cp_var = -0.5}
+        if = { limit = { has_variable = street_pp_var }
+        add_dynamic_modifier = { modifier = GNG_street_dummy }}
+        
 	}
 }
 shared_focus = {
@@ -117,7 +121,7 @@ shared_focus = {
             }
         1439 = {
             create_unit = {
-                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" "
+                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" start_experience_factor=1"
                 owner = GNG
                 count = 1
                 id = 1439
@@ -131,7 +135,7 @@ shared_focus = {
             }
         1439 = {
             create_unit = {
-                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" "
+                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" start_experience_factor=1"
                 owner = GNG
                 count = 2
                 id = 1439
@@ -145,7 +149,7 @@ shared_focus = {
             }
         1439 = {
             create_unit = {
-                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" "
+                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" start_experience_factor=1"
                 owner = GNG
                 count = 3
                 id = 1439
@@ -159,7 +163,7 @@ shared_focus = {
             }
         1439 = {
             create_unit = {
-                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" "
+                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" start_experience_factor=1"
                 owner = GNG
                 count = 4
                 id = 1439
@@ -173,7 +177,7 @@ shared_focus = {
             }
         1439 = {
             create_unit = {
-                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" "
+                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" start_experience_factor=1"
                 owner = GNG
                 count = 5
                 id = 1439
@@ -187,7 +191,7 @@ shared_focus = {
             }
         1439 = {
             create_unit = {
-                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" "
+                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" start_experience_factor=1"
                 owner = GNG
                 count = 6
                 id = 1439
@@ -201,7 +205,7 @@ shared_focus = {
             }
         1439 = {
             create_unit = {
-                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" "
+                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" start_experience_factor=1"
                 owner = GNG
                 count = 7
                 id = 1439
@@ -214,7 +218,7 @@ shared_focus = {
             }
         1439 = {
             create_unit = {
-                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" "
+                division = "name = \"Special Police\" division_template = \"Guangdong Special Police\" start_experience_factor=1 "
                 owner = GNG
                 count = 8
                 id = 1439
@@ -249,7 +253,7 @@ shared_focus = {
         }
         1439 = {
             create_unit = {
-                division = "name = \"Special Police\" division_template = \"Guangdong Tri Devision\" "
+                division = "name = \"Special Police\" division_template = \"Guangdong Tri Devision\" start_experience_factor=1"
                 owner = GNG
                 count = 4
                 id = 1439
@@ -297,6 +301,9 @@ shared_focus = {
     x = 0
     y = 6
     completion_reward = {
+        add_to_variable = { street_pp_var = 0.25 }
+        add_to_variable = { street_cp_var = 0.25 }
+        custom_effect_tooltip =  GNG_effect_release_tt
     }
 }
 shared_focus = {
@@ -308,6 +315,9 @@ shared_focus = {
     x = 0
     y = 7
     completion_reward = {
+        add_to_variable = { street_pp_var = 0.25 }
+        add_to_variable = { street_cf_var = -3 }
+        custom_effect_tooltip =  GNG_effect_release_tt
     }
 }
 shared_focus = {
@@ -319,6 +329,7 @@ shared_focus = {
     x = 0
     y = 8
     completion_reward = {
+        remove_dynamic_modifier = { modifier = GNG_street_dummy }
     }
 }
 shared_focus = {
@@ -328,9 +339,10 @@ shared_focus = {
     relative_position_id = GNG_black_cloud_roming
     
     prerequisite = { focus = GNG_so_we_give_our_all}
-    x = 0
+    x = 0/
     y = 9
     completion_reward = {
+        custom_effect_tooltip = gff_tt
     }
 }
 shared_focus = { 
@@ -344,6 +356,9 @@ shared_focus = {
         NOT= {has_country_flag = gng_chi_choiced}
     }
     completion_reward = {
+        add_to_variable = {street_pp_var = 0.1}
+        add_to_variable = { street_ws_var = 0.1}
+        custom_effect_tooltip =  GNG_effect_release_tt
     }
     prerequisite = { focus = GNG_black_cloud_roming}
 }
@@ -358,6 +373,9 @@ shared_focus = {
         NOT= {has_country_flag = gng_chi_choiced}
     }
     completion_reward = {
+        add_to_variable = {street_pp_var = 0.2}
+        add_to_variable = { street_st_var = 0.1}
+        custom_effect_tooltip =  GNG_effect_release_tt
     }
     prerequisite = { focus = GNG_a_state_of_unstay}
 }
@@ -372,6 +390,10 @@ shared_focus = {
         NOT= {has_country_flag = gng_chi_choiced}
     }
     completion_reward = {
+        add_to_variable = {street_pp_var = 0.2}
+        add_to_variable = { street_st_var = 0.2}
+        custom_effect_tooltip =  GNG_effect_release_tt
+        add_manpower = -10000
     }
     prerequisite = { focus = GNG_chi_crazy}
 }
@@ -386,6 +408,9 @@ shared_focus = {
         NOT= {has_country_flag = gng_chi_choiced}
     }
     completion_reward = {
+        add_to_variable = {street_pp_var = 0.1}
+        add_to_variable = { street_ws_var = 0.05}
+        custom_effect_tooltip =  GNG_effect_release_tt
     }
     prerequisite = { focus = GNG_a_state_of_unstay}
 }
@@ -400,6 +425,9 @@ shared_focus = {
         NOT= {has_country_flag = gng_chi_choiced}
     }
     completion_reward = {
+        add_to_variable = { street_pp_var = 0.1}
+        add_to_variable = { street_ws_var = 0.1 }
+        custom_effect_tooltip =  GNG_effect_release_tt
     }
     prerequisite = { focus = GNG_battle_for_loyal}
 }
@@ -414,6 +442,9 @@ shared_focus = {
         NOT= {has_country_flag = gng_chi_choiced}
     }
     completion_reward = {
+        add_to_variable = { street_cp_var = 0.1}
+        add_to_variable = { street_cf_var = -3 }
+        custom_effect_tooltip =  GNG_effect_release_tt
     }
     prerequisite = { focus = GNG_a_state_of_unstay}
 }
@@ -428,6 +459,9 @@ shared_focus = {
         NOT= {has_country_flag = gng_chi_choiced}
     }
     completion_reward = {
+        add_to_variable = { street_cp_var = 0.2}
+        add_to_variable = { street_cf_var = -1 }
+        custom_effect_tooltip =  GNG_effect_release_tt
     }
     prerequisite = { focus = GNG_time_for_prove}
 }
@@ -442,6 +476,8 @@ shared_focus = {
         NOT= {has_country_flag = gng_chi_choiced}
     }
     completion_reward = {
+        add_to_variable = { street_ws_var = 2 }
+        custom_effect_tooltip =  GNG_effect_release_tt
     }
     prerequisite = { focus = GNG_battle_for_self}
     prerequisite = { focus = GNG_japanese_nationalism}
