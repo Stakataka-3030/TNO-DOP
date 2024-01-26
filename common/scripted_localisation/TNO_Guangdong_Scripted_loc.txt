@@ -181,14 +181,13 @@ defined_text = {
 	name = bfg_end_effect
 	text = {
 		trigger = {
-			AND = {check_variable = { BFG_CHI_Balance > BFG_JAP_Balance }	check_variable = { BFG_GNG_Balance < 70.001 }}
-		}
+			check_variable = { BFG_CHI_Balance > BFG_JAP_Balance }	check_variable = { BFG_GNG_Balance < 70.001 }}
 		localization_key = GNG_sony_btfgng_chi_win_tt
 	}
 	text = {
 		trigger = {
-			AND = {check_variable = { BFG_CHI_Balance < BFG_JAP_Balance }	check_variable = { BFG_GNG_Balance < 70.001 }}
-		}
+			check_variable = { BFG_CHI_Balance < BFG_JAP_Balance }	check_variable = { BFG_GNG_Balance < 70.001 }}
+		
 		localization_key = GNG_sony_btfgng_jap_win_tt
 	}
 	text = {
@@ -11648,75 +11647,95 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				AND = {
+				
 				gjqh_var<60
-				gjqh_var>29.9
-				}
+
+				
 		}
+		check_variable = {
+			gjqh_var>29.9
+			
+	}
 		}
 		localization_key = gjqh_effect_2
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				AND = {
+				
 				gjqh_var<90
-				gjqh_var>59.9
-				}
+
+
+				
 		}
+		check_variable = {
+			gjqh_var>59.9
+			
+	}
 		}
 		localization_key = gjqh_effect_3
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				AND = {
+				
 				gjqh_var<120
-				gjqh_var>89.9
-				}
+
+
 		}
+		check_variable = {
+			gjqh_var>89.9	
+	}
 		}
 		localization_key = gjqh_effect_4
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				AND = {
-				gjqh_var<150
-				gjqh_var>119.9
-				}
+				
+				gjqh_var < 150
+
 		}
+		check_variable = {
+			gjqh_var>119.9
+	}
 		}
 		localization_key = gjqh_effect_5
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				AND = {
+				
 				gjqh_var<180
-				gjqh_var>149.9
-				}
+				
+
 		}
+		check_variable = {
+			gjqh_var>149.9
+	}
 		}
 		localization_key = gjqh_effect_6
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				AND = {
+				
 				gjqh_var<210
-				gjqh_var>179.9
-				}
+				
+
 		}
+		check_variable = {
+			gjqh_var>179.9
+			
+	}
 		}
 		localization_key = gjqh_effect_7
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				AND = {
+				
 				gjqh_var>209.9
-		}
 		}
 		}
 		localization_key = gjqh_effect_8

@@ -15,11 +15,16 @@ characters = {
 			planning_skill = 6
 			logistics_skill = 7
 			legacy_id = 12111
+			visible = {
+				has_completed_focus = GNG_prepare_never_stop
+				has_country_flag = gng_chi_choiced
+			}
 		}
-		allowed = {
+		visible = {
 			has_completed_focus = GNG_prepare_never_stop
-			has_country_flag = chi_choiced
+			has_country_flag = gng_chi_choiced
 		}
+	
 	}
 
 	GNG_wang_jingxu = {
@@ -38,10 +43,14 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 9
 			legacy_id = 12112
+			visible = {
+				has_completed_focus = GNG_prepare_never_stop
+				has_country_flag = gng_chi_choiced
+			}
 		}
-		allowed = {
+		visible = {
 			has_completed_focus = GNG_prepare_never_stop
-			has_country_flag = chi_choiced
+			has_country_flag = gng_chi_choiced
 		}
 	}
 
@@ -58,12 +67,16 @@ GNG_peng_mengji = {
 		planning_skill = 3
 		logistics_skill = 2
 		legacy_id = 24100
+		visible = {
+			has_completed_focus = GNG_prepare_never_stop
+			has_country_flag = gng_chi_choiced
+		}
 	}
-	allowed = {
+	visible = {
 		has_completed_focus = GNG_prepare_never_stop
-		has_country_flag = chi_choiced
+		has_country_flag = gng_chi_choiced
 	}
-}
+ }
 GNG_chen_daqing = {
 	name = CHI_chen_daqing
 	portraits = {
@@ -77,10 +90,11 @@ GNG_chen_daqing = {
 		planning_skill = 2
 		logistics_skill = 3
 		legacy_id = 24120
+		visible = {
+			has_completed_focus = GNG_prepare_never_stop
+			has_country_flag = gng_chi_choiced
+		}
 	}
-	allowed = {
-		has_completed_focus = GNG_prepare_never_stop
-		has_country_flag = chi_choiced
-	}
+	
 }
 }

@@ -17,7 +17,54 @@ prerequisite = { focus = GNG_black_cloud_roming}
 x = 4
 y = 1
 completion_reward = {
-
+    if = {
+        limit = {
+            has_country_flag = chi_choiced
+        }
+            add_corps_commander_role = {
+                character = GNG_song_zhiguang
+                traits = {
+                            trickster
+                            cavalry_leader
+                        }
+                        skill = 6
+                        attack_skill = 6
+                        defense_skill = 7
+                        planning_skill = 6
+                        logistics_skill = 7
+        }
+            add_corps_commander_role = {
+                character =GNG_wang_jingxu
+                traits = {
+                            trickster
+                            cavalry_leader
+                        }
+                        skill = 6
+                        attack_skill = 7
+                        defense_skill = 4
+                        planning_skill = 1
+                        logistics_skill = 9
+        }
+            add_corps_commander_role = {
+                character = GNG_peng_mengji
+                traits = { commando }
+                skill = 4
+                attack_skill = 4
+                defense_skill = 3
+                planning_skill = 3
+                logistics_skill = 2
+        }
+                add_corps_commander_role = {
+                character = GNG_chen_daqing
+                traits = { organizer }
+                skill = 4
+                attack_skill = 4
+                defense_skill = 2
+                planning_skill = 2
+                logistics_skill = 3
+        }
+    }
+    army_experience = 100
 }
 }
 shared_focus = {

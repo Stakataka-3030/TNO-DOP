@@ -330,24 +330,7 @@ shared_focus = {
 			set_temp_variable = { GNG_legco_hitachi_temp_support = 0.30 }
 			set_temp_variable = { GNG_temp_legco_id = 76 }
 			legco_introduce_ordinance_start = yes
-			hidden_effect = {
-				country_event = {
-					id = guangdong_sonyAmendment.35
-					days = 5
-				}
-				country_event = {
-					id = guangdong_sonyAmendment.36
-					days = 10
-				}
-				country_event = {
-					id = guangdong_sonyAmendment.37
-					days = 15
-				}
-				country_event = {
-					id = guangdong_sonyAmendment.38
-					days = 20
-				}
-			}
+			
 			
 			}
 			
@@ -560,23 +543,7 @@ shared_focus = {
 		set_temp_variable = { GNG_legco_hitachi_temp_support = 0.00 }
 		set_temp_variable = { GNG_temp_legco_id = 78 }
 		legco_introduce_ordinance_start = yes
-		hidden_effect = {
-			country_event = {
-				id = guangdong_sonyAmendment.35
-				days = 5
-			}
-			country_event = {
-				id = guangdong_sonyAmendment.36
-				days = 10
-			}
-			country_event = {
-				id = guangdong_sonyAmendment.37
-				days = 15
-			}
-			country_event = {
-				id = guangdong_sonyAmendment.38
-				days = 20
-			}}}}
+		}}
 shared_focus = {
 	prerequisite=
 	{	
