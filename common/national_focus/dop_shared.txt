@@ -330,7 +330,20 @@ shared_focus = {
 			set_temp_variable = { GNG_legco_hitachi_temp_support = 0.30 }
 			set_temp_variable = { GNG_temp_legco_id = 76 }
 			legco_introduce_ordinance_start = yes
-			
+			hidden_effect = {
+				country_event = {
+					id = guangdong_sonyAmendment.12
+					days = 7
+				}
+				country_event = {
+					id = guangdong_sonyAmendment.13
+					days = 14
+				}
+				country_event = {
+					id = guangdong_sonyAmendment.14
+					days = 21
+				}
+			}
 			
 			}
 			
@@ -363,6 +376,20 @@ shared_focus = {
 					set_temp_variable = { jap_app_temp = 0.5 }
 					GNG_japanese_app_change = yes
 					}
+					hidden_effect = {
+						country_event = {
+							id = guangdong_sonyAmendment.12
+							days = 7
+						}
+						country_event = {
+							id = guangdong_sonyAmendment.13
+							days = 14
+						}
+						country_event = {
+							id = guangdong_sonyAmendment.14
+							days = 21
+						}
+					}	
 				}
 			}
 shared_focus = {
@@ -396,6 +423,7 @@ shared_focus = {
 			GNG_japanese_app_change = yes
 			}
 		set_variable = {GNG_ndw_success_chance = 20}#standard
+		
 		}
 		
 	}
@@ -543,6 +571,20 @@ shared_focus = {
 		set_temp_variable = { GNG_legco_hitachi_temp_support = 0.00 }
 		set_temp_variable = { GNG_temp_legco_id = 78 }
 		legco_introduce_ordinance_start = yes
+		hidden_effect = {
+			country_event = {
+				id = guangdong_sonyAmendment.12
+				days = 7
+			}
+			country_event = {
+				id = guangdong_sonyAmendment.13
+				days = 14
+			}
+			country_event = {
+				id = guangdong_sonyAmendment.14
+				days = 21
+			}
+		}
 		}}
 shared_focus = {
 	prerequisite=
@@ -662,6 +704,20 @@ shared_focus = {
 		set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
 		set_temp_variable = { GNG_temp_legco_id = 82 }
 		legco_introduce_ordinance_start = yes
+		hidden_effect = {
+			country_event = {
+				id = guangdong_sonyAmendment.12
+				days = 7
+			}
+			country_event = {
+				id = guangdong_sonyAmendment.13
+				days = 14
+			}
+			country_event = {
+				id = guangdong_sonyAmendment.14
+				days = 21
+			}
+		}
 		}
 		
 		}
@@ -759,6 +815,20 @@ shared_focus = {
 			set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
 			set_temp_variable = { GNG_temp_legco_id = 83 }
 			legco_introduce_ordinance_start = yes
+			hidden_effect = {
+				country_event = {
+					id = guangdong_sonyAmendment.12
+					days = 7
+				}
+				country_event = {
+					id = guangdong_sonyAmendment.13
+					days = 14
+				}
+				country_event = {
+					id = guangdong_sonyAmendment.14
+					days = 21
+				}
+			}
 			}}
 shared_focus = {
 	prerequisite=
@@ -843,6 +913,20 @@ shared_focus = {
 			set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
 			set_temp_variable = { GNG_temp_legco_id = 84 }
 			legco_introduce_ordinance_start = yes
+			hidden_effect = {
+				country_event = {
+					id = guangdong_sonyAmendment.12
+					days = 7
+				}
+				country_event = {
+					id = guangdong_sonyAmendment.13
+					days = 14
+				}
+				country_event = {
+					id = guangdong_sonyAmendment.14
+					days = 21
+				}
+			}
 			}}
 shared_focus = {
 	prerequisite=
@@ -927,6 +1011,20 @@ shared_focus = {
 			set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
 			set_temp_variable = { GNG_temp_legco_id = 85 }
 			legco_introduce_ordinance_start = yes
+			hidden_effect = {
+				country_event = {
+					id = guangdong_sonyAmendment.12
+					days = 7
+				}
+				country_event = {
+					id = guangdong_sonyAmendment.13
+					days = 14
+				}
+				country_event = {
+					id = guangdong_sonyAmendment.14
+					days = 21
+				}
+			}
 			}}
 shared_focus = {
 	prerequisite=
@@ -1011,6 +1109,20 @@ shared_focus = {
 			set_temp_variable = { GNG_legco_hitachi_temp_support = 0.10 }
 			set_temp_variable = { GNG_temp_legco_id = 86 }
 			legco_introduce_ordinance_start = yes
+			hidden_effect = {
+				country_event = {
+					id = guangdong_sonyAmendment.12
+					days = 7
+				}
+				country_event = {
+					id = guangdong_sonyAmendment.13
+					days = 14
+				}
+				country_event = {
+					id = guangdong_sonyAmendment.14
+					days = 21
+				}
+			}
 			}}
 shared_focus = {
 	prerequisite=
