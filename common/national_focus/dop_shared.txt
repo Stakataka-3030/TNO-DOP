@@ -1163,8 +1163,8 @@ shared_focus = {
 	x = 0
 	y = 4
 	relative_position_id = GNG_new_develop_project
-	select_effect = { 
-		country_event = dop_sar.11
+	select_effect = {
+		country_event = { id = dop_sar.11 }
 	}
 	completion_reward = {
 		custom_effect_tooltip = GNG_fakeswitchfocustree

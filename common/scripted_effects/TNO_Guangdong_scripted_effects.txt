@@ -7691,7 +7691,7 @@ GNG_initiailize_product_cycle_end_event = {
 				GNG_product_cycle_company = 1 #Hitachi
 			}
 		}
-		country_event = GNG_Product_Cycle.47
+		country_event = GNG_Product_Cycle.48
 	}
 	else = {
 		country_event = GNG_Product_Cycle.2

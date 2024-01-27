@@ -16,7 +16,7 @@ lhc_gui_decision_category = {
 			tag = GNG
 		}
 		timeout_effect = {
-			if = { limit = {killer_prgess < 79 }
+			if = { limit = {killer_prgess > 79 }
 			add_to_variable = {killer_prgess = 20}
 		}
 			else = {

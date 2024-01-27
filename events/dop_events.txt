@@ -100,6 +100,20 @@ country_event = { #
 	}
 }
 country_event = { #
+	id = GNG_Product_Cycle.48
+	title = GNG_Product_Cycle.48.t
+	desc = GNG_Product_Cycle.48.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = GNG_Product_Cycle.48.a
+		GNG_give_product_cycle_effects = yes
+	}
+}
+country_event = { #
 	id = dop_pregaw.1
 	title = dop_pregaw.1.t
 	desc = dop_pregaw.1.desc
