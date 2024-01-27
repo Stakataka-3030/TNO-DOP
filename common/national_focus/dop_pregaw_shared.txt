@@ -5,16 +5,13 @@ shared_focus = {
 	cost = 0.5
 	x = 8
 	y = 0
-    select_effect = {
+	completion_reward = {
         set_variable = {street_pp_var = -1}
 		set_variable = {street_st_var = -0.6}
 		set_variable = {street_ws_var = -0.6}
 		set_variable = { street_cf_var = 10}
 		set_variable = { street_cp_var = -0.5}
-    }
-	completion_reward = {
-        if = { limit = { has_variable = street_pp_var }
-        add_dynamic_modifier = { modifier = GNG_street_dummy }}
+        add_dynamic_modifier = { modifier = GNG_street_dummy }
         
 	}
 }
@@ -339,7 +336,7 @@ shared_focus = {
     relative_position_id = GNG_black_cloud_roming
     
     prerequisite = { focus = GNG_so_we_give_our_all}
-    x = 0/
+    x = 0
     y = 9
     completion_reward = {
         custom_effect_tooltip = gff_tt
@@ -393,7 +390,7 @@ shared_focus = {
         add_to_variable = {street_pp_var = 0.2}
         add_to_variable = { street_st_var = 0.2}
         custom_effect_tooltip =  GNG_effect_release_tt
-        add_manpower = -10000
+        add_manpower = -100000
     }
     prerequisite = { focus = GNG_chi_crazy}
 }
@@ -491,6 +488,9 @@ shared_focus = {
 		y = 1
 		relative_position_id = GNG_black_cloud_roming
 		completion_reward = {
+            add_to_variable = {street_pp_var = 0.1}
+        add_to_variable = { street_ws_var = 0.1}
+        custom_effect_tooltip =  GNG_effect_release_tt
 		}
         allow_branch = {
            has_country_flag = gng_chi_choiced
@@ -505,6 +505,9 @@ shared_focus = {
 		y = 2
 		relative_position_id = GNG_black_cloud_roming
 		completion_reward = {
+            add_to_variable = {street_pp_var = 0.2}
+        add_to_variable = { street_st_var = 0.1}
+        custom_effect_tooltip =  GNG_effect_release_tt
 		}
         allow_branch = {
             has_country_flag = gng_chi_choiced
@@ -519,6 +522,10 @@ shared_focus = {
 		y = 3
 		relative_position_id = GNG_black_cloud_roming
 		completion_reward = {
+            add_to_variable = {street_pp_var = 0.2}
+        add_to_variable = { street_st_var = 0.2}
+        custom_effect_tooltip =  GNG_effect_release_tt
+        add_manpower = -10000
 		}
         allow_branch = {
             has_country_flag = gng_chi_choiced
@@ -533,6 +540,9 @@ shared_focus = {
 		y = 2
 		relative_position_id = GNG_black_cloud_roming
 		completion_reward = {
+            add_to_variable = {street_pp_var = 0.1}
+        add_to_variable = { street_ws_var = 0.05}
+        custom_effect_tooltip =  GNG_effect_release_tt
 		}
         allow_branch = {
             has_country_flag = gng_chi_choiced
@@ -547,6 +557,9 @@ shared_focus = {
 		y = 3
 		relative_position_id = GNG_black_cloud_roming
 		completion_reward = {
+            add_to_variable = { street_pp_var = 0.1}
+        add_to_variable = { street_ws_var = 0.1 }
+        custom_effect_tooltip =  GNG_effect_release_tt
 		}
         allow_branch = {
             has_country_flag = gng_chi_choiced
@@ -561,6 +574,9 @@ shared_focus = {
 		y = 2
 		relative_position_id = GNG_black_cloud_roming
 		completion_reward = {
+            add_to_variable = { street_cp_var = 0.1}
+        add_to_variable = { street_cf_var = -3 }
+        custom_effect_tooltip =  GNG_effect_release_tt
 		}
         allow_branch = {
             has_country_flag = gng_chi_choiced
@@ -575,6 +591,9 @@ shared_focus = {
 		y = 3
 		relative_position_id = GNG_black_cloud_roming
 		completion_reward = {
+            add_to_variable = { street_cp_var = 0.2}
+        add_to_variable = { street_cf_var = -1 }
+        custom_effect_tooltip =  GNG_effect_release_tt
 		}
         allow_branch = {
             has_country_flag = gng_chi_choiced
@@ -589,6 +608,8 @@ shared_focus = {
 		y = 4
 		relative_position_id = GNG_black_cloud_roming
 		completion_reward = {
+            add_to_variable = { street_ws_var = 2 }
+        custom_effect_tooltip =  GNG_effect_release_tt
 		}
         allow_branch = {
             has_country_flag = gng_chi_choiced
