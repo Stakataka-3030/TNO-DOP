@@ -264,6 +264,112 @@ country_event = { #
 	}
 }
 country_event = { #
+	id = dop_pregaw.11
+	title = dop_pregaw.11.t
+	desc = dop_pregaw.11.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.11.a
+		
+	}
+}
+country_event = { #
+	id = dop_pregaw.9
+	title = dop_pregaw.9.t
+	desc = dop_pregaw.9.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.9.a
+	}
+}
+country_event = { #
+	id = dop_pregaw.9
+	title = dop_pregaw.9.t
+	desc = dop_pregaw.9.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.9.a
+	}
+}
+country_event = { #
+	id = dop_pregaw.9
+	title = dop_pregaw.9.t
+	desc = dop_pregaw.9.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.9.a
+	}
+}
+country_event = { #
+	id = dop_pregaw.9
+	title = dop_pregaw.9.t
+	desc = dop_pregaw.9.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.9.a
+	}
+}
+country_event = { #
+	id = dop_pregaw.9
+	title = dop_pregaw.9.t
+	desc = dop_pregaw.9.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.9.a
+	}
+}
+country_event = { #
+	id = dop_pregaw.9
+	title = dop_pregaw.9.t
+	desc = dop_pregaw.9.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.9.a
+	}
+}
+country_event = { #
+	id = dop_pregaw.9
+	title = dop_pregaw.9.t
+	desc = dop_pregaw.9.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.9.a
+	}
+}
+
+country_event = { #
 	id = dop_legco_hostage_crisis.1
 	title = dop_legco_hostage_crisis.1.t
 	desc = dop_legco_hostage_crisis.1.desc
