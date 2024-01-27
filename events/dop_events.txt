@@ -30,7 +30,7 @@ country_event = { #
 				remove_from_faction = SHX
 				remove_from_faction = GAN
 				remove_from_faction = MEN
-
+				remove_from_faction = GNG
 			}
 			YUN = {
 				annex_country = {
@@ -278,6 +278,70 @@ country_event = { #
 		custom_effect_tooltip = GNG_fakeswitchfocustree
 		complete_national_focus = GNG_black_cloud_roming
 	}
+}
+country_event = { #
+	id = dop_pregaw.12
+	title = dop_pregaw.12.t
+	desc = dop_pregaw.12.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.12.a
+		custom_effect_tooltip = pregaw_11_tt
+		custom_effect_tooltip = GNG_fakeswitchfocustree
+		complete_national_focus = GNG_black_cloud_roming
+	}
+}
+
+country_event = { #
+	id = dop_pregaw.13
+	title = dop_pregaw.13.t
+	desc = dop_pregaw.13.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.13.a
+		diplomatic_relation = {
+			country = CHI
+			relation = military_access
+			active = yes
+		}
+		CHI = {diplomatic_relation = {
+			country = GNG
+			relation = military_access
+			active = yes
+		}}
+	}
+}
+country_event = { #
+	id = dop_pregaw.14
+	title = dop_pregaw.14.t
+	desc = dop_pregaw.14.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.14.a
+		diplomatic_relation = {
+			country = JAP
+			relation = military_access
+			active = yes
+		}
+		JAP = {diplomatic_relation = {
+			country = GNG
+			relation = military_access
+			active = yes
+		}
+	}
+}
 }
 country_event = { #
 	id = dop_pregaw.9
