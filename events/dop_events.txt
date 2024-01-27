@@ -317,7 +317,8 @@ country_event = { #
 			relation = military_access
 			active = yes
 		}}
-	}
+		news_event = WORLD.40002
+		}
 }
 country_event = { #
 	id = dop_pregaw.14
@@ -340,9 +341,96 @@ country_event = { #
 			relation = military_access
 			active = yes
 		}
+		news_event = WORLD.40003
 	}
 }
 }
+country_event = { #
+	id = dop_pregaw.15
+	title = dop_pregaw.15.t
+	desc = dop_pregaw.15.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.15.a
+		news_event = WORLD.40004
+		CHI = { add_to_faction = GNG }
+		JAP = { declare_war_on = {target = GNG 
+		type = annex_everything}}
+		country_event = dop_pregaw.17
+	}
+}
+
+country_event = { #
+	id = dop_pregaw.16
+	title = dop_pregaw.16.t
+	desc = dop_pregaw.16.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.16.a
+		news_event = WORLD.40005
+		JAP = { add_to_faction = GNG }
+		CHI = { declare_war_on = {target = GNG 
+		type = annex_everything}}
+	set_country_flag = dop_ending
+	TNO_Country_Closing_Screen_Show = yes
+	custom_effect_tooltip = dop_country_closing_tt
+	}
+}
+country_event = { #
+	id = dop_pregaw.17
+	title = dop_pregaw.17.t
+	desc = dop_pregaw.17.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.17.a
+	if = {
+		limit = {has_country_flag = yongye_leave}
+		delete_unit_template_and_units = {
+			division_template = "Sensha Shidan - Armored Division"
+			disband = no #will refund equipment and manpower
+		}
+		729 = {
+			create_unit = {
+				division = "name = \"107 'Nagi' Kikaika Shidan\" division_template = \"Sensha Shidan - Armored Division\" start_manpower_factor = 0.7"
+				owner = JAP
+				count = 1
+				allow_spawning_on_enemy_provs = yes
+				id = 123
+			}
+		}
+	}
+	else = {
+		delete_unit_template_and_units = {
+			division_template = "Sensha Shidan - Armored Division"
+			disband = no #will refund equipment and manpower
+		}
+	JAP = {transfer_state = 729}
+	729 = {
+		create_unit = {
+			division = "name = \"107 'Nagi' Kikaika Shidan\" division_template = \"Sensha Shidan - Armored Division\" start_manpower_factor = 0.7"
+			owner = JAP
+			count = 1
+			allow_spawning_on_enemy_provs = yes
+			id = 123
+		}
+	}}
+	set_country_flag = dop_ending
+	TNO_Country_Closing_Screen_Show = yes
+	custom_effect_tooltip = dop_country_closing_tt
+}}
+
 country_event = { #
 	id = dop_pregaw.9
 	title = dop_pregaw.9.t
@@ -981,6 +1069,32 @@ country_event = { #
 
 	option = { #
 		name = dop_legco_hostage_crisis.24.a
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.25
+	title = dop_legco_hostage_crisis.25.t
+	desc = dop_legco_hostage_crisis.25.desc
+
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_legco_hostage_crisis.25.a
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.26
+	title = dop_legco_hostage_crisis.26.t
+	desc = dop_legco_hostage_crisis.26.desc
+
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_legco_hostage_crisis.26.a
 	}
 }
 country_event = { #

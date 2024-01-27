@@ -14,7 +14,7 @@ news_event = { #GAW
 		name = WORLD.40001.a
 	}
 }
-news_event = { #GAW CHI WIN
+news_event = { #GAW CHI 1
 	id = WORLD.40002
 	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40002"}
 	title = WORLD.40002.t
@@ -27,7 +27,7 @@ news_event = { #GAW CHI WIN
 		name = WORLD.40002.a
 	}
 }
-news_event = { #GAW JAP WIN
+news_event = { #GAW JAP 1
 	id = WORLD.40003
 	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40003"}
 	title = WORLD.40003.t
@@ -40,7 +40,7 @@ news_event = { #GAW JAP WIN
 		name = WORLD.40003.a
 	}
 }
-news_event = { #GAW GNG EASTEREGG
+news_event = { #GAW CHI 2
 	id = WORLD.40004
 	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40004"}
 	title = WORLD.40004.t
@@ -51,5 +51,18 @@ news_event = { #GAW GNG EASTEREGG
 
 	option = {
 		name = WORLD.40004.a
+	}
+}
+news_event = { #GAW JAP 2
+	id = WORLD.40005
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40004"}
+	title = WORLD.40005.t
+	desc = WORLD.40005.desc
+	picture = GFX_news_event_SUR_suriname_coup
+
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40005.a
 	}
 }
