@@ -1,3 +1,37 @@
+lhc_gui_decision_category = {
+	GNG_killer_active = {
+		icon = GFX_decisionguangdong_IJA
+		activation = {
+			check_variable= { current_witness  > 0} 
+			has_country_flag = lhc_active
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = no
+		days_mission_timeout = 5
+			allowed = {
+			tag = GNG
+		}
+		timeout_effect = {
+			if = { limit = {killer_prgess < 79 }
+			add_to_variable = {killer_prgess = 20}
+		}
+			else = {
+				set_variable = {killer_prgess = 0}
+				add_to_variable = { current_witness = -1 }
+				random_list = {
+					40 = {country_event = {id=dop_legco_hostage_crisis.24}}
+					40 = {country_event = {id=dop_legco_hostage_crisis.25}}
+					20 = {country_event = {id=dop_legco_hostage_crisis.26}}
+				}
+			}		
+		}
+		days_remove = 1
+	}
+}
 bfg_gui_decision_category = {
 GNG_ken_effect_on_bfg = {
 	icon = GFX_decisionguangdong_IJA
@@ -144,10 +178,24 @@ GNG_bfg_countdown = {
 	}
 	fixed_random_seed = no
 	timeout_effect = {
+		hidden_effect = {
+		CHI = {
+			country_event = {dop_usage.1000}
+
+		}
+	}
+	hidden_effect = {
+		if = {limit = {check_variable = { BFG_CHI_Balance > BFG_JAP_Balance }	check_variable = { BFG_GNG_Balance < 70.001 }}
+			country_event = dop_gaw.1
+	}
+		if = {limit = { check_variable = { BFG_CHI_Balance < BFG_JAP_Balance }	check_variable = { BFG_GNG_Balance < 70.001 }}
+			country_event = dop_gaw.2
+	}
 		set_country_flag = {bfg_active = 0}
 		clr_country_flag = bfg_active
 		custom_effect_tooltip = bfg_end_effect
 	}
+}
 	days_remove = 1
 }
 BFG_CHI_gun = {

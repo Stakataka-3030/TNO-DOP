@@ -23,6 +23,7 @@ lhc_gui_decision_category = {
 	scripted_gui = GNG_LHC_GUI
 	priority = 97000
 	visible_when_empty = yes
+	
 }
 	
 enchance_guangjing_decision_category = {

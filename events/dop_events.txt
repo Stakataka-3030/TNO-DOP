@@ -5,7 +5,84 @@ add_namespace = dop_end
 add_namespace = dop_usage
 add_namespace = dop_legco_hostage_crisis
 add_namespace = dop_flavors #maybe…i think
+country_event = { #
+	id = dop_usage.1000
+	title = dop_usage.1000.t
+	desc = dop_usage.1000.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_usage.1000.a
+		drop_cosmetic_tag = yes
+			set_cosmetic_tag = CHI_FIVE
+			JAP = {
+				end_puppet = CHI
+				end_puppet = GUX
+				end_puppet = SIC
+				end_puppet = SHX
+				remove_from_faction = CHI
+				remove_from_faction = GUX
+				remove_from_faction = YUN
+				remove_from_faction = SIC
+				remove_from_faction = SHX
+				remove_from_faction = GAN
+				remove_from_faction = MEN
+
+			}
+			YUN = {
+				annex_country = {
+					target = GUZ
+					transfer_troops = yes
+				}
+			}
+			CHI = {
+				set_politics = {
+					ruling_party = despotism
+				}
+				puppet = GUX
+				puppet = SIC
+				puppet = SHX
+				puppet = YUN
+				puppet = MEN
+				puppet = XIN
+				puppet = QIN
+				puppet = XIK
+				create_faction = CHI_THE_CHINESE_LEAGUE
+				transfer_state = 591
+				transfer_state = 813
+				transfer_state = 812
+				transfer_state = 1022
+				transfer_state = 811
+				transfer_state = 810
+				transfer_state = 524
+				add_state_core = 591
+				add_state_core = 813
+				add_state_core = 812
+				add_state_core = 1022
+				add_state_core = 811
+				add_state_core = 810
+				add_state_core = 524
+				load_oob = GNG_1962
+				load_oob = GNG_1962
+				load_oob = GNG_1962
+				load_oob = GNG_1962
+				load_oob = GNG_1962
+				load_oob = GNG_1962
+				load_oob = GNG_1962
+			}
+			declare_war_on = {
+				target = JAP
+				type = annex_everything
+			}
+			every_country = {
+				limit = { is_ai = no }
+				news_event = { id = WORLD.40001 days = 1 }
+			}
+	}
+}
 
 country_event = { #
 	id = dop_pregaw.1
@@ -681,18 +758,13 @@ country_event = { #
 country_event = { #
 	id = dop_legco_hostage_crisis.23
 	title = dop_legco_hostage_crisis.23.t
-	desc = dop_legco_hostage_crisis.23.desc
-	picture = GFX_report_event_GNG_morita_future
+
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { #
 		name = dop_legco_hostage_crisis.23.a
-		country_event = {
-			id = dop_legco_hostage_crisis.24
-			random_hours = 96
-		}
 		custom_effect_tooltip = Lhc_enable_tt
 		set_country_flag = lhc_active
 	}
@@ -701,19 +773,13 @@ country_event = { #
 	id = dop_legco_hostage_crisis.24
 	title = dop_legco_hostage_crisis.24.t
 	desc = dop_legco_hostage_crisis.24.desc
-	picture = GFX_report_event_GNG_morita_future
+
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { #
 		name = dop_legco_hostage_crisis.24.a
-		country_event = {
-			id = dop_legco_hostage_crisis.24
-			random_hours = 96
-		}
-		custom_effect_tooltip = Lhc_enable_tt
-		set_country_flag = lhc_active
 	}
 }
 country_event = { #
