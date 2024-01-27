@@ -5,6 +5,29 @@ scripted_gui = {
 		}
 		context_type = decision_category
 		window_name = "GNG_LHC_GUI"
+		triggers = {
+			TNO_LHC_pic_1_visible = {
+				check_variable = { GNG_LHC_cards_revealed > 0 }
+			}
+			TNO_LHC_pic_2_visible = {
+				check_variable = { GNG_LHC_cards_revealed > 1 }
+			}
+			TNO_LHC_pic_3_visible = {
+				check_variable = { GNG_LHC_cards_revealed > 2 }
+			}
+			TNO_LHC_pic_4_visible = {
+				check_variable = { GNG_LHC_cards_revealed > 3 }
+			}
+			TNO_LHC_pic_5_visible = {
+				check_variable = { GNG_LHC_cards_revealed > 4 }
+			}
+			TNO_LHC_pic_6_visible = {
+				check_variable = { GNG_LHC_cards_revealed > 5 }
+			}
+			TNO_LHC_pic_7_visible = {
+				check_variable = { GNG_LHC_cards_revealed > 6 }
+			}
+		}
 		properties = {
 			TNO_LHC_killer_pb = {
 				frame = killer_prgess
