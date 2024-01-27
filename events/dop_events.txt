@@ -274,7 +274,9 @@ country_event = { #
 
 	option = { #
 		name = dop_pregaw.11.a
-		
+		custom_effect_tooltip = pregaw_11_tt
+		custom_effect_tooltip = GNG_fakeswitchfocustree
+		complete_national_focus = GNG_black_cloud_roming
 	}
 }
 country_event = { #
