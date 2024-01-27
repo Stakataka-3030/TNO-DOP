@@ -15,6 +15,10 @@ spriteTypes = {
 		name = "GFX_frontend_DOP_logo"
 		texturefile = "gfx/interface/thumbnail.png"
 	}
+	spriteType = {
+		name = "GFX_frontend_DOP_logo"
+		texturefile = "gfx/interface/thumbnail.png"
+	}
 	corneredTileSpriteType = {
 		name = "GFX_fronticons_dop"
 		#texturefile = "gfx/interface/backpic.dds"
@@ -27,5 +31,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_frontend_DOP_backpic"
 		texturefile = "gfx/interface/backpic.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Sony_74_STR6046A_product"
+		textureFile = "gfx/interface/SONY_74_STR6046A.dds"
 	}
 }

@@ -83,7 +83,22 @@ country_event = { #
 			}
 	}
 }
+country_event = { #
+	id = dop_usage.2000
+	title = dop_usage.2000.t
+	desc = dop_usage.2000.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_usage.2000.a
+		set_temp_variable = { GNG_product_cycle_company_temp = 1 }
+			set_variable = { GNG_current_product_id = 60 }
+			GNG_new_product_cycle_start = yes
+	}
+}
 country_event = { #
 	id = dop_pregaw.1
 	title = dop_pregaw.1.t

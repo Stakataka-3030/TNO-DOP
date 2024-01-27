@@ -4677,6 +4677,14 @@ GNG_product_cycle_event_initializer = {
 		}
 		country_event = GNG_Product_Cycle.3
 	}
+	else_if = {
+		limit = {
+			check_variable = {
+				GNG_product_cycle_tracker = 13 #1974
+			}
+		}
+		country_event = dop_usage.2000
+	}
 }
 
 GNG_new_product_cycle_start = {
@@ -7670,6 +7678,17 @@ GNG_initiailize_product_cycle_end_event = {
 			}
 			check_variable = {
 				GNG_product_cycle_company = 4 #Hitachi
+			}
+		}
+		country_event = GNG_Product_Cycle.47
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				GNG_product_cycle_tracker = 13 #1972
+			}
+			check_variable = {
+				GNG_product_cycle_company = 1 #Hitachi
 			}
 		}
 		country_event = GNG_Product_Cycle.47

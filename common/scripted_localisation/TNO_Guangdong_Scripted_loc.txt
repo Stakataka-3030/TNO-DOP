@@ -6699,6 +6699,12 @@ defined_text = {
 		}
 		localization_key = GNG_product_hitachi_1973_title
 	}
+	text = {
+		trigger = {
+			check_variable = { GNG_current_product_id = 60 }
+		}
+		localization_key = GNG_product_sony_1974_title
+	}
 }
 
 defined_text = {
@@ -6990,6 +6996,12 @@ defined_text = {
 			check_variable = { GNG_current_product_id = 59 }
 		}
 		localization_key = GNG_product_hitachi_1973_specs
+	}
+	text = {
+		trigger = {
+			check_variable = { GNG_current_product_id = 60 }
+		}
+		localization_key = GNG_product_sony_1974_specs
 	}
 }
 
@@ -7737,6 +7749,12 @@ TNO_GNG_Product_Decision_GUI_Get_Product = {
 			check_variable = { GNG_current_product_id = 59 }
 		}
 		localization_key = "GFX_GNG_Product_Decisions_GUI_GX-201_Color_Copier"
+	}
+	text = {
+		trigger = {
+			check_variable = { GNG_current_product_id = 60 }
+		}
+		localization_key = "GFX_GNG_Product_Decisions_GUI_Sony_74_STR6046A_product"
 	}
 }
 
