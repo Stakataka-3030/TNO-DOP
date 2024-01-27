@@ -654,7 +654,10 @@ country_event = { #
 
 	option = { #
 		name = dop_legco_hostage_crisis.21.a
-		
+		country_event = {
+			id = dop_legco_hostage_crisis.23
+			random_hours = 96
+		}
 	}
 }
 country_event = { #
@@ -675,7 +678,25 @@ country_event = { #
 		}
 	}
 }
+country_event = { #
+	id = dop_legco_hostage_crisis.23
+	title = dop_legco_hostage_crisis.23.t
+	desc = dop_legco_hostage_crisis.23.desc
+	picture = GFX_report_event_GNG_morita_future
 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_legco_hostage_crisis.23.a
+		country_event = {
+			id = dop_legco_hostage_crisis.24
+			random_hours = 96
+		}
+		custom_effect_tooltip = Lhc_enable_tt
+		set_country_flag = lhc_active
+	}
+}
 country_event = { #
 	id = dop_sar.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.1" }
