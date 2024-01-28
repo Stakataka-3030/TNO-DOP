@@ -129,9 +129,12 @@ focus_tree = {
 focus_tree = {
 	id = dop_warpp_tree
 	factor = 0
-	modifier = {
-		add = 10
-		tag = GNG
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GNG
+		}
 	}
 	default = no
 	shared_focus = GNG_black_cloud_roming

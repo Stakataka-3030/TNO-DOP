@@ -1,4 +1,3 @@
-
 shared_focus = {
 	id = GNG_black_cloud_roming
 	icon = GER_GOR_Only_Clouds_Remain
