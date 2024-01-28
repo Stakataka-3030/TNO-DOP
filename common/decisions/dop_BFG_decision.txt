@@ -162,17 +162,15 @@ lhc_gui_decision_category = {
 			add_to_variable = {
 				winning_count = current_witness
 			}
-			
 				if = {
 					limit = {
-						winning_count > 6 
+						check_variable ={ winning_count > 6 }
 					}
 					country_event = dop_legco_hostage_crisis.50
 				}
 				else = {
 					country_event = dop_legco_hostage_crisis.51
 				}
-			
 	}
 	}
 }
