@@ -162,7 +162,7 @@ lhc_gui_decision_category = {
 			add_to_variable = {
 				winning_count = current_witness
 			}
-			hidden_effect = {
+			
 				if = {
 					limit = {
 						winning_count > 6 
@@ -172,7 +172,7 @@ lhc_gui_decision_category = {
 				else = {
 					country_event = dop_legco_hostage_crisis.51
 				}
-			}
+			
 	}
 	}
 }
