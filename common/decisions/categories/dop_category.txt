@@ -1,6 +1,6 @@
 bfg_gui_decision_category = {
 	allowed = {
-			tag = GNG
+		tag = GNG
 	}
 	visible = {
 		has_country_flag = bfg_active

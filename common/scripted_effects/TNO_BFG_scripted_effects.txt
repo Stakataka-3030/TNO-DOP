@@ -1,4 +1,4 @@
-### Stolen from the BattleForGNG :heart: ###
+### Stolen from the BattleForItaly :heart: ###
 
 BFG_setup_influence = {
 	GNG = {

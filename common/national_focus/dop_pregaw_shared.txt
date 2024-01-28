@@ -484,7 +484,7 @@ shared_focus = {
         NOT= {has_country_flag = gng_chi_choiced}
     }
     completion_reward = {
-        add_to_variable = { street_ws_var = 2 }
+        add_to_variable = { street_ws_var = 0.2 }
         custom_effect_tooltip =  GNG_effect_release_tt
     }
     prerequisite = { focus = GNG_battle_for_self}

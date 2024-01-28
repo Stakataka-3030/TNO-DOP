@@ -43,7 +43,6 @@ set_variable = { gng_product_interest = 0 }
 set_country_flag = country_has_gui
 set_country_flag = gui_alert_visible
 set_country_flag = gui_alert_visible_2
-clr_country_flag = bfg_active
 load_focus_tree = GNG_suzuki_tree
 
 set_stability = 1.2
