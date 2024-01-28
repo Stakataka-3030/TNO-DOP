@@ -36,9 +36,19 @@ lhc_gui_decision_category = {
 		allowed = {
 			original_tag = GNG
 		}
+		available = {
+			NOT = {
+				has_country_flag = now_ding
+			}
+		}
 		cost = 50
 		fire_only_once = yes
 		complete_effect = {
+			set_country_flag = {
+				flag = now_ding
+				days = 30
+				value = 1
+			}
 			country_event = 
 			{
 				id = dop_legco_hostage_crisis.27
@@ -49,9 +59,19 @@ lhc_gui_decision_category = {
 		allowed = {
 			original_tag = GNG
 		}
+		available = {
+			NOT = {
+				has_country_flag = now_ding
+			}
+		}
 		cost = 50
 		fire_only_once = yes
 		complete_effect = {
+			set_country_flag = {
+				flag = now_ding
+				days = 30
+				value = 1
+			}
 			country_event = 
 			{
 				id = dop_legco_hostage_crisis.28
@@ -62,12 +82,68 @@ lhc_gui_decision_category = {
 		allowed = {
 			original_tag = GNG
 		}
+		available = {
+			NOT = {
+				has_country_flag = now_ding
+			}
+		}
 		cost = 50
 		fire_only_once = yes
 		complete_effect = {
+			set_country_flag = {
+				flag = now_ding
+				days = 30
+				value = 1
+			}
 			country_event = 
 			{
 				id = dop_legco_hostage_crisis.29
+			}
+	}
+	}
+	LHC_riben = {
+		allowed = {
+			original_tag = GNG
+		}
+		available = {
+			NOT = {
+				has_country_flag = now_ding
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = {
+				flag = now_ding
+				days = 30
+				value = 1
+			}
+			country_event = 
+			{
+				id = dop_legco_hostage_crisis.30
+			}
+	}
+	}
+	LHC_zhujun = {
+		allowed = {
+			original_tag = GNG
+		}
+		available = {
+			NOT = {
+				has_country_flag = now_ding
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = {
+				flag = now_ding
+				days = 30
+				value = 1
+			}
+			country_event = 
+			{
+				id = dop_legco_hostage_crisis.31
 			}
 	}
 	}

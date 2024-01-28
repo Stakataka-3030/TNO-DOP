@@ -7,25 +7,25 @@ scripted_gui = {
 		window_name = "GNG_LHC_GUI"
 		triggers = {
 			TNO_LHC_pic_1_visible = {
-				check_variable = { GNG_LHC_cards_revealed > 0 }
+				check_variable = { GNG_LHC_cards_revealed_1 = 1 }
 			}
 			TNO_LHC_pic_2_visible = {
-				check_variable = { GNG_LHC_cards_revealed > 1 }
+				check_variable = { GNG_LHC_cards_revealed_2 = 1 }
 			}
 			TNO_LHC_pic_3_visible = {
-				check_variable = { GNG_LHC_cards_revealed > 2 }
+				check_variable = { GNG_LHC_cards_revealed_3 = 1 }
 			}
 			TNO_LHC_pic_4_visible = {
-				check_variable = { GNG_LHC_cards_revealed > 3 }
+				check_variable = { GNG_LHC_cards_revealed_4 = 1 }
 			}
 			TNO_LHC_pic_5_visible = {
-				check_variable = { GNG_LHC_cards_revealed > 4 }
+				check_variable = { GNG_LHC_cards_revealed_5 = 1 }
 			}
 			TNO_LHC_pic_6_visible = {
-				check_variable = { GNG_LHC_cards_revealed > 5 }
+				check_variable = { GNG_LHC_cards_revealed_6 = 1 }
 			}
 			TNO_LHC_pic_7_visible = {
-				check_variable = { GNG_LHC_cards_revealed > 6 }
+				check_variable = { GNG_LHC_cards_revealed_7 = 1 }
 			}
 		}
 		properties = {

@@ -1384,6 +1384,45 @@ country_event = { #
 	}
 }
 country_event = { #
+	id = dop_legco_hostage_crisis.30
+	title = dop_legco_hostage_crisis.30.t
+	desc = dop_legco_hostage_crisis.30.desc
+
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_legco_hostage_crisis.30.a
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.31
+	title = dop_legco_hostage_crisis.31.t
+	desc = dop_legco_hostage_crisis.31.desc
+
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_legco_hostage_crisis.29.a
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.32
+	title = dop_legco_hostage_crisis.32.t
+	desc = dop_legco_hostage_crisis.32.desc
+
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_legco_hostage_crisis.32.a
+	}
+}
+country_event = { #
 	id = dop_sar.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event dop_sar.1" }
 	title = dop_sar.1.t
