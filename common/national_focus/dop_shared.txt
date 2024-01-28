@@ -682,6 +682,8 @@ shared_focus = {
 	y = 2
 	relative_position_id = GNG_new_develop_project
 	completion_reward = {
+		set_temp_variable = { GNG_legco_amendment_id = 82.1 }
+			GNG_add_amendment_to_current = yes
 	}}
 shared_focus = {
 	prerequisite=
@@ -748,6 +750,8 @@ shared_focus = {
 	y = 2
 	relative_position_id = GNG_new_develop_project
 	completion_reward = {
+		set_temp_variable = { GNG_legco_amendment_id = 82.2}
+			GNG_add_amendment_to_current = yes
 	}}
 shared_focus = {
 	prerequisite=
@@ -780,7 +784,12 @@ shared_focus = {
 	cost = 2
 	x = -5
 	y = 2
-	relative_position_id = GNG_new_develop_project}
+	relative_position_id = GNG_new_develop_project
+	completion_reward = {
+		set_temp_variable = { GNG_legco_amendment_id = 83.1 }
+			GNG_add_amendment_to_current = yes
+	}
+}
 shared_focus = {
 	prerequisite=
 	{	
@@ -793,6 +802,8 @@ shared_focus = {
 	y = 2
 	relative_position_id = GNG_new_develop_project
 	completion_reward = {
+		set_temp_variable = { GNG_legco_amendment_id = 83.2 }
+			GNG_add_amendment_to_current = yes
 	}}
 	shared_focus = {
 		prerequisite=
@@ -878,6 +889,8 @@ shared_focus = {
 	y = 2
 	relative_position_id = GNG_new_develop_project
 	completion_reward = {
+		set_temp_variable = { GNG_legco_amendment_id = 84.1 }
+			GNG_add_amendment_to_current = yes
 	}}
 shared_focus = {
 	prerequisite=
@@ -891,6 +904,8 @@ shared_focus = {
 	y = 2
 	relative_position_id = GNG_new_develop_project
 	completion_reward = {
+		set_temp_variable = { GNG_legco_amendment_id = 84.2 }
+			GNG_add_amendment_to_current = yes
 	}}
 	shared_focus = {
 		prerequisite=
@@ -976,6 +991,8 @@ shared_focus = {
 	y = 2
 	relative_position_id = GNG_new_develop_project
 	completion_reward = {
+		set_temp_variable = { GNG_legco_amendment_id = 85.1 }
+			GNG_add_amendment_to_current = yes
 	}}
 shared_focus = {
 	prerequisite=
@@ -989,6 +1006,8 @@ shared_focus = {
 	y = 2
 	relative_position_id = GNG_new_develop_project
 	completion_reward = {
+		set_temp_variable = { GNG_legco_amendment_id = 85.2 }
+			GNG_add_amendment_to_current = yes
 	}}
 	shared_focus = {
 		prerequisite=
@@ -1074,6 +1093,8 @@ shared_focus = {
 	y = 2
 	relative_position_id = GNG_new_develop_project
 	completion_reward = {
+		set_temp_variable = { GNG_legco_amendment_id = 86.1 }
+			GNG_add_amendment_to_current = yes
 	}}
 shared_focus = {
 	prerequisite=
@@ -1087,6 +1108,8 @@ shared_focus = {
 	y = 2
 	relative_position_id = GNG_new_develop_project
 	completion_reward = {
+		set_temp_variable = { GNG_legco_amendment_id = 86.2 }
+			GNG_add_amendment_to_current = yes
 	}}
 	shared_focus = {
 		prerequisite=
