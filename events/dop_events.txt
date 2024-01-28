@@ -508,7 +508,7 @@ country_event = { #
 
 	option = { #
 	country_event = {
-		id = dop_pregaw.22
+		id = dop_pregaw.23
 		random_hours = 150
 	}
 		add_to_variable = { CCL_cong = 2 }
@@ -521,33 +521,141 @@ country_event = { #
 		tno_max_workhours_improve = yes
 	}
 	option = { 
+		country_event = {
+			id = dop_pregaw.23
+			random_hours = 150
+		}
 		add_to_variable = { CCL_cong = 1 }
 		add_political_power = -50
 		tno_max_workhours_improve = yes
 		name = dop_pregaw.22.b
 	}
 	option = { #
+	country_event = {
+		id = dop_pregaw.23
+		random_hours = 150
+	}
 	add_to_variable = { CCL_cong = 1 }
 		add_political_power = -50
 		tno_minimum_wage_improve = yes
 		name = dop_pregaw.22.c
 	}
 	option = { #
+	country_event = {
+		id = dop_pregaw.23
+		random_hours = 150
+	}
 		name = dop_pregaw.22.d
 	}
 }
 country_event = { #
-	id = dop_pregaw.9
-	title = dop_pregaw.9.t
-	desc = dop_pregaw.9.desc
+	id = dop_pregaw.23
+	title = dop_pregaw.23.t
+	desc = dop_pregaw.23.desc
 	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { #
-		name = dop_pregaw.9.a
+	country_event = {
+		id = dop_pregaw.24
+		random_hours = 150
 	}
+		add_to_variable = { CCL_cong = 2 }
+		name = dop_pregaw.23.a
+		add_political_power = -50
+		
+		
+		set_temp_variable = { GNG_legco_seat_temp = -2 }
+		set_temp_variable = { GNG_legco_faction_temp = 6 }
+		GNG_change_legco_seats = yes
+		tno_pensions_improve = yes
+		tno_health_care_improve = yes
+	}
+	option = { 
+		country_event = {
+			id = dop_pregaw.24
+			random_hours = 150
+		}
+		add_to_variable = { CCL_cong = 1 }
+		add_political_power = -50
+		tno_health_care_improve = yes
+		name = dop_pregaw.23.b
+	}
+	option = { #
+	country_event = {
+		id = dop_pregaw.24
+		random_hours = 150
+	}
+	add_to_variable = { CCL_cong = 1 }
+		add_political_power = -50
+		tno_pensions_improve = yes
+		name = dop_pregaw.23.c
+	}
+	option = { #
+	country_event = {
+		id = dop_pregaw.24
+		random_hours = 150
+	}
+		name = dop_pregaw.23.d
+	}
+}
+country_event = { #
+	id = dop_pregaw.24
+	title = dop_pregaw.24.t
+	desc = dop_pregaw.24.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+	name = dop_pregaw.24.a
+	set_temp_variable = { GNG_legco_seat_temp = -2 }
+	set_temp_variable = { GNG_legco_faction_temp = 6 }
+	GNG_change_legco_seats = yes
+	set_temp_variable = { GNG_legco_seat_temp = -2 }
+	set_temp_variable = { GNG_legco_faction_temp = 3 }
+	GNG_change_legco_seats = yes
+	hidden_effect = {
+	if = {
+		limit = {
+			check_variable = { CCL_cong > 1.99 }
+		}
+		country_event = {
+			id = dop_pregaw.25
+			random_hours = 150
+		}
+	}
+	else = {
+		country_event = {
+			id = dop_pregaw.26
+			random_hours = 150
+		}
+	}
+}
+}
+option = { #
+name = dop_pregaw.24.b
+hidden_effect = {
+if = {
+	limit = {
+		check_variable = { CCL_cong > 3.99 }
+	}
+	country_event = {
+		id = dop_pregaw.25
+		random_hours = 150
+	}
+}
+else = {
+	country_event = {
+		id = dop_pregaw.26
+		random_hours = 150
+	}
+}
+}
+}
 }
 country_event = { #
 	id = dop_pregaw.9
