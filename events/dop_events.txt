@@ -314,7 +314,7 @@ country_event = { #
 	option = { #
 	country_event = {
 		id = dop_legco_hostage_crisis.20
-		days = 20
+		days = 30
 		
 	}
 		name = dop_pregaw.13.a
@@ -1355,6 +1355,13 @@ country_event = { #
 
 	option = { #
 		name = dop_legco_hostage_crisis.27.a
+		country_event = {
+			id = dop_legco_hostage_crisis.32
+			days = 3
+		}
+		set_variable = { GNG_LHC_cards_revealed_1 = 1 }
+		add_to_variable = { winning_count = 1 }
+		custom_effect_tooltip = LHC_add
 	}
 }
 country_event = { #
@@ -1419,7 +1426,118 @@ country_event = { #
 	fire_only_once = yes
 
 	option = { #
+		country_event = {
+		id = dop_legco_hostage_crisis.33
+		days = 3
+		}
 		name = dop_legco_hostage_crisis.32.a
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.33
+	title = dop_legco_hostage_crisis.33.t
+	desc = dop_legco_hostage_crisis.33.desc
+
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+	
+	country_event = {
+		id = dop_legco_hostage_crisis.34
+		days = 3
+		}
+		name = dop_legco_hostage_crisis.33.a
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.34
+	title = dop_legco_hostage_crisis.34.t
+	desc = dop_legco_hostage_crisis.34.desc
+
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+	country_event = {
+		id = dop_legco_hostage_crisis.35
+		days = 3
+		}
+		
+		name = dop_legco_hostage_crisis.34.a
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.35
+	title = dop_legco_hostage_crisis.35.t
+	desc = dop_legco_hostage_crisis.35.desc
+
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+	country_event = {
+		id = dop_legco_hostage_crisis.36
+		days = 3
+		}
+		name = dop_legco_hostage_crisis.35.a
+		set_variable = { GNG_LHC_cards_revealed_2 = 1 }
+		add_to_variable = { winning_count = 1 }
+		custom_effect_tooltip = LHC_add
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.36
+	title = dop_legco_hostage_crisis.36.t
+	desc = dop_legco_hostage_crisis.36.desc
+
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+	country_event = {
+		id = dop_legco_hostage_crisis.37
+		days = 3
+		}
+		name = dop_legco_hostage_crisis.36.a
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.37
+	title = dop_legco_hostage_crisis.37.t
+	desc = dop_legco_hostage_crisis.37.desc
+
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		clr_country_flag = now_ding
+		name = dop_legco_hostage_crisis.37.a
+		set_variable = { GNG_LHC_cards_revealed_5 = 1 }
+		add_to_variable = { winning_count = 1 }
+		custom_effect_tooltip = LHC_add
+	}
+}
+country_event = { #
+	id = dop_legco_hostage_crisis.38
+	title = dop_legco_hostage_crisis.38.t
+	desc = dop_legco_hostage_crisis.38.desc
+
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+	country_event = {
+		id = dop_legco_hostage_crisis.39
+		days = 3
+		}
+		name = dop_legco_hostage_crisis.38.a
 	}
 }
 country_event = { #

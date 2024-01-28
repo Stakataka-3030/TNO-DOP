@@ -46,7 +46,7 @@ lhc_gui_decision_category = {
 		complete_effect = {
 			set_country_flag = {
 				flag = now_ding
-				days = 30
+				
 				value = 1
 			}
 			country_event = 
@@ -69,7 +69,7 @@ lhc_gui_decision_category = {
 		complete_effect = {
 			set_country_flag = {
 				flag = now_ding
-				days = 30
+				
 				value = 1
 			}
 			country_event = 
@@ -92,7 +92,7 @@ lhc_gui_decision_category = {
 		complete_effect = {
 			set_country_flag = {
 				flag = now_ding
-				days = 30
+				
 				value = 1
 			}
 			country_event = 
@@ -115,7 +115,7 @@ lhc_gui_decision_category = {
 		complete_effect = {
 			set_country_flag = {
 				flag = now_ding
-				days = 30
+				
 				value = 1
 			}
 			country_event = 
@@ -138,12 +138,40 @@ lhc_gui_decision_category = {
 		complete_effect = {
 			set_country_flag = {
 				flag = now_ding
-				days = 30
+				
 				value = 1
 			}
 			country_event = 
 			{
 				id = dop_legco_hostage_crisis.31
+			}
+	}
+	}
+	LHC_end = {
+		allowed = {
+			original_tag = GNG
+		}
+		available = {
+			NOT = {
+				has_country_flag = now_ding
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			clr_country_flag = lhc_active
+			add_to_variable = {
+				winning_count = current_witness
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						winning_count > 6 
+					}
+					country_event = dop_legco_hostage_crisis.50
+				}
+				else = {
+					country_event = dop_legco_hostage_crisis.51
+				}
 			}
 	}
 	}
