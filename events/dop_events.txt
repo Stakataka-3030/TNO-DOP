@@ -283,6 +283,38 @@ country_event = { #
 		custom_effect_tooltip = pregaw_11_tt
 		custom_effect_tooltip = GNG_fakeswitchfocustree
 		complete_national_focus = GNG_black_cloud_roming
+		remove_unit_leader = 12103
+		remove_unit_leader = 12107
+		remove_unit_leader = 12104
+		remove_unit_leader = 12105
+		remove_unit_leader = 12106
+		remove_unit_leader = 12108
+		remove_unit_leader = 12101
+		GNG_kobayashi_masami = {
+			retire = yes
+		}
+		GNG_kayanomiya_tsunenorio = {
+			retire = yes
+		}
+		GNG_kuribayashi_tadamichi = {
+			retire = yes
+		}
+		GNG_watanabe_keitaro = {
+			retire = yes
+		}
+		GNG_murai_sumio = {
+			retire = yes
+		}
+		GNG_takashima_masuo = {
+			retire = yes
+		}
+		GNG_takeda_goro= {
+			retire = yes
+		}
+		GNG_nagano_shigeto= {
+			retire = yes
+		}
+		
 	}
 }
 country_event = { #
@@ -1615,6 +1647,7 @@ country_event = { #
 	option = { #
 		name = dop_legco_hostage_crisis.50.a
 		custom_effect_tooltip = LHC_win
+		remove_unit_leader = 12103
 	}
 }
 country_event = { #
