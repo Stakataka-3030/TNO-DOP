@@ -129,9 +129,11 @@ GNG_debug_category = {
 GNG_dop_debug_show_bfg_gui = {
 allowed = {
 	original_tag = GNG
+	is_ai = no
 }
 icon = GFX_decision_GNG_generic
 visible = {
+	is_ai = no
 }
 complete_effect = {
 	BFG_setup_influence = yes

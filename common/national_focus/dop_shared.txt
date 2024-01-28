@@ -1204,8 +1204,6 @@ shared_focus = {
 		y = 0
 		completion_reward = {
 			BFG_setup_influence = yes
-
-
 	}}
 	shared_focus = {
 		id = GNG_silicon_tower_collasped
