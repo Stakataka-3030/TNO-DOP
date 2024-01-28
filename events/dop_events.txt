@@ -274,6 +274,12 @@ country_event = { #
 
 	option = { #
 		name = dop_pregaw.11.a
+		hidden_effect = {
+			country_event = {
+				id = dop_pregaw.21
+				random_hours = 300
+			}
+		}
 		custom_effect_tooltip = pregaw_11_tt
 		custom_effect_tooltip = GNG_fakeswitchfocustree
 		complete_national_focus = GNG_black_cloud_roming
@@ -627,6 +633,9 @@ country_event = { #
 			id = dop_pregaw.25
 			random_hours = 150
 		}
+		add_to_variable = {
+			CCL_cong = 2
+		}
 	}
 	else = {
 		country_event = {
@@ -658,19 +667,109 @@ else = {
 }
 }
 country_event = { #
-	id = dop_pregaw.9
-	title = dop_pregaw.9.t
-	desc = dop_pregaw.9.desc
+	id = dop_pregaw.25
+	title = dop_pregaw.25.t
+	desc = dop_pregaw.25.desc
 	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { #
-		name = dop_pregaw.9.a
+		name = dop_pregaw.25.a
+		if = {
+			limit = {
+				CCL_cong > 5.99
+			}
+			division_template = {
+				name = "CCL infantry"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 1 }
+					recon = { x = 0 y = 2 }
+					artillery = { x = 0 y = 3 }
+				}
+				
+			}
+			1439 = {
+				create_unit = {
+					division = "name = \"Guangdong_CCL_Devision\" division_template = \"CCL infantry\" start_experience_factor=0.3"
+					owner = GNG
+					count = 4
+					id = 1439
+				}
+			 }
+		}
+		else_if = {
+			limit = {
+				CCL_cong > 4.99
+			}
+			division_template = {
+				name = "CCL infantry"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+				}
+				support = {
+					engineer = { x = 0 y = 1 }
+					recon = { x = 0 y = 2 }
+				}
+			}
+			1439 = {
+				create_unit = {
+					division = "name = \"Guangdong_CCL_Devision\" division_template = \"CCL infantry\" start_experience_factor=0.3"
+					owner = GNG
+					count = 4
+					id = 1439
+				}
+			 }
+		}
+		else = {
+			division_template = {
+				name = "CCL infantry"
+				regiments = {
+					light_infantry = { x = 0 y = 0 }
+					light_infantry = { x = 0 y = 1 }
+					light_infantry = { x = 0 y = 2 }
+					light_infantry = { x = 1 y = 0 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+				}
+			}
+			1439 = {
+				create_unit = {
+					division = "name = \"Guangdong_CCL_Devision\" division_template = \"CCL infantry\" start_experience_factor=0.3"
+					owner = GNG
+					count = 4
+					id = 1439
+				}
+			 }
+		}
 	}
 }
+country_event = { #
+	id = dop_pregaw.26
+	title = dop_pregaw.26.t
+	desc = dop_pregaw.26.desc
+	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dop_pregaw.26.a
+	}
+}
 country_event = { #
 	id = dop_legco_hostage_crisis.1
 	title = dop_legco_hostage_crisis.1.t

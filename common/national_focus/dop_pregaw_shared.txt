@@ -250,7 +250,7 @@ shared_focus = {
         }
         1439 = {
             create_unit = {
-                division = "name = \"Special Police\" division_template = \"Guangdong Tri Devision\" start_experience_factor=1"
+                division = "name = \"Guangdong_tri_Devision\" division_template = \"Guangdong Tri Devision\" start_experience_factor=0.2"
                 owner = GNG
                 count = 4
                 id = 1439
