@@ -7,7 +7,7 @@ shared_focus = {
 	completion_reward = {
         set_variable = {street_pp_var = -1}
 		set_variable = {street_st_var = -0.6}
-		set_variable = {street_ws_var = -0.6}
+		set_variable = {street_ws_var = -0.8}
 		set_variable = { street_cf_var = 10}
 		set_variable = { street_cp_var = -0.5}
         add_dynamic_modifier = { modifier = GNG_street_dummy }
@@ -94,6 +94,7 @@ shared_focus = {
     x = 2
     y = 3
     completion_reward = {
+        clr_country_flag = gjqh_active
         division_template = {
             name = "Guangdong Special Police"
             regiments = {
@@ -364,8 +365,8 @@ shared_focus = {
         NOT= {has_country_flag = gng_chi_choiced}
     }
     completion_reward = {
-        add_to_variable = {street_pp_var = 0.1}
-        add_to_variable = { street_ws_var = 0.1}
+        add_to_variable = {street_pp_var = 0.05}
+        add_to_variable = { street_ws_var = 0.05}
         custom_effect_tooltip =  GNG_effect_release_tt
     }
     prerequisite = { focus = GNG_black_cloud_roming}
@@ -381,7 +382,7 @@ shared_focus = {
         NOT= {has_country_flag = gng_chi_choiced}
     }
     completion_reward = {
-        add_to_variable = {street_pp_var = 0.2}
+        add_to_variable = {street_pp_var = 0.1}
         add_to_variable = { street_st_var = 0.1}
         custom_effect_tooltip =  GNG_effect_release_tt
     }
@@ -398,7 +399,7 @@ shared_focus = {
         NOT= {has_country_flag = gng_chi_choiced}
     }
     completion_reward = {
-        add_to_variable = {street_pp_var = 0.2}
+        add_to_variable = {street_pp_var = 0.1}
         add_to_variable = { street_st_var = 0.2}
         custom_effect_tooltip =  GNG_effect_release_tt
         add_manpower = -100000
@@ -416,7 +417,7 @@ shared_focus = {
         NOT= {has_country_flag = gng_chi_choiced}
     }
     completion_reward = {
-        add_to_variable = {street_pp_var = 0.1}
+        add_to_variable = {street_pp_var = 0.05}
         add_to_variable = { street_ws_var = 0.05}
         custom_effect_tooltip =  GNG_effect_release_tt
     }
@@ -433,7 +434,7 @@ shared_focus = {
         NOT= {has_country_flag = gng_chi_choiced}
     }
     completion_reward = {
-        add_to_variable = { street_pp_var = 0.1}
+        add_to_variable = { street_pp_var = 0.05}
         add_to_variable = { street_ws_var = 0.1 }
         custom_effect_tooltip =  GNG_effect_release_tt
     }
@@ -450,7 +451,7 @@ shared_focus = {
         NOT= {has_country_flag = gng_chi_choiced}
     }
     completion_reward = {
-        add_to_variable = { street_cp_var = 0.1}
+        add_to_variable = { street_cp_var = 0.05}
         add_to_variable = { street_cf_var = -3 }
         custom_effect_tooltip =  GNG_effect_release_tt
     }
@@ -467,7 +468,7 @@ shared_focus = {
         NOT= {has_country_flag = gng_chi_choiced}
     }
     completion_reward = {
-        add_to_variable = { street_cp_var = 0.2}
+        add_to_variable = { street_cp_var = 0.1}
         add_to_variable = { street_cf_var = -1 }
         custom_effect_tooltip =  GNG_effect_release_tt
     }

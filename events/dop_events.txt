@@ -5,22 +5,7 @@ add_namespace = dop_end
 add_namespace = dop_usage
 add_namespace = dop_legco_hostage_crisis
 add_namespace = dop_flavors #maybe…i think
-country_event = {
-	id = dop_usage.20001
-	title = ""
-	desc = ""
-	fire_only_once = yes
-	trigger = {
-		tag = ZZZ
-		date > 1962.01.01
-	}
-	option = {
-		name = dop_usage.20001.a
-		GNG = {
-			clr_country_flag = bfg_active
-		}
-	}
-}
+
 country_event = { #
 	id = dop_usage.1000
 	title = dop_usage.1000.t
