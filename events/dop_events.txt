@@ -396,11 +396,13 @@ country_event = { #
 	option = { #
 		name = dop_pregaw.17.a
 	if = {
+		custom_effect_tooltip = final_yongye_no_tt
 		limit = {has_country_flag = yongye_leave}
 		delete_unit_template_and_units = {
 			division_template = "Sensha Shidan - Armored Division"
 			disband = no #will refund equipment and manpower
 		}
+		
 		729 = {
 			create_unit = {
 				division = "name = \"107 'Nagi' Kikaika Shidan\" division_template = \"Sensha Shidan - Armored Division\" start_manpower_factor = 0.7"
@@ -412,6 +414,7 @@ country_event = { #
 		}
 	}
 	else = {
+		custom_effect_tooltip = final_yongye_yes_tt
 		delete_unit_template_and_units = {
 			division_template = "Sensha Shidan - Armored Division"
 			disband = no #will refund equipment and manpower
