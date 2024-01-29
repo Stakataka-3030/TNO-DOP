@@ -393,7 +393,7 @@ GNG_update_fiscal = {
 			}
 			add_ideas = GNG_fiscal_warning_dummy
 			set_variable = { GNG_fiscal_inflation_rate = 0.2 }
-			set_variable = { GNG_fiscal_pp_gain = 0. }
+			set_variable = { GNG_fiscal_pp_gain = 0.2 }
 			set_variable = { GNG_fiscal_credit_rating = 6 }
 			set_temp_variable = { temp_credit_rating = 6 }
 			set_temp_variable = { temp_credit_rating_min = 6 }
@@ -2270,6 +2270,7 @@ GNG_initialize_riots_underworld = {
 		}
 		set_variable = { riot_spt = 80 }
 		set_variable = { govt_spt = 20 }
+		set_state_flag = GNG_rioter_rural_state
 	}
 	random_owned_state = {
 		limit = {
@@ -2668,7 +2669,25 @@ GNG_backfill_graphs = {
 		multiply_temp_variable = { delta = man_monthly_gdp_growth }
 		subtract_from_temp_variable = { man_monthly_gdp_growth = delta }
 	}
+	#Backfill Target GDP Graphs - purely to prevent 2 errors
+	set_variable = { GNG_GDP_Goal = 21.2 } # Starting GDP
+	set_variable = { GNG_Growth_Goal = 0.06 } # Pre-1962 Normal Growth
+	for_loop_effect = {
+		start = 0
+		end = 25
+		value = i
 
+		add_to_array = { array = GNG_target_gdp_history value = GNG_GDP_Goal index = 0 }
+	}
+	set_temp_variable = { GNG_Growth_Goal_temp = GNG_Growth_Goal }
+	multiply_temp_variable = { GNG_Growth_Goal_temp = 100 }
+	for_loop_effect = {
+		start = 0
+		end = 25
+		value = i
+
+		add_to_array = { array = GNG_target_gdp_growth_history value = GNG_Growth_Goal_temp index = 0 }
+	}
 	#Backfill Debt History
 	clear_array = GNG_debt_ratio_history
 	clear_array = GNG_debt_target_1_history
@@ -8032,6 +8051,16 @@ GNG_research_modifiers_base_calc = {
 }
 
 GNG_research_monthly_calc = {
+	for_each_loop = {
+		array = GNG_ARR_research_bars
+		index = i
+		value = val
+
+		if = {
+			limit = { check_variable = { i < 6 } }
+			add_to_variable = { GNG_ARR_research_bars^i = GNG_ARR_research_monthly_real^i }
+		}
+	}
 	if = {
 		limit = {
 			check_variable = { GNG_ARR_research_bars^1 > 99.9 }
@@ -8084,7 +8113,6 @@ GNG_research_monthly_calc = {
 
 		if = {
 			limit = { check_variable = { i < 6 } }
-			add_to_variable = { GNG_ARR_research_bars^i = GNG_ARR_research_monthly_real^i }
 			clamp_variable = {
 				var = GNG_ARR_research_bars^i
 				min = 0
@@ -8309,8 +8337,7 @@ GNG_fail_ordinance = {
 	if = {
 		limit = { 
 			check_variable = { GNG_legco_current_ordinance_id > 0 }
-			check_variable = { GNG_Current_Ordinance_Votes < 50 }
-		 }
+		}
 		log = "12121"
 		add_to_array = { array = GNG_legco_history value = GNG_legco_current_ordinance_id index = 0 }
 		add_to_array = { array = GNG_legco_passage value = -1 index = 0 }
@@ -9511,53 +9538,73 @@ legco_set_popularities = {
 	hidden_effect = {
 		if = {
 			limit = {
-				NOT = { has_country_flag = GNG_legco_stage_2 }
+				OR = {
+					has_country_leader = { character = GNG_suzuki_teiichi }
+					has_country_leader = { character = GNG_matsuzawa_takuji }
+				}
 			}
-			set_temp_variable = { GNG_state_seats = GNG_legco_sony_seats }
-			set_temp_variable = { GNG_corporate_seats = GNG_legco_matsushita_seats }
-			add_to_temp_variable = { GNG_corporate_seats = GNG_legco_fujitsu_seats }
-			add_to_temp_variable = { GNG_corporate_seats = GNG_legco_yasuda_seats }
-			set_temp_variable = { GNG_fascist_seats = GNG_legco_suzuki_seats }
 			set_popularities = {
-				paternalism = var:GNG_state_seats
-				despotism = var:GNG_corporate_seats
-				fascism = var:GNG_fascist_seats
+				paternalism = var:GNG_legco_sony_seats
+				paternalism_2 = var:GNG_legco_cheungkong_seats
+				despotism = var:GNG_legco_yasuda_seats
+				despotism_1 = var:GNG_legco_fujitsu_seats
+				despotism_2 = var:GNG_legco_matsushita_seats
+				fascism = var:GNG_legco_suzuki_seats
 			}
 		}
 		else_if = {
 			limit = {
-				has_country_flag = GNG_legco_stage_2
 				has_country_flag = GNG_Ibuka_Fascism
 			}
-			set_temp_variable = { GNG_state_seats = GNG_legco_sony_seats }
-			add_to_temp_variable = { GNG_state_seats = GNG_legco_cheungkong_seats }
-			set_temp_variable = { GNG_corporate_seats = GNG_legco_matsushita_seats }
-			set_temp_variable = { GNG_fascist_seats = GNG_legco_fujitsu_seats }
-			add_to_temp_variable = { GNG_fascist_seats = GNG_legco_hitachi_seats }
 			set_popularities = {
-				paternalism = var:GNG_state_seats
-				despotism = var:GNG_corporate_seats
-				fascism = var:GNG_fascist_seats
+				paternalism = var:GNG_legco_sony_seats
+				paternalism_2 = var:GNG_legco_cheungkong_seats
+				despotism = var:GNG_legco_matsushita_seats
+				fascism = var:GNG_legco_fujitsu_seats
+				fascism_3 = var:GNG_legco_hitachi_seats
 			}
 		}
 		else_if = {
 			limit = {
-				has_country_flag = GNG_legco_stage_2
+				has_country_leader = { character = GNG_morita_akio }
 			}
-			set_temp_variable = { GNG_state_seats = GNG_legco_sony_seats }
-			add_to_temp_variable = { GNG_state_seats = GNG_legco_cheungkong_seats }
-			set_temp_variable = { GNG_corporate_seats = GNG_legco_matsushita_seats }
-			add_to_temp_variable = { GNG_corporate_seats = GNG_legco_fujitsu_seats }
-			set_temp_variable = { GNG_fascist_seats = GNG_legco_hitachi_seats }
 			set_popularities = {
-				paternalism = var:GNG_state_seats
-				despotism = var:GNG_corporate_seats
-				fascism = var:GNG_fascist_seats
+				paternalism = var:GNG_legco_sony_seats
+				paternalism_2 = var:GNG_legco_cheungkong_seats
+				despotism = var:GNG_legco_matsushita_seats
+				despotism_1 = var:GNG_legco_fujitsu_seats
+				fascism = var:GNG_legco_hitachi_seats
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader = { character = GNG_matsushita_masaharu }
+			}
+			set_popularities = {
+				paternalism = var:GNG_legco_sony_seats
+				paternalism_2 = var:GNG_legco_cheungkong_seats
+				despotism = var:GNG_legco_matsushita_seats
+				despotism_1 = var:GNG_legco_fujitsu_seats
+				fascism = var:GNG_legco_hitachi_seats
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader = { character = GNG_ibuka_masaru }
+				NOT = {
+					has_country_flag = GNG_Ibuka_Fascism
+				}
+			}
+			set_popularities = {
+				paternalism = var:GNG_legco_sony_seats
+				paternalism_2 = var:GNG_legco_cheungkong_seats
+				despotism = var:GNG_legco_fujitsu_seats
+				despotism_2 = var:GNG_legco_matsushita_seats
+				fascism = var:GNG_legco_hitachi_seats
 			}
 		}
 	}
 }
-
 legco_introduce_ordinance = {
 	set_variable = { GNG_legco_current_ordinance_id = GNG_temp_legco_id }
 	log = "Guangdong ID [?GNG_temp_legco_id] Bill Initialize"
@@ -9779,7 +9826,8 @@ GNG_pass_ordinance_event_effect = {
 	}
 	else_if = {
 		limit = {
-			OR= {has_country_flag = GNG_Dismantlement_CCL_OVER
+			OR= {
+			has_country_flag = GNG_Dismantlement_CCL_OVER
 			has_country_flag = GNG_Dismantlement_GFT_OVER }			
 			check_variable = { GNG_legco_current_ordinance_id = 76 } #country park ordinance
 		}
@@ -9833,49 +9881,10 @@ GNG_pass_ordinance_event_effect = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { GNG_legco_current_ordinance_id = 80 } #indep
-		}
-		country_event = {
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = { GNG_legco_current_ordinance_id = 81 } #japan
-		}
-		country_event = {
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = { GNG_legco_current_ordinance_id = 82 } #compulsory_educ_ord
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = { GNG_legco_current_ordinance_id = 83 } #tools_ord
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = { GNG_legco_current_ordinance_id = 84 } #health_ord
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = { GNG_legco_current_ordinance_id = 85 } #agri_ord
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = { GNG_legco_current_ordinance_id = 86 } #science_dev_ord
-		}
-	}
-	else_if = {
-		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 87 } #emergencey_power_ord
 		}
 		country_event = {
-			dop_pregaw.8
+			id = dop_pregaw.8
 		}
 	}
 	else_if = {
@@ -10602,6 +10611,7 @@ GNG_fail_ordinance_event_effect = {
 		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 23 } #Corruption Advisory Ordinance
 		}
+		set_country_flag = GNG_ICAC_ended
 		country_event = {
 			id = guangdong_sonyflavor.117
 		}
@@ -10610,6 +10620,7 @@ GNG_fail_ordinance_event_effect = {
 		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 24 } #Inspector General Ordinance
 		}
+		set_country_flag = GNG_ICAC_ended
 		country_event = {
 			id = guangdong_sonyflavor.117
 		}
@@ -10618,6 +10629,7 @@ GNG_fail_ordinance_event_effect = {
 		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 25 } #Independent Commsion Against Corruption
 		}
+		set_country_flag = GNG_ICAC_ended
 		country_event = {
 			id = guangdong_sonyflavor.117
 		}
@@ -10626,6 +10638,7 @@ GNG_fail_ordinance_event_effect = {
 		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 26 } #Public Order Ordinance
 		}
+		set_country_flag = GNG_Public_Order_Ordinance_ended
 		country_event = {
 			id = guangdong_sonyflavor.133
 		}
@@ -10634,6 +10647,7 @@ GNG_fail_ordinance_event_effect = {
 		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 27 } #Casino Licensing Review Ordinance, Stanley Edition
 		}
+		set_country_flag = GNG_Casino_License_ended
 		country_event = {
 			id = guangdong_sonyCasino.9
 		}
@@ -10642,6 +10656,7 @@ GNG_fail_ordinance_event_effect = {
 		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 28 } #Casino Licensing Review Ordinance, Yokoi Edition
 		}
+		set_country_flag = GNG_Casino_License_ended
 		country_event = {
 			id = guangdong_sonyCasino.12
 		}
@@ -11358,6 +11373,7 @@ GNG_ordinances_effects = {
 		limit = {
 			check_variable = { GNG_temp_legco_id = 23 } #Corruption Advisory Ordinance
 		}
+		set_country_flag = GNG_ICAC_ended
 		set_country_flag = GNG_morita_corruption_advisory_ordinance
 		custom_effect_tooltip = GNG_corruption_advisory_ordinance_passed_tt
 		add_to_variable = { GNG_morita_security_ordinances_passed = 1 }
@@ -11368,6 +11384,7 @@ GNG_ordinances_effects = {
 		limit = {
 			check_variable = { GNG_temp_legco_id = 24 } #Inspector General Ordinance
 		}
+		set_country_flag = GNG_ICAC_ended
 		set_country_flag = GNG_morita_inspector_general_ordinance
 		custom_effect_tooltip = GNG_inspector_general_ordinance_passed_tt
 		add_to_variable = { GNG_morita_security_ordinances_passed = 1 }
@@ -11378,6 +11395,7 @@ GNG_ordinances_effects = {
 		limit = {
 			check_variable = { GNG_temp_legco_id = 25 } #ICAC Ordinance
 		}
+		set_country_flag = GNG_ICAC_ended
 		custom_effect_tooltip = GNG_ICAC_ordinance_passed_tt
 		add_to_variable = { GNG_morita_security_ordinances_passed = 1 }
 		set_temp_variable = { v = 21 }
@@ -11387,6 +11405,7 @@ GNG_ordinances_effects = {
 		limit = {
 			check_variable = { GNG_temp_legco_id = 26 } #Public Order Ordinance
 		}
+		set_country_flag = GNG_Public_Order_Ordinance_ended
 		add_to_variable = { GNG_morita_security_ordinances_passed = 1 }
 		if = {
 			limit = {
@@ -11465,6 +11484,7 @@ GNG_ordinances_effects = {
 		limit = {
 			check_variable = { GNG_temp_legco_id = 27 } #Casino License, Ho Edition
 		}
+		set_country_flag = GNG_Casino_License_ended
 		every_owned_state = {
 			set_temp_variable = { tri_spt_temp = 2.5 }
 			GNG_triad_control_change = yes
@@ -11501,6 +11521,7 @@ GNG_ordinances_effects = {
 		limit = {
 			check_variable = { GNG_temp_legco_id = 28 } #Casino License, Yokoi Edition
 		}
+		set_country_flag = GNG_Casino_License_ended
 		every_owned_state = {
 			set_temp_variable = { yak_spt_temp = 2.5 }
 			GNG_yakuza_control_change = yes
@@ -12011,6 +12032,10 @@ GNG_ordinances_effects = {
 		set_country_flag = GNG_Future_Act_passed
 		set_temp_variable = { v = 57 }
 		GNG_add_uncategorised_law = yes
+		GNG_change_legco_seats = yes
+		set_temp_variable = { GNG_legco_seat_temp = 100 }
+		set_temp_variable = { GNG_legco_faction_temp = 5 }
+		GNG_change_legco_seats = no
 	}
 	else_if = {
 		limit = {
@@ -18781,8 +18806,7 @@ GNG_amendment_effects = {
 			limit = {
 				check_variable = { GNG_legco_amendment_id = 19.7 } #Worker Safety
 			}
-			tno_regulations_improve = yes
-			TNO_worsen_regulations_policy_effectiveness_med = yes
+			TNO_improve_regulations_policy_effectiveness_high = yes
 			TNO_improve_poverty_med = yes
 			every_owned_state = {
 				set_temp_variable = { zhu_app_temp = 0.3 }
@@ -22242,7 +22266,7 @@ GNG_check_legco_changes = {
 		limit = {
 			check_variable = { GNG_legco_changes_counter = 7 } #1972 effect
 		}
-		country_event = GNG_LegCo_Changes.3
+		country_event = GNG_LegCo_Changes.4
 	}
 	add_to_variable = { GNG_legco_changes_counter = 1 }
 }
@@ -26110,19 +26134,35 @@ GNG_IJA_piechart_manipulation = {
 	subtract_from_temp_variable = { party_pop_multiplier = GNG_IJA_takeover_party_pop_calc }
 
 	set_temp_variable = { GNG_IJA_paternalism_holding_calc = GNG_IJA_paternalism_holding }
+	set_temp_variable = { GNG_IJA_paternalism_2_holding_calc = GNG_IJA_paternalism_2_holding }
 	set_temp_variable = { GNG_IJA_despotism_holding_calc = GNG_IJA_despotism_holding }
+	set_temp_variable = { GNG_IJA_despotism_1_holding_calc = GNG_IJA_despotism_1_holding }
+	set_temp_variable = { GNG_IJA_despotism_2_holding_calc = GNG_IJA_despotism_2_holding }
 	set_temp_variable = { GNG_IJA_fascism_holding_calc = GNG_IJA_fascism_holding }
+	set_temp_variable = { GNG_IJA_fascism_3_holding_calc = GNG_IJA_fascism_3_holding }
 	multiply_temp_variable = { GNG_IJA_paternalism_holding_calc = party_pop_multiplier }
+	multiply_temp_variable = { GNG_IJA_paternalism_2_holding_calc = party_pop_multiplier }
 	multiply_temp_variable = { GNG_IJA_despotism_holding_calc = party_pop_multiplier }
+	multiply_temp_variable = { GNG_IJA_despotism_1_holding_calc = party_pop_multiplier }
+	multiply_temp_variable = { GNG_IJA_despotism_2_holding_calc = party_pop_multiplier }
 	multiply_temp_variable = { GNG_IJA_fascism_holding_calc = party_pop_multiplier }
+	multiply_temp_variable = { GNG_IJA_fascism_3_holding_calc = party_pop_multiplier }
 	multiply_temp_variable = { GNG_IJA_paternalism_holding_calc = 100 }
+	multiply_temp_variable = { GNG_IJA_paternalism_2_holding_calc = 100 }
 	multiply_temp_variable = { GNG_IJA_despotism_holding_calc = 100 }
+	multiply_temp_variable = { GNG_IJA_despotism_1_holding_calc = 100 }
+	multiply_temp_variable = { GNG_IJA_despotism_2_holding_calc = 100 }
 	multiply_temp_variable = { GNG_IJA_fascism_holding_calc = 100 }
+	multiply_temp_variable = { GNG_IJA_fascism_3_holding_calc = 100 }
 
 	set_popularities = {
 		paternalism = var:GNG_IJA_paternalism_holding_calc
+		paternalism_2 = var:GNG_IJA_paternalism_2_holding_calc
 		despotism = var:GNG_IJA_despotism_holding_calc
+		despotism_1 = var:GNG_IJA_despotism_1_holding_calc
+		despotism_2 = var:GNG_IJA_despotism_2_holding_calc
 		fascism = var:GNG_IJA_fascism_holding_calc
+		fascism_3 = var:GNG_IJA_fascism_3_holding_calc
 		ultranationalism = var:GNG_IJA_takeover_party_pop
 	}
 }

@@ -620,6 +620,9 @@ shared_focus = {
 	y = 5
 	relative_position_id = GNG_New_defense_way
 	completion_reward = {
+		set_temp_variable = { v = 93 }
+GNG_add_uncategorised_law = yes
+		country_event = dop_legco_hostage_crisis.21
 		load_focus_tree = dop_peace_develop
 	}}
 shared_focus = {

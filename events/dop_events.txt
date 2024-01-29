@@ -948,6 +948,7 @@ country_event = { #
 	option = { #
 		name = dop_legco_hostage_crisis.8.a
 		custom_effect_tooltip = lhc_deduce_2
+		set_variable = {current_witness = 3}
 		country_event = {
 			id = dop_legco_hostage_crisis.20
 			random_hours = 48
@@ -1582,6 +1583,7 @@ country_event = { #
 	fire_only_once = yes
 
 	option = { #
+	clr_country_flag = now_ding
 		name = dop_legco_hostage_crisis.38.a
 		set_variable = { GNG_LHC_cards_revealed_7 = 1 }
 		add_to_variable = { winning_count = 1 }
@@ -1598,6 +1600,7 @@ country_event = { #
 	fire_only_once = yes
 
 	option = { #
+	clr_country_flag = now_ding
 		name = dop_legco_hostage_crisis.39.a
 		set_variable = { GNG_LHC_cards_revealed_4 = 1 }
 		add_to_variable = { winning_count = 1 }
@@ -1614,6 +1617,7 @@ country_event = { #
 	fire_only_once = yes
 
 	option = { #
+	clr_country_flag = now_ding
 		name = dop_legco_hostage_crisis.40.a
 		set_variable = { GNG_LHC_cards_revealed_6 = 1 }
 		add_to_variable = { winning_count = 1 }
@@ -1630,6 +1634,7 @@ country_event = { #
 	fire_only_once = yes
 
 	option = { #
+	clr_country_flag = now_ding
 		name = dop_legco_hostage_crisis.41.a
 		set_variable = { GNG_LHC_cards_revealed_3 = 1 }
 		add_to_variable = { winning_count = 1 }
@@ -1648,6 +1653,7 @@ country_event = { #
 	option = { #
 		name = dop_legco_hostage_crisis.50.a
 		custom_effect_tooltip = LHC_win
+		set_country_flag = yongye_leave
 		remove_unit_leader = 12103
 	}
 }
