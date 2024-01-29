@@ -347,15 +347,15 @@ shared_focus = {
 			legco_introduce_ordinance_start = yes
 			hidden_effect = {
 				country_event = {
-					id = guangdong_sonyAmendment.12
+					id = guangdong_sonyAmendment.1000
 					days = 7
 				}
 				country_event = {
-					id = guangdong_sonyAmendment.13
+					id = guangdong_sonyAmendment.1001
 					days = 14
 				}
 				country_event = {
-					id = guangdong_sonyAmendment.14
+					id = guangdong_sonyAmendment.1002
 					days = 21
 				}
 			}
@@ -393,15 +393,15 @@ shared_focus = {
 					}
 					hidden_effect = {
 						country_event = {
-							id = guangdong_sonyAmendment.12
+							id = guangdong_sonyAmendment.1000
 							days = 7
 						}
 						country_event = {
-							id = guangdong_sonyAmendment.13
+							id = guangdong_sonyAmendment.1001
 							days = 14
 						}
 						country_event = {
-							id = guangdong_sonyAmendment.14
+							id = guangdong_sonyAmendment.1002
 							days = 21
 						}
 					}	
@@ -597,15 +597,15 @@ shared_focus = {
 		legco_introduce_ordinance_start = yes
 		hidden_effect = {
 			country_event = {
-				id = guangdong_sonyAmendment.12
+				id = guangdong_sonyAmendment.1000
 				days = 7
 			}
 			country_event = {
-				id = guangdong_sonyAmendment.13
+				id = guangdong_sonyAmendment.1001
 				days = 14
 			}
 			country_event = {
-				id = guangdong_sonyAmendment.14
+				id = guangdong_sonyAmendment.1002
 				days = 21
 			}
 		}
@@ -735,15 +735,15 @@ shared_focus = {
 		legco_introduce_ordinance_start = yes
 		hidden_effect = {
 			country_event = {
-				id = guangdong_sonyAmendment.12
+				id = guangdong_sonyAmendment.1000
 				days = 7
 			}
 			country_event = {
-				id = guangdong_sonyAmendment.13
+				id = guangdong_sonyAmendment.1001
 				days = 14
 			}
 			country_event = {
-				id = guangdong_sonyAmendment.14
+				id = guangdong_sonyAmendment.1002
 				days = 21
 			}
 		}
@@ -855,15 +855,15 @@ shared_focus = {
 			legco_introduce_ordinance_start = yes
 			hidden_effect = {
 				country_event = {
-					id = guangdong_sonyAmendment.12
+					id = guangdong_sonyAmendment.1000
 					days = 7
 				}
 				country_event = {
-					id = guangdong_sonyAmendment.13
+					id = guangdong_sonyAmendment.1001
 					days = 14
 				}
 				country_event = {
-					id = guangdong_sonyAmendment.14
+					id = guangdong_sonyAmendment.1002
 					days = 21
 				}
 			}
@@ -957,15 +957,15 @@ shared_focus = {
 			legco_introduce_ordinance_start = yes
 			hidden_effect = {
 				country_event = {
-					id = guangdong_sonyAmendment.12
+					id = guangdong_sonyAmendment.1000
 					days = 7
 				}
 				country_event = {
-					id = guangdong_sonyAmendment.13
+					id = guangdong_sonyAmendment.1001
 					days = 14
 				}
 				country_event = {
-					id = guangdong_sonyAmendment.14
+					id = guangdong_sonyAmendment.1002
 					days = 21
 				}
 			}
@@ -1059,15 +1059,15 @@ shared_focus = {
 			legco_introduce_ordinance_start = yes
 			hidden_effect = {
 				country_event = {
-					id = guangdong_sonyAmendment.12
+					id = guangdong_sonyAmendment.1000
 					days = 7
 				}
 				country_event = {
-					id = guangdong_sonyAmendment.13
+					id = guangdong_sonyAmendment.1001
 					days = 14
 				}
 				country_event = {
-					id = guangdong_sonyAmendment.14
+					id = guangdong_sonyAmendment.1002
 					days = 21
 				}
 			}
@@ -1161,15 +1161,15 @@ shared_focus = {
 			legco_introduce_ordinance_start = yes
 			hidden_effect = {
 				country_event = {
-					id = guangdong_sonyAmendment.12
+					id = guangdong_sonyAmendment.1000
 					days = 7
 				}
 				country_event = {
-					id = guangdong_sonyAmendment.13
+					id = guangdong_sonyAmendment.1001
 					days = 14
 				}
 				country_event = {
-					id = guangdong_sonyAmendment.14
+					id = guangdong_sonyAmendment.1002
 					days = 21
 				}
 			}
