@@ -103,6 +103,7 @@ country_event = { #
 				target = JAP
 				type = annex_everything
 			}
+			set_global_flag = GAW_ongoing
 			every_country = {
 				limit = { is_ai = no }
 				news_event = { id = WORLD.40001 days = 1 }

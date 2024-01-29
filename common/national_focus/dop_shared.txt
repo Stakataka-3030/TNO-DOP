@@ -1225,7 +1225,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_silicon_tower_collasped
 		icon = GFX_GNG_Once_Again_Alone
-		cost = 1
+		cost = 0.5
 		x = -1
 		y = 1
 		prerequisite = {focus = GNG_nanjing_emergency_call}
@@ -1236,7 +1236,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_ground_lighting
 		icon = GFX_GNG_From_the_Ground_Up
-		cost = 1
+		cost = 0.5
 		x = 1
 		y = 1
 		prerequisite = {focus = GNG_nanjing_emergency_call}
@@ -1247,7 +1247,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_keep_calm
 		icon = GFX_USA_Calm_the_Hell_Down
-		cost = 1
+		cost = 0.5
 		x = -1
 		y = 2
 		prerequisite = {focus = GNG_ground_lighting}
@@ -1259,7 +1259,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_consider_the_situation
 		icon = GFX_GNG_The_Security_Situation
-		cost = 1
+		cost = 0.5
 		x = 1
 		y = 2
 		prerequisite = {focus = GNG_ground_lighting}
