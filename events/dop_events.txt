@@ -10,7 +10,7 @@ country_event = { #
 	id = dop_usage.1000
 	title = dop_usage.1000.t
 	desc = dop_usage.1000.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -88,7 +88,7 @@ country_event = { #
 	id = dop_usage.2000
 	title = dop_usage.2000.t
 	desc = dop_usage.2000.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -104,7 +104,7 @@ country_event = { #
 	id = GNG_Product_Cycle.48
 	title = GNG_Product_Cycle.48.t
 	desc = GNG_Product_Cycle.48.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -118,7 +118,7 @@ country_event = { #
 	id = dop_pregaw.1
 	title = dop_pregaw.1.t
 	desc = dop_pregaw.1.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -143,7 +143,7 @@ country_event = { #
 	id = dop_pregaw.2
 	title = dop_pregaw.2.t
 	desc = dop_pregaw.2.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -168,7 +168,7 @@ country_event = { #
 	id = dop_pregaw.3
 	title = dop_pregaw.3.t
 	desc = dop_pregaw.3.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -186,7 +186,7 @@ country_event = { #
 	id = dop_pregaw.4
 	title = dop_pregaw.4.t
 	desc = dop_pregaw.4.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -203,7 +203,7 @@ country_event = { #
 	id = dop_pregaw.5
 	title = dop_pregaw.5.t
 	desc = dop_pregaw.5.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -216,7 +216,7 @@ country_event = { #
 	id = dop_pregaw.6
 	title = dop_pregaw.6.t
 	desc = dop_pregaw.6.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -229,7 +229,7 @@ country_event = { #
 	id = dop_pregaw.7
 	title = dop_pregaw.7.t
 	desc = dop_pregaw.7.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -242,7 +242,7 @@ country_event = { #
 	id = dop_pregaw.8
 	title = dop_pregaw.8.t
 	desc = dop_pregaw.8.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -255,7 +255,7 @@ country_event = { #
 	id = dop_pregaw.9
 	title = dop_pregaw.9.t
 	desc = dop_pregaw.9.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -268,7 +268,7 @@ country_event = { #
 	id = dop_pregaw.11
 	title = dop_pregaw.11.t
 	desc = dop_pregaw.11.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -322,7 +322,7 @@ country_event = { #
 	id = dop_pregaw.12
 	title = dop_pregaw.12.t
 	desc = dop_pregaw.12.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -339,7 +339,7 @@ country_event = { #
 	id = dop_pregaw.13
 	title = dop_pregaw.13.t
 	desc = dop_pregaw.13.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -368,7 +368,7 @@ country_event = { #
 	id = dop_pregaw.14
 	title = dop_pregaw.14.t
 	desc = dop_pregaw.14.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -393,7 +393,7 @@ country_event = { #
 	id = dop_pregaw.15
 	title = dop_pregaw.15.t
 	desc = dop_pregaw.15.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -412,7 +412,7 @@ country_event = { #
 	id = dop_pregaw.16
 	title = dop_pregaw.16.t
 	desc = dop_pregaw.16.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -432,7 +432,7 @@ country_event = { #
 	id = dop_pregaw.17
 	title = dop_pregaw.17.t
 	desc = dop_pregaw.17.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -482,7 +482,7 @@ country_event = { #
 	id = dop_pregaw.18
 	title = dop_pregaw.18.t
 	desc = dop_pregaw.18.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -495,7 +495,7 @@ country_event = { #
 	id = dop_pregaw.19
 	title = dop_pregaw.19.t
 	desc = dop_pregaw.19.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -508,7 +508,7 @@ country_event = { #
 	id = dop_pregaw.20
 	title = dop_pregaw.20.t
 	desc = dop_pregaw.20.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -521,7 +521,7 @@ country_event = { #
 	id = dop_pregaw.21
 	title = dop_pregaw.21.t
 	desc = dop_pregaw.21.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -540,7 +540,7 @@ country_event = { #
 	id = dop_pregaw.22
 	title = dop_pregaw.22.t
 	desc = dop_pregaw.22.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -591,7 +591,7 @@ country_event = { #
 	id = dop_pregaw.23
 	title = dop_pregaw.23.t
 	desc = dop_pregaw.23.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -644,7 +644,7 @@ country_event = { #
 	id = dop_pregaw.24
 	title = dop_pregaw.24.t
 	desc = dop_pregaw.24.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -703,7 +703,7 @@ country_event = { #
 	id = dop_pregaw.25
 	title = dop_pregaw.25.t
 	desc = dop_pregaw.25.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -794,7 +794,7 @@ country_event = { #
 	id = dop_pregaw.26
 	title = dop_pregaw.26.t
 	desc = dop_pregaw.26.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -807,7 +807,7 @@ country_event = { #
 	id = dop_legco_hostage_crisis.1
 	title = dop_legco_hostage_crisis.1.t
 	desc = dop_legco_hostage_crisis.1.desc
-	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_3
+	
 
 	is_triggered_only = yes
 	fire_only_once = yes

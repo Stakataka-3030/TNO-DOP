@@ -8307,7 +8307,11 @@ GNG_stall_ordinance = {
 # Fails the current ordinance and adds it to the history
 GNG_fail_ordinance = {
 	if = {
-		limit = { check_variable = { GNG_legco_current_ordinance_id > 0 } }
+		limit = { 
+			check_variable = { GNG_legco_current_ordinance_id > 0 }
+			check_variable = { GNG_Current_Ordinance_Votes < 50 }
+		 }
+		log = "12121"
 		add_to_array = { array = GNG_legco_history value = GNG_legco_current_ordinance_id index = 0 }
 		add_to_array = { array = GNG_legco_passage value = -1 index = 0 }
 		set_variable = { GNG_legco_amendments_1^GNG_legco_ordinance_id = GNG_legco_amendments_1^GNG_legco_current_ordinance_id }
@@ -10415,6 +10419,7 @@ GNG_pass_ordinance_event_effect = {
 }
 
 GNG_fail_ordinance_event_effect = {
+	log = "1111211"
 	if = {
 		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 1 } #RLSO
@@ -10555,8 +10560,6 @@ GNG_fail_ordinance_event_effect = {
 	else_if = {
 		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 81 } #japan
-		}
-		country_event = {
 		}
 	}
 	else_if = {
@@ -11028,7 +11031,6 @@ GNG_fail_ordinance_event_effect = {
 		}
 	}
 }
-
 GNG_show_effects_for_ordinance = {
 	set_temp_variable = { GNG_legco_holding_value = GNG_legco_current_ordinance_id}
 	set_temp_variable = { GNG_temp_legco_id = GNG_legco_holding_value }

@@ -322,8 +322,7 @@ GNG_bfg_countdown = {
 	timeout_effect = {
 		hidden_effect = {
 		CHI = {
-			country_event = {dop_usage.1000}
-
+			country_event = dop_usage.1000
 		}
 	}
 	hidden_effect = {
@@ -336,7 +335,6 @@ GNG_bfg_countdown = {
 			country_event = dop_pregaw.12
 			load_focus_tree = dop_warpp_tree
 	}
-		set_country_flag = {bfg_active = 0}
 		clr_country_flag = bfg_active
 		
 	}

@@ -1203,7 +1203,12 @@ shared_focus = {
 		x = 8
 		y = 0
 		completion_reward = {
-			BFG_setup_influence = yes
+			set_variable = { BFG_GNG_Balance = 33 }
+ 		set_variable = { BFG_CHI_Balance = 33 }
+ 		set_variable = { BFG_JAP_Balance = 33 }
+ 		BattleForGNGTangle_calcXY = yes
+ 		set_country_flag = bfg_active
+ 		custom_effect_tooltip = GNG_sony_btfgng_start_tt
 	}}
 	shared_focus = {
 		id = GNG_silicon_tower_collasped
