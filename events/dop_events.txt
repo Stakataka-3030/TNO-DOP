@@ -17,6 +17,32 @@ country_event = { #
 
 	option = { #
 		name = dop_usage.1000.a
+		remove_ideas = {
+			CHI_small_army
+			CHI_slave_of_the_samurai_0
+			CHI_slave_of_the_samurai_1
+			CHI_slave_of_the_samurai_2
+			CHI_slave_of_the_samurai_3
+			CHI_slave_of_the_samurai_4
+			CHI_surrounded_by_enemies
+			CHI_japans_breadbasket_0
+			CHI_japans_breadbasket_1
+			CHI_japans_breadbasket_2
+		}
+		tno_conscription_clear = yes
+		tno_trade_laws_clear = yes
+		tno_income_taxation_clear = yes
+		tno_women_clear = yes
+		tno_gender_rights_clear = yes
+		tno_security_clear = yes
+		add_ideas = {
+			tno_conscription_broadened_conscription
+			tno_trade_laws_closed_economy
+			tno_income_taxation_flat_taxes
+			tno_women_military_assistance
+			tno_gender_rights_women_in_the_workplace
+			tno_security_oppressive_police
+		}
 		drop_cosmetic_tag = yes
 			set_cosmetic_tag = CHI_FIVE
 			JAP = {
@@ -29,7 +55,6 @@ country_event = { #
 				remove_from_faction = YUN
 				remove_from_faction = SIC
 				remove_from_faction = SHX
-				remove_from_faction = GAN
 				remove_from_faction = MEN
 				remove_from_faction = GNG
 			}

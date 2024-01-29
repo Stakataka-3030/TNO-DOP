@@ -186,7 +186,7 @@ GNG_ken_effect_on_bfg = {
 			always = no
 		}}
 	is_good = no
-	days_mission_timeout = 10
+	days_mission_timeout = 50
 	allowed = {
 		tag = GNG
 	}
@@ -211,7 +211,7 @@ GNG_tri_effect_on_bfg = {
 		}
 	}
 	is_good = no
-	days_mission_timeout = 10
+	days_mission_timeout = 50
 	allowed = {
 		tag = GNG
 	}
@@ -237,7 +237,7 @@ GNG_yak_effect_on_bfg = {
 		}
 	}
 	is_good = no
-	days_mission_timeout = 10
+	days_mission_timeout = 50
 	allowed = {
 		tag = GNG
 	}
@@ -263,7 +263,7 @@ GNG_chi_effect_on_bfg = {
 		}
 	}
 	is_good = no
-	days_mission_timeout = 10
+	days_mission_timeout = 50
 	allowed = {
 		tag = GNG
 	}
@@ -289,7 +289,7 @@ GNG_jap_effect_on_bfg = {
 		}
 	}
 	is_good = no
-	days_mission_timeout = 10
+	days_mission_timeout = 50
 	allowed = {
 		tag = GNG
 	}
@@ -314,7 +314,7 @@ GNG_bfg_countdown = {
 			always = no
 		}}
 	is_good = no
-	days_mission_timeout = 180
+	days_mission_timeout = 210
 	allowed = {
 		tag = GNG
 	}

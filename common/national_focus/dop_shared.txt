@@ -142,7 +142,7 @@ focus_tree = {
 shared_focus = {
 		id = GNG_Li_frightened
 		icon = GFX_GNG_An_Island_of_Stability
-		cost = 2
+		cost = 3
 		x = 8
 		y = 0
 		completion_reward = {
@@ -156,7 +156,7 @@ shared_focus = {
 shared_focus = {
 		id = GNG_Test_the_police
 		icon = GFX_focus_deploy_the_police
-		cost = 2
+		cost = 3
 		x = 0
 		y = 1
 		relative_position_id = GNG_Li_frightened
@@ -171,7 +171,7 @@ shared_focus = {
 shared_focus = {
 	id = GNG_Enhance_the_police
 	icon = GFX_OMS_enhanced_training_programs
-	cost = 2
+	cost = 3
 	x = 8
 	y = 2
 	relative_position_id = Test_the_police
@@ -204,7 +204,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_train_day_by_day
 		icon = GFX_QIN_Training_Day_and_Night
-		cost = 2
+		cost = 3
 		x = 0
 		y = 1
 		relative_position_id = GNG_Enhance_the_police
@@ -220,7 +220,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_improve_train_method
 		icon = GFX_GNG_The_Public_Order_and_Police_Law
-		cost = 2
+		cost = 3
 		x = 0
 		y = 1
 		relative_position_id = GNG_train_day_by_day
@@ -238,7 +238,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_update_weapon
 		icon = GFX_GER_guns_for_the_future
-		cost = 2
+		cost = 3
 		x = 0
 		y = 1
 		relative_position_id = GNG_improve_train_method
@@ -263,7 +263,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_Long_way_back_home
 		icon = GFX_CHI_The_Sphere_Relies_On_Us
-		cost = 2
+		cost = 3
 		x = 8
 		y = 5
 		available = {
@@ -292,7 +292,7 @@ shared_focus = {
 		shared_focus = {
 			id = GNG_We_are_Guangdong
 			icon = GFX_GNG_within_the_sphere
-			cost = 2
+			cost = 3
 			x = 8
 			y = 6
 			relative_position_id = Test_the_police
@@ -410,7 +410,7 @@ shared_focus = {
 shared_focus = {
 	id = GNG_New_defense_way
 	icon = GFX_generic_Police_Sphere
-	cost = 2
+	cost = 3
 	x = 8
 	y = 1
 	available = {
@@ -450,7 +450,7 @@ shared_focus = {
 		focus = GNG_New_defense_way
 	}
 	icon = GFX_YUN_For_China
-	cost = 2
+	cost = 3
 	x = -3
 	y = 1
 	relative_position_id = GNG_New_defense_way
@@ -468,7 +468,7 @@ shared_focus = {
 		focus = GNG_New_defense_way
 	}
 	icon = GFX_AST_friends_japan
-	cost = 2
+	cost = 3
 	x = -1
 	y = 1
 	relative_position_id = GNG_New_defense_way
@@ -486,7 +486,7 @@ shared_focus = {
 		focus = GNG_New_defense_way
 	}
 	icon = GFX_GNG_Matsushita_Leads
-	cost = 2
+	cost = 3
 	x = 1
 	y = 1
 	relative_position_id = GNG_New_defense_way
@@ -519,13 +519,22 @@ shared_focus = {
 	prerequisite=
 	{	
 		focus = GNG_ask_chi
+	}
+		prerequisite=
+		{	
 		focus = GNG_ask_jap
+		}
+		prerequisite=
+	{	
 		focus = GNG_ask_self
+	}
+		prerequisite=
+	{	
 		focus = GNG_ask_other
 	}
 	id = GNG_dangerous_try
 	icon = GFX_GNG_fiscal_cliff
-	cost = 2
+	cost = 3
 	x = 0
 	y = 2
 	relative_position_id = GNG_New_defense_way
@@ -541,7 +550,7 @@ shared_focus = {
 	}
 	id = GNG_now_is_time
 	icon = GFX_MAG_Desperate_Times
-	cost = 2
+	cost = 3
 	x = 0
 	y = 3
 	relative_position_id = GNG_New_defense_way
@@ -615,7 +624,7 @@ shared_focus = {
 	}
 	id = GNG_sdw_passed
 	icon = GFX_GNG_Pass_the_Amendments
-	cost = 2
+	cost = 3
 	x = 0
 	y = 5
 	relative_position_id = GNG_New_defense_way
@@ -635,7 +644,7 @@ shared_focus = {
 	}
 	id = GNG_sdw_failed
 	icon = GFX_MAD_HOW_DID_YOU_FAIL
-	cost = 2
+	cost = 3
 	x = 0
 	y = 5
 	relative_position_id = GNG_New_defense_way
@@ -645,7 +654,7 @@ shared_focus = {
 shared_focus = {
 	id = GNG_new_develop_project
 	icon = GFX_GNG_Civil_Service
-	cost = 2
+	cost = 3
 	x = 8
 	y = 0
 	completion_reward = {
@@ -659,7 +668,7 @@ shared_focus = {
 	}
 	id = GNG_teaching_first
 	icon = GFX_CHI_Increase_Education_Spending
-	cost = 2
+	cost = 3
 	x = -8
 	y = 1
 	relative_position_id = GNG_new_develop_project
@@ -680,7 +689,7 @@ shared_focus = {
 	}
 	id = GNG_rewrite_textbook
 	icon = GFX_USA_Print_More_Books
-	cost = 2
+	cost = 3
 	x = -9
 	y = 2
 	relative_position_id = GNG_new_develop_project
@@ -748,7 +757,7 @@ shared_focus = {
 	}
 	id = GNG_poverty_help
 	icon = GFX_USA_Primary_Education_Act
-	cost = 2
+	cost = 3
 	x = -7
 	y = 2
 	relative_position_id = GNG_new_develop_project
@@ -763,7 +772,7 @@ shared_focus = {
 	}
 	id = GNG_advance_tools
 	icon = GFX_CHI_New_Tools
-	cost = 2
+	cost = 3
 	x = -4
 	y = 1
 	relative_position_id = GNG_new_develop_project
@@ -784,7 +793,7 @@ shared_focus = {
 	}
 	id = GNG_japanese_tech
 	icon = GFX_CHI_Invite_Japanese_Technicians
-	cost = 2
+	cost = 3
 	x = -5
 	y = 2
 	relative_position_id = GNG_new_develop_project
@@ -800,7 +809,7 @@ shared_focus = {
 	}
 	id = GNG_chinese_tech
 	icon = GFX_CHI_New_Chinese_Technicians
-	cost = 2
+	cost = 3
 	x = -3
 	y = 2
 	relative_position_id = GNG_new_develop_project
@@ -866,7 +875,7 @@ shared_focus = {
 	}
 	id = GNG_improve_health_care
 	icon = GFX_generic_change_law_healthcare
-	cost = 2
+	cost = 3
 	x = 0
 	y = 1
 	relative_position_id = GNG_new_develop_project
@@ -887,7 +896,7 @@ shared_focus = {
 	}
 	id = GNG_county_hospital
 	icon = GFX_ENG_The_Health_And_Needs_Division
-	cost = 2
+	cost = 3
 	x = -1
 	y = 2
 	relative_position_id = GNG_new_develop_project
@@ -902,7 +911,7 @@ shared_focus = {
 	}
 	id = GNG_social_care
 	icon = GFX_GNG_healthcare
-	cost = 2
+	cost = 3
 	x = 1
 	y = 2
 	relative_position_id = GNG_new_develop_project
@@ -968,7 +977,7 @@ shared_focus = {
 	}
 	id = GNG_agriculture_growth
 	icon = GFX_CHI_New_Agricultural_Equipment
-	cost = 2
+	cost = 3
 	x = 4
 	y = 1
 	relative_position_id = GNG_new_develop_project
@@ -989,7 +998,7 @@ shared_focus = {
 	}
 	id = GNG_import_seeds
 	icon = GFX_Generic_Agricultural_Control
-	cost = 2
+	cost = 3
 	x = 3
 	y = 2
 	relative_position_id = GNG_new_develop_project
@@ -1004,7 +1013,7 @@ shared_focus = {
 	}
 	id = GNG_tech_help_agri
 	icon = GFX_ITA_Conclude_the_Mechanization_of_Agriculture
-	cost = 2
+	cost = 3
 	x = 5
 	y = 2
 	relative_position_id = GNG_new_develop_project
@@ -1070,7 +1079,7 @@ shared_focus = {
 	}
 	id = GNG_science_future
 	icon = GFX_TNO_Generic_Science
-	cost = 2
+	cost = 3
 	x = 8
 	y = 1
 	relative_position_id = GNG_new_develop_project
@@ -1091,7 +1100,7 @@ shared_focus = {
 	}
 	id = GNG_build_research_center
 	icon = GFX_GNG_Establish_Research_Parks
-	cost = 2
+	cost = 3
 	x = 7
 	y = 2
 	relative_position_id = GNG_new_develop_project
@@ -1106,7 +1115,7 @@ shared_focus = {
 	}
 	id = GNG_sponsor_new_tech
 	icon = GFX_CHI_We_Have_The_Technology
-	cost = 2
+	cost = 3
 	x = 9
 	y = 2
 	relative_position_id = GNG_new_develop_project
@@ -1188,7 +1197,7 @@ shared_focus = {
 	}
 	id = GNG_fake_final
 	icon = GFX_GNG_the_rural_development_ordinance
-	cost = 2
+	cost = 3
 	x = 0
 	y = 4
 	relative_position_id = GNG_new_develop_project
@@ -1202,7 +1211,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_nanjing_emergency_call
 		icon = GFX_Call_In_The_Whiz_Kids
-		cost = 2
+		cost = 3
 		x = 8
 		y = 0
 		completion_reward = {
@@ -1216,7 +1225,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_silicon_tower_collasped
 		icon = GFX_GNG_Once_Again_Alone
-		cost = 2
+		cost = 1
 		x = -1
 		y = 1
 		prerequisite = {focus = GNG_nanjing_emergency_call}
@@ -1227,7 +1236,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_ground_lighting
 		icon = GFX_GNG_From_the_Ground_Up
-		cost = 2
+		cost = 1
 		x = 1
 		y = 1
 		prerequisite = {focus = GNG_nanjing_emergency_call}
@@ -1238,7 +1247,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_keep_calm
 		icon = GFX_USA_Calm_the_Hell_Down
-		cost = 2
+		cost = 1
 		x = -1
 		y = 2
 		prerequisite = {focus = GNG_ground_lighting}
@@ -1250,7 +1259,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_consider_the_situation
 		icon = GFX_GNG_The_Security_Situation
-		cost = 2
+		cost = 1
 		x = 1
 		y = 2
 		prerequisite = {focus = GNG_ground_lighting}
@@ -1262,7 +1271,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_get_control
 		icon = GFX_GNG_Keep_Control
-		cost = 2
+		cost = 1
 		x = 0
 		y = 3
 		prerequisite = {focus = GNG_consider_the_situation}
@@ -1280,7 +1289,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_guarantee_m
 		icon = GFX_GNG_Ensure_Matsushita_Dominance
-		cost = 2
+		cost = 1
 		x = -2
 		y = 4
 		prerequisite = {focus = GNG_get_control}
@@ -1296,7 +1305,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_bribe_ito
 		icon = GFX_GNG_Listen_to_Ibukas_Concerns
-		cost = 2
+		cost = 1
 		x = 0
 		y = 4
 		prerequisite = {focus = GNG_get_control}
@@ -1312,7 +1321,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_coercion_hitachi
 		icon = GFX_GNG_Hail_Hitachi
-		cost = 2
+		cost = 1
 		x = 2
 		y = 4
 		prerequisite = {focus = GNG_get_control}
@@ -1332,8 +1341,13 @@ shared_focus = {
 		x = 0
 		y = 5
 		prerequisite = {
+
 		focus = GNG_coercion_hitachi
+		}
+		prerequisite = {
 		focus = GNG_bribe_ito
+		}
+		prerequisite = {
 		focus = GNG_guarantee_m
 	}
 		relative_position_id = GNG_nanjing_emergency_call
@@ -1362,7 +1376,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_storm_center
 		icon = GFX_IRQ_A_Dark_and_Stormy_Night
-		cost = 2
+		cost = 1
 		x = -5
 		y = 6
 		prerequisite = {focus = GNG_apply_emergency_ordinance}
@@ -1374,7 +1388,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_change_support_as_weapon
 		icon = GFX_SVR_Specialized_Weapons
-		cost = 2
+		cost = 1
 		x = -7
 		y = 7
 		prerequisite = {focus = GNG_storm_center}
@@ -1386,7 +1400,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_calm_civil
 		icon = GFX_GNG_Shut_Up_and_Get_On_with_It
-		cost = 2
+		cost = 1
 		x = -3
 		y = 8
 		prerequisite = {focus = GNG_storm_center}
@@ -1397,7 +1411,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_use_chi_emotion
 		icon = GFX_GNG_The_Pearls_Ablaze
-		cost = 2
+		cost = 1
 		x = -2
 		y = 9
 		prerequisite = {focus = GNG_calm_civil}
@@ -1408,7 +1422,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_rise_money
 		icon = GFX_USA_money_wall
-		cost = 2
+		cost = 1
 		x = -7
 		y = 8
 		prerequisite = {focus = GNG_change_support_as_weapon}
@@ -1420,7 +1434,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_use_jap_emotion
 		icon = GFX_GNG_Tighten_Eligibility
-		cost = 2
+		cost = 1
 		x = -4
 		y = 9
 		prerequisite = {focus = GNG_calm_civil}
@@ -1431,7 +1445,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_ask_indepence
 		icon = GFX_GNG_review_government_contracts
-		cost = 2
+		cost = 1
 		x = -7
 		y = 9
 		prerequisite = {focus = GNG_rise_money}
@@ -1443,7 +1457,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_social_military
 		icon = GFX_HGR_Military_Preference
-		cost = 2
+		cost = 1
 		x = -5
 		y = 10
 		prerequisite = {focus = GNG_ask_indepence}
@@ -1460,7 +1474,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_observation_leave
 		icon = GFX_SGR_Observing_the_People
-		cost = 2
+		cost = 1
 		x = 5
 		y = 6
 		prerequisite = {focus = GNG_apply_emergency_ordinance}
@@ -1476,9 +1490,15 @@ shared_focus = {
 				template_counter = 0
 				regiments = {
 					light_infantry = { x = 0 y = 0 }
-				light_infantry = { x = 0 y = 1 }
-				light_infantry = { x = 0 y = 2 }
-				light_infantry = { x = 1 y = 0 }
+					light_infantry = { x = 0 y = 1 }
+					light_infantry = { x = 0 y = 2 }
+					light_infantry = { x = 0 y = 3 }
+					light_infantry = { x = 0 y = 4 }
+					light_infantry = { x = 1 y = 0 }
+					light_infantry = { x = 1 y = 1 }
+					light_infantry = { x = 1 y = 2 }
+					light_infantry = { x = 1 y = 3 }
+					light_infantry = { x = 1 y = 4 }
 				}
 				support = {
 					engineer = { x = 0 y = 0 }
@@ -1488,7 +1508,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_develop_urge
 		icon = GFX_Arms_factory_red
-		cost = 2
+		cost = 1
 		x = 7
 		y = 7
 		prerequisite = {focus = GNG_observation_leave}
@@ -1510,7 +1530,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_transfor_weapon
 		icon = GFX_SVR_Sverdlovsk_Tank_Factory
-		cost = 2
+		cost = 1
 		x = 3
 		y = 7
 		prerequisite = {focus = GNG_observation_leave}
@@ -1537,7 +1557,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_arms_built
 		icon = GFX_COG_Ask_for_more_guns
-		cost = 2
+		cost = 1
 		x = 3
 		y = 9
 		prerequisite = {focus = GNG_transfor_weapon}
@@ -1564,7 +1584,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_recruitment
 		icon = GFX_HGR_Encourage_Recruitment
-		cost = 2
+		cost = 1
 		x = 7
 		y = 8
 		prerequisite = {focus = GNG_develop_urge}
@@ -1578,7 +1598,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_cutback_traintime
 		icon = GFX_ORE_the_leagues_training
-		cost = 2
+		cost = 1
 		x = 8
 		y = 9
 		prerequisite = {focus = GNG_recruitment}
@@ -1589,7 +1609,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_lower_standard
 		icon = GFX_General_Recruitment
-		cost = 2
+		cost = 1
 		x = 6
 		y = 9
 		prerequisite = {focus = GNG_recruitment}
@@ -1600,7 +1620,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_build_barricade
 		icon = GFX_ITA_Run_over_the_Barricades
-		cost = 2
+		cost = 1
 		x = 5
 		y = 10
 		prerequisite = {focus = GNG_cutback_traintime}
@@ -1634,7 +1654,7 @@ shared_focus = {
 	shared_focus = {
 		id = GNG_war_drum_roming
 		icon = GFX_GRO_The_Drums_Echo
-		cost = 2
+		cost = 1
 		x = 0
 		y = 11
 		relative_position_id = GNG_nanjing_emergency_call
