@@ -249,6 +249,9 @@ country_event = { #
 
 	option = { #
 		name = dop_pregaw.8.a
+		TNO_worsen_admin_efficiency_mid = yes
+		set_temp_variable = { v = 93 }
+		GNG_add_uncategorised_law = yes
 	}
 }
 country_event = { #
@@ -1211,6 +1214,14 @@ country_event = { #
 			random_hours = 48
 			
 		}
+		every_owned_state = {
+			set_temp_variable = { zhu_app_temp = 1 }
+			GNG_zhujin_app_change = yes
+			set_temp_variable = { chi_app_temp = 1 }
+			GNG_chinese_app_change = yes
+			set_temp_variable = { jap_app_temp = 1 }
+			GNG_japanese_app_change = yes
+		}
 		custom_effect_tooltip = lhc_deduce_1
 		set_variable = {current_witness = 2}
 	}
@@ -1655,6 +1666,9 @@ country_event = { #
 		custom_effect_tooltip = LHC_win
 		set_country_flag = yongye_leave
 		remove_unit_leader = 12103
+		GNG_nagano_shigeto= {
+			retire = yes
+		}
 	}
 }
 country_event = { #
@@ -1734,6 +1748,19 @@ country_event = { #
 	option = { #
 		name = dop_sar.4.a
 		load_focus_tree = dop_ndwtree
+		set_temp_variable = { temp_econ_spending_amount = 0.30 }
+		econ_spend_money_once_effect_raw_money = yes
+		TNO_improve_military_supervision_policy_effectiveness_high = yes
+		TNO_improve_security_policy_effectiveness_high = yes
+		TNO_improve_army_professionalism_high = yes
+		set_country_flag = gjqh_active
+		custom_effect_tooltip = unlock_gjqh_tt
+		every_owned_state = {
+				set_temp_variable = { zhu_app_temp = 1.5 }
+				GNG_zhujin_app_change = yes
+				set_temp_variable = { chi_app_temp = 0.75 }
+				GNG_chinese_app_change = yes
+			}
 	}
 }
 country_event = { #
@@ -1749,6 +1776,19 @@ country_event = { #
 	option = { #
 		name = dop_sar.5.a
 		load_focus_tree = dop_ndwtree
+		set_temp_variable = { temp_econ_spending_amount = 0.30 }
+		econ_spend_money_once_effect_raw_money = yes
+		TNO_improve_military_supervision_policy_effectiveness_high = yes
+		TNO_improve_security_policy_effectiveness_high = yes
+		TNO_improve_army_professionalism_high = yes
+		set_country_flag = gjqh_active
+		custom_effect_tooltip = unlock_gjqh_tt
+		every_owned_state = {
+				set_temp_variable = { zhu_app_temp = 1.5 }
+				GNG_zhujin_app_change = yes
+				set_temp_variable = { chi_app_temp = 0.75 }
+				GNG_chinese_app_change = yes
+			}
 	}
 }
 country_event = { #
@@ -1780,6 +1820,14 @@ option = { #
 	name = dop_sar.7.a
 	custom_effect_tooltip = GNG_sdw_pass_tt
 	country_event = dop_sar.10
+	every_owned_state = {
+		set_temp_variable = { zhu_app_temp = 1 }
+		GNG_zhujin_app_change = yes
+		set_temp_variable = { chi_app_temp = 1 }
+		GNG_chinese_app_change = yes
+		set_temp_variable = { jap_app_temp = 1 }
+		GNG_japanese_app_change = yes
+	}
 }
 }
 country_event = { #sdw_fail
@@ -1848,12 +1896,8 @@ title = dop_sar.11.t
 desc = dop_sar.11.desc
 picture = GFX_report_event_GNG_morita_akio_10
 
-is_triggered_only = no
+is_triggered_only = yes
 fire_only_once = yes
-trigger = {
-	tag = GNG
-	date > 1975.01.01
-}
 option = { #
 	name = dop_sar.11.a
 	country_event = dop_sar.13
@@ -1866,7 +1910,7 @@ title = dop_sar.13.t
 desc = dop_sar.13.desc
 picture = GFX_report_event_GNG_morita_akio_10
 
-is_triggered_only = no
+is_triggered_only = yes
 fire_only_once = yes
 option = { #
 	name = dop_sar.13.a

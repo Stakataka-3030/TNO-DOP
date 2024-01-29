@@ -620,7 +620,7 @@ shared_focus = {
 	y = 5
 	relative_position_id = GNG_New_defense_way
 	completion_reward = {
-		set_temp_variable = { v = 93 }
+		set_temp_variable = { v = 92 }
 GNG_add_uncategorised_law = yes
 		country_event = dop_legco_hostage_crisis.21
 		load_focus_tree = dop_peace_develop
@@ -1193,7 +1193,7 @@ shared_focus = {
 	y = 4
 	relative_position_id = GNG_new_develop_project
 	select_effect = {
-		country_event = { id = dop_sar.11 }
+		country_event = dop_sar.11 
 	}
 	completion_reward = {
 		custom_effect_tooltip = GNG_fakeswitchfocustree
