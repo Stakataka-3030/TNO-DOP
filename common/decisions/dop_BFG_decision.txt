@@ -563,7 +563,7 @@ BFG_JAP_ask_indep_promise = {
 	fire_only_once = yes
 	icon = GFX_decision_guangdong_japan
 	complete_effect = {
-		CHI ={ 
+		JAP ={ 
 			country_event = {id = dop_usage.1}
 		}
 		custom_effect_tooltip = jap_decision_lock_tt

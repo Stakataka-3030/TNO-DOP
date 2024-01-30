@@ -9932,6 +9932,7 @@ GNG_pass_ordinance_event_effect = {
 		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 23 } #Corruption Advisory Ordinance
 		}
+		set_country_flag = GNG_ICAC_ended
 		country_event = {
 			id = guangdong_sonyflavor.118
 		}
@@ -9940,14 +9941,15 @@ GNG_pass_ordinance_event_effect = {
 		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 24 } #Inspector General Ordinance
 		}
+		set_country_flag = GNG_ICAC_ended
 		country_event = {
-			id = guangdong_sonyflavor.118
-		}
+			id = guangdong_sonyflavor.11		}
 	}
 	else_if = {
 		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 25 } #Independent Commsion Against Corruption
 		}
+		set_country_flag = GNG_ICAC_ended
 		country_event = {
 			id = guangdong_sonyflavor.120
 		}
@@ -9956,6 +9958,7 @@ GNG_pass_ordinance_event_effect = {
 		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 26 } #Public Order Ordinance
 		}
+		set_country_flag = GNG_Public_Order_Ordinance_ended
 		country_event = {
 			id = guangdong_sonyflavor.132
 		}
@@ -9964,6 +9967,7 @@ GNG_pass_ordinance_event_effect = {
 		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 27 } #Casino Licensing Review Ordinance, Stanley Edition
 		}
+		set_country_flag = GNG_Casino_License_ended
 		country_event = {
 			id = guangdong_sonyCasino.8
 		}
@@ -9972,6 +9976,7 @@ GNG_pass_ordinance_event_effect = {
 		limit = {
 			check_variable = { GNG_legco_current_ordinance_id = 28 } #Casino Licensing Review Ordinance, Yokoi Edition
 		}
+		set_country_flag = GNG_Casino_License_ended
 		country_event = {
 			id = guangdong_sonyCasino.11
 		}
@@ -19005,7 +19010,7 @@ GNG_amendment_effects = {
 			TNO_improve_industrial_equipment_high = yes
 			every_owned_state = {
 				set_temp_variable = { jap_app_temp = 0.3 }
-				GNG_zhujin_app_change = yes
+				GNG_japanese_app_change = yes
 			}
 		}
 		else_if = {
@@ -19015,7 +19020,7 @@ GNG_amendment_effects = {
 			TNO_improve_industrial_equipment_high = yes
 			every_owned_state = {
 				set_temp_variable = { chi_app_temp = 0.3 }
-				GNG_zhujin_app_change = yes
+				GNG_chinese_app_change = yes
 			}
 		}
 		else_if = {
