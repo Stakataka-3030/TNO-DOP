@@ -335,8 +335,11 @@ GNG_bfg_countdown = {
 			country_event = dop_pregaw.12
 			load_focus_tree = dop_warpp_tree
 	}
+		else = {
+			country_event = dop_pregaw.12
+			load_focus_tree = dop_warpp_tree
+		}
 		clr_country_flag = bfg_active
-		
 	}
 	custom_effect_tooltip = bfg_end_effect
 }
