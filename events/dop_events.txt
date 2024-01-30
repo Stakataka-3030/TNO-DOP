@@ -13,7 +13,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_usage.1000.a
@@ -99,6 +99,8 @@ country_event = { #
 				load_oob = GNG_1962
 				load_oob = GNG_1962
 			}
+			set_global_flag = nukes_disabled
+			custom_effect_tooltip = TNO_ArcadeMode_DisableNuclearArsenals_tt
 			declare_war_on = {
 				target = JAP
 				type = annex_everything
@@ -117,7 +119,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_usage.2000.a
@@ -133,7 +135,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = GNG_Product_Cycle.48.a
@@ -147,7 +149,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.1.a
@@ -172,7 +174,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.2.a
@@ -197,7 +199,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.3.a
@@ -215,7 +217,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.4.a
@@ -232,7 +234,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.5.a
@@ -245,7 +247,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.6.a
@@ -357,7 +359,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.7.a
@@ -370,7 +372,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.8.a
@@ -386,7 +388,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.9.a
@@ -399,7 +401,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.11.a
@@ -453,7 +455,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.12.a
@@ -470,7 +472,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 	country_event = {
@@ -499,7 +501,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.14.a
@@ -524,7 +526,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.15.a
@@ -543,7 +545,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.16.a
@@ -563,7 +565,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.17.a
@@ -613,7 +615,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.18.a
@@ -626,7 +628,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.19.a
@@ -639,7 +641,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.20.a
@@ -652,7 +654,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.21.a
@@ -671,7 +673,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 	country_event = {
@@ -722,7 +724,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 	country_event = {
@@ -775,7 +777,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 	name = dop_pregaw.24.a
@@ -834,7 +836,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.25.a
@@ -925,7 +927,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_pregaw.26.a
@@ -938,7 +940,7 @@ country_event = { #
 	
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.1.a
@@ -951,7 +953,7 @@ country_event = { #
 	picture = GFX_report_event_GNG_IJA_street_battle
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.2.a
@@ -967,7 +969,7 @@ country_event = { #
 	picture = GFX_report_event_generic_firing_squad
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.3.a
@@ -997,7 +999,7 @@ country_event = { #
 	picture = GFX_report_event_GNG_Takashima_Masuo_1
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.4.a
@@ -1014,7 +1016,7 @@ country_event = { #
 	picture = GFX_report_event_GNG_Takashima_Masuo_2
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.5.a
@@ -1037,7 +1039,7 @@ country_event = { #
 	picture = GFX_report_event_GNG_Takashima_Masuo_1
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.6.a
@@ -1054,7 +1056,7 @@ country_event = { #
 	picture = GFX_report_event_GNG_Takashima_Masuo_1
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.7.a
@@ -1071,7 +1073,7 @@ country_event = { #
 	picture = GFX_report_event_IBR_iberian_wars_11
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.8.a
@@ -1090,7 +1092,7 @@ country_event = { #
 	picture = GFX_report_event_HIS_ua_tv
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.9.a
@@ -1122,7 +1124,7 @@ country_event = { #
 					id = dop_legco_hostage_crisis.13
 					days = 1}}else={set_country_flag = senjiu_refuse
 				country_event = {
-					id = dop_legco_hostage_crisis.6
+					id = dop_legco_hostage_crisis.10
 					days = 1}}
 			}
 		}}
@@ -1135,9 +1137,10 @@ country_event = { #
 			}
 			country_event = {
 				id = dop_legco_hostage_crisis.13
-				days = 1}}else={set_country_flag = senjiu_refuse
+				days = 1}}
+				else={set_country_flag = senjiu_refuse
 			country_event = {
-				id = dop_legco_hostage_crisis.6
+				id = dop_legco_hostage_crisis.10
 				days = 1}}}
 	}
 }
@@ -1148,7 +1151,7 @@ country_event = { #
 	picture = GFX_report_event_HIS_ua_tv
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 	name = dop_legco_hostage_crisis.10.a
@@ -1171,7 +1174,7 @@ country_event = { #
 	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_2
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.11.a
@@ -1188,7 +1191,7 @@ country_event = { #
 	picture = GFX_report_event_GNG_morita_akio_10
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.12.a
@@ -1201,7 +1204,7 @@ country_event = { #
 	picture = GFX_report_event_generic_money
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.13.a
@@ -1218,7 +1221,7 @@ country_event = { #
 	picture = GFX_report_event_IBR_belem_brazil_hotel
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.14.a
@@ -1266,7 +1269,7 @@ country_event = { #
 	picture = GFX_report_event_RUS_war_planning
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.15.a
@@ -1330,7 +1333,7 @@ country_event = { #
 	picture = GFX_report_event_IME_attack
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.16.a
@@ -1358,7 +1361,7 @@ country_event = { #
 	picture = GFX_report_event_IME_attack
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.17.a
@@ -1378,7 +1381,7 @@ country_event = { #
 	picture = GFX_report_event_IME_attack
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.18.a
@@ -1398,7 +1401,7 @@ country_event = { #
 	picture = GFX_report_event_IME_attack
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.19.a
@@ -1418,7 +1421,7 @@ country_event = { #
 	picture = GFX_report_event_GNG_morita_future
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.20.a
@@ -1433,7 +1436,7 @@ country_event = { #
 	picture = GFX_report_event_GNG_morita_future
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.21.a
@@ -1449,7 +1452,7 @@ country_event = { #
 	desc = dop_legco_hostage_crisis.22.desc
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.22.a
@@ -1467,7 +1470,7 @@ country_event = { #
 	desc = dop_legco_hostage_crisis.23.desc
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.23.a
@@ -1482,7 +1485,7 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.24.a
@@ -1495,7 +1498,7 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.25.a
@@ -1508,7 +1511,7 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.26.a
@@ -1521,7 +1524,7 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.27.a
@@ -1541,7 +1544,7 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 	country_event = {
@@ -1558,7 +1561,7 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 	country_event = {
@@ -1575,7 +1578,7 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 	country_event = {
@@ -1592,7 +1595,7 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 	country_event = {
@@ -1609,7 +1612,7 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		country_event = {
@@ -1626,7 +1629,7 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 	
@@ -1644,7 +1647,7 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 	country_event = {
@@ -1662,7 +1665,7 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 	country_event = {
@@ -1682,7 +1685,7 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 	country_event = {
@@ -1699,7 +1702,7 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		clr_country_flag = now_ding
@@ -1716,7 +1719,7 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 	clr_country_flag = now_ding
@@ -1733,7 +1736,7 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 	clr_country_flag = now_ding
@@ -1750,7 +1753,7 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 	clr_country_flag = now_ding
@@ -1767,7 +1770,7 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 	clr_country_flag = now_ding
@@ -1784,7 +1787,7 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.50.a
@@ -1794,6 +1797,7 @@ country_event = { #
 		GNG_nagano_shigeto= {
 			retire = yes
 		}
+		
 	}
 }
 country_event = { #
@@ -1803,11 +1807,12 @@ country_event = { #
 
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_legco_hostage_crisis.51.a
 		custom_effect_tooltip = LHC_lose
+		
 	}
 }
 country_event = { #
@@ -1818,7 +1823,7 @@ country_event = { #
 	picture = GFX_report_event_GNG_morita_akio_10
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_sar.1.a
@@ -1832,7 +1837,7 @@ country_event = { #
 	picture = GFX_report_event_GNG_morita_akio_10
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_sar.2.a
@@ -1850,7 +1855,7 @@ country_event = { #
 		tag = GNG
 		has_completed_focus = GNG_the_coming_storm
 	}
-	fire_only_once = yes
+	
 	mean_time_to_happen = {
 		days = 40
 	}
@@ -1868,7 +1873,7 @@ country_event = { #
 	picture = GFX_report_event_GNG_morita_akio_6
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_sar.4.a
@@ -1884,7 +1889,7 @@ country_event = { #
 	picture = GFX_report_event_GNG_morita_akio_6
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_sar.5.a
@@ -1900,7 +1905,7 @@ country_event = { #
 	picture = GFX_report_event_GNG_morita_akio_10
 
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 
 	option = { #
 		name = dop_sar.6.a
@@ -1915,7 +1920,7 @@ desc = dop_sar.7.desc
 picture = GFX_report_event_GNG_morita_akio_10
 
 is_triggered_only = yes
-fire_only_once = yes
+
 
 option = { #
 	name = dop_sar.7.a
@@ -1932,7 +1937,7 @@ desc = dop_sar.8.desc
 picture = GFX_report_event_GNG_morita_akio_10
 
 is_triggered_only = yes
-fire_only_once = yes
+
 
 option = { #
 	name = dop_sar.8.a
@@ -1951,7 +1956,7 @@ desc = dop_sar.9.desc
 picture = GFX_report_event_GNG_morita_akio_10
 
 is_triggered_only = yes
-fire_only_once = yes
+
 
 option = { #
 	name = dop_sar.9.a
@@ -1973,7 +1978,7 @@ desc = dop_sar.10.desc
 picture = GFX_report_event_GNG_morita_akio_10
 
 is_triggered_only = yes
-fire_only_once = yes
+
 
 option = { #
 	name = dop_sar.10.a
@@ -1991,7 +1996,7 @@ desc = dop_sar.11.desc
 picture = GFX_report_event_GNG_morita_akio_10
 
 is_triggered_only = yes
-fire_only_once = yes
+
 option = { #
 	name = dop_sar.11.a
 	country_event = dop_sar.13
@@ -2005,7 +2010,7 @@ desc = dop_sar.13.desc
 picture = GFX_report_event_GNG_morita_akio_10
 
 is_triggered_only = yes
-fire_only_once = yes
+
 		option = { #
 		name = dop_sar.13.a
 		complete_national_focus = GNG_nanjing_emergency_call
@@ -2026,7 +2031,7 @@ desc = dop_sar.12.desc
 picture = GFX_report_event_GNG_morita_akio_10
 
 is_triggered_only = yes
-fire_only_once = yes
+
 
 option = { #
 set_temp_variable = { v = 93 }
@@ -2042,7 +2047,7 @@ desc = dop_pregaw.10.desc
 picture = GFX_report_event_GNG_morita_akio_10
 
 is_triggered_only = yes
-fire_only_once = yes
+
 
 option = { #
 	name = dop_pregaw.10.a
@@ -2057,7 +2062,7 @@ desc = dop_flavors.1.desc
 picture = GFX_report_event_generic_restaurant
 
 is_triggered_only = yes
-fire_only_once = yes
+
 
 option = { #
 	name = dop_flavors.1.a
@@ -2069,7 +2074,7 @@ desc = dop_flavors.2.desc
 picture = GFX_report_event_GNG_police_fujitsu_militiamen
 
 is_triggered_only = yes
-fire_only_once = yes
+
 
 option = { #
 name = dop_flavors.2.a
@@ -2081,7 +2086,7 @@ desc = dop_flavors.3.desc
 picture = GFX_report_event_CHI_Chinese_Police
 
 is_triggered_only = yes
-fire_only_once = yes
+
 
 option = { #
 name = dop_flavors.3.a
@@ -2093,7 +2098,7 @@ desc = dop_flavors.4.desc
 picture = GFX_report_event_GNG_generic_HK_police_4
 
 is_triggered_only = yes
-fire_only_once = yes
+
 
 option = { #
 	name = dop_flavors.4.a
@@ -2105,7 +2110,7 @@ country_event = {
 	picture = GFX_report_event_generic_helicopter_2
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 	
 	option = { 
 		name = dop_flavors.5.a
@@ -2117,7 +2122,7 @@ country_event = {
 	picture = GFX_report_event_generic_crate_of_guns_2
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 	
 	option = { #
 		
@@ -2130,7 +2135,7 @@ country_event = {
 	picture = GFX_report_event_GNG_HK_generic_6
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 	
 	option = { #
 		name = dop_flavors.7.a
@@ -2142,7 +2147,7 @@ country_event = {
 	picture = GFX_report_event_CHI_Nanjing_Palace
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 	
 	option = { #
 		name = dop_flavors.8.a
@@ -2154,7 +2159,7 @@ country_event = {
 	picture = GFX_report_event_GNG_IJA_soldiers_generic
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 	
 	option = { #
 	country_event = {
@@ -2170,7 +2175,7 @@ country_event = {
 	picture = GFX_report_event_GNG_IJA_it_begins
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 	
 	option = { #
 		name = dop_flavors.10.a
@@ -2185,7 +2190,7 @@ country_event = {
 	picture = GFX_report_event_GNG_matsushita_2
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 	
 	option = { #
 		name = dop_flavors.11.a
@@ -2196,7 +2201,7 @@ country_event = {
 	desc = dop_flavors.12.desc
 	picture = GFX_report_event_GNG_stanley_ho_4
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 	
 	option = { #
 		name = dop_flavors.12.a
@@ -2208,7 +2213,7 @@ country_event = {
 	picture = GFX_report_event_GNG_Nagano_Shigeto_Generic_1
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 	
 	option = { #
 		name = dop_flavors.13.a
@@ -2226,7 +2231,7 @@ country_event = {
 	desc = dop_flavors.14.desc
 	picture = GFX_report_event_GNG_stanley_ho_4
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 	
 	option = { #
 		name = dop_flavors.14.a
@@ -2250,7 +2255,7 @@ country_event = {
 	picture = GFX_report_event_generic_crate_of_guns_2
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 	
 	option = { #
 		name = dop_usage.1.a
@@ -2262,7 +2267,7 @@ country_event = {
 	picture = GFX_report_event_generic_crate_of_guns_2
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 	
 	option = { #
 		name = dop_usage.2.a
@@ -2334,7 +2339,7 @@ country_event = {
 	picture = GFX_report_event_generic_crate_of_guns_2
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 	
 option = { #
 name = dop_usage.2.f
@@ -2409,7 +2414,7 @@ country_event = {
 	picture = GFX_report_event_generic_crate_of_guns_2
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+	
 	
 option = { #
 name = dop_usage.2.l
