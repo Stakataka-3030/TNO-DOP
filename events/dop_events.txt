@@ -438,7 +438,9 @@ country_event = { #
 		GNG_nagano_shigeto= {
 			retire = yes
 		}
-		
+		GNG_arisue_seizo= {
+			retire = yes
+		}
 	}
 }
 country_event = { #
@@ -564,6 +566,7 @@ country_event = { #
 		name = dop_pregaw.17.a
 	if = {
 		custom_effect_tooltip = final_yongye_no_tt
+		set_country_flag = gng_chi_choiced
 		limit = {has_country_flag = yongye_leave}
 		delete_unit_template_and_units = {
 			division_template = "Sensha Shidan - Armored Division"
