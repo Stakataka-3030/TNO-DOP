@@ -414,13 +414,6 @@ country_event = { #
 		custom_effect_tooltip = pregaw_11_tt
 		custom_effect_tooltip = GNG_fakeswitchfocustree
 		complete_national_focus = GNG_black_cloud_roming
-		remove_unit_leader = 12103
-		remove_unit_leader = 12107
-		remove_unit_leader = 12104
-		remove_unit_leader = 12105
-		remove_unit_leader = 12106
-		remove_unit_leader = 12108
-		remove_unit_leader = 12101
 		GNG_kobayashi_masami = {
 			retire = yes
 		}
