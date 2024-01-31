@@ -331,7 +331,7 @@ GNG_bfg_countdown = {
 			set_country_flag = gng_chi_choiced
 			load_focus_tree = dop_warpp_tree
 	}
-		if = {limit = { check_variable = { BFG_CHI_Balance < BFG_JAP_Balance }	check_variable = { BFG_GNG_Balance < 70.001 }}
+		else_if = {limit = { check_variable = { BFG_CHI_Balance < BFG_JAP_Balance }	check_variable = { BFG_GNG_Balance < 70.001 }}
 			country_event = dop_pregaw.12
 			load_focus_tree = dop_warpp_tree
 	}

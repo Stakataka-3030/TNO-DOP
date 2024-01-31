@@ -9916,7 +9916,7 @@ GNG_pass_ordinance_event_effect = {
 			check_variable = { GNG_legco_current_ordinance_id = 87 } #emergencey_power_ord
 		}
 		country_event = {
-			id = dop_pregaw.8
+			id = dop_pregaw.9
 		}
 		GNG_ordinances_effects = yes
 	}
