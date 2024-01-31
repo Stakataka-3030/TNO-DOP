@@ -366,6 +366,7 @@ shared_focus = {
     }
     completion_reward = {
         custom_effect_tooltip = gff_tt
+        load_focus_tree = ZZZ_national_focus
     }
 }
 shared_focus = { 
