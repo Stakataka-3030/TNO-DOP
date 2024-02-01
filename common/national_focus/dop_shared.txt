@@ -432,7 +432,7 @@ shared_focus = {
 		country_event = {
 			id = dop_flavors.8
 		}
-		set_temp_variable = { GNG_legco_amendment_id = 78.1 }
+		set_temp_variable = { GNG_legco_amendment_id = 89.1 }
 			GNG_add_amendment_to_current = yes
 	}}
 shared_focus = {
@@ -468,7 +468,7 @@ shared_focus = {
 		country_event = {
 			id = dop_flavors.11
 		}
-		set_temp_variable = { GNG_legco_amendment_id = 78.3 }
+		set_temp_variable = { GNG_legco_amendment_id = 89.3 }
 			GNG_add_amendment_to_current = yes
 	}}
 shared_focus = {
@@ -550,7 +550,7 @@ shared_focus = {
 	relative_position_id = GNG_New_defense_way
 	completion_reward = {
 		effect_tooltip = {
-			set_temp_variable = { GNG_temp_legco_id = 78 }
+			set_temp_variable = { GNG_temp_legco_id = 89 }
 		custom_effect_tooltip = GNG_legco_bill_vote_when_selected_tooltip
 		}
 		log = "[GetDateText]: [Root.GetName]: Focus GNG_Special_police_ordinance"

@@ -11224,7 +11224,7 @@ GNG_ordinances_effects = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { GNG_temp_legco_id = 78 } #compulsory education ordinance
+			check_variable = { GNG_temp_legco_id = 89 } #compulsory education ordinance
 		}
 
 		every_owned_state = {
