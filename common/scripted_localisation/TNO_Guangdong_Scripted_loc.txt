@@ -2590,16 +2590,16 @@ defined_text = {
 		localization_key = GNG_legco_ord_75_title
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_ordinance_id = 76 } } #Country Park ORD
-		localization_key = GNG_legco_ord_76_title
+		trigger = { check_variable = { GNG_legco_ordinance_id = 88 } } #Country Park ORD
+		localization_key = GNG_legco_ord_88_title
 	}
 	text = {
 		trigger = { check_variable = { GNG_legco_ordinance_id = 77 } } #Compulsory Education ORD
 		localization_key = GNG_legco_ord_77_title
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_ordinance_id = 78 } } #Public Transport ORD
-		localization_key = GNG_legco_ord_78_title
+		trigger = { check_variable = { GNG_legco_ordinance_id = 89 } } #Public Transport ORD
+		localization_key = GNG_legco_ord_89_title
 	}
 	text = {
 		trigger = { check_variable = { GNG_legco_ordinance_id = 79 } } #Public Housing ORD
@@ -2949,16 +2949,16 @@ defined_text = {
 		localization_key = GNG_legco_ord_75_effect
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_ordinance_id = 76 } } #Country Park ORD
-		localization_key = GNG_legco_ord_76_effect
+		trigger = { check_variable = { GNG_legco_ordinance_id = 88 } } #Country Park ORD
+		localization_key = GNG_legco_ord_88_effect
 	}
 	text = {
 		trigger = { check_variable = { GNG_legco_ordinance_id = 77 } } #Compulsory Education ORD
 		localization_key = GNG_legco_ord_77_effect
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_ordinance_id = 78 } } #Public Transport ORD
-		localization_key = GNG_legco_ord_78_effect
+		trigger = { check_variable = { GNG_legco_ordinance_id = 89 } } #Public Transport ORD
+		localization_key = GNG_legco_ord_89_effect
 	}
 	text = {
 		trigger = { check_variable = { GNG_legco_ordinance_id = 79 } } #Public Housing ORD
@@ -3207,44 +3207,33 @@ defined_text = {
 		localization_key = GNG_legco_amend_19_9_title
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 76.1 } }
-		localization_key = GNG_legco_amend_76_1_title
+		trigger = { check_variable = { GNG_legco_amendment_id = 88.1 } }
+		localization_key = GNG_legco_amend_88_1_title
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 76.2 } }
-		localization_key = GNG_legco_amend_76_2_title
+		trigger = { check_variable = { GNG_legco_amendment_id = 88.2 } }
+		localization_key = GNG_legco_amend_88_2_title
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 76.3 } }
-		localization_key = GNG_legco_amend_76_3_title
+		trigger = { check_variable = { GNG_legco_amendment_id = 88.3 } }
+		localization_key = GNG_legco_amend_88_3_title
+	}
+
+	text = {
+		trigger = { check_variable = { GNG_legco_amendment_id = 89.1 } }
+		localization_key = GNG_legco_amend_89_1_title
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 77.1 } }
-		localization_key = GNG_legco_amend_77_1_title
+		trigger = { check_variable = { GNG_legco_amendment_id = 89.2 } }
+		localization_key = GNG_legco_amend_89_2_title
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 77.2 } }
-		localization_key = GNG_legco_amend_77_2_title
+		trigger = { check_variable = { GNG_legco_amendment_id = 89.3 } }
+		localization_key = GNG_legco_amend_89_3_title
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 77.3 } }
-		localization_key = GNG_legco_amend_77_3_title
-	}
-	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 78.1 } }
-		localization_key = GNG_legco_amend_78_1_title
-	}
-	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 78.2 } }
-		localization_key = GNG_legco_amend_78_2_title
-	}
-	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 78.3 } }
-		localization_key = GNG_legco_amend_78_3_title
-	}
-	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 78.4 } }
-		localization_key = GNG_legco_amend_78_4_title
+		trigger = { check_variable = { GNG_legco_amendment_id = 89.4 } }
+		localization_key = GNG_legco_amend_89_4_title
 	}
 	text = {
 		trigger = { check_variable = { GNG_legco_amendment_id = 82.1 } }
@@ -4223,16 +4212,16 @@ defined_text = {
 		localization_key = GNG_legco_amend_20_9_effect
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 76.1 } }
-		localization_key = GNG_legco_amend_76_1_effect
+		trigger = { check_variable = { GNG_legco_amendment_id = 88.1 } }
+		localization_key = GNG_legco_amend_88_1_effect
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 76.2 } }
-		localization_key = GNG_legco_amend_76_2_effect
+		trigger = { check_variable = { GNG_legco_amendment_id = 88.2 } }
+		localization_key = GNG_legco_amend_88_2_effect
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 76.3 } }
-		localization_key = GNG_legco_amend_76_3_effect
+		trigger = { check_variable = { GNG_legco_amendment_id = 88.3 } }
+		localization_key = GNG_legco_amend_88_3_effect
 	}
 	text = {
 		trigger = { check_variable = { GNG_legco_amendment_id = 77.1 } }
@@ -4247,20 +4236,20 @@ defined_text = {
 		localization_key = GNG_legco_amend_77_3_effect
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 78.1 } }
-		localization_key = GNG_legco_amend_78_1_effect
+		trigger = { check_variable = { GNG_legco_amendment_id = 89.1 } }
+		localization_key = GNG_legco_amend_89_1_effect
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 78.2 } }
-		localization_key = GNG_legco_amend_78_2_effect
+		trigger = { check_variable = { GNG_legco_amendment_id = 89.2 } }
+		localization_key = GNG_legco_amend_89_2_effect
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 78.3 } }
-		localization_key = GNG_legco_amend_78_3_effect
+		trigger = { check_variable = { GNG_legco_amendment_id = 89.3 } }
+		localization_key = GNG_legco_amend_89_3_effect
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 78.4 } }
-		localization_key = GNG_legco_amend_78_4_effect
+		trigger = { check_variable = { GNG_legco_amendment_id = 89.4 } }
+		localization_key = GNG_legco_amend_89_4_effect
 	}
 	text = {
 		trigger = { check_variable = { GNG_legco_amendment_id = 82.1 } }
@@ -5931,9 +5920,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			check_variable = { GNG_temp_legco_id = 76 }
+			check_variable = { GNG_temp_legco_id = 88 }
 		}
-		localization_key = GNG_legco_temp_tooltip_bill_76
+		localization_key = GNG_legco_temp_tooltip_bill_88
 	}
 	text = {
 		trigger = {
@@ -5943,9 +5932,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			check_variable = { GNG_temp_legco_id = 78 }
+			check_variable = { GNG_temp_legco_id = 89 }
 		}
-		localization_key = GNG_legco_temp_tooltip_bill_78
+		localization_key = GNG_legco_temp_tooltip_bill_89
 	}
 	text = {
 		trigger = {
@@ -6413,9 +6402,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			check_variable = { GNG_legco_current_ordinance_id = 76 }
+			check_variable = { GNG_legco_current_ordinance_id = 88 }
 		}
-		localization_key = GNG_legco_temp_tooltip_bill_76
+		localization_key = GNG_legco_temp_tooltip_bill_88
 	}
 	text = {
 		trigger = {
@@ -6425,9 +6414,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			check_variable = { GNG_legco_current_ordinance_id = 78 }
+			check_variable = { GNG_legco_current_ordinance_id = 89 }
 		}
-		localization_key = GNG_legco_temp_tooltip_bill_78
+		localization_key = GNG_legco_temp_tooltip_bill_89
 	}
 	text = {
 		trigger = {

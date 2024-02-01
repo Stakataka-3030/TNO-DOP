@@ -8960,7 +8960,8 @@ GNG_initialize_legco = {
 	add_to_array = { GNG_legco_sponsor_faction = CHEUNG_KONG } # Bill 85: cujinnongye
 	add_to_array = { GNG_legco_sponsor_faction = CHEUNG_KONG } # Bill 86: xinjishufazhan
 	add_to_array = { GNG_legco_sponsor_faction = SONY } # Bill 87: yingjingquanli
-
+	add_to_array = { GNG_legco_sponsor_faction = SONY }
+	add_to_array = { GNG_legco_sponsor_faction = SONY }
 	clear_array = GNG_legco_amendments_1
 	clear_array = GNG_legco_amendments_2
 	clear_array = GNG_legco_amendments_3
@@ -9829,7 +9830,7 @@ GNG_pass_ordinance_event_effect = {
 			OR= {
 			has_country_flag = GNG_Dismantlement_CCL_OVER
 			has_country_flag = GNG_Dismantlement_GFT_OVER }			
-			check_variable = { GNG_legco_current_ordinance_id = 76 } #country park ordinance
+			check_variable = { GNG_legco_current_ordinance_id = 88 } #country park ordinance
 		}
 		country_event = {
 			id = dop_sar.4
@@ -9839,7 +9840,7 @@ GNG_pass_ordinance_event_effect = {
 		limit = {
 			NOT = {has_country_flag = GNG_Dismantlement_CCL_OVER }
 			NOT = {has_country_flag = GNG_Dismantlement_GFT_OVER }			
-			check_variable = { GNG_legco_current_ordinance_id = 76 } #country park ordinance
+			check_variable = { GNG_legco_current_ordinance_id = 88 } #country park ordinance
 		}
 		country_event = {
 			id = dop_sar.5
@@ -9855,7 +9856,7 @@ GNG_pass_ordinance_event_effect = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { GNG_legco_current_ordinance_id = 78 }
+			check_variable = { GNG_legco_current_ordinance_id = 89 }
 			has_country_flag = lhc_disabled
 		}
 		country_event = {
@@ -9865,7 +9866,7 @@ GNG_pass_ordinance_event_effect = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { GNG_legco_current_ordinance_id = 78 }
+			check_variable = { GNG_legco_current_ordinance_id = 89 }
 			NOT = {has_country_flag = lhc_disabled}
 		}
 		country_event = {
@@ -10574,7 +10575,7 @@ GNG_fail_ordinance_event_effect = {
 	
 	else_if = {
 		limit = {
-			check_variable = { GNG_legco_current_ordinance_id = 76 } #country park ordinance
+			check_variable = { GNG_legco_current_ordinance_id = 88 } #country park ordinance
 		}
 		country_event = {
 			id = dop_sar.6
@@ -10589,7 +10590,7 @@ GNG_fail_ordinance_event_effect = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { GNG_legco_current_ordinance_id = 78 } #Public Transport Ordinance
+			check_variable = { GNG_legco_current_ordinance_id = 898 } #Public Transport Ordinance
 		}
 	}
 	else_if = {
@@ -11238,7 +11239,7 @@ GNG_ordinances_effects = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { GNG_temp_legco_id = 76 } #special_police ordinance
+			check_variable = { GNG_temp_legco_id = 88 } #special_police ordinance
 		}
 			
 		set_temp_variable = { temp_econ_spending_amount = 0.30 }
@@ -19078,7 +19079,7 @@ GNG_amendment_effects = {
 		}
 		else_if = {
 			limit = {
-				check_variable = { GNG_legco_amendment_id = 76.1 } 
+				check_variable = { GNG_legco_amendment_id = 88.1 } 
 			}
 			set_temp_variable = { temp_econ_spending_amount = 0.1 }
 			econ_spend_money_once_effect_raw_money = yes
@@ -19092,7 +19093,7 @@ GNG_amendment_effects = {
 		}
 		else_if = {
 			limit = {
-				check_variable = { GNG_legco_amendment_id = 76.2 } 
+				check_variable = { GNG_legco_amendment_id = 88.2 } 
 			}
 			set_temp_variable = { temp_econ_spending_amount = 0.175 }
 			econ_spend_money_once_effect_raw_money = yes
@@ -19108,7 +19109,7 @@ GNG_amendment_effects = {
 		}
 		else_if = {
 			limit = {
-				check_variable = { GNG_legco_amendment_id = 76.3 } 
+				check_variable = { GNG_legco_amendment_id = 88.3 } 
 			}
 			set_temp_variable = { GNG_legco_seat_temp = 1 }
 			set_temp_variable = { GNG_legco_faction_temp = 3 }
@@ -19176,7 +19177,7 @@ GNG_amendment_effects = {
 		}
 		else_if = {
 			limit = {
-				check_variable = { GNG_legco_amendment_id = 78.1 } 
+				check_variable = { GNG_legco_amendment_id = 89.1 } 
 			}
 			set_temp_variable = { temp_econ_spending_amount = 1 }
 			econ_spend_money_once_effect_raw_money = yes
@@ -19184,7 +19185,7 @@ GNG_amendment_effects = {
 		}
 		else_if = {
 			limit = {
-				check_variable = { GNG_legco_amendment_id = 78.2 } 
+				check_variable = { GNG_legco_amendment_id = 89.2 } 
 			}
 			set_temp_variable = { temp_econ_spending_amount = 1 }
 			econ_spend_money_once_effect_raw_money = yes
@@ -19192,13 +19193,13 @@ GNG_amendment_effects = {
 		}
 		else_if = {
 			limit = {
-				check_variable = { GNG_legco_amendment_id = 78.3 } 
+				check_variable = { GNG_legco_amendment_id = 89.3 } 
 			}
 			add_to_variable = {GNG_ndw_success_chance = 10}
 		}
 		else_if = {
 			limit = {
-				check_variable = { GNG_legco_amendment_id = 78.4 } 
+				check_variable = { GNG_legco_amendment_id = 89.4 } 
 			}
 			if = {
 				limit = {
