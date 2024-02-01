@@ -3258,14 +3258,6 @@ defined_text = {
 		localization_key = GNG_legco_amend_87_3_title
 	}
 	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 79.3 } }
-		localization_key = GNG_legco_amend_79_3_title
-	}
-	text = {
-		trigger = { check_variable = { GNG_legco_amendment_id = 79.4 } }
-		localization_key = GNG_legco_amend_79_4_title
-	}	
-	text = {
 		trigger = { check_variable = { GNG_legco_amendment_id = 20.1 } }
 		localization_key = GNG_legco_amend_20_1_title
 	}
